@@ -35,39 +35,18 @@
     "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
   },
   {
-    "objectID": "Day1.html#welcome-to-survey-sampling",
-    "href": "Day1.html#welcome-to-survey-sampling",
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
     "title": "Day 1",
-    "section": "Welcome to Survey Sampling",
-    "text": "Welcome to Survey Sampling\n\n\n\n\nWhat is Survey Sampling?\n\nEssential statistical method for collecting representative data.\nKey tool in business, health sciences, environmental studies, and more."
-  },
-  {
-    "objectID": "Day1.html#why-study-survey-sampling",
-    "href": "Day1.html#why-study-survey-sampling",
-    "title": "Day 1",
-    "section": "Why Study Survey Sampling?",
-    "text": "Why Study Survey Sampling?\n\n\n\n\nData-Driven Decision Making\n\nInformed decisions require accurate data.\nSampling helps gather this data efficiently and effectively."
-  },
-  {
-    "objectID": "Day1.html#basic-principles-of-survey-sampling",
-    "href": "Day1.html#basic-principles-of-survey-sampling",
-    "title": "Day 1",
-    "section": "Basic Principles of Survey Sampling",
-    "text": "Basic Principles of Survey Sampling\n\n\n\n\nRandom Sampling\n\nEach member of a population has an equal chance of selection.\nEnsures unbiased data representation.\n\nSystematic Approach\n\nMethodical selection process to avoid sampling bias."
-  },
-  {
-    "objectID": "Day1.html#importance-in-professional-fields",
-    "href": "Day1.html#importance-in-professional-fields",
-    "title": "Day 1",
-    "section": "Importance in Professional Fields",
-    "text": "Importance in Professional Fields\n\n\n\nHealth Sciences\n\nEstimating disease prevalence, patient outcomes.\n\nEnvironmental Studies\n\nMonitoring pollution levels, wildlife populations.\n\nBusiness\n\nUnderstanding market trends, consumer preferences."
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
   },
   {
     "objectID": "Day1.html#group-activity-1",
     "href": "Day1.html#group-activity-1",
     "title": "Day 1",
     "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\nMake a course folder called ‘stat220’ either on your Maize account or on your local computer\nPlease download the Class-Activity-1 template from moodle and go to class helper web page\n\n\n\n\n −+ 10:00"
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   },
   {
     "objectID": "about.html",

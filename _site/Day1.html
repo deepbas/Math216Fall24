@@ -331,7 +331,7 @@
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Day 1</h1>
-  <p class="subtitle">MATH 216</p>
+  <p class="subtitle">MATH 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -442,74 +442,37 @@ Bastola
 </div>
 </div>
 </section>
-<section id="welcome-to-survey-sampling" class="slide level2">
-<h2>Welcome to Survey Sampling</h2>
-<p><br></p>
-<div class="eqt">
-<div>
-<ul>
-<li class="fragment"><strong>What is Survey Sampling?</strong>
-<ul>
-<li class="fragment">Essential statistical method for collecting representative data.</li>
-<li class="fragment">Key tool in business, health sciences, environmental studies, and more.</li>
-</ul></li>
-</ul>
-</div>
-</div>
+<section id="statistics" class="title-slide slide level1 inverse center">
+<h1>Statistics</h1>
+<p>Statistics is the study of data and the uncertainties surrounding them. We will take a more conceptual route to statistics in this course.</p>
 </section>
-<section id="why-study-survey-sampling" class="slide level2">
-<h2>Why Study Survey Sampling?</h2>
-<p><br></p>
+
+<section id="what-and-why-of-statistics" class="centered-content">
+<h3>What and Why of Statistics?</h3>
 <div class="lqt">
-<div>
+<p>Science of collecting, describing, analyzing and making decisions based on data</p>
 <ul>
-<li class="fragment"><strong>Data-Driven Decision Making</strong>
-<ul>
-<li class="fragment">Informed decisions require accurate data.</li>
-<li class="fragment">Sampling helps gather this data efficiently and effectively.</li>
-</ul></li>
+<li>Sampling</li>
+<li>Exploratory Data Analysis</li>
+<li>Inference</li>
 </ul>
 </div>
+<div class="green-h">
+<p>Allows us to make informed decisions in the face of uncertainty and let’s us take an unbiased and evidence-based viewpoint</p>
 </div>
 </section>
-<section id="basic-principles-of-survey-sampling" class="slide level2">
-<h2>Basic Principles of Survey Sampling</h2>
-<p><br></p>
-<div class="eqt">
-<div>
+<section id="statistical-computation" class="slide level2">
+<h2>Statistical Computation</h2>
+<p><br> <br></p>
+<div class="bq">
 <ul>
-<li class="fragment"><strong>Random Sampling</strong>
-<ul>
-<li class="fragment">Each member of a population has an equal chance of selection.</li>
-<li class="fragment">Ensures unbiased data representation.</li>
-</ul></li>
-<li class="fragment"><strong>Systematic Approach</strong>
-<ul>
-<li class="fragment">Methodical selection process to avoid sampling bias.</li>
-</ul></li>
+<li>Statistical computing software called R</li>
+<li>RStudio/Posit gives a nice user-friendly interface to R</li>
+<li>R Markdown is a platform in Posit to write your codes and results</li>
 </ul>
 </div>
-</div>
-</section>
-<section id="importance-in-professional-fields" class="slide level2">
-<h2>Importance in Professional Fields</h2>
-<div class="fsp">
-<div>
-<ul>
-<li class="fragment"><strong>Health Sciences</strong>
-<ul>
-<li class="fragment">Estimating disease prevalence, patient outcomes.</li>
-</ul></li>
-<li class="fragment"><strong>Environmental Studies</strong>
-<ul>
-<li class="fragment">Monitoring pollution levels, wildlife populations.</li>
-</ul></li>
-<li class="fragment"><strong>Business</strong>
-<ul>
-<li class="fragment">Understanding market trends, consumer preferences.</li>
-</ul></li>
-</ul>
-</div>
+<div class="footer">
+<p><a href="https://rmarkdown.rstudio.com/">R Documentation</a></p>
 </div>
 </section>
 <section id="group-activity-1" class="slide level2 centered-content" data-background="#ffdf9e">
@@ -519,15 +482,16 @@ Bastola
 <p><img data-src="https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif"></p>
 </div>
 <div class="right">
+<p><br></p>
 <div class="lqt">
 <ul>
-<li>Make a course folder called ‘stat220’ either on your <a href="https://maize.mathcs.carleton.edu/auth-sign-in?appUri=%2F">Maize</a> account or on your local computer</li>
-<li>Please download the Class-Activity-1 template from <a href="https://moodle.carleton.edu/course/view.php?id=43692">moodle</a> and go to <a href="https://stat220-spring24.netlify.app/">class helper web page</a></li>
+<li>Make a course folder called ‘math216’ on your local computer</li>
+<li>You will keep all of your class materials on this folder</li>
 </ul>
 </div>
 </div>
 </div>
-<p></p><div class="countdown" id="timer_6e37c930" data-update-every="1" tabindex="0" style="top:0;left:0;padding:3px 4px;font-size:1em;"> <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div> <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code> </div><p></p>
+<p></p><div class="countdown" id="timer_8b9b8161" data-update-every="1" tabindex="0" style="top:0;left:0;padding:3px 4px;font-size:1em;"> <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div> <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code> </div><p></p>
 </section>
 
 <div class="quarto-auto-generated-content">
@@ -874,7 +838,7 @@ Bastola
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/stellar-baklava-178e61\.netlify\.app");
+          var filterRegex = new RegExp('/' + window.location.host + '/');
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }

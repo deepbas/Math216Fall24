@@ -4,7 +4,7 @@ title-slide-attributes:
   data-background-image: images/lake.jpg
   data-background-size: contain
   data-background-opacity: "0.5"
-subtitle: "MATH 216"
+subtitle: "MATH 216: Statistical Thinking"
 author: "Bastola"
 format:
   revealjs: 
@@ -19,6 +19,9 @@ format:
     background-transition: fade    
     touch: false 
     controls: true
+filters:
+  - shinylive
+  - webr
 ---
 
 ```{r setup, include=FALSE}
@@ -135,56 +138,46 @@ yt <- 0
 :::
 :::
 
-## Welcome to Survey Sampling
 
-<br>
+::: inverse
+# Statistics 
 
-::: eqt
-::: incremental
--   **What is Survey Sampling?**
-    -   Essential statistical method for collecting representative data.
-    -   Key tool in business, health sciences, environmental studies, and more.
-:::
+Statistics is the study of data and the uncertainties surrounding them. We will take a more conceptual route to statistics in this course.
 :::
 
-## Why Study Survey Sampling?
+::: centered-content
+### What and Why of Statistics?
 
-<br>
 
 ::: lqt
-::: incremental
--   **Data-Driven Decision Making**
-    -   Informed decisions require accurate data.
-    -   Sampling helps gather this data efficiently and effectively.
+Science of collecting, describing, analyzing and making decisions based on data
+
+-   Sampling
+-   Exploratory Data Analysis
+-   Inference
+:::
+
+::: green-h
+Allows us to make informed decisions in the face of uncertainty and let's us take an unbiased and evidence-based viewpoint
 :::
 :::
 
-## Basic Principles of Survey Sampling
+
+## Statistical Computation
 
 <br>
+<br>
 
-::: eqt
-::: incremental
--   **Random Sampling**
-    -   Each member of a population has an equal chance of selection.
-    -   Ensures unbiased data representation.
--   **Systematic Approach**
-    -   Methodical selection process to avoid sampling bias.
-:::
+::: bq
+-   Statistical computing software called R
+-   RStudio/Posit gives a nice user-friendly interface to R
+-   R Markdown is a platform in Posit to write your codes and results
 :::
 
-## Importance in Professional Fields
+::: footer
+[R Documentation](https://rmarkdown.rstudio.com/)
+:::
 
-::: fsp
-::: incremental
--   **Health Sciences**
-    -   Estimating disease prevalence, patient outcomes.
--   **Environmental Studies**
-    -   Monitoring pollution levels, wildlife populations.
--   **Business**
-    -   Understanding market trends, consumer preferences.
-:::
-:::
 
 ::: centered-content
 ## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
@@ -195,9 +188,12 @@ yt <- 0
 :::
 
 ::: right
+
+<br>
+
 ::: lqt
--   Make a course folder called 'stat220' either on your [Maize](https://maize.mathcs.carleton.edu/auth-sign-in?appUri=%2F) account or on your local computer
--   Please download the Class-Activity-1 template from [moodle](https://moodle.carleton.edu/course/view.php?id=43692) and go to [class helper web page](https://stat220-spring24.netlify.app/)
+-   Make a course folder called 'math216' on your local computer
+-   You will keep all of your class materials on this folder 
 :::
 :::
 :::
