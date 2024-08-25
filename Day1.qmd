@@ -1,0 +1,206 @@
+---
+title: "Day 1"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "MATH 216"
+author: "Bastola"
+format:
+  revealjs: 
+    theme: [default, scss/main.scss]
+    show-notes: separate-page
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: chalkboard.json
+    transition: slide
+    background-transition: fade    
+    touch: false 
+    controls: true
+---
+
+```{r setup, include=FALSE}
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(xaringanExtra)
+library(forcats)
+library(patchwork)
+library(knitr)
+library(gridExtra)
+
+
+select <- dplyr::select
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+yt <- 0
+
+# read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/agstrat.csv")
+```
+
+::: centered-content
+## Something about me
+
+::: row
+::: left
+::: bq
+::: incremental
+-   First year at Salisbury
+-   Originally from Nepal
+-   Research in Statistical Computation and Applied Statistics
+-   Avid learner and traveler
+:::
+:::
+:::
+
+::: right
+<br>
+
+[![My website](images/website.png)](http://deepbas.io)
+:::
+:::
+:::
+
+::: centered-content
+## Active Participation
+
+::: bq
+::: incremental
+-   **Engage Actively**
+    -   Take lecture notes
+    -   Follow class handouts
+-   **Ask Questions**
+    -   Every question is valuable; we're learning together
+-   **Gain Conceptual Understanding**
+    -   To be able to apply the knowledge; understanding the concepts is key
+:::
+:::
+:::
+
+::: centered-content
+## Tell me something about yourself!
+
+::: row
+::: left
+<br>
+
+::: bqt
+-   Your name?
+-   Gender Pronouns?
+-   Favorite Summer Memory?
+:::
+:::
+
+::: right
+<iframe src="https://giphy.com/embed/Tq8B3WOqXToBlrqClZ" width="3000" height="280" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+`<p><a href="https://giphy.com/gifs/new-post-creative-Tq8B3WOqXToBlrqClZ"`{=html}via GIPHY</a></p>
+:::
+:::
+:::
+
+::: centered-content
+## Class Pipelines
+
+<br>
+
+::: bql
+-   Most of the course information and schedule will be posted in [MyClasses](https://salisbury.instructure.com/courses/67043)
+-   Homework will be posted but not collected
+-   Labs most Tuesdays; lab reports due in [MyClasses](https://salisbury.instructure.com/courses/67043) a week from the lab date
+-   Quizzes every Friday in-person; includes HW, lectures, labs
+:::
+:::
+
+::: centered-content
+## What will a typical day/week look like?
+
+::: eqt
+::: incremental
+-   Before class:
+    -   Read assigned topics from textbook
+    -   Work on homework/lab reports, come with questions
+-   During class:
+    -   Mini lectures
+    -   Class activities
+:::
+:::
+:::
+
+## Welcome to Survey Sampling
+
+<br>
+
+::: eqt
+::: incremental
+-   **What is Survey Sampling?**
+    -   Essential statistical method for collecting representative data.
+    -   Key tool in business, health sciences, environmental studies, and more.
+:::
+:::
+
+## Why Study Survey Sampling?
+
+<br>
+
+::: lqt
+::: incremental
+-   **Data-Driven Decision Making**
+    -   Informed decisions require accurate data.
+    -   Sampling helps gather this data efficiently and effectively.
+:::
+:::
+
+## Basic Principles of Survey Sampling
+
+<br>
+
+::: eqt
+::: incremental
+-   **Random Sampling**
+    -   Each member of a population has an equal chance of selection.
+    -   Ensures unbiased data representation.
+-   **Systematic Approach**
+    -   Methodical selection process to avoid sampling bias.
+:::
+:::
+
+## Importance in Professional Fields
+
+::: fsp
+::: incremental
+-   **Health Sciences**
+    -   Estimating disease prevalence, patient outcomes.
+-   **Environmental Studies**
+    -   Monitoring pollution levels, wildlife populations.
+-   **Business**
+    -   Understanding market trends, consumer preferences.
+:::
+:::
+
+::: centered-content
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+::: lqt
+-   Make a course folder called 'stat220' either on your [Maize](https://maize.mathcs.carleton.edu/auth-sign-in?appUri=%2F) account or on your local computer
+-   Please download the Class-Activity-1 template from [moodle](https://moodle.carleton.edu/course/view.php?id=43692) and go to [class helper web page](https://stat220-spring24.netlify.app/)
+:::
+:::
+:::
+
+`r countdown(minutes = 10, seconds = 00, top = 0 , left = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+:::

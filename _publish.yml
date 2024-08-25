@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 8f581c8b-f53b-4f5f-ba2c-22f6b127ae08
+      url: 'https://stellar-baklava-178e61.netlify.app'
