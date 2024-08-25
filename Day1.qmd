@@ -105,7 +105,7 @@ yt <- 0
 
 </iframe>
 
-`<p><a href="https://giphy.com/gifs/new-post-creative-Tq8B3WOqXToBlrqClZ"`{=html}via GIPHY</a></p>
+<p><a href="https://giphy.com/gifs/new-post-creative-Tq8B3WOqXToBlrqClZ">via GIPHY</a></p>
 :::
 :::
 :::
@@ -116,8 +116,10 @@ yt <- 0
 <br>
 
 ::: bql
--   Most of the course information and schedule will be posted in [MyClasses](https://salisbury.instructure.com/courses/67043)
+-   Most of the course information and schedule will be posted in                [MyClasses](https://salisbury.instructure.com/courses/67043)
+
 -   Homework will be posted but not collected
+
 -   Labs most Tuesdays; lab reports due in [MyClasses](https://salisbury.instructure.com/courses/67043) a week from the lab date
 -   Quizzes every Friday in-person; includes HW, lectures, labs
 :::
@@ -180,6 +182,7 @@ Allows us to make informed decisions in the face of uncertainty and let's us tak
 
 
 ::: centered-content
+
 ## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
 
 ::: row
@@ -192,6 +195,7 @@ Allows us to make informed decisions in the face of uncertainty and let's us tak
 <br>
 
 ::: lqt
+-   Install R and RStudio on your machine
 -   Make a course folder called 'math216' on your local computer
 -   You will keep all of your class materials on this folder 
 :::
