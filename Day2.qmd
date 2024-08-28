@@ -78,14 +78,14 @@ Each row = unit & Each column = variable
 
 ::: centered-content
 
-## Categorical Versus Quantitative
+## Qualitative Versus Quantitative
 
-> Variables are classified as either **categorical** or **quantitative:**
+> Variables are classified as either **qualitative** or **quantitative:**
 
 <br>
 
 ::: cle2
--   A **categorical variable** divides the cases into groups. e.g. gender, country, state etc.
+-   A **qualitative variable** divides the cases into groups. e.g. gender, country, state etc.
 -   A **quantitative variable** measures a numerical quantity for each case, e.g. age, height, sleep hours, blood pressure etc
 :::
 :::
@@ -104,10 +104,10 @@ Each row = unit & Each column = variable
 ::: centered-content
 ## Kidney cancer
 
-> If the cases in the kidney cancer dataset are people, then the measured variable is categorical
+> If the cases in the kidney cancer dataset are people, then the measured variable is qualitative
 
 ::: green-h
-We categorize each person as either having kidney cancer or not which is categorical.
+We categorize each person as either having kidney cancer or not which is qualitative.
 :::
 :::
 
@@ -125,7 +125,7 @@ Data collected at the county level is aggregated across all people living in the
 ## Variable manipulations
 
 ::: bq
-Can use numbers to code categories of categorical variable
+Can use numbers to code categories of qualitative variable
 
 - e.g. Gender (1 for male and 2 for female)
 :::
@@ -134,7 +134,7 @@ Can use numbers to code categories of categorical variable
 <br>
 
 ::: bq
-Can convert quantitative variable into categorical groups 
+Can convert quantitative variable into qualitative groups 
 
 - e.g. Income (0-50000 as Low, 50000+ as High)
 

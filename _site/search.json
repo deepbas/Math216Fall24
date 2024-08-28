@@ -56,11 +56,11 @@
     "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\n\nData is stored and presented in a dataset that comprises of variables measured on units\n\nA variable is any characteristic that is recorded for each unit"
   },
   {
-    "objectID": "Day2.html#categorical-versus-quantitative",
-    "href": "Day2.html#categorical-versus-quantitative",
+    "objectID": "Day2.html#qualitative-versus-quantitative",
+    "href": "Day2.html#qualitative-versus-quantitative",
     "title": "Day 2",
-    "section": "Categorical Versus Quantitative",
-    "text": "Categorical Versus Quantitative\n\nVariables are classified as either categorical or quantitative:\n\n\n\n\nA categorical variable divides the cases into groups. e.g. gender, country, state etc.\nA quantitative variable measures a numerical quantity for each case, e.g. age, height, sleep hours, blood pressure etc"
+    "section": "Qualitative Versus Quantitative",
+    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\n\nA qualitative variable divides the cases into groups. e.g. gender, country, state etc.\nA quantitative variable measures a numerical quantity for each case, e.g. age, height, sleep hours, blood pressure etc"
   },
   {
     "objectID": "Day2.html#kidney-cancer",
@@ -74,7 +74,7 @@
     "href": "Day2.html#kidney-cancer-1",
     "title": "Day 2",
     "section": "Kidney cancer",
-    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are people, then the measured variable is categorical\n\n\nWe categorize each person as either having kidney cancer or not which is categorical."
+    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are people, then the measured variable is qualitative\n\n\nWe categorize each person as either having kidney cancer or not which is qualitative."
   },
   {
     "objectID": "Day2.html#kidney-cancer-2",
@@ -88,7 +88,7 @@
     "href": "Day2.html#variable-manipulations",
     "title": "Day 2",
     "section": "Variable manipulations",
-    "text": "Variable manipulations\n\nCan use numbers to code categories of categorical variable\n\ne.g. Gender (1 for male and 2 for female)\n\n\n \n\nCan convert quantitative variable into categorical groups\n\ne.g. Income (0-50000 as Low, 50000+ as High)"
+    "text": "Variable manipulations\n\nCan use numbers to code categories of qualitative variable\n\ne.g. Gender (1 for male and 2 for female)\n\n\n \n\nCan convert quantitative variable into qualitative groups\n\ne.g. Income (0-50000 as Low, 50000+ as High)"
   },
   {
     "objectID": "Day2.html#sampling-and-inference",
