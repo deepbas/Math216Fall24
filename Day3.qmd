@@ -1,0 +1,409 @@
+---
+title: "Day 3"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs: 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(Sleuth3)   # Data-set for Sleuth
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(xaringanExtra)
+library(forcats)
+#library(NHSRtheme)  # color themes, nhs
+xaringanExtra::use_panelset()
+xaringanExtra::use_tachyons()
+xaringanExtra::use_clipboard()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+library(flipbookr)
+library(patchwork)
+
+
+yt <- 0
+
+cell_phone_data <- data.frame(
+  Type = c("Android", "iPhone", "Blackberry", "Non Smartphone", "No Cell Phone"),
+  Frequency = c(458, 437, 141, 924, 293)
+)
+
+data <- data.frame(
+  Gender = c("Female", "Male"),
+  In_a_relationship = c(32, 10),
+  Its_complicated = c(12, 7),
+  Single = c(63, 45)
+)
+
+# read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/APM_DougEvansCases.csv")
+survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv")
+# renderthis::to_pdf(from = "Day4.html", complex_slides = TRUE, partial_slides = TRUE)
+
+```
+
+
+
+
+# Descriptive Statistics
+
+::: bqt
+- In order to make sense of data, we need ways to **summarize and visualize** it
+- Summarizing and visualizing variables and relationships between two variables is often known as descriptive statistics, also known as **exploratory data analysis (EDA)**
+- The type of summary statistics and visualization methods depend on the type of variable(s) being analyzed (categorical or quantitative)
+:::
+
+
+
+
+
+## One Categorical Variable
+
+::: green-h
+A random sample of US adults in 2012 were surveyed regarding the type of cell phone owned
+:::
+
+<center>
+<img src="images/cellphone.png" width="70%" height="70%"> <br>
+<a>Android?  iPhone?  Blackberry? Non-smartphone?  No cell phone?
+</a>
+</center>
+
+
+
+
+
+## Frequency Table
+
+::: font70
+
+A frequency table shows the number of cases or counts that fall
+in each category:
+
+::: row
+::: left
+
+::: table-colored
+
+| Subset of Raw Data | Device Type             |
+|--------------------|-------------------------|
+| Case 1             | Android                 |
+| Case 2             | none                    |
+| Case 3             | none                    |
+| Case 4             | iPhone                  |
+| Case 5             | Non Smartphone          |
+| Case 6             | iPhone                  |
+| Case 7             | Blackberry              |
+| Case 8             | Non Smartphone          |
+| Case 9             | Android                 |
+| Case 10            | Android                 |
+| ...                | (for 2253 cases ...)    |
+:::
+:::
+
+
+::: right
+::: table-colored
+ Cell Phone Type  | Frequency 
+------------- | -------------
+Android  | 458
+iPhone  | 437
+Blackberry | 141
+Non Smartphone | 924
+No Cell Phone | 293
+Total | 2253
+:::
+:::
+:::
+
+
+:::
+
+
+
+## Proportion
+
+The proportion in a category is found by $$\text{proportion} = \frac{\text{number in category}}{\text{total sample size}}$$
+
+
+
+
+::: lqt
+Percentages/proportions  (relative frequencies)
+
+- $p$ = proportion for a [population (parameter)]{.bold-red}
+- $\hat{p}$ = proportion for a [sample (statistic) ("p-hat")]{.bold-red}
+:::
+
+
+## What proportion of adults sampled do not own a cell phone?
+
+::: table-colored
+
+Cell Phone Type  | Frequency | Proportion
+------------- | ------------- | -----------
+Android  | 458 | 0.203
+iPhone  | 437 | 0.194
+Blackberry | 141 | 0.063
+Non Smartphone | 924 | 0.41
+No Cell Phone | 293 | 0.13
+Total | 2253 | 1.000
+
+:::
+
+Proportions and percentages can be used interchangeably
+
+
+
+## Bar Chart/Plot/Graph
+
+In a barplot, the height of the bar corresponds to the number of cases falling in each category
+
+
+
+
+```{r, echo=FALSE, fig.height=5, out.width="50%", fig.align='center'}
+ggplot(cell_phone_data, aes(x = Type, y = Frequency)) +
+  geom_col(fill = c("darkblue", "red", "green", "orange", "purple")) +
+  labs(x = "Cell Phone Type", y = "Frequency") +
+  ggtitle("Cell Phone Usage") +
+  theme(axis.text.x = element_text(size = 6))
+```
+
+
+
+## Two Categorical Variables
+
+Look at the relationship between two categorical variables
+- Relationship status
+- Gender
+
+::: table-colored
+|  | Female | Male | Total |
+| :--- | :---: | :---: | :---: |
+| In a Relationship | 32 | 10 | 42 |
+| It's Complicated | 12 | 7 | 19 |
+| Single | 63 | 45 | 108 |
+| Total | 107 | 62 | 169 |
+:::
+
+We add a second dimension to a frequency table to account for the second categorical variable
+
+
+
+
+## Relationship status and Gender
+
+::: eqt
+
+Proportion of students in a relationship that are female?
+
+```{r}
+prop.relation.female <- 32/42
+round(prop.relation.female,2)
+```
+
+<br>
+
+Proportion of students in a relationship that are male?
+
+```{r}
+prop.relation.male <- 10/42
+round(prop.relation.male,2)
+```
+
+:::
+
+
+
+
+## Relationship status and Gender
+
+::: eqt
+Proportion of males that are in a relationship?
+
+```{r}
+prop.male <- 10/62
+round(prop.male,2) 
+```
+
+Proportion of females that are in a relationship?
+
+```{r}
+prop.female <- 32/107
+round(prop.female,2)
+```
+:::
+
+
+
+[Statkey for Data Visualization: [https://www.lock5stat.com/StatKey/index.html](https://www.lock5stat.com/StatKey/index.html)]{.footer}
+
+
+
+## Difference in proportions
+
+::: bql
+::: font80
+
+A difference in proportions is a difference in proportions for one categorical variable calculated for different levels of the other categorical variable
+
+ - Example: Difference in proportions of male and female that are in a relationship:
+
+$$
+\begin{align*}
+ \hat{p}_F - \hat{p}_M = \frac{32}{107} - \frac{10}{62} = 0.14
+\end{align*}
+$$
+
+
+
+
+```{r}
+# R-code
+prop.female <- 32/107
+prop.male <- 10/62
+prop.diff <- prop.female - prop.male
+round(prop.diff,2) 
+```
+
+
+
+:::
+:::
+
+
+## Student Survey
+
+Dataset on 362 responses to a student survey given at one college
+
+
+::: font50
+
+```{r, echo=FALSE}
+knitr::kable(head(survey |> select(-c(4,5,6, 13,14, 15, 18)),10))
+```
+
+:::
+
+
+
+# Distribution
+
+> In the given dataset, there are multiple variables (such as Gender, Smoke, Exercise, Height, Weight, etc.) for different students across various academic years.
+
+
+Knowing the distribution of each variable can help us identify relationships, trends, and potential anomalies in the data.
+
+
+
+
+::: middle-align-xy
+
+
+## Distribution 
+
+<br>
+
+::: green-h
+"The distribution of the variable Y"
+
+- describes its center, variability and shape
+- use both numbers and graphics
+:::
+
+:::
+
+
+## Center: Mean or Average
+
+::: bqt
+Mean: average value in a sample or population
+
+- $\bar{y} = \dfrac{\sum_{i=1}^ny_i}{n}$ is an average of $n$ values $y_i$ in a sample
+- $\mu$ is an average value of $y$ in a population
+
+:::
+
+
+## Student Survey 
+
+::: eqt
+
+```{r}
+survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv")
+mean(survey$Pulse) # the command `mean` computes an average
+```
+:::
+
+::: green-h
+The mean pulse rate for this sample of students is $\bar{y} = 69.6$ beats per minute.
+:::
+
+
+
+
+## Center: Median
+
+::: bql
+Median: the middle value when the data are ordered
+
+- The median splits the data in half
+- $m$ is the median value in a sample
+- $M$ is the median value in a population
+
+:::
+
+```{r}
+median(survey$Pulse) # the command `median` computes an median
+```
+
+::: green-h
+The median pulse rate for this sample of students is $m = 70$ beats per minute. 
+:::
+
+
+
+## Variability: Standard Deviation
+
+::: bq
+
+Standard Devation (SD): average deviation from center in a sample or population
+
+- $s = \sqrt{ \dfrac{\sum_{i=1}^n(y_i - \overline{y})^2}{n-1}}$ is the SD of $n$ values $y_i$ in a sample
+- $\sigma$ is the SD of values of $y$ in a population
+:::
+
+```{r}
+sd(survey$Pulse) # the command `sd` computes an average
+```
+
+::: green-h
+The SD of pulse rates for this sample of students is $s = 12.2$ beats per minute. The "average" deviation of individual pulse rates around the mean value is about 12.2 beats per minute.
+:::
+
+

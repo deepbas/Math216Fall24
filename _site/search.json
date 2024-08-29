@@ -1,52 +1,10 @@
 [
   {
-    "objectID": "Day1.html#something-about-me",
-    "href": "Day1.html#something-about-me",
-    "title": "Day 1",
-    "section": "Something about me",
-    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
-  },
-  {
-    "objectID": "Day1.html#active-participation",
-    "href": "Day1.html#active-participation",
-    "title": "Day 1",
-    "section": "Active Participation",
-    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
-  },
-  {
-    "objectID": "Day1.html#tell-me-something-about-yourself",
-    "href": "Day1.html#tell-me-something-about-yourself",
-    "title": "Day 1",
-    "section": "Tell me something about yourself!",
-    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "Day1.html#class-pipelines",
-    "href": "Day1.html#class-pipelines",
-    "title": "Day 1",
-    "section": "Class Pipelines",
-    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
-  },
-  {
-    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "title": "Day 1",
-    "section": "What will a typical day/week look like?",
-    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
-  },
-  {
-    "objectID": "Day1.html#statistical-computation",
-    "href": "Day1.html#statistical-computation",
-    "title": "Day 1",
-    "section": "Statistical Computation",
-    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
-  },
-  {
-    "objectID": "Day1.html#group-activity-1",
-    "href": "Day1.html#group-activity-1",
-    "title": "Day 1",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Fall 2024",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
   },
   {
     "objectID": "Day2.html#data-units-and-variables",
@@ -175,25 +133,109 @@
     "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Fall 2024",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
+    "objectID": "Day3.html#one-categorical-variable",
+    "href": "Day3.html#one-categorical-variable",
+    "title": "Day 3",
+    "section": "One Categorical Variable",
+    "text": "One Categorical Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n}\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+    "objectID": "Day3.html#frequency-table",
+    "href": "Day3.html#frequency-table",
+    "title": "Day 3",
+    "section": "Frequency Table",
+    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
   },
   {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+    "objectID": "Day3.html#proportion",
+    "href": "Day3.html#proportion",
+    "title": "Day 3",
+    "section": "Proportion",
+    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
+  },
+  {
+    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "title": "Day 3",
+    "section": "What proportion of adults sampled do not own a cell phone?",
+    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
+  },
+  {
+    "objectID": "Day3.html#bar-chartplotgraph",
+    "href": "Day3.html#bar-chartplotgraph",
+    "title": "Day 3",
+    "section": "Bar Chart/Plot/Graph",
+    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
+  },
+  {
+    "objectID": "Day3.html#two-categorical-variables",
+    "href": "Day3.html#two-categorical-variables",
+    "title": "Day 3",
+    "section": "Two Categorical Variables",
+    "text": "Two Categorical Variables\nLook at the relationship between two categorical variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second categorical variable"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender",
+    "href": "Day3.html#relationship-status-and-gender",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender-1",
+    "href": "Day3.html#relationship-status-and-gender-1",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
+  },
+  {
+    "objectID": "Day3.html#difference-in-proportions",
+    "href": "Day3.html#difference-in-proportions",
+    "title": "Day 3",
+    "section": "Difference in proportions",
+    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one categorical variable calculated for different levels of the other categorical variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
+  },
+  {
+    "objectID": "Day3.html#student-survey",
+    "href": "Day3.html#student-survey",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+  },
+  {
+    "objectID": "Day3.html#distribution-1",
+    "href": "Day3.html#distribution-1",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
+  },
+  {
+    "objectID": "Day3.html#center-mean-or-average",
+    "href": "Day3.html#center-mean-or-average",
+    "title": "Day 3",
+    "section": "Center: Mean or Average",
+    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
+  },
+  {
+    "objectID": "Day3.html#student-survey-1",
+    "href": "Day3.html#student-survey-1",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#center-median",
+    "href": "Day3.html#center-median",
+    "title": "Day 3",
+    "section": "Center: Median",
+    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#variability-standard-deviation",
+    "href": "Day3.html#variability-standard-deviation",
+    "title": "Day 3",
+    "section": "Variability: Standard Deviation",
+    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
   },
   {
     "objectID": "RandRStudio.html",
@@ -243,5 +285,68 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n}\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "Day1.html#something-about-me",
+    "href": "Day1.html#something-about-me",
+    "title": "Day 1",
+    "section": "Something about me",
+    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
+  },
+  {
+    "objectID": "Day1.html#active-participation",
+    "href": "Day1.html#active-participation",
+    "title": "Day 1",
+    "section": "Active Participation",
+    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
+  },
+  {
+    "objectID": "Day1.html#tell-me-something-about-yourself",
+    "href": "Day1.html#tell-me-something-about-yourself",
+    "title": "Day 1",
+    "section": "Tell me something about yourself!",
+    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "Day1.html#class-pipelines",
+    "href": "Day1.html#class-pipelines",
+    "title": "Day 1",
+    "section": "Class Pipelines",
+    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
+  },
+  {
+    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "title": "Day 1",
+    "section": "What will a typical day/week look like?",
+    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
+  },
+  {
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
+    "title": "Day 1",
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
+  },
+  {
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   }
 ]
