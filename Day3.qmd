@@ -73,15 +73,15 @@ survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/
 
 ::: bqt
 - In order to make sense of data, we need ways to **summarize and visualize** it
-- Summarizing and visualizing variables and relationships between two variables is often known as descriptive statistics, also known as **exploratory data analysis (EDA)**
-- The type of summary statistics and visualization methods depend on the type of variable(s) being analyzed (categorical or quantitative)
+- Summarizing and visualizing variables and relationships between two variables is often known as **descriptive statistics**, also known as **exploratory data analysis (EDA)**
+- The type of summary statistics and visualization methods depend on the type of variable(s) being analyzed (qualitative or quantitative)
 :::
 
 
 
 
 
-## One Categorical Variable
+## One qualitative Variable
 
 ::: green-h
 A random sample of US adults in 2012 were surveyed regarding the type of cell phone owned
@@ -196,9 +196,9 @@ ggplot(cell_phone_data, aes(x = Type, y = Frequency)) +
 
 
 
-## Two Categorical Variables
+## Two qualitative Variables
 
-Look at the relationship between two categorical variables
+Look at the relationship between two qualitative variables
 - Relationship status
 - Gender
 
@@ -211,7 +211,7 @@ Look at the relationship between two categorical variables
 | Total | 107 | 62 | 169 |
 :::
 
-We add a second dimension to a frequency table to account for the second categorical variable
+We add a second dimension to a frequency table to account for the second qualitative variable
 
 
 
@@ -270,7 +270,7 @@ round(prop.female,2)
 ::: bql
 ::: font80
 
-A difference in proportions is a difference in proportions for one categorical variable calculated for different levels of the other categorical variable
+A difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable
 
  - Example: Difference in proportions of male and female that are in a relationship:
 

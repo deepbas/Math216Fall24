@@ -49,11 +49,11 @@
     "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   },
   {
-    "objectID": "Day3.html#one-categorical-variable",
-    "href": "Day3.html#one-categorical-variable",
+    "objectID": "Day3.html#one-qualitative-variable",
+    "href": "Day3.html#one-qualitative-variable",
     "title": "Day 3",
-    "section": "One Categorical Variable",
-    "text": "One Categorical Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
+    "section": "One qualitative Variable",
+    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
   },
   {
     "objectID": "Day3.html#frequency-table",
@@ -84,11 +84,11 @@
     "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
   },
   {
-    "objectID": "Day3.html#two-categorical-variables",
-    "href": "Day3.html#two-categorical-variables",
+    "objectID": "Day3.html#two-qualitative-variables",
+    "href": "Day3.html#two-qualitative-variables",
     "title": "Day 3",
-    "section": "Two Categorical Variables",
-    "text": "Two Categorical Variables\nLook at the relationship between two categorical variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second categorical variable"
+    "section": "Two qualitative Variables",
+    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
   },
   {
     "objectID": "Day3.html#relationship-status-and-gender",
@@ -109,7 +109,7 @@
     "href": "Day3.html#difference-in-proportions",
     "title": "Day 3",
     "section": "Difference in proportions",
-    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one categorical variable calculated for different levels of the other categorical variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
+    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
   },
   {
     "objectID": "Day3.html#student-survey",
