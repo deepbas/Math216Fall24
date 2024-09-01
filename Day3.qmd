@@ -68,7 +68,6 @@ survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/
 
 
 
-
 # Descriptive Statistics
 
 ::: bqt
@@ -78,10 +77,14 @@ survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/
 :::
 
 
+<<<<<<< Updated upstream
 
 
 
 ## One qualitative Variable
+=======
+## One Categorical Variable
+>>>>>>> Stashed changes
 
 ::: green-h
 A random sample of US adults in 2012 were surveyed regarding the type of cell phone owned
