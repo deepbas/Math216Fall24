@@ -1,136 +1,157 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Fall 2024",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
+    "objectID": "Day1.html#something-about-me",
+    "href": "Day1.html#something-about-me",
+    "title": "Day 1",
+    "section": "Something about me",
+    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
   },
   {
-    "objectID": "Day2.html#data-units-and-variables",
-    "href": "Day2.html#data-units-and-variables",
-    "title": "Day 2",
-    "section": "Data: Units and Variables",
-    "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\n\nData is stored and presented in a dataset that comprises of variables measured on units\n\nA variable is any characteristic that is recorded for each unit"
+    "objectID": "Day1.html#active-participation",
+    "href": "Day1.html#active-participation",
+    "title": "Day 1",
+    "section": "Active Participation",
+    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
   },
   {
-    "objectID": "Day2.html#qualitative-versus-quantitative",
-    "href": "Day2.html#qualitative-versus-quantitative",
-    "title": "Day 2",
-    "section": "Qualitative Versus Quantitative",
-    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\n\nA qualitative variable divides the cases into groups. e.g. gender, country, state etc.\nA quantitative variable measures a numerical quantity for each case, e.g. age, height, sleep hours, blood pressure etc"
+    "objectID": "Day1.html#tell-me-something-about-yourself",
+    "href": "Day1.html#tell-me-something-about-yourself",
+    "title": "Day 1",
+    "section": "Tell me something about yourself!",
+    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "Day2.html#kidney-cancer",
-    "href": "Day2.html#kidney-cancer",
-    "title": "Day 2",
-    "section": "Kidney cancer",
-    "text": "Kidney cancer\n\nCounties with the highest kidney cancer rates\n\n\n Source: Gelman et. al. Bayesian Data Anaylsis, CRC Press, 2004"
+    "objectID": "Day1.html#class-pipelines",
+    "href": "Day1.html#class-pipelines",
+    "title": "Day 1",
+    "section": "Class Pipelines",
+    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
   },
   {
-    "objectID": "Day2.html#kidney-cancer-1",
-    "href": "Day2.html#kidney-cancer-1",
-    "title": "Day 2",
-    "section": "Kidney cancer",
-    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are people, then the measured variable is qualitative\n\n\nWe categorize each person as either having kidney cancer or not which is qualitative."
+    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "title": "Day 1",
+    "section": "What will a typical day/week look like?",
+    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
   },
   {
-    "objectID": "Day2.html#kidney-cancer-2",
-    "href": "Day2.html#kidney-cancer-2",
-    "title": "Day 2",
-    "section": "Kidney cancer",
-    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are counties, then the measured variable is quantitative\n\n\nData collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative)."
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
+    "title": "Day 1",
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
   },
   {
-    "objectID": "Day2.html#variable-manipulations",
-    "href": "Day2.html#variable-manipulations",
-    "title": "Day 2",
-    "section": "Variable manipulations",
-    "text": "Variable manipulations\n\nCan use numbers to code categories of qualitative variable\n\ne.g. Gender (1 for male and 2 for female)\n\n\n \n\nCan convert quantitative variable into qualitative groups\n\ne.g. Income (0-50000 as Low, 50000+ as High)"
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   },
   {
-    "objectID": "Day2.html#sampling-and-inference",
-    "href": "Day2.html#sampling-and-inference",
-    "title": "Day 2",
-    "section": "Sampling and Inference",
-    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+    "objectID": "Day3.html#one-qualitative-variable",
+    "href": "Day3.html#one-qualitative-variable",
+    "title": "Day 3",
+    "section": "One qualitative Variable",
+    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
   },
   {
-    "objectID": "Day2.html#sampling-and-inference-source",
-    "href": "Day2.html#sampling-and-inference-source",
-    "title": "Day 2",
-    "section": "Sampling and Inference (Source)",
-    "text": "Sampling and Inference (Source)"
+    "objectID": "Day3.html#frequency-table",
+    "href": "Day3.html#frequency-table",
+    "title": "Day 3",
+    "section": "Frequency Table",
+    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
   },
   {
-    "objectID": "Day2.html#section",
-    "href": "Day2.html#section",
-    "title": "Day 2",
-    "section": "",
-    "text": "Population\n\nAll blue crabs in the Maryland Coastal Bays (MCB)\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay\n\nSample\n\nBlue crabs collected from 20 sites within MCB\nSample period: April - December, 2014-2016\nMethod: Trawl surveys"
+    "objectID": "Day3.html#proportion",
+    "href": "Day3.html#proportion",
+    "title": "Day 3",
+    "section": "Proportion",
+    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
   },
   {
-    "objectID": "Day2.html#section-1",
-    "href": "Day2.html#section-1",
-    "title": "Day 2",
-    "section": "",
-    "text": "Variables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage\n\nInference\n\nPopulation structure of blue crabs in MCB\nSeasonal variations: size distribution, molt cycles, reproductive patterns"
+    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "title": "Day 3",
+    "section": "What proportion of adults sampled do not own a cell phone?",
+    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
   },
   {
-    "objectID": "Day2.html#question-order",
-    "href": "Day2.html#question-order",
-    "title": "Day 2",
-    "section": "Question order",
-    "text": "Question order\n\n\n\nDepending on the order of questions we can see either a greater differences in responses or lesser difference in response.\nRespondents tend to provide answers consistent with their prior responses."
+    "objectID": "Day3.html#bar-chartplotgraph",
+    "href": "Day3.html#bar-chartplotgraph",
+    "title": "Day 3",
+    "section": "Bar Chart/Plot/Graph",
+    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
   },
   {
-    "objectID": "Day2.html#swedish-study-response-bias",
-    "href": "Day2.html#swedish-study-response-bias",
-    "title": "Day 2",
-    "section": "Swedish Study: Response bias",
-    "text": "Swedish Study: Response bias"
+    "objectID": "Day3.html#two-qualitative-variables",
+    "href": "Day3.html#two-qualitative-variables",
+    "title": "Day 3",
+    "section": "Two qualitative Variables",
+    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
   },
   {
-    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "title": "Day 2",
-    "section": "Identified Sources of Bias in Swedish Study",
-    "text": "Identified Sources of Bias in Swedish Study\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+    "objectID": "Day3.html#relationship-status-and-gender",
+    "href": "Day3.html#relationship-status-and-gender",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
   },
   {
-    "objectID": "Day2.html#context",
-    "href": "Day2.html#context",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids\n\\[30\\% \\text{ said yes}\\]"
+    "objectID": "Day3.html#relationship-status-and-gender-1",
+    "href": "Day3.html#relationship-status-and-gender-1",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
   },
   {
-    "objectID": "Day2.html#context-1",
-    "href": "Day2.html#context-1",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed”\n\\[95\\% \\text{ said yes}\\]"
+    "objectID": "Day3.html#difference-in-proportions",
+    "href": "Day3.html#difference-in-proportions",
+    "title": "Day 3",
+    "section": "Difference in proportions",
+    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
   },
   {
-    "objectID": "Day2.html#non-response-bias",
-    "href": "Day2.html#non-response-bias",
-    "title": "Day 2",
-    "section": "Non-response Bias",
-    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias\n\n\n\nSurvey targeted to the wrong audience\nThere is general unwillingness due to polar opposite opinions\nThe survey did not reach the right respondent\n\ne.g. A survey asking teenagers about best cigarette brands."
+    "objectID": "Day3.html#student-survey",
+    "href": "Day3.html#student-survey",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
   },
   {
-    "objectID": "Day2.html#experiment-or-observational-study",
-    "href": "Day2.html#experiment-or-observational-study",
-    "title": "Day 2",
-    "section": "Experiment or Observational Study?",
-    "text": "Experiment or Observational Study?\n\nTo examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.\n\n\n\nClick for answer\n\nThis is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm."
+    "objectID": "Day3.html#distribution-1",
+    "href": "Day3.html#distribution-1",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
   },
   {
-    "objectID": "Day2.html#conclusion-statistical-thinking",
-    "href": "Day2.html#conclusion-statistical-thinking",
-    "title": "Day 2",
-    "section": "Conclusion: Statistical Thinking!",
-    "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
+    "objectID": "Day3.html#center-mean-or-average",
+    "href": "Day3.html#center-mean-or-average",
+    "title": "Day 3",
+    "section": "Center: Mean or Average",
+    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
+  },
+  {
+    "objectID": "Day3.html#student-survey-1",
+    "href": "Day3.html#student-survey-1",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#center-median",
+    "href": "Day3.html#center-median",
+    "title": "Day 3",
+    "section": "Center: Median",
+    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#variability-standard-deviation",
+    "href": "Day3.html#variability-standard-deviation",
+    "title": "Day 3",
+    "section": "Variability: Standard Deviation",
+    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
   },
   {
     "objectID": "Day4.html#recap-student-survey",
@@ -259,6 +280,153 @@
     "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Fall 2024",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n}\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "Day2.html#data-units-and-variables",
+    "href": "Day2.html#data-units-and-variables",
+    "title": "Day 2",
+    "section": "Data: Units and Variables",
+    "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\n\nData is stored and presented in a dataset that comprises of variables measured on units\n\nA variable is any characteristic that is recorded for each unit"
+  },
+  {
+    "objectID": "Day2.html#qualitative-versus-quantitative",
+    "href": "Day2.html#qualitative-versus-quantitative",
+    "title": "Day 2",
+    "section": "Qualitative Versus Quantitative",
+    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\n\nA qualitative variable divides the cases into groups. e.g. gender, country, state etc.\nA quantitative variable measures a numerical quantity for each case, e.g. age, height, sleep hours, blood pressure etc"
+  },
+  {
+    "objectID": "Day2.html#kidney-cancer",
+    "href": "Day2.html#kidney-cancer",
+    "title": "Day 2",
+    "section": "Kidney cancer",
+    "text": "Kidney cancer\n\nCounties with the highest kidney cancer rates\n\n\n Source: Gelman et. al. Bayesian Data Anaylsis, CRC Press, 2004"
+  },
+  {
+    "objectID": "Day2.html#kidney-cancer-1",
+    "href": "Day2.html#kidney-cancer-1",
+    "title": "Day 2",
+    "section": "Kidney cancer",
+    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are people, then the measured variable is qualitative\n\n\nWe categorize each person as either having kidney cancer or not which is qualitative."
+  },
+  {
+    "objectID": "Day2.html#kidney-cancer-2",
+    "href": "Day2.html#kidney-cancer-2",
+    "title": "Day 2",
+    "section": "Kidney cancer",
+    "text": "Kidney cancer\n\nIf the cases in the kidney cancer dataset are counties, then the measured variable is quantitative\n\n\nData collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative)."
+  },
+  {
+    "objectID": "Day2.html#variable-manipulations",
+    "href": "Day2.html#variable-manipulations",
+    "title": "Day 2",
+    "section": "Variable manipulations",
+    "text": "Variable manipulations\n\nCan use numbers to code categories of qualitative variable\n\ne.g. Gender (1 for male and 2 for female)\n\n\n \n\nCan convert quantitative variable into qualitative groups\n\ne.g. Income (0-50000 as Low, 50000+ as High)"
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference",
+    "href": "Day2.html#sampling-and-inference",
+    "title": "Day 2",
+    "section": "Sampling and Inference",
+    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference-source",
+    "href": "Day2.html#sampling-and-inference-source",
+    "title": "Day 2",
+    "section": "Sampling and Inference (Source)",
+    "text": "Sampling and Inference (Source)"
+  },
+  {
+    "objectID": "Day2.html#section",
+    "href": "Day2.html#section",
+    "title": "Day 2",
+    "section": "",
+    "text": "Population\n\nAll blue crabs in the Maryland Coastal Bays (MCB)\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay\n\nSample\n\nBlue crabs collected from 20 sites within MCB\nSample period: April - December, 2014-2016\nMethod: Trawl surveys"
+  },
+  {
+    "objectID": "Day2.html#section-1",
+    "href": "Day2.html#section-1",
+    "title": "Day 2",
+    "section": "",
+    "text": "Variables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage\n\nInference\n\nPopulation structure of blue crabs in MCB\nSeasonal variations: size distribution, molt cycles, reproductive patterns"
+  },
+  {
+    "objectID": "Day2.html#question-order",
+    "href": "Day2.html#question-order",
+    "title": "Day 2",
+    "section": "Question order",
+    "text": "Question order\n\n\n\nDepending on the order of questions we can see either a greater differences in responses or lesser difference in response.\nRespondents tend to provide answers consistent with their prior responses."
+  },
+  {
+    "objectID": "Day2.html#swedish-study-response-bias",
+    "href": "Day2.html#swedish-study-response-bias",
+    "title": "Day 2",
+    "section": "Swedish Study: Response bias",
+    "text": "Swedish Study: Response bias"
+  },
+  {
+    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "title": "Day 2",
+    "section": "Identified Sources of Bias in Swedish Study",
+    "text": "Identified Sources of Bias in Swedish Study\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+  },
+  {
+    "objectID": "Day2.html#context",
+    "href": "Day2.html#context",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids\n\\[30\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#context-1",
+    "href": "Day2.html#context-1",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed”\n\\[95\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#non-response-bias",
+    "href": "Day2.html#non-response-bias",
+    "title": "Day 2",
+    "section": "Non-response Bias",
+    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias\n\n\n\nSurvey targeted to the wrong audience\nThere is general unwillingness due to polar opposite opinions\nThe survey did not reach the right respondent\n\ne.g. A survey asking teenagers about best cigarette brands."
+  },
+  {
+    "objectID": "Day2.html#experiment-or-observational-study",
+    "href": "Day2.html#experiment-or-observational-study",
+    "title": "Day 2",
+    "section": "Experiment or Observational Study?",
+    "text": "Experiment or Observational Study?\n\nTo examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.\n\n\n\nClick for answer\n\nThis is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm."
+  },
+  {
+    "objectID": "Day2.html#conclusion-statistical-thinking",
+    "href": "Day2.html#conclusion-statistical-thinking",
+    "title": "Day 2",
+    "section": "Conclusion: Statistical Thinking!",
+    "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
+  },
+  {
     "objectID": "RandRStudio.html",
     "href": "RandRStudio.html",
     "title": "Setting Up R and RStudio",
@@ -306,173 +474,5 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "Day3.html#one-qualitative-variable",
-    "href": "Day3.html#one-qualitative-variable",
-    "title": "Day 3",
-    "section": "One qualitative Variable",
-    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
-  },
-  {
-    "objectID": "Day3.html#frequency-table",
-    "href": "Day3.html#frequency-table",
-    "title": "Day 3",
-    "section": "Frequency Table",
-    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
-  },
-  {
-    "objectID": "Day3.html#proportion",
-    "href": "Day3.html#proportion",
-    "title": "Day 3",
-    "section": "Proportion",
-    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
-  },
-  {
-    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "title": "Day 3",
-    "section": "What proportion of adults sampled do not own a cell phone?",
-    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
-  },
-  {
-    "objectID": "Day3.html#bar-chartplotgraph",
-    "href": "Day3.html#bar-chartplotgraph",
-    "title": "Day 3",
-    "section": "Bar Chart/Plot/Graph",
-    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
-  },
-  {
-    "objectID": "Day3.html#two-qualitative-variables",
-    "href": "Day3.html#two-qualitative-variables",
-    "title": "Day 3",
-    "section": "Two qualitative Variables",
-    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender",
-    "href": "Day3.html#relationship-status-and-gender",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender-1",
-    "href": "Day3.html#relationship-status-and-gender-1",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
-  },
-  {
-    "objectID": "Day3.html#difference-in-proportions",
-    "href": "Day3.html#difference-in-proportions",
-    "title": "Day 3",
-    "section": "Difference in proportions",
-    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
-  },
-  {
-    "objectID": "Day3.html#student-survey",
-    "href": "Day3.html#student-survey",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
-  },
-  {
-    "objectID": "Day3.html#distribution-1",
-    "href": "Day3.html#distribution-1",
-    "title": "Day 3",
-    "section": "Distribution",
-    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
-  },
-  {
-    "objectID": "Day3.html#center-mean-or-average",
-    "href": "Day3.html#center-mean-or-average",
-    "title": "Day 3",
-    "section": "Center: Mean or Average",
-    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
-  },
-  {
-    "objectID": "Day3.html#student-survey-1",
-    "href": "Day3.html#student-survey-1",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#center-median",
-    "href": "Day3.html#center-median",
-    "title": "Day 3",
-    "section": "Center: Median",
-    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#variability-standard-deviation",
-    "href": "Day3.html#variability-standard-deviation",
-    "title": "Day 3",
-    "section": "Variability: Standard Deviation",
-    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n}\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "Day1.html#something-about-me",
-    "href": "Day1.html#something-about-me",
-    "title": "Day 1",
-    "section": "Something about me",
-    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
-  },
-  {
-    "objectID": "Day1.html#active-participation",
-    "href": "Day1.html#active-participation",
-    "title": "Day 1",
-    "section": "Active Participation",
-    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
-  },
-  {
-    "objectID": "Day1.html#tell-me-something-about-yourself",
-    "href": "Day1.html#tell-me-something-about-yourself",
-    "title": "Day 1",
-    "section": "Tell me something about yourself!",
-    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "Day1.html#class-pipelines",
-    "href": "Day1.html#class-pipelines",
-    "title": "Day 1",
-    "section": "Class Pipelines",
-    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
-  },
-  {
-    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "title": "Day 1",
-    "section": "What will a typical day/week look like?",
-    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
-  },
-  {
-    "objectID": "Day1.html#statistical-computation",
-    "href": "Day1.html#statistical-computation",
-    "title": "Day 1",
-    "section": "Statistical Computation",
-    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
-  },
-  {
-    "objectID": "Day1.html#group-activity-1",
-    "href": "Day1.html#group-activity-1",
-    "title": "Day 1",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   }
 ]
