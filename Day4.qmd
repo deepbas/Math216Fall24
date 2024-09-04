@@ -1,0 +1,445 @@
+---
+title: "Day 4"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs: 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+
+yt <- 0
+
+survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv")
+survey <- survey[survey$Year != "", ]
+survey$Year <- factor(survey$Year, levels = c("FirstYear", "Sophomore", "Junior", "Senior"))
+```
+
+
+
+## Recap: Student Survey 
+
+Dataset on 362 responses to a student survey given at one college
+
+
+::: font50
+
+```{r, echo=FALSE}
+knitr::kable(head(survey |> select(-c(4,5,6, 13,14, 15, 18)),10))
+```
+
+:::
+
+
+
+## Histogram
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo = FALSE, fig.align='center'}
+ggplot(survey, aes(x = Pulse)) +
+  geom_histogram(binwidth = 5, col = "gold", fill = "maroon") +
+  labs(
+    title = "Histogram of pulse rates",
+    x = "Pulse",
+    y = "Count"
+  ) 
+
+```
+
+### Code
+
+```{r, eval = FALSE, fig.align='center'}
+ggplot(survey, aes(x = Pulse)) +
+  geom_histogram(binwidth = 5, col = "gold", fill = "maroon") +
+  labs(
+    title = "Histogram of pulse rates",
+    x = "Pulse",
+    y = "Count"
+  ) 
+```
+
+
+:::
+
+## Histogram: Shape
+
+::: cle5
+- **Histogram:** aggregates values into bins and counts how many cases fall into each bin
+- Pulse rates are symmetrically distributed around a rate of about 70 beats per minute.
+- **Symmetric distributions** are "centered" around a mean and median that are roughly the same in value.
+:::
+
+
+
+## Shape and Stats
+
+::: bq
+- Mean and standard deviation are good summary stats of a symmetric distribution.
+- Similar variation to the left and right of the mean so one measure of SD is fine.
+:::
+
+<br>
+
+```{r}
+library(dplyr)  # for data manipulation
+survey %>% summarize(mean = mean(Pulse),
+                     sd = sd(Pulse))
+```
+
+
+
+# Shape: data distribution
+
+::: cle
+
+If a distribution of data is **approximately bell-shaped**, about 95% of the data should fall within two standard deviations of the sample mean.
+
+- for a sample: 95% of values between $\bar{y} - 2s$ and $\bar{y} + 2s$
+- for a population: 95% of values between $\mu - 2\sigma$ and $\mu + 2\sigma$
+
+:::
+
+## Bell-shaped distribution 
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = MathSAT)) +
+  geom_histogram(bins = 12, col = "gold", fill = "maroon") +
+  labs(title = "Distribution of Math SAT Scores",
+       cex.lab = 0.5, cex.main = 0.5, cex.axis = 0.5)
+```
+
+
+### Quiz
+
+::: bq
+
+The standard deviation for math SAT scores is closest to
+
+(a) 100
+
+(b) 75
+
+(c) 200
+
+(d) 25
+
+:::
+:::
+
+## Standardizing data: z-score
+
+::: lqt
+::: font80
+
+The z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:
+
+$$z = \dfrac{x - \text{mean}}{\text{SD}}$$
+
+
+- E.g. if a value $x$ has $z=-1.5$ then the value $x$ is 1.5 standard deviations below the mean.
+
+:::
+:::
+
+If we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between ____ and _____.
+
+
+
+## Shape: Left Skew $\&$ Right Skew (Histograms)
+
+::: font90
+::: row
+
+::: left
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = GPA)) + 
+  geom_histogram(fill="steelblue", color = "black") +
+  labs(title = "Histogram of GPA",
+       cex = 0.5)
+```
+
+
+```{r}
+mean(survey$GPA, na.rm =T)
+median(survey$GPA, na.rm = T)
+```
+
+:::
+
+
+::: right
+
+```{r echo=FALSE}
+ggplot(data = survey, aes(x = Exercise)) + 
+  geom_histogram(fill="steelblue", color = "black") +
+  labs(title = "Histogram of Exercise",
+       cex = 0.5)
+```
+
+
+```{r}
+mean(survey$Exercise, na.rm =T)
+median(survey$Exercise, na.rm = T)
+```
+
+:::
+:::
+:::
+
+## Shape: Left Skew $\&$ Right Skew (Boxplots)
+
+::: font90
+::: row
+::: left
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = 1, y = GPA)) + 
+  geom_boxplot(fill = "maroon", col = "black") +
+  labs(x = "", y = "GPA", title = "Boxplot of GPA") + coord_flip()
+```
+
+
+```{r}
+mean(survey$GPA, na.rm =T)
+median(survey$GPA, na.rm = T)
+```
+
+:::
+
+::: right
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = 1, y = Exercise)) + 
+  geom_boxplot(fill = "maroon", col = "black") +
+  labs(x = "", y = "Exercise", title = "Boxplot of Exercise") + coord_flip()
+```
+
+
+```{r}
+mean(survey$Exercise, na.rm =T)
+median(survey$Exercise, na.rm = T)
+```
+
+:::
+:::
+:::
+
+
+## Shape: boxplots
+
+::: bqt
+::: font60
+
+A graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.
+
+- *Box:* Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3)
+- *Median:* The middle value of the dataset, represented by a line inside the box
+- *Whiskers:* Extend from the box to the minimum and maximum data points within 1.5 times the IQR
+- *Outliers:* Data points outside of the whiskers, often represented as individual points
+
+:::
+:::
+
+## Shape: boxplots
+
+::: cle4
+::: font90
+[Symmetry:]{.bold-text} If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.
+
+
+[Skewness:]{.bold-text}
+
+- **Left-skewed:** The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.
+- **Right-skewed:** The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker.
+
+:::
+:::
+
+## Elements of a Box Plot: Inner Fences
+
+::: cle3
+::: font70
+**Lower Inner Fence**: 
+$$ \text{Lower inner fence} = Q_L - 1.5 \times \text{IQR} $$
+
+**Upper Inner Fence**:
+$$ \text{Upper inner fence} = Q_U + 1.5 \times \text{IQR} $$
+
+
+Inner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values.
+:::
+:::
+
+## Elements of a Box Plot: Outer Fences
+
+::: cle5
+::: font70
+**Lower Outer Fence**:
+$$ \text{Lower outer fence} = Q_L - 3 \times \text{IQR} $$
+
+**Upper Outer Fence**:
+$$ \text{Upper outer fence} = Q_U + 3 \times \text{IQR} $$
+
+Outer fences help in spotting what are often considered extreme outliers. These are data points that are significantly distant from the typical data range, suggesting possible data entry errors, measurement errors, or novel findings worthy of further investigation.
+:::
+:::
+
+## Outliers
+
+::: fsp
+
+**Mild Outliers** fall between the inner and outer fences and **Extreme Outliers** fall beyond the outer fences.
+
+Differentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. This categorization can impact the conclusions drawn from the data.
+:::
+
+
+
+## Adding a qualitative variable: stats
+
+::: font70
+::: out-t
+Use `group_by()` and `summarise()` to get summary statistics using `dplyr` package to compare distributions across different levels of a qualitative variable
+:::
+
+
+```{r}
+library(dplyr)
+survey %>%
+  group_by(Smoke) %>%
+  summarise(Min = min(Pulse),
+            Q1 = quantile(Pulse, 0.25),
+            Median = median(Pulse),
+            Mean = mean(Pulse),
+            Q3 = quantile(Pulse, 0.75),
+            Max = max(Pulse),
+            SD = sd(Pulse),
+            N = n()) %>% 
+  knitr::kable(caption = "Summary Stats of Smoke Categories")
+```
+
+Smoker have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3).
+
+:::
+
+
+## Side-by-side Histogram
+
+::: panel-tabset
+
+### Plot
+
+```{r cat-graphics-1, echo=FALSE}
+library(ggplot2)
+ggplot(survey, aes(x=Pulse)) + 
+  geom_histogram(binwidth = 4, fill="maroon", col = "gold") +
+  facet_wrap(~Smoke)
+```
+
+### Code
+
+```{r cat-graphics-2, fig.width = 3, fig.height = 3.5, out.width = "100%", eval=FALSE}
+library(ggplot2)
+ggplot(survey, aes(x=Pulse)) + 
+  geom_histogram(binwidth = 4, fill="maroon", col = "gold") +
+  facet_wrap(~Smoke)  # to plot by category of Smoke
+```
+:::
+
+## Side-by-side boxplot
+
+
+::: panel-tabset
+
+### Plot
+
+```{r echo=FALSE}
+ggplot(survey, aes(x = Smoke, y = Pulse)) +
+  geom_boxplot(fill = c("maroon", "purple"), col = "darkgreen") +
+  labs(x = "Smoking Status", y = "Pulse Rate")
+
+```
+
+### Code
+
+```{r eval=FALSE, fig.height=3, out.width="60%", fig.align='center'}
+# Create boxplots using facet_wrap()
+ggplot(survey, aes(x = Smoke, y = Pulse)) +
+  geom_boxplot(fill = c("maroon", "purple"), col = "darkgreen") +
+  labs(x = "Smoking Status", y = "Pulse Rate")
+
+```
+
+:::
+
+
+## Qualitative Variables: Stacked bar graph 
+
+
+```{r jurors-stacked, out.width = "100%"}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "fill") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender") 
+```
+
+
+---
+
+## Qualitative Variables: Stacked bar graph (counts)
+
+
+```{r jurors-stacked-counts, out.width = "100%"}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "stack") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender") 
+```
+
+
