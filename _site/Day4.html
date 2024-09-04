@@ -961,8 +961,23 @@ Bastola
 </div>
 </div>
 </section>
-<section id="qualitative-variables-stacked-bar-graph" class="slide level2">
-<h2>Qualitative Variables: Stacked bar graph</h2>
+<section id="stacked-bar-graph" class="slide level2">
+<h2>Stacked bar graph</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Plot</a></li><li><a href="#tabset-5-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day4_files/figure-revealjs/jurors-stacked-1.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">ggplot</span>(survey, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">fill =</span> Gender)) <span class="sc">+</span> </span>
 <span id="cb23-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span> </span>
@@ -971,11 +986,28 @@ Bastola
 <span id="cb23-5"><a></a>       <span class="at">y =</span> <span class="st">"proportion"</span>, </span>
 <span id="cb23-6"><a></a>       <span class="at">x =</span> <span class="st">"year"</span>, </span>
 <span id="cb23-7"><a></a>       <span class="at">fill =</span> <span class="st">"Gender"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="Day4_files/figure-revealjs/jurors-stacked-1.png" style="width:100.0%" class="r-stretch"></section>
-<section id="qualitative-variables-stacked-bar-graph-counts" class="slide level2">
-<h2>Qualitative Variables: Stacked bar graph (counts)</h2>
+</div>
+</div>
+</div>
+</section>
+<section id="stacked-bar-graph-counts" class="slide level2">
+<h2>Stacked bar graph (counts)</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Plot</a></li><li><a href="#tabset-6-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day4_files/figure-revealjs/jurors-stacked-counts-1.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">ggplot</span>(survey, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">fill =</span> Gender)) <span class="sc">+</span> </span>
 <span id="cb24-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span> </span>
@@ -984,10 +1016,12 @@ Bastola
 <span id="cb24-5"><a></a>       <span class="at">y =</span> <span class="st">"proportion"</span>, </span>
 <span id="cb24-6"><a></a>       <span class="at">x =</span> <span class="st">"year"</span>, </span>
 <span id="cb24-7"><a></a>       <span class="at">fill =</span> <span class="st">"Gender"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+</div>
+</div>
+</div>
 </div>
 
-<img data-src="Day4_files/figure-revealjs/jurors-stacked-counts-1.png" style="width:100.0%" class="r-stretch"><div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>

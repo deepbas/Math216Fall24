@@ -245,18 +245,18 @@
     "text": "Side-by-side boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Create boxplots using facet_wrap()\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
   },
   {
-    "objectID": "Day4.html#qualitative-variables-stacked-bar-graph",
-    "href": "Day4.html#qualitative-variables-stacked-bar-graph",
+    "objectID": "Day4.html#stacked-bar-graph",
+    "href": "Day4.html#stacked-bar-graph",
     "title": "Day 4",
-    "section": "Qualitative Variables: Stacked bar graph",
-    "text": "Qualitative Variables: Stacked bar graph\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+    "section": "Stacked bar graph",
+    "text": "Stacked bar graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
-    "objectID": "Day4.html#qualitative-variables-stacked-bar-graph-counts",
-    "href": "Day4.html#qualitative-variables-stacked-bar-graph-counts",
+    "objectID": "Day4.html#stacked-bar-graph-counts",
+    "href": "Day4.html#stacked-bar-graph-counts",
     "title": "Day 4",
-    "section": "Qualitative Variables: Stacked bar graph (counts)",
-    "text": "Qualitative Variables: Stacked bar graph (counts)\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+    "section": "Stacked bar graph (counts)",
+    "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
     "objectID": "RandRStudio.html",

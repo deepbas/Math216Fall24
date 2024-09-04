@@ -413,10 +413,13 @@ ggplot(survey, aes(x = Smoke, y = Pulse)) +
 :::
 
 
-## Qualitative Variables: Stacked bar graph 
+## Stacked bar graph 
 
+::: panel-tabset
 
-```{r jurors-stacked, out.width = "100%"}
+### Plot
+
+```{r jurors-stacked, echo=FALSE, out.width = "100%"}
 ggplot(survey, aes(x = Year, fill = Gender)) + 
   geom_bar(position = "fill") + 
   scale_fill_manual(values = c("maroon", "gold")) +
@@ -427,12 +430,28 @@ ggplot(survey, aes(x = Year, fill = Gender)) +
 ```
 
 
----
-
-## Qualitative Variables: Stacked bar graph (counts)
+### Code
 
 
-```{r jurors-stacked-counts, out.width = "100%"}
+```{r jurors-stacked1, eval=FALSE, out.width = "100%"}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "fill") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender") 
+```
+
+:::
+
+## Stacked bar graph (counts)
+
+::: panel-tabset
+
+### Plot
+
+```{r jurors-stacked-counts, echo= FALSE, out.width = "100%"}
 ggplot(survey, aes(x = Year, fill = Gender)) + 
   geom_bar(position = "stack") + 
   scale_fill_manual(values = c("maroon", "gold")) +
@@ -443,3 +462,16 @@ ggplot(survey, aes(x = Year, fill = Gender)) +
 ```
 
 
+### Code
+
+```{r jurors-stacked-counts1, eval=FALSE, out.width = "100%"}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "stack") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender") 
+```
+
+:::
