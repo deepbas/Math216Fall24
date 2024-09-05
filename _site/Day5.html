@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 2</title>
+  <title>Math 216: Statistical Thinking – Day 5</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 2</h1>
+  <h1 class="title">Day 5</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,353 +340,254 @@ Bastola
 </div>
 
 </section>
-<section id="data-units-and-variables" class="slide level2 centered-content">
-<h2>Data: Units and Variables</h2>
-<div class="bqt">
-<p><strong>Experimental (or Observational) Unit</strong></p>
-<p>An experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.</p>
-</div>
-<p><br></p>
-<div class="bqt">
-<p>Data is stored and presented in a dataset that comprises of variables measured on units</p>
+<section id="introduction-to-probability" class="slide level2">
+<h2>Introduction to Probability</h2>
+<div class="cle5">
+<div class="font90">
 <ul>
-<li>A <strong>variable</strong> is any characteristic that is recorded for each unit</li>
+<li><strong>Experiment</strong>: Any act of observation with uncertain outcomes (e.g., Tossing a coin).</li>
+<li><strong>Observation</strong>: The result of an experiment (e.g., heads or tails).</li>
+</ul>
+<p>Mathematical Representation</p>
+<ul>
+<li>Let <span class="math inline">\(E\)</span> represent an experiment.</li>
+<li>An outcome of <span class="math inline">\(E\)</span> is an element of the sample space <span class="math inline">\(S\)</span>.</li>
+<li>Probability of an event <span class="math inline">\(A\)</span> is denoted by <span class="math inline">\(P(A)\)</span>.</li>
 </ul>
 </div>
+</div>
 </section>
-<section id="gpa_iq-dataset" class="centered-content">
-<h3><code>Gpa_IQ</code> dataset</h3>
-<div class="scrollable">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gpa</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">iq</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gender</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">concept</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7.940</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8.292</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4.643</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">52</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">7.470</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">66</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8.882</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">58</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7.585</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">51</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
-</div>
-<p>Each row = unit &amp; Each column = variable</p>
-</section>
-<section id="qualitative-versus-quantitative" class="slide level2 centered-content">
-<h2>Qualitative Versus Quantitative</h2>
-<blockquote>
-<p>Variables are classified as either <strong>qualitative</strong> or <strong>quantitative:</strong></p>
-</blockquote>
-<p><br></p>
+<section id="definitions" class="slide level2">
+<h2>Definitions</h2>
 <div class="cle2">
+<div class="font80">
+<h3 id="sample-point">Sample Point</h3>
 <ul>
-<li>A <strong>qualitative variable</strong> divides the cases into groups. e.g.&nbsp;gender, country, state etc.</li>
-<li>A <strong>quantitative variable</strong> measures a numerical quantity for each case, e.g.&nbsp;age, height, sleep hours, blood pressure etc</li>
+<li><strong>Definition</strong>: The most basic outcome of an experiment.</li>
+<li><strong>In Coin Toss</strong>: Each toss that results in H or T.</li>
+</ul>
+<h3 id="sample-space">Sample Space</h3>
+<ul>
+<li><strong>Definition</strong>: Collection of all possible outcomes (sample points) of an experiment.</li>
+<li><strong>In Coin Toss</strong>: {H, T}</li>
 </ul>
 </div>
-</section>
-<section id="kidney-cancer" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>Counties with the highest kidney cancer rates</p>
-</blockquote>
-<center>
-<img src="images/kidneycancermap.png" width="65%" height="65%"><br> <a>Source: Gelman et. al.&nbsp;Bayesian Data Anaylsis, CRC Press, 2004</a>
-</center>
-</section>
-<section id="kidney-cancer-1" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are people, then the measured variable is qualitative</p>
-</blockquote>
-<div class="green-h">
-<p>We categorize each person as either having kidney cancer or not which is qualitative.</p>
 </div>
 </section>
-<section id="kidney-cancer-2" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative</p>
-</blockquote>
-<div class="green-h">
-<p>Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative).</p>
-</div>
-</section>
-<section id="variable-manipulations" class="slide level2 centered-content">
-<h2>Variable manipulations</h2>
-<div class="bq">
-<p>Can use numbers to code categories of qualitative variable</p>
+<section id="venn-diagram" class="slide level2">
+<h2>Venn Diagram</h2>
+<div class="cle5">
+<div class="font60">
 <ul>
-<li>e.g.&nbsp;Gender (1 for male and 2 for female)</li>
+<li><strong>Sample Space (S)</strong>: Represented as a closed figure in the diagram.</li>
+<li><strong>Sample Points</strong>: Each possible outcome shown as a solid dot within the figure.</li>
+</ul>
+<p>Example: Coin Toss</p>
+<ul>
+<li><strong>Venn Diagram</strong>: Circle labeled S containing two points labeled H (Head) and T (Tail).</li>
+<li><strong>Representation</strong>: Helps visualize all possible outcomes in a single view.</li>
 </ul>
 </div>
-<p><br> <br></p>
-<div class="bq">
-<p>Can convert quantitative variable into qualitative groups</p>
-<ul>
-<li>e.g.&nbsp;Income (0-50000 as Low, 50000+ as High)</li>
-</ul>
 </div>
 </section>
-<section id="sampling-and-inference" class="slide level2 centered-content">
-<h2>Sampling and Inference</h2>
+<section id="experiments-and-their-sample-spaces" class="slide level2">
+<h2>Experiments and Their Sample Spaces</h2>
+<div class="cle">
+<div class="font50">
+<p>Experiment: Tossing a Coin</p>
+<ul>
+<li><strong>Sample Space (S)</strong>: <span class="math display">\[\begin{align*}
+S &amp;= \{e \mid e \text{ is the up face of a coin}\} \\
+&amp;= \{H, T\} \text{ (Head or Tail)}
+\end{align*}\]</span></li>
+</ul>
+<p>Experiment: Rolling a Die</p>
+<ul>
+<li><strong>Sample Space (S)</strong>: <span class="math display">\[\begin{align*}
+S &amp;= \{e \mid e \text{ is the up face of a die}\} \\
+&amp;= \{1, 2, 3, 4, 5, 6\} \text{ (Numbers on the die)}
+\end{align*}\]</span></li>
+</ul>
+<p>Experiment: Tossing Two Coins</p>
+<ul>
+<li><strong>Sample Space (S)</strong>: <span class="math display">\[\begin{align*}
+S &amp;= \{e \mid e \text{ is the combination of faces of two coins}\} \\
+&amp;= \{HH, HT, TH, TT\} \text{ (All possible combinations)}
+\end{align*}\]</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="defining-probability" class="slide level2">
+<h2>Defining Probability</h2>
 <div class="cle4">
+<div class="font70">
+<p><strong>Probability of a Sample Point</strong>: Number between 0 and 1 indicating likelihood of the outcome.</p>
+<p>Rule 1: Range of Probabilities</p>
 <ul>
-<li>A <strong>population</strong> includes all individuals or objects of interest.</li>
-<li>A <strong>sample</strong> is all the cases that we have collected data on (a subset of the population).</li>
-<li><strong>Statistical inference</strong> is the process of using data from a sample to gain information about the population.</li>
+<li>Each probability <span class="math inline">\(p_i\)</span> must be: <span class="math inline">\(0 \leq p_i \leq 1\)</span></li>
+</ul>
+<p>Rule 2: Sum of Probabilities</p>
+<ul>
+<li>Total probability across all sample points: <span class="math inline">\(\sum_{\text{all } i} p_i = 1\)</span></li>
+<li>Ensures completeness of the sample space.</li>
 </ul>
 </div>
-</section>
-<section id="sampling-and-inference-source" class="slide level2 centered-content">
-<h2>Sampling and Inference (<a href="https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&amp;context=vimsarticles">Source</a>)</h2>
-<div style="text-align: center;">
-<p><img data-src="images/bluecrab.png" style="width:70.0%;height:60.0%"></p>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="example-calculating-winning-probability-in-a-dice-game" class="slide level2">
+<h2>Example: Calculating Winning Probability in a Dice Game</h2>
+<div class="cle2">
+<div class="font50">
+<div class="row">
+<div class="left">
+<ul>
+<li><strong>Experiment</strong>: Tossing a fair die.</li>
+<li><strong>Winning Condition</strong>: If the up face is an even number (2, 4, 6), you win $1.</li>
+<li><strong>Losing Condition</strong>: If the up face is odd (1, 3, 5), you lose $1.</li>
+</ul>
+<p>Sample Space and Probabilities</p>
+<ul>
+<li><strong>Sample Space (S)</strong>: <span class="math display">\[S = \{1, 2, 3, 4, 5, 6\}\]</span></li>
+<li><strong>Uniform Probabilities</strong>: <span class="math display">\[p_1 = p_2 = p_3 = \cdots = p_6 = \frac{1}{6}\]</span></li>
+</ul>
+</div>
+<div class="right">
+<p>Calculation of Winning Probability</p>
+<ul>
+<li><strong>Event of Winning</strong>: <span class="math display">\[\text{Winning } = \{2, 4, 6\}\]</span></li>
+<li><strong>Probability of Winning</strong>: <span class="math display">\[\text{Prob of Winning } = p_2 + p_4 + p_6 = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = \frac{1}{2}\]</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="event-definition" class="slide level2">
+<h2>Event Definition</h2>
 <div class="cle">
-<div class="font90">
-<p><strong>Population</strong></p>
+<p>Definition of an Event</p>
 <ul>
-<li>All blue crabs in the Maryland Coastal Bays (MCB)</li>
-<li>Includes sub-estuaries: Assawoman Bay, St.&nbsp;Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay</li>
+<li><strong>Event (A)</strong>: A collection of sample points.</li>
 </ul>
-<p><strong>Sample</strong></p>
+<p>Probability of an Event</p>
 <ul>
-<li>Blue crabs collected from 20 sites within MCB</li>
-<li>Sample period: April - December, 2014-2016</li>
-<li>Method: Trawl surveys</li>
+<li><strong>Calculation</strong>: Sum of probabilities of all sample points in the event.</li>
 </ul>
-</div>
 </div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="steps-for-calculating-event-probabilities" class="slide level2">
+<h2>Steps for Calculating Event Probabilities</h2>
 <div class="cle">
-<div class="font90">
-<p><strong>Variables</strong></p>
+<div class="font60">
+<div class="row">
+<div class="left">
+<ol type="1">
+<li><strong>Define the Experiment</strong>: Describe the observation process.</li>
+<li><strong>List Sample Points</strong>: Identify possible outcomes.</li>
+<li><strong>Assign Probabilities</strong>: Allocate probability to each sample point.</li>
+<li><strong>Identify Event’s Sample Points</strong>: Determine which sample points are part of the event.</li>
+<li><strong>Calculate Event Probability</strong>: Sum the probabilities of the event’s sample points.</li>
+</ol>
+</div>
+<div class="right">
+<p>Example</p>
 <ul>
-<li><strong>Primary Variable</strong>: Carapace width, sex, maturity status, molt stage</li>
+<li><strong>Experiment</strong>: Tossing a coin twice.</li>
+<li><strong>Sample Points</strong>: {HH, HT, TH, TT}</li>
+<li><strong>Event</strong>: Getting at least one head.</li>
+<li><strong>Calculation</strong>: Probability(HH) + Probability(HT) + Probability(TH)</li>
 </ul>
-<p><strong>Inference</strong></p>
-<ul>
-<li>Population structure of blue crabs in MCB</li>
-<li>Seasonal variations: size distribution, molt cycles, reproductive patterns</li>
-</ul>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="sampling-bias" class="title-slide slide level1 centered-content center">
-<h1>Sampling Bias</h1>
-<div class="bq">
+<section id="compound-events-unions" class="slide level2">
+<h2>Compound Events: Unions</h2>
+<div class="cle">
+<p>Unions</p>
 <ul>
-<li><p>Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way</p></li>
-<li><p>If sampling bias exists, we cannot trust generalizations from the sample to the population</p></li>
-</ul>
-</div>
-<p>To eliminate sampling bias always take a <span class="bold-text">RANDOM SAMPLE!</span></p>
-</section>
-
-<section id="bias-in-data" class="title-slide slide level1 middle-align-xy center">
-<h1>Bias in data</h1>
-<blockquote>
-<p>Even with a random sample, data can still be biased, especially when collected on humans</p>
-</blockquote>
-<div class="lqt">
-<p>Some forms of bias to watch out for in data collection:</p>
-<ul>
-<li>Question wording</li>
-<li>Question order</li>
-<li>Context</li>
-<li>Non-response Bias</li>
+<li><strong>Definition</strong>: Union of two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> (<span class="math inline">\(A \cup B\)</span>)</li>
+<li><strong>Occurs If</strong>: Either event <span class="math inline">\(A\)</span>, event <span class="math inline">\(B\)</span>, or both happen.</li>
+<li><strong>Composition</strong>: Includes all sample points in <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, or both. <span class="math display">\[A \cup B = \{x : x \in A \text{ or } x \in B\}\]</span></li>
 </ul>
 </div>
 </section>
-
-<section id="question-wording" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”</p>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>60%</td>
-<td>40%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-wording-1" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”</p>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>22%</td>
-<td>78%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-order" class="slide level2 centered-content">
-<h2>Question order</h2>
-<p><br></p>
-<div class="bq">
+<section id="compound-events-intersections" class="slide level2">
+<h2>Compound Events: Intersections</h2>
+<div class="cle">
+<p>Intersections</p>
 <ul>
-<li>Depending on the order of questions we can see either a greater differences in responses or lesser difference in response.</li>
-<li>Respondents tend to provide answers consistent with their prior responses.</li>
+<li><strong>Definition</strong>: Intersection of two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> (<span class="math inline">\(A \cap B\)</span>)</li>
+<li><strong>Occurs If</strong>: Both event <span class="math inline">\(A\)</span> and event <span class="math inline">\(B\)</span> happen.</li>
+<li><strong>Composition</strong>: Includes all sample points that are in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. <span class="math display">\[A \cap B = \{x : x \in A \text{ and } x \in B\}\]</span></li>
 </ul>
 </div>
 </section>
-<section id="swedish-study-response-bias" class="slide level2 centered-content">
-<h2><a href="https://link.springer.com/article/10.1007/s11109-020-09630-5">Swedish Study</a>: Response bias</h2>
-<center>
-<img src="images/swedish_study.png" width="70%" height="50%"> <br>
-</center>
-</section>
-<section id="identified-sources-of-bias-in-swedish-study" class="slide level2 centered-content">
-<h2>Identified Sources of Bias in <code>Swedish Study</code></h2>
-<div class="bqt">
-<p><code>Political Bias:</code> The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.</p>
-</div>
-<p><br></p>
-<div class="bqt">
-<p><code>Sensitivity Bias:</code> Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.</p>
-</div>
-</section>
-<section id="context" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p><strong>Ann Landers</strong> column asked readers <em>“If you had it to do over again, would you have children?”</em></p>
-<p>The first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids</p>
-<p><span class="math display">\[30\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="context-1" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p>The second request for data was in response to this number, in which Ann wrote how she was <em>“stunned, disturbed, and just plain flummoxed”</em></p>
-<p><span class="math display">\[95\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="non-response-bias" class="slide level2 centered-content">
-<h2>Non-response Bias</h2>
-<blockquote>
-<p>When respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias</p>
-</blockquote>
-<div class="bq">
+<section id="example-calculating-unions-and-intersections-in-a-die-toss" class="slide level2">
+<h2>Example: Calculating Unions and Intersections in a Die-Toss</h2>
+<div class="font40">
+<div class="cle">
+<div class="row">
+<div class="left">
 <ul>
-<li>Survey targeted to the wrong audience</li>
-<li>There is general unwillingness due to polar opposite opinions</li>
-<li>The survey did not reach the right respondent
-<ul>
-<li>e.g.&nbsp;A survey asking teenagers about best cigarette brands.</li>
-</ul></li>
+<li><strong>Event A</strong>: Toss an even number. <span class="math display">\[A = \{2, 4, 6\}\]</span></li>
+<li><strong>Event B</strong>: Toss a number less than or equal to 3. <span class="math display">\[B = \{1, 2, 3\}\]</span></li>
+<li><strong>Sample Space (S)</strong>: <span class="math display">\[S = \{1, 2, 3, 4, 5, 6\}\]</span></li>
 </ul>
 </div>
-</section>
-<section id="experiment-vs-observational-study" class="centered-content">
-<h3>Experiment Vs Observational Study</h3>
-<div class="lqt">
-<p>An <span class="bold-text">observational study</span> is a study in which the researcher does not actively control the value of any variable, but simply observes the values as they naturally exist</p>
+<div class="right">
+<p>Union and Intersection</p>
+<ul>
+<li><strong>Union (<span class="math inline">\(A \cup B\)</span>)</strong>: Any number less than 6. <span class="math display">\[A \cup B = \{1, 2, 3, 4, 6\}\]</span></li>
+<li><strong>Intersection (<span class="math inline">\(A \cap B\)</span>)</strong>: Only number both even and ≤ 3. <span class="math display">\[A \cap B = \{2\}\]</span></li>
+</ul>
 </div>
-<p><br></p>
-<div class="lqt">
-<p>An <span class="bold-text">experiment</span> is a study in which the researcher actively controls one or more of the explanatory variables</p>
 </div>
-</section>
-<section id="experiment-or-observational-study" class="slide level2 centered-content">
-<h2>Experiment or Observational Study?</h2>
-<div class="bq">
-<p>To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.</p>
+<p>Probability Calculations</p>
+<ul>
+<li><strong>Probability of Union (<span class="math inline">\(P(A \cup B)\)</span>)</strong>: <span class="math display">\[P(A \cup B) = P_1 + P_2 + P_3 + P_4 + P_6 = \frac{5}{6}\]</span></li>
+<li><strong>Probability of Intersection (<span class="math inline">\(P(A \cap B)\)</span>)</strong>: <span class="math display">\[P(A \cap B) = P_2 = \frac{1}{6}\]</span></li>
+</ul>
 </div>
-<details>
-<summary class="answer">
-<p>Click for answer</p>
-</summary>
-<p>This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.</p>
-</details>
-</section>
-<section id="conclusion-statistical-thinking" class="slide level2 middle-align-xy">
-<h2>Conclusion: Statistical Thinking!</h2>
-<div class="green-h">
-<p><strong>Statistical thinking</strong> involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.</p>
 </div>
 </section>
+<section id="calculating-sample-points-using-combinations" class="slide level2">
+<h2>Calculating Sample Points Using Combinations</h2>
+<div class="cle">
+<div class="font60">
+<ul>
+<li><strong>Combinations Rule</strong>: Calculate the number of possible samples drawn without replacement.</li>
+<li><strong>Formula</strong>: <span class="math inline">\(\binom{N}{n} = \frac{N!}{n!(N-n)!}\)</span> where <span class="math inline">\(N\)</span> is the total number of elements, and <span class="math inline">\(n\)</span> is the number of elements per sample.</li>
+</ul>
+<p>Factorial Explained</p>
+<ul>
+<li><strong>Notation</strong>: <span class="math inline">\(n!\)</span> (factorial of <span class="math inline">\(n\)</span>)</li>
+<li><strong>Definition</strong>: Product of all positive integers up to <span class="math inline">\(n\)</span>. <span class="math display">\[n! = n \times (n-1) \times \dots \times 1\]</span></li>
+<li><strong>Example</strong>: <span class="math inline">\(5! = 5 \times 4 \times 3 \times 2 \times 1 = 120\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="your-odds-in-the-pick-6-lotto" class="slide level2">
+<h2>Your Odds in the Pick-6 Lotto</h2>
+<div class="cle">
+<div class="font70">
+<p>In Florida’s Pick-6 Lotto, you select six numbers from a set ranging from 1 to 53, aiming to match all to win.</p>
+<ul>
+<li><strong>Total Combinations</strong>: <span class="math display">\[\binom{53}{6} = \frac{53!}{6!(53-6)!} = \frac{53 \times 52 \times 51 \times 50 \times 49 \times 48}{6 \times 5 \times 4 \times 3 \times 2 \times 1} = 22,957,480\]</span></li>
+<li><strong>Probability of Winning</strong>: <span class="math display">\[P = \frac{1}{22,957,480}\]</span></li>
+</ul>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
+</section>
     </div>
   </div>
 
