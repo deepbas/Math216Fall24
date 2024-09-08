@@ -504,6 +504,7 @@
     "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias\n\n\n\nSurvey targeted to the wrong audience\nThere is general unwillingness due to polar opposite opinions\nThe survey did not reach the right respondent\n\ne.g. A survey asking teenagers about best cigarette brands."
   },
   {
+<<<<<<< HEAD
     "objectID": "Day2.html#experiment-or-observational-study",
     "href": "Day2.html#experiment-or-observational-study",
     "title": "Day 2",
@@ -565,5 +566,131 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+=======
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
+  },
+  {
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+  },
+  {
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule-and-mutually-exclusive-events",
+    "href": "Day6.html#additive-rule-and-mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Additive Rule and Mutually Exclusive Events",
+    "text": "Additive Rule and Mutually Exclusive Events\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#coin-toss-experiment",
+    "href": "Day6.html#coin-toss-experiment",
+    "title": "Day 6",
+    "section": "Coin Toss Experiment",
+    "text": "Coin Toss Experiment\nExperiment Overview: In tossing two balanced coins, find the probability of observing at least one head.\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: example",
+    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#understanding-conditional-probability",
+    "href": "Day6.html#understanding-conditional-probability",
+    "title": "Day 6",
+    "section": "Understanding Conditional Probability",
+    "text": "Understanding Conditional Probability\n\n\n\n\nUnconditional Probabilities\n\nThese probabilities reflect the relative frequencies of events occurring over many repetitions of an experiment without any additional conditions.\n\nConditional Probabilities\n\nWhen additional knowledge about the experiment’s outcome is available, this influences the probability calculation.\nConditional probabilities adjust for this knowledge, reflecting how the presence of certain conditions changes the likelihood of an event."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#ethical-dilemma-in-business",
+    "href": "Day6.html#ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Ethical Dilemma in Business",
+    "text": "Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at go, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at go, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-and-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-and-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking and Cancer",
+    "text": "Exercise: Cigarette Smoking and Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer."
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+>>>>>>> 7bce980 (9-8-1)
   }
 ]
