@@ -8,7 +8,6 @@ Welcome to the captivating world of statistical thinking! This course will provi
 
 At the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.
 
-}
 
 
 ## Learning Objectives
