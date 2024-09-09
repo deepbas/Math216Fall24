@@ -275,7 +275,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 
 ::: font50
-> To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that $55 \%$ of the executives admitted that they had cheated at golf. Also, $20 \%$ of the executives admitted that they had cheated at go, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?
+> To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that $55 \%$ of the executives admitted that they had cheated at golf. Also, $20 \%$ of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?
 :::
 
 ## Exercise: Cigarette Smoking $\&$ Cancer 
@@ -296,4 +296,21 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 :::
 
 
-##
+## Exercise: Cigarette Smoking $\&$ Cancer 
+
+::: font80
+a. Given a person is a smoker, what is the probability of having cancer?
+
+<br>
+
+b. Given a person is a smoker, what is the probability of not having cancer?
+
+<br>
+
+c. Given a person is not a smoker, what is the probability of having cancer?
+
+<br>
+
+d. Given a person is not a smoker, what is the probability of not having cancer?
+
+:::
