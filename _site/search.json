@@ -592,7 +592,7 @@
     "href": "Day7.html#law-of-total-probability",
     "title": "Day 7",
     "section": "Law of Total Probability",
-    "text": "Law of Total Probability\n\n\n\nThe law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.\nIt divides the sample space into parts (B) and (\\(B^c\\)) (the complement of (B)).\n\n\\[P(A)=P(B) \\cdot P(A|B)+P\\left(B^c\\right) \\cdot P\\left(A|B^c\\right)\\]"
+    "text": "Law of Total Probability\n\n\n\nThe law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.\nIt divides the sample space into parts (\\(B\\)) and (\\(B^c\\)) (the complement of (\\(B\\))).\n\n\\[P(A)=P(B) \\cdot P(A|B)+P\\left(B^c\\right) \\cdot P\\left(A|B^c\\right)\\]"
   },
   {
     "objectID": "Day7.html#section",

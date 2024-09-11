@@ -83,7 +83,7 @@ $$P(A\cap B)=P(B) \cdot P(A|B)$$
 ::: font70
 
 - The law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.
-- It divides the sample space into parts \(B\) and \($B^c$\) (the complement of \(B\)).
+- It divides the sample space into parts \($B$\) and \($B^c$\) (the complement of \($B$\)).
 
 $$P(A)=P(B) \cdot P(A|B)+P\left(B^c\right) \cdot P\left(A|B^c\right)$$
 :::
@@ -174,7 +174,7 @@ b. What is the probability that in a sample of 10 divorced couples, all 10 are c
 ## Bayes's Rule and Its Foundation
 
 ::: cle1
-::: font60
+::: font50
 
 - **Recall Multiplicative Rule**:
 
