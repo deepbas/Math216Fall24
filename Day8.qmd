@@ -137,10 +137,10 @@ This distribution fully describes the likelihood of each outcome when a fair die
 | :--- | ---: | ---: | ---: | ---: | ---: |
 | $p(x)$ | .10 | .15 | .40 | .30 | .05 |
 
-a. Find $P(x \leq 0)$
-b. Find $P(x>-1)$
-c. Find $P(-1 \leq x<1)$
-d. Find $P(-1 \leq x \leq 1)$
+a. Find $P(X \leq 0)$
+b. Find $P(X>-1)$
+c. Find $P(-1 \leq X<1)$
+d. Find $P(-1 \leq X \leq 1)$
 
 :::
 
