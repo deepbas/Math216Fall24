@@ -350,95 +350,81 @@
     "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
   },
   {
-    "objectID": "Day8_prelim.html#key-probability-concepts-recap",
-    "href": "Day8_prelim.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+    "objectID": "Day8.html#random-variables-rvs",
+    "href": "Day8.html#random-variables-rvs",
+    "title": "Day 8",
+    "section": "Random Variables (RVs)",
+    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
   },
   {
-    "objectID": "Day8_prelim.html#complementary-events",
-    "href": "Day8_prelim.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+    "objectID": "Day8.html#discrete-rvs",
+    "href": "Day8.html#discrete-rvs",
+    "title": "Day 8",
+    "section": "Discrete RVs",
+    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
   },
   {
-    "objectID": "Day8_prelim.html#calculating-pa-for-coin-tosses",
-    "href": "Day8_prelim.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+    "objectID": "Day8.html#continuous-rvs",
+    "href": "Day8.html#continuous-rvs",
+    "title": "Day 8",
+    "section": "Continuous RVs",
+    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
   },
   {
-    "objectID": "Day8_prelim.html#calculating-pa-for-coin-tosses-1",
-    "href": "Day8_prelim.html#calculating-pa-for-coin-tosses-1",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
+    "href": "Day8.html#probability-distributions-for-discrete-rvs",
+    "title": "Day 8",
+    "section": "Probability Distributions for Discrete RVs",
+    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
   },
   {
-    "objectID": "Day8_prelim.html#additive-rule",
-    "href": "Day8_prelim.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+    "objectID": "Day8.html#section",
+    "href": "Day8.html#section",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
   },
   {
-    "objectID": "Day8_prelim.html#hospital-admission-probabilities",
-    "href": "Day8_prelim.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "title": "Day 8",
+    "section": "Key Requirements for Discrete Probability Distributions",
+    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
   },
   {
-    "objectID": "Day8_prelim.html#mutually-exclusive-events",
-    "href": "Day8_prelim.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+    "objectID": "Day8.html#section-1",
+    "href": "Day8.html#section-1",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(x \\leq 0)\\)\nFind \\(P(x&gt;-1)\\)\nFind \\(P(-1 \\leq x&lt;1)\\)\nFind \\(P(-1 \\leq x \\leq 1)\\)"
   },
   {
-    "objectID": "Day8_prelim.html#mutually-exclusive-events-example",
-    "href": "Day8_prelim.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: example",
-    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+    "objectID": "Day8.html#section-2",
+    "href": "Day8.html#section-2",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
   },
   {
-    "objectID": "Day8_prelim.html#conditional-probability",
-    "href": "Day8_prelim.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "title": "Day 8",
+    "section": "Expected Value: Mean of Discrete Random Variables",
+    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
   },
   {
-    "objectID": "Day8_prelim.html#conditional-probability-in-dice-throws",
-    "href": "Day8_prelim.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+    "objectID": "Day8.html#section-3",
+    "href": "Day8.html#section-3",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
   },
   {
-    "objectID": "Day8_prelim.html#exercise-ethical-dilemma-in-business",
-    "href": "Day8_prelim.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day8_prelim.html#exercise-cigarette-smoking-cancer",
-    "href": "Day8_prelim.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day8_prelim.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day8_prelim.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+    "objectID": "Day8.html#variance-and-standard-deviation",
+    "href": "Day8.html#variance-and-standard-deviation",
+    "title": "Day 8",
+    "section": "Variance and Standard Deviation",
+    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
   },
   {
     "objectID": "index.html",
@@ -845,180 +831,5 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "Day8_prelim.html#random-variables-rv",
-    "href": "Day8_prelim.html#random-variables-rv",
-    "title": "Day 8",
-    "section": "Random Variables (RV)",
-    "text": "Random Variables (RV)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
-  },
-  {
-    "objectID": "Day8_prelim.html#random-variables-rv-1",
-    "href": "Day8_prelim.html#random-variables-rv-1",
-    "title": "Day 8",
-    "section": "Random Variables (RV)",
-    "text": "Random Variables (RV)\n\n\n\n\n\n\n\nDefinition\n\n\n\nDiscrete Random Variables: Assume a countable number of values.\nContinuous Random Variables: Assume values from any point within an interval."
-  },
-  {
-    "objectID": "Day8_prelim.html#discrete-rvs",
-    "href": "Day8_prelim.html#discrete-rvs",
-    "title": "Day 8",
-    "section": "Discrete RVs",
-    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
-  },
-  {
-    "objectID": "Day8_prelim.html#continuous-rvs",
-    "href": "Day8_prelim.html#continuous-rvs",
-    "title": "Day 8",
-    "section": "Continuous RVs",
-    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
-  },
-  {
-    "objectID": "Day8_prelim.html#probability-distributions-for-discrete-random-variables",
-    "href": "Day8_prelim.html#probability-distributions-for-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete Random Variables",
-    "text": "Probability Distributions for Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled.\n\n\n\n\n:::"
-  },
-  {
-    "objectID": "Day8_prelim.html#probability-distributions-for-discrete-rvs",
-    "href": "Day8_prelim.html#probability-distributions-for-discrete-rvs",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete RVs",
-    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
-  },
-  {
-    "objectID": "Day8_prelim.html#section",
-    "href": "Day8_prelim.html#section",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
-  },
-  {
-    "objectID": "Day8_prelim.html#key-requirements-for-discrete-probability-distributions",
-    "href": "Day8_prelim.html#key-requirements-for-discrete-probability-distributions",
-    "title": "Day 8",
-    "section": "Key Requirements for Discrete Probability Distributions",
-    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
-  },
-  {
-    "objectID": "Day8_prelim.html#section-1",
-    "href": "Day8_prelim.html#section-1",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(x \\leq 0)\\)\nFind \\(P(x&gt;-1)\\)\nFind \\(P(-1 \\leq x&lt;1)\\)\nFind \\(P(-1 \\leq x \\leq 1)\\)"
-  },
-  {
-    "objectID": "Day8_prelim.html#section-2",
-    "href": "Day8_prelim.html#section-2",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
-  },
-  {
-    "objectID": "Day8_prelim.html#expected-value-mean-of-discrete-random-variables",
-    "href": "Day8_prelim.html#expected-value-mean-of-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Expected Value: Mean of Discrete Random Variables",
-    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
-  },
-  {
-    "objectID": "Day8_prelim.html#section-3",
-    "href": "Day8_prelim.html#section-3",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
-  },
-  {
-    "objectID": "Day8_prelim.html#variance-and-standard-deviation",
-    "href": "Day8_prelim.html#variance-and-standard-deviation",
-    "title": "Day 8",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
-  },
-  {
-    "objectID": "Day8.html#random-variables-rv",
-    "href": "Day8.html#random-variables-rv",
-    "title": "Day 8",
-    "section": "Random Variables (RV)",
-    "text": "Random Variables (RV)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
-  },
-  {
-    "objectID": "Day8.html#discrete-rvs",
-    "href": "Day8.html#discrete-rvs",
-    "title": "Day 8",
-    "section": "Discrete RVs",
-    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
-  },
-  {
-    "objectID": "Day8.html#continuous-rvs",
-    "href": "Day8.html#continuous-rvs",
-    "title": "Day 8",
-    "section": "Continuous RVs",
-    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
-  },
-  {
-    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
-    "href": "Day8.html#probability-distributions-for-discrete-rvs",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete RVs",
-    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
-  },
-  {
-    "objectID": "Day8.html#section",
-    "href": "Day8.html#section",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
-  },
-  {
-    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "title": "Day 8",
-    "section": "Key Requirements for Discrete Probability Distributions",
-    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
-  },
-  {
-    "objectID": "Day8.html#section-1",
-    "href": "Day8.html#section-1",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(x \\leq 0)\\)\nFind \\(P(x&gt;-1)\\)\nFind \\(P(-1 \\leq x&lt;1)\\)\nFind \\(P(-1 \\leq x \\leq 1)\\)"
-  },
-  {
-    "objectID": "Day8.html#section-2",
-    "href": "Day8.html#section-2",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
-  },
-  {
-    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Expected Value: Mean of Discrete Random Variables",
-    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
-  },
-  {
-    "objectID": "Day8.html#section-3",
-    "href": "Day8.html#section-3",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
-  },
-  {
-    "objectID": "Day8.html#variance-and-standard-deviation",
-    "href": "Day8.html#variance-and-standard-deviation",
-    "title": "Day 8",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
-  },
-  {
-    "objectID": "Day8.html#random-variables-rvs",
-    "href": "Day8.html#random-variables-rvs",
-    "title": "Day 8",
-    "section": "Random Variables (RVs)",
-    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
   }
 ]
