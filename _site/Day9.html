@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 2</title>
+  <title>Math 216: Statistical Thinking – Day 9</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 2</h1>
+  <h1 class="title">Day 9</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,353 +340,259 @@ Bastola
 </div>
 
 </section>
-<section id="data-units-and-variables" class="slide level2 centered-content">
-<h2>Data: Units and Variables</h2>
-<div class="bqt">
-<p><strong>Experimental (or Observational) Unit</strong></p>
-<p>An experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.</p>
+<section id="recap-variance-and-standard-deviation" class="slide level2 font80">
+<h2>Recap: Variance and Standard Deviation</h2>
+<div title="Definition">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p><br></p>
-<div class="bqt">
-<p>Data is stored and presented in a dataset that comprises of variables measured on units</p>
-<ul>
-<li>A <strong>variable</strong> is any characteristic that is recorded for each unit</li>
-</ul>
+<p><strong>Definition</strong></p>
 </div>
-</section>
-<section id="gpa_iq-dataset" class="centered-content">
-<h3><code>Gpa_IQ</code> dataset</h3>
-<div class="scrollable">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gpa</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">iq</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gender</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">concept</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7.940</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8.292</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4.643</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">52</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">7.470</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">66</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8.882</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">58</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7.585</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">51</td>
-</tr>
-</tbody>
-</table>
-
-
+<div class="callout-content">
+<p><strong>Variance</strong> measures the spread of values around the mean. <span class="math display">\[
+  \sigma^2 = \operatorname{Var}(x) = E\left[(x-\mu)^2\right] = \sum_{\text{all } x_i}\left(x_i-\mu\right)^2 p(x_i) = \left[\sum_{\text{all } x_i} x_i^2 p(x_i)\right] - \mu^2
+  \]</span></p>
+<p><strong>Standard Deviation</strong> is the square root of variance, indicates typical deviation from the mean.</p>
+<p><span class="math display">\[
+  \sigma = \sqrt{\operatorname{Var}(x)}
+  \]</span></p>
 </div>
 </div>
 </div>
-</div>
-<p>Each row = unit &amp; Each column = variable</p>
-</section>
-<section id="qualitative-versus-quantitative" class="slide level2 centered-content">
-<h2>Qualitative Versus Quantitative</h2>
-<blockquote>
-<p>Variables are classified as either <strong>qualitative</strong> or <strong>quantitative:</strong></p>
-</blockquote>
-<p><br></p>
-<div class="cle2">
-<ul>
-<li>A <strong>qualitative variable</strong> divides the cases into groups. e.g.&nbsp;gender, country, state etc.</li>
-<li>A <strong>quantitative variable</strong> measures a numerical quantity for each case, e.g.&nbsp;age, height, sleep hours, blood pressure etc</li>
-</ul>
-</div>
-</section>
-<section id="kidney-cancer" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>Counties with the highest kidney cancer rates</p>
-</blockquote>
-<center>
-<img src="images/kidneycancermap.png" width="65%" height="65%"><br> <a>Source: Gelman et. al.&nbsp;Bayesian Data Anaylsis, CRC Press, 2004</a>
-</center>
-</section>
-<section id="kidney-cancer-1" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are people, then the measured variable is qualitative</p>
-</blockquote>
-<div class="green-h">
-<p>We categorize each person as either having kidney cancer or not which is qualitative.</p>
-</div>
-</section>
-<section id="kidney-cancer-2" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative</p>
-</blockquote>
-<div class="green-h">
-<p>Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative).</p>
-</div>
-</section>
-<section id="variable-manipulations" class="slide level2 centered-content">
-<h2>Variable manipulations</h2>
-<div class="bq">
-<p>Can use numbers to code categories of qualitative variable</p>
-<ul>
-<li>e.g.&nbsp;Gender (1 for male and 2 for female)</li>
-</ul>
-</div>
-<p><br> <br></p>
-<div class="bq">
-<p>Can convert quantitative variable into qualitative groups</p>
-<ul>
-<li>e.g.&nbsp;Income (0-50000 as Low, 50000+ as High)</li>
-</ul>
-</div>
-</section>
-<section id="sampling-and-inference" class="slide level2 centered-content">
-<h2>Sampling and Inference</h2>
-<div class="cle4">
-<ul>
-<li>A <strong>population</strong> includes all individuals or objects of interest.</li>
-<li>A <strong>sample</strong> is all the cases that we have collected data on (a subset of the population).</li>
-<li><strong>Statistical inference</strong> is the process of using data from a sample to gain information about the population.</li>
-</ul>
-</div>
-</section>
-<section id="sampling-and-inference-source" class="slide level2 centered-content">
-<h2>Sampling and Inference (<a href="https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&amp;context=vimsarticles">Source</a>)</h2>
-<div style="text-align: center;">
-<p><img data-src="images/bluecrab.png" style="width:70.0%;height:60.0%"></p>
 </div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Population</strong></p>
-<ul>
-<li>All blue crabs in the Maryland Coastal Bays (MCB)</li>
-<li>Includes sub-estuaries: Assawoman Bay, St.&nbsp;Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay</li>
-</ul>
-<p><strong>Sample</strong></p>
-<ul>
-<li>Blue crabs collected from 20 sites within MCB</li>
-<li>Sample period: April - December, 2014-2016</li>
-<li>Method: Trawl surveys</li>
-</ul>
-</div>
-</div>
-</section>
+
+<img data-src="images/prob_chebyshev.png" class="r-stretch"></section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Variables</strong></p>
-<ul>
-<li><strong>Primary Variable</strong>: Carapace width, sex, maturity status, molt stage</li>
-</ul>
-<p><strong>Inference</strong></p>
-<ul>
-<li>Population structure of blue crabs in MCB</li>
-<li>Seasonal variations: size distribution, molt cycles, reproductive patterns</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="sampling-bias" class="title-slide slide level1 centered-content center">
-<h1>Sampling Bias</h1>
-<div class="bq">
-<ul>
-<li><p>Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way</p></li>
-<li><p>If sampling bias exists, we cannot trust generalizations from the sample to the population</p></li>
-</ul>
-</div>
-<p>To eliminate sampling bias always take a <span class="bold-text">RANDOM SAMPLE!</span></p>
-</section>
-
-<section id="bias-in-data" class="title-slide slide level1 middle-align-xy center">
-<h1>Bias in data</h1>
+<div class="font50">
 <blockquote>
-<p>Even with a random sample, data can still be biased, especially when collected on humans</p>
+<p>Example 1: Medical research has shown that a certain type of chemotherapy is successful <span class="math inline">\(70 \%\)</span> of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let <span class="math inline">\(x\)</span> equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:</p>
 </blockquote>
-<div class="lqt">
-<p>Some forms of bias to watch out for in data collection:</p>
-<ul>
-<li>Question wording</li>
-<li>Question order</li>
-<li>Context</li>
-<li>Non-response Bias</li>
-</ul>
-</div>
-</section>
-
-<section id="question-wording" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”</p>
-</div>
 <table>
 <thead>
 <tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
+<th><span class="math inline">\(x\)</span></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>60%</td>
-<td>40%</td>
+<td><span class="math inline">\(p(x)\)</span></td>
+<td>0.002</td>
+<td>0.029</td>
+<td>0.132</td>
+<td>0.309</td>
+<td>0.360</td>
+<td>0.168</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="question-wording-1" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”</p>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>22%</td>
-<td>78%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-order" class="slide level2 centered-content">
-<h2>Question order</h2>
 <p><br></p>
-<div class="bq">
-<ul>
-<li>Depending on the order of questions we can see either a greater differences in responses or lesser difference in response.</li>
-<li>Respondents tend to provide answers consistent with their prior responses.</li>
-</ul>
-</div>
-</section>
-<section id="swedish-study-response-bias" class="slide level2 centered-content">
-<h2><a href="https://link.springer.com/article/10.1007/s11109-020-09630-5">Swedish Study</a>: Response bias</h2>
-<center>
-<img src="images/swedish_study.png" width="70%" height="50%"> <br>
-</center>
-</section>
-<section id="identified-sources-of-bias-in-swedish-study" class="slide level2 centered-content">
-<h2>Identified Sources of Bias in <code>Swedish Study</code></h2>
-<div class="bqt">
-<p><code>Political Bias:</code> The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.</p>
-</div>
+<ol type="a">
+<li>Find <span class="math inline">\(\mu\)</span></li>
+</ol>
 <p><br></p>
-<div class="bqt">
-<p><code>Sensitivity Bias:</code> Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.</p>
+<ol start="2" type="a">
+<li>Find <span class="math inline">\(\sigma\)</span></li>
+</ol>
+<p><br></p>
+<ol start="3" type="a">
+<li>Use Chebyshev’s rule to approximate the probability that <span class="math inline">\(x\)</span> falls into the interval <span class="math inline">\(\mu \pm 2 \sigma\)</span></li>
+</ol>
 </div>
 </section>
-<section id="context" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p><strong>Ann Landers</strong> column asked readers <em>“If you had it to do over again, would you have children?”</em></p>
-<p>The first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids</p>
-<p><span class="math display">\[30\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="context-1" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p>The second request for data was in response to this number, in which Ann wrote how she was <em>“stunned, disturbed, and just plain flummoxed”</em></p>
-<p><span class="math display">\[95\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="non-response-bias" class="slide level2 centered-content">
-<h2>Non-response Bias</h2>
-<blockquote>
-<p>When respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias</p>
-</blockquote>
-<div class="bq">
+<section id="introduction-to-binomial-random-variables" class="slide level2 font80">
+<h2>Introduction to Binomial Random Variables</h2>
+<div class="cle5">
+<div class="font80">
 <ul>
-<li>Survey targeted to the wrong audience</li>
-<li>There is general unwillingness due to polar opposite opinions</li>
-<li>The survey did not reach the right respondent
+<li><strong>Context of Binomial Experiments</strong>:
 <ul>
-<li>e.g.&nbsp;A survey asking teenagers about best cigarette brands.</li>
+<li>Used to model situations with two distinct outcomes.</li>
+<li>Example: Flipping a coin results in either a Head (Success, <span class="math inline">\(S\)</span>) or Tail (Failure, <span class="math inline">\(F\)</span>).</li>
 </ul></li>
 </ul>
+<h4 id="two-possible-outcomes">Two Possible Outcomes:</h4>
+<ul>
+<li><strong>Success</strong> <span class="math inline">\((S)\)</span></li>
+<li><strong>Failure</strong> <span class="math inline">\((F)\)</span></li>
+</ul>
+<h4 id="consistent-probability">Consistent Probability:</h4>
+<ul>
+<li>Probability of success <span class="math inline">\((p)\)</span></li>
+<li>Probability of failure <span class="math inline">\((q = 1 - p)\)</span></li>
+</ul>
+</div>
 </div>
 </section>
-<section id="experiment-vs-observational-study" class="centered-content">
-<h3>Experiment Vs Observational Study</h3>
-<div class="lqt">
-<p>An <span class="bold-text">observational study</span> is a study in which the researcher does not actively control the value of any variable, but simply observes the values as they naturally exist</p>
+<section id="characteristics-of-binomial-experiments" class="slide level2 font80">
+<h2>Characteristics of Binomial Experiments</h2>
+<div class="cle5">
+<div class="font80">
+<ul>
+<li><strong>Essential Features</strong>:
+<ul>
+<li><strong>Fixed Number of Trials</strong> <span class="math inline">\((n)\)</span>: Each experiment consists of <span class="math inline">\(n\)</span> identical and independent trials.</li>
+<li><strong>Stable Probabilities</strong>: The probability of success <span class="math inline">\((p)\)</span> and failure <span class="math inline">\((q = 1 - p)\)</span> remains constant across trials.</li>
+</ul></li>
+</ul>
+<h3 id="key-points">Key Points:</h3>
+<ul>
+<li><strong>Independence of Trials</strong>: Each trial’s outcome does not influence another.</li>
+<li><strong>Identical Trials</strong>: All trials follow the same probability model.</li>
+</ul>
 </div>
-<p><br></p>
-<div class="lqt">
-<p>An <span class="bold-text">experiment</span> is a study in which the researcher actively controls one or more of the explanatory variables</p>
-</div>
-</section>
-<section id="experiment-or-observational-study" class="slide level2 centered-content">
-<h2>Experiment or Observational Study?</h2>
-<div class="bq">
-<p>To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.</p>
-</div>
-<details>
-<summary class="answer">
-<p>Click for answer</p>
-</summary>
-<p>This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.</p>
-</details>
-</section>
-<section id="conclusion-statistical-thinking" class="slide level2 middle-align-xy">
-<h2>Conclusion: Statistical Thinking!</h2>
-<div class="green-h">
-<p><strong>Statistical thinking</strong> involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.</p>
 </div>
 </section>
+<section id="the-binomial-random-variable" class="slide level2">
+<h2>The Binomial Random Variable</h2>
+<div class="cle5">
+<div class="font80">
+<ul>
+<li><strong>Defining the Variable</strong>:
+<ul>
+<li>A binomial random variable <span class="math inline">\(X\)</span> counts the number of successes in <span class="math inline">\(n\)</span> trials.</li>
+<li>Notation: <span class="math inline">\(X \sim \operatorname{Bin}(n, p)\)</span>, where <span class="math inline">\(p\)</span> is the probability of a success on any given trial.</li>
+</ul></li>
+</ul>
+<h3 id="understanding-x">Understanding <span class="math inline">\(X\)</span>:</h3>
+<ul>
+<li>Represents the sum of successes in the experiment.</li>
+<li>Can take values from 0 (no success) to <span class="math inline">\(n\)</span> (all successes).</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-binomial-probability-formula" class="slide level2">
+<h2>The Binomial Probability Formula</h2>
+<div class="cle5">
+<div class="font70">
+<ul>
+<li><strong>Calculating Probabilities</strong>:
+<ul>
+<li>The probability of exactly <span class="math inline">\(x\)</span> successes in <span class="math inline">\(n\)</span> trials is given by the binomial formula:</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+P(x) = \binom{n}{x} p^x q^{n-x}, \quad x = 0, 1, 2, \ldots, n
+\]</span></p>
+<h3 id="components">Components:</h3>
+<ul>
+<li><strong><span class="math inline">\(\binom{n}{x}\)</span></strong>: The number of ways to choose <span class="math inline">\(x\)</span> successes from <span class="math inline">\(n\)</span> trials.</li>
+<li><strong><span class="math inline">\(p^x\)</span></strong>: The probability of <span class="math inline">\(x\)</span> successes.</li>
+<li><strong><span class="math inline">\(q^{n-x}\)</span></strong>: The probability of <span class="math inline">\(n-x\)</span> failures.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="font50">
+<blockquote>
+<p>Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let <span class="math inline">\(X\)</span> represent the number of the four adults who pass the fitness test. Is <span class="math inline">\(X\)</span> a binomial random variable? Why? What is the probability of <span class="math inline">\(X=3\)</span> ?</p>
+</blockquote>
+</div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="font50">
+<blockquote>
+<p>Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of <span class="math inline">\(x\)</span>, where <span class="math inline">\(x\)</span> is the number of adults who pass the fitness test.</p>
+</blockquote>
+<p><span class="math display">\[\begin{align*}
+\begin{aligned}
+&amp; p(0)=\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(1)(4 \cdot 3 \cdot 2 \cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\
+&amp; p(1)=\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(1)(3 \cdot 2 \cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\
+&amp; p(2)=\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(2 \cdot 1)(2 \cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\
+&amp; p(3)=\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(3 \cdot 2 \cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\
+&amp; p(4)=\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(4 \cdot 3 \cdot 2 \cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001
+\end{aligned}
+\end{align*}\]</span></p>
+<p>Based on the above result, what is <span class="math inline">\(P(X&lt;3), P(X \geq 2), P(1 \leq X&lt;3)\)</span>?</p>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+
+<img data-src="Day9_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+<section id="observations-on-binomial-distributions" class="slide level2 font80">
+<h2>Observations on Binomial Distributions</h2>
+<div class="cle3">
+<div class="font80">
+<ol type="1">
+<li><strong>Unimodal Distribution</strong>:
+<ul>
+<li>Regardless of the value of <span class="math inline">\(p\)</span>, the distribution exhibits a single peak.</li>
+</ul></li>
+<li><strong>Skewness Based on ( p )</strong>:
+<ul>
+<li><strong>Right Skew</strong> (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.</li>
+<li><strong>Symmetry</strong> (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.</li>
+<li><strong>Left Skew</strong> (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+
+<img data-src="Day9_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><div class="green-h">
+<p>As <span class="math inline">\(n\)</span> increases, the binomial distribution approximates a bell-shaped curve.</p>
+</div>
+</section>
+<section id="statistics-of-binomial-distribution" class="slide level2">
+<h2>Statistics of Binomial Distribution</h2>
+<div class="cle3">
+<div class="font70">
+<div class="row">
+<div class="left">
+<p><strong>Statistical Properties</strong>:</p>
+<ul>
+<li><strong>Mean (<span class="math inline">\(\mu\)</span>):</strong> <span class="math inline">\(\mu = np\)</span></li>
+<li><strong>Variance (<span class="math inline">\(\sigma^2\)</span>):</strong> <span class="math inline">\(\sigma^2 = np(1-p)\)</span></li>
+<li><strong>Standard Deviation (<span class="math inline">\(\sigma\)</span>):</strong> <span class="math inline">\(\sigma = \sqrt{np(1-p)}\)</span></li>
+</ul>
+</div>
+<div class="right">
+<p><strong>Insights</strong>:</p>
+<ul>
+<li>The mean indicates the expected number of successes.</li>
+<li>Variance and standard deviation provide insight into the spread of the distribution around the mean.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="font60">
+<blockquote>
+<p>Example 4: What is the mean, variance, and standard deviation of <span class="math inline">\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\)</span>?</p>
+</blockquote>
+</div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
+</section>
     </div>
   </div>
 

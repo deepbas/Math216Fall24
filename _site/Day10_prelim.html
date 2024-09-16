@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 2</title>
+  <title>Math 216: Statistical Thinking – Day 10</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 2</h1>
+  <h1 class="title">Day 10</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,353 +340,115 @@ Bastola
 </div>
 
 </section>
-<section id="data-units-and-variables" class="slide level2 centered-content">
-<h2>Data: Units and Variables</h2>
-<div class="bqt">
-<p><strong>Experimental (or Observational) Unit</strong></p>
-<p>An experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.</p>
+<section id="introduction-to-poisson-random-variables" class="slide level2 font90">
+<h2>Introduction to Poisson Random Variables</h2>
+<p><br> <br></p>
+<div title="Definition">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p><br></p>
-<div class="bqt">
-<p>Data is stored and presented in a dataset that comprises of variables measured on units</p>
-<ul>
-<li>A <strong>variable</strong> is any characteristic that is recorded for each unit</li>
-</ul>
+<p><strong>Definition</strong></p>
+</div>
+<div class="callout-content">
+<p>A <strong>Poisson Random Variable</strong> is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter <span class="math inline">\(\lambda\)</span> (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="gpa_iq-dataset" class="centered-content">
-<h3><code>Gpa_IQ</code> dataset</h3>
-<div class="scrollable">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gpa</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">iq</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gender</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">concept</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7.940</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8.292</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4.643</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">52</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">7.470</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">66</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8.882</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">58</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7.585</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">51</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
-</div>
-<p>Each row = unit &amp; Each column = variable</p>
-</section>
-<section id="qualitative-versus-quantitative" class="slide level2 centered-content">
-<h2>Qualitative Versus Quantitative</h2>
-<blockquote>
-<p>Variables are classified as either <strong>qualitative</strong> or <strong>quantitative:</strong></p>
-</blockquote>
+<section id="introduction-to-poisson-random-variables-1" class="slide level2 font80">
+<h2>Introduction to Poisson Random Variables</h2>
 <p><br></p>
 <div class="cle2">
 <ul>
-<li>A <strong>qualitative variable</strong> divides the cases into groups. e.g.&nbsp;gender, country, state etc.</li>
-<li>A <strong>quantitative variable</strong> measures a numerical quantity for each case, e.g.&nbsp;age, height, sleep hours, blood pressure etc</li>
+<li><strong>Discrete Outcomes</strong>: Counts of events (0, 1, 2, …).</li>
+<li><strong>Rate of Occurrence</strong>: Governed by <span class="math inline">\(\lambda\)</span>, which is both the mean and the variance of the distribution.</li>
+<li><strong>Independence</strong>: The occurrence of one event does not affect the probability of another event occurring in the same interval.</li>
 </ul>
 </div>
 </section>
-<section id="kidney-cancer" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>Counties with the highest kidney cancer rates</p>
-</blockquote>
-<center>
-<img src="images/kidneycancermap.png" width="65%" height="65%"><br> <a>Source: Gelman et. al.&nbsp;Bayesian Data Anaylsis, CRC Press, 2004</a>
-</center>
-</section>
-<section id="kidney-cancer-1" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are people, then the measured variable is qualitative</p>
-</blockquote>
-<div class="green-h">
-<p>We categorize each person as either having kidney cancer or not which is qualitative.</p>
-</div>
-</section>
-<section id="kidney-cancer-2" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative</p>
-</blockquote>
-<div class="green-h">
-<p>Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative).</p>
-</div>
-</section>
-<section id="variable-manipulations" class="slide level2 centered-content">
-<h2>Variable manipulations</h2>
-<div class="bq">
-<p>Can use numbers to code categories of qualitative variable</p>
+<section id="probability-distribution-mean-and-variance-of-poisson-random-variables" class="slide level2 font70">
+<h2>Probability Distribution, Mean, and Variance of Poisson Random Variables</h2>
+<div class="cle2">
 <ul>
-<li>e.g.&nbsp;Gender (1 for male and 2 for female)</li>
+<li><strong>Formula for Probability</strong>:</li>
 </ul>
-</div>
-<p><br> <br></p>
-<div class="bq">
-<p>Can convert quantitative variable into qualitative groups</p>
+<p><span class="math display">\[\begin{align*}
+p(x)&amp;=\frac{\lambda^x e^{-\lambda}}{x!}\quad(x=0,1,2,\ldots)
+\end{align*}\]</span></p>
 <ul>
-<li>e.g.&nbsp;Income (0-50000 as Low, 50000+ as High)</li>
-</ul>
-</div>
-</section>
-<section id="sampling-and-inference" class="slide level2 centered-content">
-<h2>Sampling and Inference</h2>
-<div class="cle4">
+<li><strong>Mean and Variance</strong>:
 <ul>
-<li>A <strong>population</strong> includes all individuals or objects of interest.</li>
-<li>A <strong>sample</strong> is all the cases that we have collected data on (a subset of the population).</li>
-<li><strong>Statistical inference</strong> is the process of using data from a sample to gain information about the population.</li>
-</ul>
-</div>
-</section>
-<section id="sampling-and-inference-source" class="slide level2 centered-content">
-<h2>Sampling and Inference (<a href="https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&amp;context=vimsarticles">Source</a>)</h2>
-<div style="text-align: center;">
-<p><img data-src="images/bluecrab.png" style="width:70.0%;height:60.0%"></p>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Population</strong></p>
-<ul>
-<li>All blue crabs in the Maryland Coastal Bays (MCB)</li>
-<li>Includes sub-estuaries: Assawoman Bay, St.&nbsp;Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay</li>
-</ul>
-<p><strong>Sample</strong></p>
-<ul>
-<li>Blue crabs collected from 20 sites within MCB</li>
-<li>Sample period: April - December, 2014-2016</li>
-<li>Method: Trawl surveys</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Variables</strong></p>
-<ul>
-<li><strong>Primary Variable</strong>: Carapace width, sex, maturity status, molt stage</li>
-</ul>
-<p><strong>Inference</strong></p>
-<ul>
-<li>Population structure of blue crabs in MCB</li>
-<li>Seasonal variations: size distribution, molt cycles, reproductive patterns</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="sampling-bias" class="title-slide slide level1 centered-content center">
-<h1>Sampling Bias</h1>
-<div class="bq">
-<ul>
-<li><p>Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way</p></li>
-<li><p>If sampling bias exists, we cannot trust generalizations from the sample to the population</p></li>
-</ul>
-</div>
-<p>To eliminate sampling bias always take a <span class="bold-text">RANDOM SAMPLE!</span></p>
-</section>
-
-<section id="bias-in-data" class="title-slide slide level1 middle-align-xy center">
-<h1>Bias in data</h1>
-<blockquote>
-<p>Even with a random sample, data can still be biased, especially when collected on humans</p>
-</blockquote>
-<div class="lqt">
-<p>Some forms of bias to watch out for in data collection:</p>
-<ul>
-<li>Question wording</li>
-<li>Question order</li>
-<li>Context</li>
-<li>Non-response Bias</li>
-</ul>
-</div>
-</section>
-
-<section id="question-wording" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”</p>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>60%</td>
-<td>40%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-wording-1" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”</p>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>22%</td>
-<td>78%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-order" class="slide level2 centered-content">
-<h2>Question order</h2>
-<p><br></p>
-<div class="bq">
-<ul>
-<li>Depending on the order of questions we can see either a greater differences in responses or lesser difference in response.</li>
-<li>Respondents tend to provide answers consistent with their prior responses.</li>
-</ul>
-</div>
-</section>
-<section id="swedish-study-response-bias" class="slide level2 centered-content">
-<h2><a href="https://link.springer.com/article/10.1007/s11109-020-09630-5">Swedish Study</a>: Response bias</h2>
-<center>
-<img src="images/swedish_study.png" width="70%" height="50%"> <br>
-</center>
-</section>
-<section id="identified-sources-of-bias-in-swedish-study" class="slide level2 centered-content">
-<h2>Identified Sources of Bias in <code>Swedish Study</code></h2>
-<div class="bqt">
-<p><code>Political Bias:</code> The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.</p>
-</div>
-<p><br></p>
-<div class="bqt">
-<p><code>Sensitivity Bias:</code> Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.</p>
-</div>
-</section>
-<section id="context" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p><strong>Ann Landers</strong> column asked readers <em>“If you had it to do over again, would you have children?”</em></p>
-<p>The first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids</p>
-<p><span class="math display">\[30\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="context-1" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p>The second request for data was in response to this number, in which Ann wrote how she was <em>“stunned, disturbed, and just plain flummoxed”</em></p>
-<p><span class="math display">\[95\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="non-response-bias" class="slide level2 centered-content">
-<h2>Non-response Bias</h2>
-<blockquote>
-<p>When respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias</p>
-</blockquote>
-<div class="bq">
-<ul>
-<li>Survey targeted to the wrong audience</li>
-<li>There is general unwillingness due to polar opposite opinions</li>
-<li>The survey did not reach the right respondent
-<ul>
-<li>e.g.&nbsp;A survey asking teenagers about best cigarette brands.</li>
+<li><strong>Mean (<span class="math inline">\(\mu\)</span>)</strong>: <span class="math inline">\(\mu=\lambda\)</span></li>
+<li><strong>Variance (<span class="math inline">\(\sigma^2\)</span>)</strong>: <span class="math inline">\(\sigma^2=\lambda\)</span></li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="experiment-vs-observational-study" class="centered-content">
-<h3>Experiment Vs Observational Study</h3>
-<div class="lqt">
-<p>An <span class="bold-text">observational study</span> is a study in which the researcher does not actively control the value of any variable, but simply observes the values as they naturally exist</p>
-</div>
-<p><br></p>
-<div class="lqt">
-<p>An <span class="bold-text">experiment</span> is a study in which the researcher actively controls one or more of the explanatory variables</p>
-</div>
-</section>
-<section id="experiment-or-observational-study" class="slide level2 centered-content">
-<h2>Experiment or Observational Study?</h2>
-<div class="bq">
-<p>To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.</p>
-</div>
+<section id="example-1-traffic-monitoring" class="slide level2">
+<h2>Example 1: Traffic Monitoring</h2>
+<div class="cle5">
+<div class="font80">
+<ul>
+<li><strong>Scenario</strong>: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.</li>
+<li><strong>Question</strong>: What is the probability of observing exactly 5 accidents in one month?</li>
+</ul>
 <details>
-<summary class="answer">
-<p>Click for answer</p>
+<summary>
+<strong>Solution</strong>:
 </summary>
-<p>This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.</p>
+Using <span class="math inline">\(\lambda=3\)</span>, <span class="math display">\[p(5)=\frac{3^5 e^{-3}}{5!}\approx0.1008\]</span>
 </details>
-</section>
-<section id="conclusion-statistical-thinking" class="slide level2 middle-align-xy">
-<h2>Conclusion: Statistical Thinking!</h2>
-<div class="green-h">
-<p><strong>Statistical thinking</strong> involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.</p>
+</div>
 </div>
 </section>
+<section id="example-2-quality-control-in-manufacturing" class="slide level2 font80">
+<h2>Example 2: Quality Control in Manufacturing</h2>
+<div class="cle5">
+<ul>
+<li><strong>Scenario</strong>: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.</li>
+<li><strong>Question</strong>: What is the probability of finding no defects on a newly inspected vehicle?</li>
+</ul>
+<details>
+<summary>
+<strong>Solution</strong>:
+</summary>
+Using <span class="math inline">\(\lambda=2\)</span>, <span class="math display">\[p(0)=\frac{2^0 e^{-2}}{0!}=e^{-2}\approx0.1353\]</span>
+</details>
+</div>
+</section>
+<section id="example-3-ecological-research" class="slide level2">
+<h2>Example 3: Ecological Research</h2>
+<div class="hljs">
+<div class="font80">
+<p><strong>Scenario</strong>: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.</p>
+<p><strong>a.</strong> Find the mean and standard deviation.</p>
+<p><br> <br></p>
+<p><strong>b.</strong> Probability of exactly five sightings:</p>
+<p><br> <br></p>
+<p><strong>c.</strong> Probability of fewer than two sightings:</p>
+<p><br></p>
+</div>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
+</section>
     </div>
   </div>
 
