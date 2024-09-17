@@ -301,81 +301,46 @@
     "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
   },
   {
-    "objectID": "Day10_prelim.html#random-variables-rvs",
-    "href": "Day10_prelim.html#random-variables-rvs",
-    "title": "Day 8",
-    "section": "Random Variables (RVs)",
-    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
-  },
-  {
-    "objectID": "Day10_prelim.html#discrete-rvs",
-    "href": "Day10_prelim.html#discrete-rvs",
-    "title": "Day 8",
-    "section": "Discrete RVs",
-    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
-  },
-  {
-    "objectID": "Day10_prelim.html#continuous-rvs",
-    "href": "Day10_prelim.html#continuous-rvs",
-    "title": "Day 8",
-    "section": "Continuous RVs",
-    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
-  },
-  {
-    "objectID": "Day10_prelim.html#probability-distributions-for-discrete-rvs",
-    "href": "Day10_prelim.html#probability-distributions-for-discrete-rvs",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete RVs",
-    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
-  },
-  {
-    "objectID": "Day10_prelim.html#section",
-    "href": "Day10_prelim.html#section",
+    "objectID": "Day10_prelim.html#introduction-to-poisson-random-variables",
+    "href": "Day10_prelim.html#introduction-to-poisson-random-variables",
     "title": "Day 10",
-    "section": "",
-    "text": "Definition"
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n \n\n\n\n\n\n\n\nDefinition\n\n\nA Poisson Random Variable is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter \\(\\lambda\\) (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area."
   },
   {
-    "objectID": "Day10_prelim.html#key-requirements-for-discrete-probability-distributions",
-    "href": "Day10_prelim.html#key-requirements-for-discrete-probability-distributions",
-    "title": "Day 8",
-    "section": "Key Requirements for Discrete Probability Distributions",
-    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
+    "objectID": "Day10_prelim.html#introduction-to-poisson-random-variables-1",
+    "href": "Day10_prelim.html#introduction-to-poisson-random-variables-1",
+    "title": "Day 10",
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n\n\n\nDiscrete Outcomes: Counts of events (0, 1, 2, …).\nRate of Occurrence: Governed by \\(\\lambda\\), which is both the mean and the variance of the distribution.\nIndependence: The occurrence of one event does not affect the probability of another event occurring in the same interval."
   },
   {
-    "objectID": "Day10_prelim.html#section-1",
-    "href": "Day10_prelim.html#section-1",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\)\nFind \\(P(X&gt;-1)\\)\nFind \\(P(-1 \\leq X&lt;1)\\)\nFind \\(P(-1 \\leq X \\leq 1)\\)"
+    "objectID": "Day10_prelim.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "href": "Day10_prelim.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "title": "Day 10",
+    "section": "Probability Distribution, Mean, and Variance of Poisson Random Variables",
+    "text": "Probability Distribution, Mean, and Variance of Poisson Random Variables\n\n\nFormula for Probability:\n\n\\[\\begin{align*}\np(x)&=\\frac{\\lambda^x e^{-\\lambda}}{x!}\\quad(x=0,1,2,\\ldots)\n\\end{align*}\\]\n\nMean and Variance:\n\nMean (\\(\\mu\\)): \\(\\mu=\\lambda\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2=\\lambda\\)"
   },
   {
-    "objectID": "Day10_prelim.html#section-2",
-    "href": "Day10_prelim.html#section-2",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
+    "objectID": "Day10_prelim.html#example-1-traffic-monitoring",
+    "href": "Day10_prelim.html#example-1-traffic-monitoring",
+    "title": "Day 10",
+    "section": "Example 1: Traffic Monitoring",
+    "text": "Example 1: Traffic Monitoring\n\n\n\nScenario: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.\nQuestion: What is the probability of observing exactly 5 accidents in one month?\n\n\n\nSolution:\n\nUsing \\(\\lambda=3\\), \\[p(5)=\\frac{3^5 e^{-3}}{5!}\\approx0.1008\\]"
   },
   {
-    "objectID": "Day10_prelim.html#expected-value-mean-of-discrete-random-variables",
-    "href": "Day10_prelim.html#expected-value-mean-of-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Expected Value: Mean of Discrete Random Variables",
-    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
+    "objectID": "Day10_prelim.html#example-2-quality-control-in-manufacturing",
+    "href": "Day10_prelim.html#example-2-quality-control-in-manufacturing",
+    "title": "Day 10",
+    "section": "Example 2: Quality Control in Manufacturing",
+    "text": "Example 2: Quality Control in Manufacturing\n\n\nScenario: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.\nQuestion: What is the probability of finding no defects on a newly inspected vehicle?\n\n\n\nSolution:\n\nUsing \\(\\lambda=2\\), \\[p(0)=\\frac{2^0 e^{-2}}{0!}=e^{-2}\\approx0.1353\\]"
   },
   {
-    "objectID": "Day10_prelim.html#section-3",
-    "href": "Day10_prelim.html#section-3",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
-  },
-  {
-    "objectID": "Day10_prelim.html#variance-and-standard-deviation",
-    "href": "Day10_prelim.html#variance-and-standard-deviation",
-    "title": "Day 8",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+    "objectID": "Day10_prelim.html#example-3-ecological-research",
+    "href": "Day10_prelim.html#example-3-ecological-research",
+    "title": "Day 10",
+    "section": "Example 3: Ecological Research",
+    "text": "Example 3: Ecological Research\n\n\nScenario: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.\na. Find the mean and standard deviation.\n \nb. Probability of exactly five sightings:\n \nc. Probability of fewer than two sightings:"
   },
   {
     "objectID": "Day7.html#the-multiplicative-rule",
@@ -992,54 +957,5 @@
     "title": "Day 1",
     "section": " Group Activity 1",
     "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
-  },
-  {
-    "objectID": "Day10_prelim.html#introduction-to-poisson-random-variables",
-    "href": "Day10_prelim.html#introduction-to-poisson-random-variables",
-    "title": "Day 10",
-    "section": "Introduction to Poisson Random Variables",
-    "text": "Introduction to Poisson Random Variables\n \n\n\n\n\n\n\n\nDefinition\n\n\nA Poisson Random Variable is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter \\(\\lambda\\) (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area."
-  },
-  {
-    "objectID": "Day10_prelim.html#characteristics-of-poisson-random-variables",
-    "href": "Day10_prelim.html#characteristics-of-poisson-random-variables",
-    "title": "Day 10",
-    "section": "Characteristics of Poisson Random Variables",
-    "text": "Characteristics of Poisson Random Variables\n\n\nEvents are Rare: Counts rare events in a specific interval.\nConsistent Rate: The rate (\\(\\lambda\\)) of occurrences is constant across intervals.\nIndependent Events: The occurrence of events in one interval is independent of another."
-  },
-  {
-    "objectID": "Day10_prelim.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
-    "href": "Day10_prelim.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
-    "title": "Day 10",
-    "section": "Probability Distribution, Mean, and Variance of Poisson Random Variables",
-    "text": "Probability Distribution, Mean, and Variance of Poisson Random Variables\n\n\nFormula for Probability:\n\n\\[\\begin{align*}\np(x)&=\\frac{\\lambda^x e^{-\\lambda}}{x!}\\quad(x=0,1,2,\\ldots)\n\\end{align*}\\]\n\nMean and Variance:\n\nMean (\\(\\mu\\)): \\(\\mu=\\lambda\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2=\\lambda\\)"
-  },
-  {
-    "objectID": "Day10_prelim.html#example-1-traffic-monitoring",
-    "href": "Day10_prelim.html#example-1-traffic-monitoring",
-    "title": "Day 10",
-    "section": "Example 1: Traffic Monitoring",
-    "text": "Example 1: Traffic Monitoring\n\n\n\nScenario: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.\nQuestion: What is the probability of observing exactly 5 accidents in one month?\n\n\n\nSolution:\n\nUsing \\(\\lambda=3\\), \\[p(5)=\\frac{3^5 e^{-3}}{5!}\\approx0.1008\\]"
-  },
-  {
-    "objectID": "Day10_prelim.html#example-2-quality-control-in-manufacturing",
-    "href": "Day10_prelim.html#example-2-quality-control-in-manufacturing",
-    "title": "Day 10",
-    "section": "Example 2: Quality Control in Manufacturing",
-    "text": "Example 2: Quality Control in Manufacturing\n\n\nScenario: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.\nQuestion: What is the probability of finding no defects on a newly inspected vehicle?\n\n\n\nSolution:\n\nUsing \\(\\lambda=2\\), \\[p(0)=\\frac{2^0 e^{-2}}{0!}=e^{-2}\\approx0.1353\\]"
-  },
-  {
-    "objectID": "Day10_prelim.html#example-3-ecological-research",
-    "href": "Day10_prelim.html#example-3-ecological-research",
-    "title": "Day 10",
-    "section": "Example 3: Ecological Research",
-    "text": "Example 3: Ecological Research\n\n\nScenario: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.\na. Find the mean and standard deviation.\n \nb. Probability of exactly five sightings:\n \nc. Probability of fewer than two sightings:"
-  },
-  {
-    "objectID": "Day10_prelim.html#introduction-to-poisson-random-variables-1",
-    "href": "Day10_prelim.html#introduction-to-poisson-random-variables-1",
-    "title": "Day 10",
-    "section": "Introduction to Poisson Random Variables",
-    "text": "Introduction to Poisson Random Variables\n\n\n\nDiscrete Outcomes: Counts of events (0, 1, 2, …).\nRate of Occurrence: Governed by \\(\\lambda\\), which is both the mean and the variance of the distribution.\nIndependence: The occurrence of one event does not affect the probability of another event occurring in the same interval."
   }
 ]
