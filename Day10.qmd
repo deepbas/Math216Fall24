@@ -45,6 +45,8 @@ yt <- 0
 ```
 
 
+
+
 ## Introduction to Poisson Random Variables {.font90}
 
 <br>
@@ -89,6 +91,13 @@ p(x)&=\frac{\lambda^x e^{-\lambda}}{x!}\quad(x=0,1,2,\ldots)
 
 
 :::
+
+##
+
+```{=html}
+<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s" title="Webpage example"></iframe>
+```
+
 
 
 ## Example 1: Traffic Monitoring
@@ -152,15 +161,42 @@ Using $\lambda=2$,
 :::
 
 
+
+## Poisson Distribution Functions in R {.font60}
+
+::: cle11
+
+The `dpois` function calculates the probability mass function of the Poisson distribution, useful for finding \(P(X = x)\).
+
+- **Syntax**: `dpois(x, lambda)`
+- **Example**: Calculate $P(X = 3)$ for $\lambda = 2.2$
+
+```{r dpois_example}
+probability_exactly_3 <- dpois(3, lambda = 2.2)
+probability_exactly_3
+```
+
+
+The `ppois` function computes the cumulative probability $P(X \leq x)$ of the Poisson distribution.
+
+- **Syntax**: `ppois(q, lambda)`
+- **Example**: Calculate $P(X \leq 3)$ for $\lambda=2.2$
+
+```{r}
+probability_up_to_3 <- ppois(3, lambda = 2.2)
+probability_up_to_3
+```
+
+:::
+
+
 ##
 
 
 
-
 ##
 
 
 
 ##
-
 

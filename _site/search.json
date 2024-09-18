@@ -957,5 +957,54 @@
     "title": "Day 1",
     "section": " Group Activity 1",
     "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
+  },
+  {
+    "objectID": "Day10.html#introduction-to-poisson-random-variables",
+    "href": "Day10.html#introduction-to-poisson-random-variables",
+    "title": "Day 10",
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n \n\n\n\n\n\n\n\nDefinition\n\n\nA Poisson Random Variable is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter \\(\\lambda\\) (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area."
+  },
+  {
+    "objectID": "Day10.html#introduction-to-poisson-random-variables-1",
+    "href": "Day10.html#introduction-to-poisson-random-variables-1",
+    "title": "Day 10",
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n\n\n\nDiscrete Outcomes: Counts of events (0, 1, 2, …).\nRate of Occurrence: Governed by \\(\\lambda\\), which is both the mean and the variance of the distribution.\nIndependence: The occurrence of one event does not affect the probability of another event occurring in the same interval."
+  },
+  {
+    "objectID": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "href": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "title": "Day 10",
+    "section": "Probability Distribution, Mean, and Variance of Poisson Random Variables",
+    "text": "Probability Distribution, Mean, and Variance of Poisson Random Variables\n\n\nFormula for Probability:\n\n\\[\\begin{align*}\np(x)&=\\frac{\\lambda^x e^{-\\lambda}}{x!}\\quad(x=0,1,2,\\ldots)\n\\end{align*}\\]\n\nMean and Variance:\n\nMean (\\(\\mu\\)): \\(\\mu=\\lambda\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2=\\lambda\\)"
+  },
+  {
+    "objectID": "Day10.html#example-1-traffic-monitoring",
+    "href": "Day10.html#example-1-traffic-monitoring",
+    "title": "Day 10",
+    "section": "Example 1: Traffic Monitoring",
+    "text": "Example 1: Traffic Monitoring\n\n\n\nScenario: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.\nQuestion: What is the probability of observing exactly 5 accidents in one month?\n\n\n\nSolution:\n\nUsing \\(\\lambda=3\\), \\[p(5)=\\frac{3^5 e^{-3}}{5!}\\approx0.1008\\]"
+  },
+  {
+    "objectID": "Day10.html#example-2-quality-control-in-manufacturing",
+    "href": "Day10.html#example-2-quality-control-in-manufacturing",
+    "title": "Day 10",
+    "section": "Example 2: Quality Control in Manufacturing",
+    "text": "Example 2: Quality Control in Manufacturing\n\n\nScenario: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.\nQuestion: What is the probability of finding no defects on a newly inspected vehicle?\n\n\n\nSolution:\n\nUsing \\(\\lambda=2\\), \\[p(0)=\\frac{2^0 e^{-2}}{0!}=e^{-2}\\approx0.1353\\]"
+  },
+  {
+    "objectID": "Day10.html#example-3-ecological-research",
+    "href": "Day10.html#example-3-ecological-research",
+    "title": "Day 10",
+    "section": "Example 3: Ecological Research",
+    "text": "Example 3: Ecological Research\n\n\nScenario: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.\na. Find the mean and standard deviation.\n \nb. Probability of exactly five sightings:\n \nc. Probability of fewer than two sightings:"
+  },
+  {
+    "objectID": "Day10.html#poisson-distribution-functions-in-r",
+    "href": "Day10.html#poisson-distribution-functions-in-r",
+    "title": "Day 10",
+    "section": "Poisson Distribution Functions in R",
+    "text": "Poisson Distribution Functions in R\n\nThe dpois function calculates the probability mass function of the Poisson distribution, useful for finding (P(X = x)).\n\nSyntax: dpois(x, lambda)\nExample: Calculate \\(P(X = 3)\\) for \\(\\lambda = 2.2\\)\n\n\nprobability_exactly_3 &lt;- dpois(3, lambda = 2.2)\nprobability_exactly_3\n\n[1] 0.1966387\n\n\nThe ppois function computes the cumulative probability \\(P(X \\leq x)\\) of the Poisson distribution.\n\nSyntax: ppois(q, lambda)\nExample: Calculate \\(P(X \\leq 3)\\) for \\(\\lambda=2.2\\)\n\n\nprobability_up_to_3 &lt;- ppois(3, lambda = 2.2)\nprobability_up_to_3\n\n[1] 0.8193524"
   }
 ]
