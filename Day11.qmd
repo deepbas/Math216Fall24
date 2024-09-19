@@ -1,0 +1,193 @@
+---
+title: "Day 11"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+
+## Introduction to Continuous Probability Distribution {.font80}
+
+
+::: cle10
+::: font80
+
+- A **continuous random variable**, $x$, can take any value within a specified range. It is graphically depicted by a smooth curve known as the **Probability Density Function (PDF)**, $f(x)$.
+
+- **Key Concepts of PDF**:
+  - **Probability of an Interval**: The area under the curve between any two points $a$ and $b$ ($a \leq x \leq b$) represents the probability of $x$ falling within that range.
+  - **Non-negativity**: $f(x)\geq0$ for all $x$.
+  - **Total Probability**: The integral of $f(x)$ across its entire range equals 1, representing the total set of outcomes for $x$.
+  - **Endpoint Consideration**: Including endpoints in an interval, like $x=a$ or $x=b$, does not change the computed probability since $P(x=a)=0$ for any particular $a$.
+
+
+:::
+:::
+
+
+
+
+
+
+
+## Properties and Visualization of Continuous Distributions {.font70}
+
+::: row
+::: left
+
+![](images/continuous_pdf.png)
+
+:::
+
+
+::: right
+
+::: font80
+::: cle6
+
+**Function Representation**: $f(x)$ is often referred to as a density function or frequency function.
+
+**Calculating Probabilities**: The probability that $x$ will fall between any two specific values, $a$ and $b$, is given by the area under $f(x)$ between these points.
+
+**Graphical Illustration**: The shape of the distribution varies based on the data it models, reflecting different types of continuous random variables.
+
+**Zero Probability at a Point**: A fundamental property of continuous variables: The probability of $x$ assuming any exact value, such as $a$, is zero, reinforcing that continuous variables span ranges rather than discrete points.
+:::
+
+:::
+:::
+:::
+
+
+
+## Introduction to Uniform Distribution
+
+::: {.callout-note title="Definition"}
+
+Uniform distribution, or rectangular distribution, is a type of continuous probability distribution where every outcome in a specified range is equally likely.
+
+- **Graphical Representation**: Depicted as a rectangle because the probability density function is constant within the bounds.
+- **Basic Formula**: The probability density function (PDF) is $f(x) = \frac{1}{b-a}$ for $x$ within the interval $[a, b]$.
+
+:::
+
+
+
+## Visualizing and Calculating Probabilities {.font80}
+
+::: row
+::: left
+
+![](images/uniform_pdf.png)
+
+:::
+
+
+::: right
+
+
+::: cle11
+::: font90
+
+- **Area Calculation**: Probabilities are calculated as the area under the PDF curve, simplifying to the width of the interval times the height of the PDF.
+- **Example**: For an interval $[a, b]$, the probability that $x$ falls within $[c, d]$ (where $c$ and $d$ are within $a$ and $b$) is $(d-c) \times \frac{1}{b-a}$.
+
+:::
+:::
+
+:::
+:::
+
+## Statistical Measures
+
+<br>
+
+::: font80
+::: cle13
+
+- **Mean and Median**: The mean, $\mu$, and median of a uniform distribution are the same, given by $\mu = \frac{c+d}{2}$.
+- **Variance**: The variance, $\sigma^2$, is calculated as $\sigma = \frac{(d-c)^2}{12}$.
+
+:::
+:::
+
+## Real-World Applications
+
+<br>
+
+::: font80
+::: cle15
+
+- **Uniformity**: Ideal for modelling scenarios where each outcome within a range is equally likely, such as random draws from a finite set or simulation inputs.
+- **Examples**: Used in simulations, randomized algorithms, and systems modeling where equal likelihood is assumed for inputs or scenarios within a certain range.
+
+:::
+:::
+
+
+
+## 
+
+::: font60
+
+> Example 1: Example 1 An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let $x$ represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.
+
+a. Calculate and interpret the mean and standard deviation of $X$.
+
+:::
+
+##
+
+::: font60
+
+b. Graph the probability distribution of $X$ , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.
+
+::: custom-space
+:::
+
+c. Calculate the probability that the breakdown occurs while the car is still under warranty.
+
+:::
+

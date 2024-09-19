@@ -91,6 +91,11 @@ html, body {
 }
 
 
+.custom-space {
+    margin-top: 200px; /* Adjust the pixel value based on the space you need */
+}
+
+
 // Responsive table, image, and overlay styles
 table, .img-stack img, .image-overlay-container, .shiny-output-panel, .shiny-plot-output {
   width: 100%;
