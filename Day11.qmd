@@ -54,7 +54,7 @@ yt <- 0
 ::: cle10
 ::: font80
 
-- A **continuous random variable**, $x$, can take any value within a specified range. It is graphically depicted by a smooth curve known as the **Probability Density Function (PDF)**, $f(x)$.
+- A **continuous random variable**, $X$, can take any value within a specified range. It is graphically depicted by a smooth curve known as the **Probability Density Function (PDF)**, $f(x)$.
 
 - **Key Concepts of PDF**:
   - **Probability of an Interval**: The area under the curve between any two points $a$ and $b$ ($a \leq x \leq b$) represents the probability of $x$ falling within that range.
@@ -132,7 +132,7 @@ Uniform distribution, or rectangular distribution, is a type of continuous proba
 ::: font90
 
 - **Area Calculation**: Probabilities are calculated as the area under the PDF curve, simplifying to the width of the interval times the height of the PDF.
-- **Example**: For an interval $[a, b]$, the probability that $x$ falls within $[c, d]$ (where $c$ and $d$ are within $a$ and $b$) is $(d-c) \times \frac{1}{b-a}$.
+- **Example**: For an interval $[c, d]$, the probability that $x$ falls within $[a, b]$ (where $a$ and $b$ are within $c$ and $d$) is $(a-b) \times \frac{1}{c-d}$.
 
 :::
 :::
