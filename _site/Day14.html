@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 2</title>
+  <title>Math 216: Statistical Thinking – Day 14</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -328,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 2</h1>
+  <h1 class="title">Day 14</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,351 +405,348 @@ Bastola
 </div>
 
 </section>
-<section id="data-units-and-variables" class="slide level2 centered-content">
-<h2>Data: Units and Variables</h2>
-<div class="bqt">
-<p><strong>Experimental (or Observational) Unit</strong></p>
-<p>An experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.</p>
-</div>
-<p><br></p>
-<div class="bqt">
-<p>Data is stored and presented in a dataset that comprises of variables measured on units</p>
-<ul>
-<li>A <strong>variable</strong> is any characteristic that is recorded for each unit</li>
-</ul>
-</div>
-</section>
-<section id="gpa_iq-dataset" class="centered-content">
-<h3><code>Gpa_IQ</code> dataset</h3>
-<div class="scrollable">
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gpa</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">iq</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gender</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">concept</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7.940</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8.292</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4.643</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">52</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">7.470</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">66</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8.882</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">58</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7.585</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">51</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
-<p>Each row = unit &amp; Each column = variable</p>
-</section>
-<section id="qualitative-versus-quantitative" class="slide level2 centered-content">
-<h2>Qualitative Versus Quantitative</h2>
-<blockquote>
-<p>Variables are classified as either <strong>qualitative</strong> or <strong>quantitative:</strong></p>
-</blockquote>
-<p><br></p>
+<section id="introduction-to-assessing-normality" class="slide level2 font80">
+<h2>Introduction to Assessing Normality</h2>
 <div class="cle2">
 <ul>
-<li>A <strong>qualitative variable</strong> divides the cases into groups. e.g.&nbsp;gender, country, state etc.</li>
-<li>A <strong>quantitative variable</strong> measures a numerical quantity for each case, e.g.&nbsp;age, height, sleep hours, blood pressure etc</li>
+<li><p><strong>Objective</strong>: Learn to determine if sample data originate from a normally distributed population, a prerequisite for many statistical analysis techniques.</p></li>
+<li><p><strong>Context</strong>: Before applying statistical methods that assume normality, it’s crucial to verify that the assumption holds for your data.</p></li>
 </ul>
 </div>
 </section>
-<section id="kidney-cancer" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>Counties with the highest kidney cancer rates</p>
-</blockquote>
-<center>
-<img src="images/kidneycancermap.png" width="65%" height="65%"><br> <a>Source: Gelman et. al.&nbsp;Bayesian Data Anaylsis, CRC Press, 2004</a>
-</center>
-</section>
-<section id="kidney-cancer-1" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are people, then the measured variable is qualitative</p>
-</blockquote>
-<div class="green-h">
-<p>We categorize each person as either having kidney cancer or not which is qualitative.</p>
-</div>
-</section>
-<section id="kidney-cancer-2" class="slide level2 centered-content">
-<h2>Kidney cancer</h2>
-<blockquote>
-<p>If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative</p>
-</blockquote>
-<div class="green-h">
-<p>Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer which are numbers (quantitative).</p>
-</div>
-</section>
-<section id="variable-manipulations" class="slide level2 centered-content">
-<h2>Variable manipulations</h2>
-<div class="bq">
-<p>Can use numbers to code categories of qualitative variable</p>
+<section id="applications-of-the-normal-distribution" class="slide level2 font80">
+<h2>Applications of the Normal Distribution</h2>
+<div class="cle10">
 <ul>
-<li>e.g.&nbsp;Gender (1 for male and 2 for female)</li>
-</ul>
-</div>
-<p><br> <br></p>
-<div class="bq">
-<p>Can convert quantitative variable into qualitative groups</p>
-<ul>
-<li>e.g.&nbsp;Income (0-50000 as Low, 50000+ as High)</li>
+<li><p><strong>Histogram and Density Plots</strong>: Begin by visualizing the distribution of your data. A histogram or density plot should reveal a bell-shaped curve, characteristic of a normal distribution. The symmetry and spread are your initial indicators.</p></li>
+<li><p><strong>Normal Q-Q Plot</strong>: This plot displays your sample data against the expected quantiles of a normal distribution. If your data points align closely with the reference line (a 45-degree angle), your data likely follow a normal distribution. Deviations from this line indicate potential skewness or the presence of outliers.</p></li>
 </ul>
 </div>
 </section>
-<section id="sampling-and-inference" class="slide level2 centered-content">
-<h2>Sampling and Inference</h2>
-<div class="cle4">
+<section id="the-empirical-rule-and-its-application" class="slide level2 font80">
+<h2>The Empirical Rule and Its Application</h2>
+<div class="cle6">
 <ul>
-<li>A <strong>population</strong> includes all individuals or objects of interest.</li>
-<li>A <strong>sample</strong> is all the cases that we have collected data on (a subset of the population).</li>
-<li><strong>Statistical inference</strong> is the process of using data from a sample to gain information about the population.</li>
-</ul>
-</div>
-</section>
-<section id="sampling-and-inference-source" class="slide level2 centered-content">
-<h2>Sampling and Inference (<a href="https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&amp;context=vimsarticles">Source</a>)</h2>
-<div style="text-align: center;">
-<p><img data-src="images/bluecrab.png" style="width:70.0%;height:60.0%"></p>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Population</strong></p>
+<li><strong>Understanding the Rule</strong>: According to the empirical rule, if the data are normal:
 <ul>
-<li>All blue crabs in the Maryland Coastal Bays (MCB)</li>
-<li>Includes sub-estuaries: Assawoman Bay, St.&nbsp;Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay</li>
-</ul>
-<p><strong>Sample</strong></p>
-<ul>
-<li>Blue crabs collected from 20 sites within MCB</li>
-<li>Sample period: April - December, 2014-2016</li>
-<li>Method: Trawl surveys</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div class="cle">
-<div class="font90">
-<p><strong>Variables</strong></p>
-<ul>
-<li><strong>Primary Variable</strong>: Carapace width, sex, maturity status, molt stage</li>
-</ul>
-<p><strong>Inference</strong></p>
-<ul>
-<li>Population structure of blue crabs in MCB</li>
-<li>Seasonal variations: size distribution, molt cycles, reproductive patterns</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="sampling-bias" class="title-slide slide level1 centered-content center">
-<h1>Sampling Bias</h1>
-<div class="bq">
-<ul>
-<li><p>Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way</p></li>
-<li><p>If sampling bias exists, we cannot trust generalizations from the sample to the population</p></li>
-</ul>
-</div>
-<p>To eliminate sampling bias always take a <span class="bold-text">RANDOM SAMPLE!</span></p>
-</section>
-
-<section id="bias-in-data" class="title-slide slide level1 middle-align-xy center">
-<h1>Bias in data</h1>
-<blockquote>
-<p>Even with a random sample, data can still be biased, especially when collected on humans</p>
-</blockquote>
-<div class="lqt">
-<p>Some forms of bias to watch out for in data collection:</p>
-<ul>
-<li>Question wording</li>
-<li>Question order</li>
-<li>Context</li>
-<li>Non-response Bias</li>
-</ul>
-</div>
-</section>
-
-<section id="question-wording" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”</p>
-</div>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>60%</td>
-<td>40%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-wording-1" class="centered-content">
-<h3>Question wording</h3>
-<div class="green-h">
-<p>A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”</p>
-</div>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Tax Cut</th>
-<th>Programs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>22%</td>
-<td>78%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="question-order" class="slide level2 centered-content">
-<h2>Question order</h2>
-<p><br></p>
-<div class="bq">
-<ul>
-<li>Depending on the order of questions we can see either a greater differences in responses or lesser difference in response.</li>
-<li>Respondents tend to provide answers consistent with their prior responses.</li>
-</ul>
-</div>
-</section>
-<section id="swedish-study-response-bias" class="slide level2 centered-content">
-<h2><a href="https://link.springer.com/article/10.1007/s11109-020-09630-5">Swedish Study</a>: Response bias</h2>
-<center>
-<img src="images/swedish_study.png" width="70%" height="50%"> <br>
-</center>
-</section>
-<section id="identified-sources-of-bias-in-swedish-study" class="slide level2 centered-content">
-<h2>Identified Sources of Bias in <code>Swedish Study</code></h2>
-<div class="bqt">
-<p><code>Political Bias:</code> The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.</p>
-</div>
-<p><br></p>
-<div class="bqt">
-<p><code>Sensitivity Bias:</code> Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.</p>
-</div>
-</section>
-<section id="context" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p><strong>Ann Landers</strong> column asked readers <em>“If you had it to do over again, would you have children?”</em></p>
-<p>The first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids</p>
-<p><span class="math display">\[30\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="context-1" class="slide level2 centered-content">
-<h2>Context</h2>
-<div class="green-h">
-<p>The second request for data was in response to this number, in which Ann wrote how she was <em>“stunned, disturbed, and just plain flummoxed”</em></p>
-<p><span class="math display">\[95\% \text{ said yes}\]</span></p>
-</div>
-</section>
-<section id="non-response-bias" class="slide level2 centered-content">
-<h2>Non-response Bias</h2>
-<blockquote>
-<p>When respondents are either unable or unwilling to respond to your survey, then this results in a non-response bias</p>
-</blockquote>
-<div class="bq">
-<ul>
-<li>Survey targeted to the wrong audience</li>
-<li>There is general unwillingness due to polar opposite opinions</li>
-<li>The survey did not reach the right respondent
-<ul>
-<li>e.g.&nbsp;A survey asking teenagers about best cigarette brands.</li>
+<li>Approximately 68% of data should fall within one standard deviation (±1σ) of the mean.</li>
+<li>About 95% fall within two standard deviations (±2σ).</li>
+<li>Nearly 99.7% should lie within three standard deviations (±3σ).</li>
 </ul></li>
+<li><strong>Application</strong>: Calculate these intervals for your data and check the percentages. Close alignment with these percentages supports the assumption of normality.</li>
 </ul>
 </div>
 </section>
-<section id="experiment-vs-observational-study" class="centered-content">
-<h3>Experiment Vs Observational Study</h3>
-<div class="lqt">
-<p>An <span class="bold-text">observational study</span> is a study in which the researcher does not actively control the value of any variable, but simply observes the values as they naturally exist</p>
+<section id="iqr-to-standard-deviation-ratio" class="slide level2 font80">
+<h2>IQR to Standard Deviation Ratio</h2>
+<div class="cle8">
+<p><strong>Rationale</strong>: The ratio of the Interquartile Range (IQR) to the standard deviation (s) is another metric used to assess normality. For normally distributed data, this ratio should be approximately 1.3.</p>
+<p><strong>Method</strong>: Calculate the IQR (the range between the 25th and 75th percentiles) and the standard deviation of your sample. Compare their ratio to 1.3 to gain another perspective on your data’s normality.</p>
 </div>
+</section>
+<section id="statistical-tests-for-normality" class="slide level2 font80">
+<h2>Statistical Tests for Normality</h2>
+<div class="cle13">
+<p><strong>Shapiro-Wilk Test</strong>: This test is particularly effective for smaller data sets. It assesses whether the data’s arrangement is likely to be derived from a normal distribution.</p>
+<p><strong>Kolmogorov-Smirnov Test</strong>: Useful for comparing your sample with a specified normal distribution. This test checks the largest difference between the empirical and the theoretical cumulative distribution functions.</p>
+</div>
+</section>
+<section id="case-study-epa-ratings" class="slide level2 font80">
+<h2>Case Study: EPA ratings</h2>
 <p><br></p>
-<div class="lqt">
-<p>An <span class="bold-text">experiment</span> is a study in which the researcher actively controls one or more of the explanatory variables</p>
+<blockquote>
+<p>The dataset consists of EPA gas mileage ratings for 100 cars. Each value represents the miles per gallon (MPG) that a particular car achieves under standardized testing conditions. This dataset can help understand how statistical methods are applied in real-world scenarios like assessing the fuel efficiency of vehicles.</p>
+</blockquote>
+</section>
+<section id="section" class="slide level2 font60">
+<h2></h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Data</a></li><li><a href="#tabset-1-2">R code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p>EPA Gas Mileage Ratings for 100 Cars (miles per gallon)</p>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">col1</th>
+<th style="text-align: left;">col2</th>
+<th style="text-align: left;">col3</th>
+<th style="text-align: left;">col4</th>
+<th style="text-align: left;">col5</th>
+<th style="text-align: left;">col6</th>
+<th style="text-align: left;">col7</th>
+<th style="text-align: left;">col8</th>
+<th style="text-align: left;">col9</th>
+<th style="text-align: left;">col10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">36.3</td>
+<td style="text-align: left;">41.0</td>
+<td style="text-align: left;">36.9</td>
+<td style="text-align: left;">37.1</td>
+<td style="text-align: left;">44.9</td>
+<td style="text-align: left;">36.8</td>
+<td style="text-align: left;">30.0</td>
+<td style="text-align: left;">37.2</td>
+<td style="text-align: left;">42.1</td>
+<td style="text-align: left;">36.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">32.7</td>
+<td style="text-align: left;">37.3</td>
+<td style="text-align: left;">41.2</td>
+<td style="text-align: left;">36.6</td>
+<td style="text-align: left;">32.9</td>
+<td style="text-align: left;">36.5</td>
+<td style="text-align: left;">33.2</td>
+<td style="text-align: left;">37.4</td>
+<td style="text-align: left;">37.5</td>
+<td style="text-align: left;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.5</td>
+<td style="text-align: left;">36.5</td>
+<td style="text-align: left;">37.6</td>
+<td style="text-align: left;">33.9</td>
+<td style="text-align: left;">40.2</td>
+<td style="text-align: left;">36.4</td>
+<td style="text-align: left;">37.7</td>
+<td style="text-align: left;">37.7</td>
+<td style="text-align: left;">40.0</td>
+<td style="text-align: left;">34.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.2</td>
+<td style="text-align: left;">37.9</td>
+<td style="text-align: left;">36.0</td>
+<td style="text-align: left;">37.9</td>
+<td style="text-align: left;">35.9</td>
+<td style="text-align: left;">38.2</td>
+<td style="text-align: left;">38.3</td>
+<td style="text-align: left;">35.7</td>
+<td style="text-align: left;">35.6</td>
+<td style="text-align: left;">35.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.5</td>
+<td style="text-align: left;">39.0</td>
+<td style="text-align: left;">35.5</td>
+<td style="text-align: left;">34.8</td>
+<td style="text-align: left;">38.6</td>
+<td style="text-align: left;">39.4</td>
+<td style="text-align: left;">35.3</td>
+<td style="text-align: left;">34.4</td>
+<td style="text-align: left;">38.8</td>
+<td style="text-align: left;">39.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.3</td>
+<td style="text-align: left;">36.8</td>
+<td style="text-align: left;">32.5</td>
+<td style="text-align: left;">36.4</td>
+<td style="text-align: left;">40.5</td>
+<td style="text-align: left;">36.6</td>
+<td style="text-align: left;">36.1</td>
+<td style="text-align: left;">38.2</td>
+<td style="text-align: left;">38.4</td>
+<td style="text-align: left;">39.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.0</td>
+<td style="text-align: left;">31.8</td>
+<td style="text-align: left;">37.3</td>
+<td style="text-align: left;">33.1</td>
+<td style="text-align: left;">37.0</td>
+<td style="text-align: left;">37.6</td>
+<td style="text-align: left;">37.0</td>
+<td style="text-align: left;">38.7</td>
+<td style="text-align: left;">39.0</td>
+<td style="text-align: left;">35.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.0</td>
+<td style="text-align: left;">37.2</td>
+<td style="text-align: left;">40.7</td>
+<td style="text-align: left;">37.4</td>
+<td style="text-align: left;">37.1</td>
+<td style="text-align: left;">37.8</td>
+<td style="text-align: left;">35.9</td>
+<td style="text-align: left;">35.6</td>
+<td style="text-align: left;">36.7</td>
+<td style="text-align: left;">34.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.1</td>
+<td style="text-align: left;">40.3</td>
+<td style="text-align: left;">36.7</td>
+<td style="text-align: left;">37.0</td>
+<td style="text-align: left;">33.9</td>
+<td style="text-align: left;">40.1</td>
+<td style="text-align: left;">38.0</td>
+<td style="text-align: left;">35.2</td>
+<td style="text-align: left;">34.8</td>
+<td style="text-align: left;">39.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.9</td>
+<td style="text-align: left;">36.9</td>
+<td style="text-align: left;">32.9</td>
+<td style="text-align: left;">33.8</td>
+<td style="text-align: left;">39.8</td>
+<td style="text-align: left;">34.0</td>
+<td style="text-align: left;">36.8</td>
+<td style="text-align: left;">35.0</td>
+<td style="text-align: left;">38.1</td>
+<td style="text-align: left;">36.9</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># store 100 mpgs in an object called 'mpg'</span></span>
+<span id="cb1-2"><a></a>mpg <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-3"><a></a>  <span class="fl">36.3</span>, <span class="fl">41.0</span>, <span class="fl">36.9</span>, <span class="fl">37.1</span>, <span class="fl">44.9</span>, <span class="fl">36.8</span>, <span class="fl">30.0</span>, <span class="fl">37.2</span>, <span class="fl">42.1</span>, <span class="fl">36.7</span>,</span>
+<span id="cb1-4"><a></a>  <span class="fl">32.7</span>, <span class="fl">37.3</span>, <span class="fl">41.2</span>, <span class="fl">36.6</span>, <span class="fl">32.9</span>, <span class="fl">36.5</span>, <span class="fl">33.2</span>, <span class="fl">37.4</span>, <span class="fl">37.5</span>, <span class="fl">33.6</span>,</span>
+<span id="cb1-5"><a></a>  <span class="fl">40.5</span>, <span class="fl">36.5</span>, <span class="fl">37.6</span>, <span class="fl">33.9</span>, <span class="fl">40.2</span>, <span class="fl">36.4</span>, <span class="fl">37.7</span>, <span class="fl">37.7</span>, <span class="fl">40.0</span>, <span class="fl">34.2</span>,</span>
+<span id="cb1-6"><a></a>  <span class="fl">36.2</span>, <span class="fl">37.9</span>, <span class="fl">36.0</span>, <span class="fl">37.9</span>, <span class="fl">35.9</span>, <span class="fl">38.2</span>, <span class="fl">38.3</span>, <span class="fl">35.7</span>, <span class="fl">35.6</span>, <span class="fl">35.1</span>,</span>
+<span id="cb1-7"><a></a>  <span class="fl">38.5</span>, <span class="fl">39.0</span>, <span class="fl">35.5</span>, <span class="fl">34.8</span>, <span class="fl">38.6</span>, <span class="fl">39.4</span>, <span class="fl">35.3</span>, <span class="fl">34.4</span>, <span class="fl">38.8</span>, <span class="fl">39.7</span>,</span>
+<span id="cb1-8"><a></a>  <span class="fl">36.3</span>, <span class="fl">36.8</span>, <span class="fl">32.5</span>, <span class="fl">36.4</span>, <span class="fl">40.5</span>, <span class="fl">36.6</span>, <span class="fl">36.1</span>, <span class="fl">38.2</span>, <span class="fl">38.4</span>, <span class="fl">39.3</span>,</span>
+<span id="cb1-9"><a></a>  <span class="fl">41.0</span>, <span class="fl">31.8</span>, <span class="fl">37.3</span>, <span class="fl">33.1</span>, <span class="fl">37.0</span>, <span class="fl">37.6</span>, <span class="fl">37.0</span>, <span class="fl">38.7</span>, <span class="fl">39.0</span>, <span class="fl">35.8</span>,</span>
+<span id="cb1-10"><a></a>  <span class="fl">37.0</span>, <span class="fl">37.2</span>, <span class="fl">40.7</span>, <span class="fl">37.4</span>, <span class="fl">37.1</span>, <span class="fl">37.8</span>, <span class="fl">35.9</span>, <span class="fl">35.6</span>, <span class="fl">36.7</span>, <span class="fl">34.5</span>,</span>
+<span id="cb1-11"><a></a>  <span class="fl">37.1</span>, <span class="fl">40.3</span>, <span class="fl">36.7</span>, <span class="fl">37.0</span>, <span class="fl">33.9</span>, <span class="fl">40.1</span>, <span class="fl">38.0</span>, <span class="fl">35.2</span>, <span class="fl">34.8</span>, <span class="fl">39.5</span>,</span>
+<span id="cb1-12"><a></a>  <span class="fl">39.9</span>, <span class="fl">36.9</span>, <span class="fl">32.9</span>, <span class="fl">33.8</span>, <span class="fl">39.8</span>, <span class="fl">34.0</span>, <span class="fl">36.8</span>, <span class="fl">35.0</span>, <span class="fl">38.1</span>, <span class="fl">36.9</span></span>
+<span id="cb1-13"><a></a>)</span>
+<span id="cb1-14"><a></a></span>
+<span id="cb1-15"><a></a>mpg_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">mpg =</span> mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="experiment-or-observational-study" class="slide level2 centered-content">
-<h2>Experiment or Observational Study?</h2>
-<div class="bq">
-<p>To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.</p>
+<section id="section-1" class="slide level2 font80">
+<h2></h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Histogram</a></li><li><a href="#tabset-2-2">R-Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day14_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</figure>
 </div>
-<details>
-<summary class="answer">
-<p>Click for answer</p>
-</summary>
-<p>This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.</p>
-</details>
-</section>
-<section id="conclusion-statistical-thinking" class="slide level2 middle-align-xy">
-<h2>Conclusion: Statistical Thinking!</h2>
-<div class="green-h">
-<p><strong>Statistical thinking</strong> involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-2"><a></a><span class="fu">ggplot</span>(mpg_data, <span class="fu">aes</span>(<span class="at">x =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb2-3"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..), <span class="at">bins =</span> <span class="dv">25</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </div>
 </section>
+<section id="section-2" class="slide level2 font80">
+<h2></h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">QQ Plot</a></li><li><a href="#tabset-3-2">R-Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day14_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">ggplot</span>(mpg_data, <span class="fu">aes</span>(<span class="at">sample =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb3-2"><a></a>  <span class="fu">stat_qq</span>() <span class="sc">+</span></span>
+<span id="cb3-3"><a></a>  <span class="fu">stat_qq_line</span>(<span class="at">col =</span> <span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tests-for-normality" class="slide level2 font80">
+<h2>Tests for Normality</h2>
+<p><strong>Shapiro-Wilk Normality Test</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">shapiro.test</span>(mpg_data<span class="sc">$</span>mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  mpg_data$mpg
+W = 0.98814, p-value = 0.5185</code></pre>
+</div>
+</div>
+<p><strong>Kolmogorov-Smirnov Test</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ks.test</span>(mpg_data<span class="sc">$</span>mpg, <span class="st">"pnorm"</span>, <span class="at">mean =</span> <span class="fu">mean</span>(mpg_data<span class="sc">$</span>mpg), <span class="at">sd =</span> <span class="fu">sd</span>(mpg_data<span class="sc">$</span>mpg))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Asymptotic one-sample Kolmogorov-Smirnov test
+
+data:  mpg_data$mpg
+D = 0.067046, p-value = 0.7597
+alternative hypothesis: two-sided</code></pre>
+</div>
+</div>
+</section>
+<section id="summary-statistics" class="slide level2 font80">
+<h2>Summary Statistics</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-2"><a></a></span>
+<span id="cb8-3"><a></a><span class="co"># Calculate summary statistics</span></span>
+<span id="cb8-4"><a></a>summary_stats <span class="ot">&lt;-</span> mpg_data <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">summarise</span>(</span>
+<span id="cb8-6"><a></a>    <span class="at">Mean =</span> <span class="fu">mean</span>(mpg),</span>
+<span id="cb8-7"><a></a>    <span class="at">IQR =</span> <span class="fu">IQR</span>(mpg),</span>
+<span id="cb8-8"><a></a>    <span class="at">SD =</span> <span class="fu">sd</span>(mpg),</span>
+<span id="cb8-9"><a></a>    <span class="at">Ratio =</span> <span class="fu">IQR</span>(mpg) <span class="sc">/</span> <span class="fu">sd</span>(mpg),</span>
+<span id="cb8-10"><a></a>    <span class="at">Within_1sd =</span> <span class="fu">mean</span>(mpg <span class="sc">&gt;=</span> (Mean <span class="sc">-</span> SD) <span class="sc">&amp;</span> mpg <span class="sc">&lt;=</span> (Mean <span class="sc">+</span> SD)),</span>
+<span id="cb8-11"><a></a>    <span class="at">Within_2sd =</span> <span class="fu">mean</span>(mpg <span class="sc">&gt;=</span> (Mean <span class="sc">-</span> <span class="dv">2</span> <span class="sc">*</span> SD) <span class="sc">&amp;</span> mpg <span class="sc">&lt;=</span> (Mean <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> SD)),</span>
+<span id="cb8-12"><a></a>    <span class="at">Within_3sd =</span> <span class="fu">mean</span>(mpg <span class="sc">&gt;=</span> (Mean <span class="sc">-</span> <span class="dv">3</span> <span class="sc">*</span> SD) <span class="sc">&amp;</span> mpg <span class="sc">&lt;=</span> (Mean <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> SD))</span>
+<span id="cb8-13"><a></a>  )</span>
+<span id="cb8-14"><a></a></span>
+<span id="cb8-15"><a></a>summary_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Mean  IQR       SD    Ratio Within_1sd Within_2sd Within_3sd
+1 36.994 2.65 2.417897 1.095994       0.68       0.96       0.99</code></pre>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
+</section>
     </div>
   </div>
 
