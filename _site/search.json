@@ -1,612 +1,10 @@
 [
   {
-    "objectID": "Day1.html#something-about-me",
-    "href": "Day1.html#something-about-me",
-    "title": "Day 1",
-    "section": "Something about me",
-    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
-  },
-  {
-    "objectID": "Day1.html#active-participation",
-    "href": "Day1.html#active-participation",
-    "title": "Day 1",
-    "section": "Active Participation",
-    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
-  },
-  {
-    "objectID": "Day1.html#tell-me-something-about-yourself",
-    "href": "Day1.html#tell-me-something-about-yourself",
-    "title": "Day 1",
-    "section": "Tell me something about yourself!",
-    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "Day1.html#class-pipelines",
-    "href": "Day1.html#class-pipelines",
-    "title": "Day 1",
-    "section": "Class Pipelines",
-    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
-  },
-  {
-    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "title": "Day 1",
-    "section": "What will a typical day/week look like?",
-    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
-  },
-  {
-    "objectID": "Day1.html#statistical-computation",
-    "href": "Day1.html#statistical-computation",
-    "title": "Day 1",
-    "section": "Statistical Computation",
-    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
-  },
-  {
-    "objectID": "Day1.html#group-activity-1",
-    "href": "Day1.html#group-activity-1",
-    "title": "Day 1",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
-  },
-  {
-    "objectID": "Day3.html#one-qualitative-variable",
-    "href": "Day3.html#one-qualitative-variable",
-    "title": "Day 3",
-    "section": "One qualitative Variable",
-    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
-  },
-  {
-    "objectID": "Day3.html#frequency-table",
-    "href": "Day3.html#frequency-table",
-    "title": "Day 3",
-    "section": "Frequency Table",
-    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
-  },
-  {
-    "objectID": "Day3.html#proportion",
-    "href": "Day3.html#proportion",
-    "title": "Day 3",
-    "section": "Proportion",
-    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
-  },
-  {
-    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "title": "Day 3",
-    "section": "What proportion of adults sampled do not own a cell phone?",
-    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
-  },
-  {
-    "objectID": "Day3.html#bar-chartplotgraph",
-    "href": "Day3.html#bar-chartplotgraph",
-    "title": "Day 3",
-    "section": "Bar Chart/Plot/Graph",
-    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
-  },
-  {
-    "objectID": "Day3.html#two-qualitative-variables",
-    "href": "Day3.html#two-qualitative-variables",
-    "title": "Day 3",
-    "section": "Two qualitative Variables",
-    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender",
-    "href": "Day3.html#relationship-status-and-gender",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender-1",
-    "href": "Day3.html#relationship-status-and-gender-1",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
-  },
-  {
-    "objectID": "Day3.html#difference-in-proportions",
-    "href": "Day3.html#difference-in-proportions",
-    "title": "Day 3",
-    "section": "Difference in proportions",
-    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
-  },
-  {
-    "objectID": "Day3.html#student-survey",
-    "href": "Day3.html#student-survey",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
-  },
-  {
-    "objectID": "Day3.html#distribution-1",
-    "href": "Day3.html#distribution-1",
-    "title": "Day 3",
-    "section": "Distribution",
-    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
-  },
-  {
-    "objectID": "Day3.html#center-mean-or-average",
-    "href": "Day3.html#center-mean-or-average",
-    "title": "Day 3",
-    "section": "Center: Mean or Average",
-    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
-  },
-  {
-    "objectID": "Day3.html#student-survey-1",
-    "href": "Day3.html#student-survey-1",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#center-median",
-    "href": "Day3.html#center-median",
-    "title": "Day 3",
-    "section": "Center: Median",
-    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#variability-standard-deviation",
-    "href": "Day3.html#variability-standard-deviation",
-    "title": "Day 3",
-    "section": "Variability: Standard Deviation",
-    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
-  },
-  {
-    "objectID": "Day6.html#key-probability-concepts-recap",
-    "href": "Day6.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
-  },
-  {
-    "objectID": "Day6.html#complementary-events",
-    "href": "Day6.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
-    "href": "Day6.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
-  },
-  {
-    "objectID": "Day6.html#additive-rule",
-    "href": "Day6.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
-  },
-  {
-    "objectID": "Day6.html#hospital-admission-probabilities",
-    "href": "Day6.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events",
-    "href": "Day6.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events-example",
-    "href": "Day6.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: example",
-    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
-  },
-  {
-    "objectID": "Day6.html#conditional-probability",
-    "href": "Day6.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
-  },
-  {
-    "objectID": "Day6.html#conditional-probability-in-dice-throws",
-    "href": "Day6.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
-  },
-  {
-    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
-    "href": "Day6.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
-  },
-  {
-    "objectID": "Day5.html#introduction-to-probability",
-    "href": "Day5.html#introduction-to-probability",
-    "title": "Day 5",
-    "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., Tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
-  },
-  {
-    "objectID": "Day5.html#definitions",
-    "href": "Day5.html#definitions",
-    "title": "Day 5",
-    "section": "Definitions",
-    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nIn Coin Toss: Each toss that results in H or T.\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nIn Coin Toss: {H, T}"
-  },
-  {
-    "objectID": "Day5.html#venn-diagram",
-    "href": "Day5.html#venn-diagram",
-    "title": "Day 5",
-    "section": "Venn Diagram",
-    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
-  },
-  {
-    "objectID": "Day5.html#experiments-and-their-sample-spaces",
-    "href": "Day5.html#experiments-and-their-sample-spaces",
-    "title": "Day 5",
-    "section": "Experiments and Their Sample Spaces",
-    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a coin}\\} \\\\\n&= \\{H, T\\} \\text{ (Head or Tail)}\n\\end{align*}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a die}\\} \\\\\n&= \\{1, 2, 3, 4, 5, 6\\} \\text{ (Numbers on the die)}\n\\end{align*}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the combination of faces of two coins}\\} \\\\\n&= \\{HH, HT, TH, TT\\} \\text{ (All possible combinations)}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "Day5.html#defining-probability",
-    "href": "Day5.html#defining-probability",
-    "title": "Day 5",
-    "section": "Defining Probability",
-    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRule 1: Range of Probabilities\n\nEach probability \\(p_i\\) must be: \\(0 \\leq p_i \\leq 1\\)\n\nRule 2: Sum of Probabilities\n\nTotal probability across all sample points: \\(\\sum_{\\text{all } i} p_i = 1\\)\nEnsures completeness of the sample space."
-  },
-  {
-    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "title": "Day 5",
-    "section": "Example: Calculating Winning Probability in a Dice Game",
-    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning } = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning } = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
-  },
-  {
-    "objectID": "Day5.html#event-definition",
-    "href": "Day5.html#event-definition",
-    "title": "Day 5",
-    "section": "Event Definition",
-    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
-  },
-  {
-    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
-    "href": "Day5.html#steps-for-calculating-event-probabilities",
-    "title": "Day 5",
-    "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
-  },
-  {
-    "objectID": "Day5.html#compound-events-unions",
-    "href": "Day5.html#compound-events-unions",
-    "title": "Day 5",
-    "section": "Compound Events: Unions",
-    "text": "Compound Events: Unions\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#compound-events-intersections",
-    "href": "Day5.html#compound-events-intersections",
-    "title": "Day 5",
-    "section": "Compound Events: Intersections",
-    "text": "Compound Events: Intersections\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "title": "Day 5",
-    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
-    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\nUnion and Intersection\n\nUnion (\\(A \\cup B\\)): Any number less than 6. \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): Only number both even and ≤ 3. \\[A \\cap B = \\{2\\}\\]\n\n\n\nProbability Calculations\n\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = P_1 + P_2 + P_3 + P_4 + P_6 = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = P_2 = \\frac{1}{6}\\]"
-  },
-  {
-    "objectID": "Day5.html#calculating-sample-points-using-combinations",
-    "href": "Day5.html#calculating-sample-points-using-combinations",
-    "title": "Day 5",
-    "section": "Calculating Sample Points Using Combinations",
-    "text": "Calculating Sample Points Using Combinations\n\n\n\nCombinations Rule: Calculate the number of possible samples drawn without replacement.\nFormula: \\(\\binom{N}{n} = \\frac{N!}{n!(N-n)!}\\) where \\(N\\) is the total number of elements, and \\(n\\) is the number of elements per sample.\n\nFactorial Explained\n\nNotation: \\(n!\\) (factorial of \\(n\\))\nDefinition: Product of all positive integers up to \\(n\\). \\[n! = n \\times (n-1) \\times \\dots \\times 1\\]\nExample: \\(5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\)"
-  },
-  {
-    "objectID": "Day5.html#your-odds-in-the-pick-6-lotto",
-    "href": "Day5.html#your-odds-in-the-pick-6-lotto",
-    "title": "Day 5",
-    "section": "Your Odds in the Pick-6 Lotto",
-    "text": "Your Odds in the Pick-6 Lotto\n\n\nIn Florida’s Pick-6 Lotto, you select six numbers from a set ranging from 1 to 53, aiming to match all to win.\n\nTotal Combinations: \\[\\binom{53}{6} = \\frac{53!}{6!(53-6)!} = \\frac{53 \\times 52 \\times 51 \\times 50 \\times 49 \\times 48}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 22,957,480\\]\nProbability of Winning: \\[P = \\frac{1}{22,957,480}\\]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Fall 2024",
     "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "Day14.html#introduction-to-assessing-normality",
-    "href": "Day14.html#introduction-to-assessing-normality",
-    "title": "Day 14",
-    "section": "Introduction to Assessing Normality",
-    "text": "Introduction to Assessing Normality\n\n\nObjective: Learn to determine if sample data originate from a normally distributed population, a prerequisite for many statistical analysis techniques.\nContext: Before applying statistical methods that assume normality, it’s crucial to verify that the assumption holds for your data."
-  },
-  {
-    "objectID": "Day14.html#applications-of-the-normal-distribution",
-    "href": "Day14.html#applications-of-the-normal-distribution",
-    "title": "Day 14",
-    "section": "Applications of the Normal Distribution",
-    "text": "Applications of the Normal Distribution\n\n\nHistogram and Density Plots: Begin by visualizing the distribution of your data. A histogram or density plot should reveal a bell-shaped curve, characteristic of a normal distribution. The symmetry and spread are your initial indicators.\nNormal Q-Q Plot: This plot displays your sample data against the expected quantiles of a normal distribution. If your data points align closely with the reference line (a 45-degree angle), your data likely follow a normal distribution. Deviations from this line indicate potential skewness or the presence of outliers."
-  },
-  {
-    "objectID": "Day14.html#the-empirical-rule-and-its-application",
-    "href": "Day14.html#the-empirical-rule-and-its-application",
-    "title": "Day 14",
-    "section": "The Empirical Rule and Its Application",
-    "text": "The Empirical Rule and Its Application\n\n\nUnderstanding the Rule: According to the empirical rule, if the data are normal:\n\nApproximately 68% of data should fall within one standard deviation (±1σ) of the mean.\nAbout 95% fall within two standard deviations (±2σ).\nNearly 99.7% should lie within three standard deviations (±3σ).\n\nApplication: Calculate these intervals for your data and check the percentages. Close alignment with these percentages supports the assumption of normality."
-  },
-  {
-    "objectID": "Day14.html#iqr-to-standard-deviation-ratio",
-    "href": "Day14.html#iqr-to-standard-deviation-ratio",
-    "title": "Day 14",
-    "section": "IQR to Standard Deviation Ratio",
-    "text": "IQR to Standard Deviation Ratio\n\nRationale: The ratio of the Interquartile Range (IQR) to the standard deviation (s) is another metric used to assess normality. For normally distributed data, this ratio should be approximately 1.3.\nMethod: Calculate the IQR (the range between the 25th and 75th percentiles) and the standard deviation of your sample. Compare their ratio to 1.3 to gain another perspective on your data’s normality."
-  },
-  {
-    "objectID": "Day14.html#statistical-tests-for-normality",
-    "href": "Day14.html#statistical-tests-for-normality",
-    "title": "Day 14",
-    "section": "Statistical Tests for Normality",
-    "text": "Statistical Tests for Normality\n\nShapiro-Wilk Test: This test is particularly effective for smaller data sets. It assesses whether the data’s arrangement is likely to be derived from a normal distribution.\nKolmogorov-Smirnov Test: Useful for comparing your sample with a specified normal distribution. This test checks the largest difference between the empirical and the theoretical cumulative distribution functions."
-  },
-  {
-    "objectID": "Day14.html#case-study-epa-ratings",
-    "href": "Day14.html#case-study-epa-ratings",
-    "title": "Day 14",
-    "section": "Case Study: EPA ratings",
-    "text": "Case Study: EPA ratings\n\n\nThe dataset consists of EPA gas mileage ratings for 100 cars. Each value represents the miles per gallon (MPG) that a particular car achieves under standardized testing conditions. This dataset can help understand how statistical methods are applied in real-world scenarios like assessing the fuel efficiency of vehicles."
-  },
-  {
-    "objectID": "Day14.html#section",
-    "href": "Day14.html#section",
-    "title": "Day 14",
-    "section": "",
-    "text": "DataR code\n\n\nEPA Gas Mileage Ratings for 100 Cars (miles per gallon)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncol1\ncol2\ncol3\ncol4\ncol5\ncol6\ncol7\ncol8\ncol9\ncol10\n\n\n\n\n36.3\n41.0\n36.9\n37.1\n44.9\n36.8\n30.0\n37.2\n42.1\n36.7\n\n\n32.7\n37.3\n41.2\n36.6\n32.9\n36.5\n33.2\n37.4\n37.5\n33.6\n\n\n40.5\n36.5\n37.6\n33.9\n40.2\n36.4\n37.7\n37.7\n40.0\n34.2\n\n\n36.2\n37.9\n36.0\n37.9\n35.9\n38.2\n38.3\n35.7\n35.6\n35.1\n\n\n38.5\n39.0\n35.5\n34.8\n38.6\n39.4\n35.3\n34.4\n38.8\n39.7\n\n\n36.3\n36.8\n32.5\n36.4\n40.5\n36.6\n36.1\n38.2\n38.4\n39.3\n\n\n41.0\n31.8\n37.3\n33.1\n37.0\n37.6\n37.0\n38.7\n39.0\n35.8\n\n\n37.0\n37.2\n40.7\n37.4\n37.1\n37.8\n35.9\n35.6\n36.7\n34.5\n\n\n37.1\n40.3\n36.7\n37.0\n33.9\n40.1\n38.0\n35.2\n34.8\n39.5\n\n\n39.9\n36.9\n32.9\n33.8\n39.8\n34.0\n36.8\n35.0\n38.1\n36.9\n\n\n\n\n\n\n# store 100 mpgs in an object called 'mpg'\nmpg &lt;- c(\n  36.3, 41.0, 36.9, 37.1, 44.9, 36.8, 30.0, 37.2, 42.1, 36.7,\n  32.7, 37.3, 41.2, 36.6, 32.9, 36.5, 33.2, 37.4, 37.5, 33.6,\n  40.5, 36.5, 37.6, 33.9, 40.2, 36.4, 37.7, 37.7, 40.0, 34.2,\n  36.2, 37.9, 36.0, 37.9, 35.9, 38.2, 38.3, 35.7, 35.6, 35.1,\n  38.5, 39.0, 35.5, 34.8, 38.6, 39.4, 35.3, 34.4, 38.8, 39.7,\n  36.3, 36.8, 32.5, 36.4, 40.5, 36.6, 36.1, 38.2, 38.4, 39.3,\n  41.0, 31.8, 37.3, 33.1, 37.0, 37.6, 37.0, 38.7, 39.0, 35.8,\n  37.0, 37.2, 40.7, 37.4, 37.1, 37.8, 35.9, 35.6, 36.7, 34.5,\n  37.1, 40.3, 36.7, 37.0, 33.9, 40.1, 38.0, 35.2, 34.8, 39.5,\n  39.9, 36.9, 32.9, 33.8, 39.8, 34.0, 36.8, 35.0, 38.1, 36.9\n)\n\nmpg_data &lt;- data.frame(mpg = mpg)"
-  },
-  {
-    "objectID": "Day14.html#section-1",
-    "href": "Day14.html#section-1",
-    "title": "Day 14",
-    "section": "",
-    "text": "HistogramR-Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(mpg_data, aes(x = mpg)) +\n  geom_histogram(aes(y = ..density..), bins = 25, fill = \"skyblue\", color = \"black\") +\n  geom_density(color = \"red\")"
-  },
-  {
-    "objectID": "Day14.html#section-2",
-    "href": "Day14.html#section-2",
-    "title": "Day 14",
-    "section": "",
-    "text": "QQ PlotR-Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(mpg_data, aes(sample = mpg)) +\n  stat_qq() +\n  stat_qq_line(col = \"blue\")"
-  },
-  {
-    "objectID": "Day14.html#tests-for-normality",
-    "href": "Day14.html#tests-for-normality",
-    "title": "Day 14",
-    "section": "Tests for Normality",
-    "text": "Tests for Normality\nShapiro-Wilk Normality Test\n\nshapiro.test(mpg_data$mpg)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mpg_data$mpg\nW = 0.98814, p-value = 0.5185\n\n\nKolmogorov-Smirnov Test\n\nks.test(mpg_data$mpg, \"pnorm\", mean = mean(mpg_data$mpg), sd = sd(mpg_data$mpg))\n\n\n    Asymptotic one-sample Kolmogorov-Smirnov test\n\ndata:  mpg_data$mpg\nD = 0.067046, p-value = 0.7597\nalternative hypothesis: two-sided"
-  },
-  {
-    "objectID": "Day14.html#summary-statistics",
-    "href": "Day14.html#summary-statistics",
-    "title": "Day 14",
-    "section": "Summary Statistics",
-    "text": "Summary Statistics\n\nlibrary(dplyr)\n\n# Calculate summary statistics\nsummary_stats &lt;- mpg_data %&gt;%\n  summarise(\n    Mean = mean(mpg),\n    IQR = IQR(mpg),\n    SD = sd(mpg),\n    Ratio = IQR(mpg) / sd(mpg),\n    Within_1sd = mean(mpg &gt;= (Mean - SD) & mpg &lt;= (Mean + SD)),\n    Within_2sd = mean(mpg &gt;= (Mean - 2 * SD) & mpg &lt;= (Mean + 2 * SD)),\n    Within_3sd = mean(mpg &gt;= (Mean - 3 * SD) & mpg &lt;= (Mean + 3 * SD))\n  )\n\nsummary_stats\n\n    Mean  IQR       SD    Ratio Within_1sd Within_2sd Within_3sd\n1 36.994 2.65 2.417897 1.095994       0.68       0.96       0.99"
-  },
-  {
-    "objectID": "Day8.html#random-variables-rvs",
-    "href": "Day8.html#random-variables-rvs",
-    "title": "Day 8",
-    "section": "Random Variables (RVs)",
-    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
-  },
-  {
-    "objectID": "Day8.html#discrete-rvs",
-    "href": "Day8.html#discrete-rvs",
-    "title": "Day 8",
-    "section": "Discrete RVs",
-    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
-  },
-  {
-    "objectID": "Day8.html#continuous-rvs",
-    "href": "Day8.html#continuous-rvs",
-    "title": "Day 8",
-    "section": "Continuous RVs",
-    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
-  },
-  {
-    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
-    "href": "Day8.html#probability-distributions-for-discrete-rvs",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete RVs",
-    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
-  },
-  {
-    "objectID": "Day8.html#section",
-    "href": "Day8.html#section",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
-  },
-  {
-    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "title": "Day 8",
-    "section": "Key Requirements for Discrete Probability Distributions",
-    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
-  },
-  {
-    "objectID": "Day8.html#section-1",
-    "href": "Day8.html#section-1",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\)\nFind \\(P(X&gt;-1)\\)\nFind \\(P(-1 \\leq X&lt;1)\\)\nFind \\(P(-1 \\leq X \\leq 1)\\)"
-  },
-  {
-    "objectID": "Day8.html#section-2",
-    "href": "Day8.html#section-2",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
-  },
-  {
-    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Expected Value: Mean of Discrete Random Variables",
-    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
-  },
-  {
-    "objectID": "Day8.html#section-3",
-    "href": "Day8.html#section-3",
-    "title": "Day 8",
-    "section": "",
-    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
-  },
-  {
-    "objectID": "Day8.html#variance-and-standard-deviation",
-    "href": "Day8.html#variance-and-standard-deviation",
-    "title": "Day 8",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
-  },
-  {
-    "objectID": "Day11.html#introduction-to-continuous-probability-distribution",
-    "href": "Day11.html#introduction-to-continuous-probability-distribution",
-    "title": "Day 11",
-    "section": "Introduction to Continuous Probability Distribution",
-    "text": "Introduction to Continuous Probability Distribution\n\n\n\nA continuous random variable, \\(X\\), can take any value within a specified range. It is graphically depicted by a smooth curve known as the Probability Density Function (PDF), \\(f(x)\\).\nKey Concepts of PDF:\n\nProbability of an Interval: The area under the curve between any two points \\(a\\) and \\(b\\) (\\(a \\leq x \\leq b\\)) represents the probability of \\(x\\) falling within that range.\nNon-negativity: \\(f(x)\\geq0\\) for all \\(x\\).\nTotal Probability: The integral of \\(f(x)\\) across its entire range equals 1, representing the total set of outcomes for \\(x\\).\nEndpoint Consideration: Including endpoints in an interval, like \\(x=a\\) or \\(x=b\\), does not change the computed probability since \\(P(x=a)=0\\) for any particular \\(a\\)."
-  },
-  {
-    "objectID": "Day11.html#properties-and-visualization-of-continuous-distributions",
-    "href": "Day11.html#properties-and-visualization-of-continuous-distributions",
-    "title": "Day 11",
-    "section": "Properties and Visualization of Continuous Distributions",
-    "text": "Properties and Visualization of Continuous Distributions\n\n\n\n\n\n\n\nFunction Representation: \\(f(x)\\) is often referred to as a density function or frequency function.\nCalculating Probabilities: The probability that \\(x\\) will fall between any two specific values, \\(a\\) and \\(b\\), is given by the area under \\(f(x)\\) between these points.\nGraphical Illustration: The shape of the distribution varies based on the data it models, reflecting different types of continuous random variables.\nZero Probability at a Point: A fundamental property of continuous variables: The probability of \\(x\\) assuming any exact value, such as \\(a\\), is zero, reinforcing that continuous variables span ranges rather than discrete points."
-  },
-  {
-    "objectID": "Day11.html#introduction-to-uniform-distribution",
-    "href": "Day11.html#introduction-to-uniform-distribution",
-    "title": "Day 11",
-    "section": "Introduction to Uniform Distribution",
-    "text": "Introduction to Uniform Distribution\n\n\n\n\n\n\n\nDefinition\n\n\nUniform distribution, or rectangular distribution, is a type of continuous probability distribution where every outcome in a specified range is equally likely.\n\nGraphical Representation: Depicted as a rectangle because the probability density function is constant within the bounds.\nBasic Formula: The probability density function (PDF) is \\(f(x) = \\frac{1}{b-a}\\) for \\(x\\) within the interval \\([a, b]\\)."
-  },
-  {
-    "objectID": "Day11.html#visualizing-and-calculating-probabilities",
-    "href": "Day11.html#visualizing-and-calculating-probabilities",
-    "title": "Day 11",
-    "section": "Visualizing and Calculating Probabilities",
-    "text": "Visualizing and Calculating Probabilities\n\n\n\n\n\n\n\n\nArea Calculation: Probabilities are calculated as the area under the PDF curve, simplifying to the width of the interval times the height of the PDF.\nExample: For an interval \\([c, d]\\), the probability that \\(x\\) falls within \\([a, b]\\) (where \\(a\\) and \\(b\\) are within \\(c\\) and \\(d\\)) is \\((a-b) \\times \\frac{1}{c-d}\\)."
-  },
-  {
-    "objectID": "Day11.html#statistical-measures",
-    "href": "Day11.html#statistical-measures",
-    "title": "Day 11",
-    "section": "Statistical Measures",
-    "text": "Statistical Measures\n\n\n\n\nMean and Median: The mean, \\(\\mu\\), and median of a uniform distribution are the same, given by \\(\\mu = \\frac{c+d}{2}\\).\nVariance: The variance, \\(\\sigma^2\\), is calculated as \\(\\sigma = \\frac{(d-c)^2}{12}\\)."
-  },
-  {
-    "objectID": "Day11.html#real-world-applications",
-    "href": "Day11.html#real-world-applications",
-    "title": "Day 11",
-    "section": "Real-World Applications",
-    "text": "Real-World Applications\n\n\n\n\nUniformity: Ideal for modelling scenarios where each outcome within a range is equally likely, such as random draws from a finite set or simulation inputs.\nExamples: Used in simulations, randomized algorithms, and systems modeling where equal likelihood is assumed for inputs or scenarios within a certain range."
-  },
-  {
-    "objectID": "Day11.html#section",
-    "href": "Day11.html#section",
-    "title": "Day 11",
-    "section": "",
-    "text": "Example 1: Example 1 An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let \\(x\\) represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.\n\n\nCalculate and interpret the mean and standard deviation of \\(X\\)."
-  },
-  {
-    "objectID": "Day11.html#section-1",
-    "href": "Day11.html#section-1",
-    "title": "Day 11",
-    "section": "",
-    "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
-  },
-  {
-    "objectID": "Day10.html#introduction-to-poisson-random-variables",
-    "href": "Day10.html#introduction-to-poisson-random-variables",
-    "title": "Day 10",
-    "section": "Introduction to Poisson Random Variables",
-    "text": "Introduction to Poisson Random Variables\n \n\n\n\n\n\n\n\nDefinition\n\n\nA Poisson Random Variable is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter \\(\\lambda\\) (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area."
-  },
-  {
-    "objectID": "Day10.html#introduction-to-poisson-random-variables-1",
-    "href": "Day10.html#introduction-to-poisson-random-variables-1",
-    "title": "Day 10",
-    "section": "Introduction to Poisson Random Variables",
-    "text": "Introduction to Poisson Random Variables\n\n\n\nDiscrete Outcomes: Counts of events (0, 1, 2, …).\nRate of Occurrence: Governed by \\(\\lambda\\), which is both the mean and the variance of the distribution.\nIndependence: The occurrence of one event does not affect the probability of another event occurring in the same interval."
-  },
-  {
-    "objectID": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
-    "href": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
-    "title": "Day 10",
-    "section": "Probability Distribution, Mean, and Variance of Poisson Random Variables",
-    "text": "Probability Distribution, Mean, and Variance of Poisson Random Variables\n\n\nFormula for Probability:\n\n\\[\\begin{align*}\np(x)&=\\frac{\\lambda^x e^{-\\lambda}}{x!}\\quad(x=0,1,2,\\ldots)\n\\end{align*}\\]\n\nMean and Variance:\n\nMean (\\(\\mu\\)): \\(\\mu=\\lambda\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2=\\lambda\\)"
-  },
-  {
-    "objectID": "Day10.html#example-1-traffic-monitoring",
-    "href": "Day10.html#example-1-traffic-monitoring",
-    "title": "Day 10",
-    "section": "Example 1: Traffic Monitoring",
-    "text": "Example 1: Traffic Monitoring\n\n\n\nScenario: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.\nQuestion: What is the probability of observing exactly 5 accidents in one month?\n\n\n\nSolution:\n\nUsing \\(\\lambda=3\\), \\[p(5)=\\frac{3^5 e^{-3}}{5!}\\approx0.1008\\]"
-  },
-  {
-    "objectID": "Day10.html#example-2-quality-control-in-manufacturing",
-    "href": "Day10.html#example-2-quality-control-in-manufacturing",
-    "title": "Day 10",
-    "section": "Example 2: Quality Control in Manufacturing",
-    "text": "Example 2: Quality Control in Manufacturing\n\n\nScenario: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.\nQuestion: What is the probability of finding no defects on a newly inspected vehicle?\n\n\n\nSolution:\n\nUsing \\(\\lambda=2\\), \\[p(0)=\\frac{2^0 e^{-2}}{0!}=e^{-2}\\approx0.1353\\]"
-  },
-  {
-    "objectID": "Day10.html#example-3-ecological-research",
-    "href": "Day10.html#example-3-ecological-research",
-    "title": "Day 10",
-    "section": "Example 3: Ecological Research",
-    "text": "Example 3: Ecological Research\n\n\nScenario: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.\na. Find the mean and standard deviation.\n \nb. Probability of exactly five sightings:\n \nc. Probability of fewer than two sightings:"
-  },
-  {
-    "objectID": "Day10.html#poisson-distribution-functions-in-r",
-    "href": "Day10.html#poisson-distribution-functions-in-r",
-    "title": "Day 10",
-    "section": "Poisson Distribution Functions in R",
-    "text": "Poisson Distribution Functions in R\n\nThe dpois function calculates the probability mass function of the Poisson distribution, useful for finding (P(X = x)).\n\nSyntax: dpois(x, lambda)\nExample: Calculate \\(P(X = 3)\\) for \\(\\lambda = 2.2\\)\n\n\nprobability_exactly_3 &lt;- dpois(3, lambda = 2.2)\nprobability_exactly_3\n\n[1] 0.1966387\n\n\nThe ppois function computes the cumulative probability \\(P(X \\leq x)\\) of the Poisson distribution.\n\nSyntax: ppois(q, lambda)\nExample: Calculate \\(P(X \\leq 3)\\) for \\(\\lambda=2.2\\)\n\n\nprobability_up_to_3 &lt;- ppois(3, lambda = 2.2)\nprobability_up_to_3\n\n[1] 0.8193524"
+    "text": "Welcome to the world of statistics!"
   },
   {
     "objectID": "Day12.html#the-normal-distribution",
@@ -714,319 +112,53 @@
     "text": "Example 9: Find \\(z_0\\) such that \\(P\\left(-z_0 \\leq z \\leq z_0\\right)=0.95\\)"
   },
   {
-    "objectID": "Day9.html#recap-variance-and-standard-deviation",
-    "href": "Day9.html#recap-variance-and-standard-deviation",
-    "title": "Day 9",
-    "section": "Recap: Variance and Standard Deviation",
-    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+    "objectID": "Day1.html#something-about-me",
+    "href": "Day1.html#something-about-me",
+    "title": "Day 1",
+    "section": "Something about me",
+    "text": "Something about me\n\n\n\n\n\nFirst year at Salisbury\nOriginally from Nepal\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler\n\n\n\n\n\n\n\n\n\nMy website"
   },
   {
-    "objectID": "Day9.html#section-1",
-    "href": "Day9.html#section-1",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+    "objectID": "Day1.html#active-participation",
+    "href": "Day1.html#active-participation",
+    "title": "Day 1",
+    "section": "Active Participation",
+    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
   },
   {
-    "objectID": "Day9.html#introduction-to-binomial-random-variables",
-    "href": "Day9.html#introduction-to-binomial-random-variables",
-    "title": "Day 9",
-    "section": "Introduction to Binomial Random Variables",
-    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
+    "objectID": "Day1.html#tell-me-something-about-yourself",
+    "href": "Day1.html#tell-me-something-about-yourself",
+    "title": "Day 1",
+    "section": "Tell me something about yourself!",
+    "text": "Tell me something about yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "Day9.html#characteristics-of-binomial-experiments",
-    "href": "Day9.html#characteristics-of-binomial-experiments",
-    "title": "Day 9",
-    "section": "Characteristics of Binomial Experiments",
-    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
+    "objectID": "Day1.html#class-pipelines",
+    "href": "Day1.html#class-pipelines",
+    "title": "Day 1",
+    "section": "Class Pipelines",
+    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
   },
   {
-    "objectID": "Day9.html#the-binomial-random-variable",
-    "href": "Day9.html#the-binomial-random-variable",
-    "title": "Day 9",
-    "section": "The Binomial Random Variable",
-    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
+    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "title": "Day 1",
+    "section": "What will a typical day/week look like?",
+    "text": "What will a typical day/week look like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
   },
   {
-    "objectID": "Day9.html#the-binomial-probability-formula",
-    "href": "Day9.html#the-binomial-probability-formula",
-    "title": "Day 9",
-    "section": "The Binomial Probability Formula",
-    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
+    "title": "Day 1",
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit gives a nice user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nR Documentation"
   },
   {
-    "objectID": "Day9.html#section-2",
-    "href": "Day9.html#section-2",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
-  },
-  {
-    "objectID": "Day9.html#section-3",
-    "href": "Day9.html#section-3",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
-  },
-  {
-    "objectID": "Day9.html#observations-on-binomial-distributions",
-    "href": "Day9.html#observations-on-binomial-distributions",
-    "title": "Day 9",
-    "section": "Observations on Binomial Distributions",
-    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
-  },
-  {
-    "objectID": "Day9.html#section-5",
-    "href": "Day9.html#section-5",
-    "title": "Day 9",
-    "section": "",
-    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
-  },
-  {
-    "objectID": "Day9.html#statistics-of-binomial-distribution",
-    "href": "Day9.html#statistics-of-binomial-distribution",
-    "title": "Day 9",
-    "section": "Statistics of Binomial Distribution",
-    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
-  },
-  {
-    "objectID": "Day9.html#section-6",
-    "href": "Day9.html#section-6",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Fall 2024",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
-  },
-  {
-    "objectID": "Day4.html#recap-student-survey",
-    "href": "Day4.html#recap-student-survey",
-    "title": "Day 4",
-    "section": "Recap: Student Survey",
-    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
-  },
-  {
-    "objectID": "Day4.html#histogram",
-    "href": "Day4.html#histogram",
-    "title": "Day 4",
-    "section": "Histogram",
-    "text": "Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
-  },
-  {
-    "objectID": "Day4.html#histogram-shape",
-    "href": "Day4.html#histogram-shape",
-    "title": "Day 4",
-    "section": "Histogram: Shape",
-    "text": "Histogram: Shape\n\n\nHistogram: aggregates values into bins and counts how many cases fall into each bin\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
-  },
-  {
-    "objectID": "Day4.html#shape-and-stats",
-    "href": "Day4.html#shape-and-stats",
-    "title": "Day 4",
-    "section": "Shape and Stats",
-    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\n\n\nlibrary(dplyr)  # for data manipulation\nsurvey %&gt;% summarize(mean = mean(Pulse),\n                     sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
-  },
-  {
-    "objectID": "Day4.html#bell-shaped-distribution",
-    "href": "Day4.html#bell-shaped-distribution",
-    "title": "Day 4",
-    "section": "Bell-shaped distribution",
-    "text": "Bell-shaped distribution\n\nPlotQuiz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n75\n200\n25"
-  },
-  {
-    "objectID": "Day4.html#standardizing-data-z-score",
-    "href": "Day4.html#standardizing-data-z-score",
-    "title": "Day 4",
-    "section": "Standardizing data: z-score",
-    "text": "Standardizing data: z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[z = \\dfrac{x - \\text{mean}}{\\text{SD}}\\]\n\nE.g. if a value \\(x\\) has \\(z=-1.5\\) then the value \\(x\\) is 1.5 standard deviations below the mean.\n\n\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between ____ and _____."
-  },
-  {
-    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
-    "href": "Day4.html#shape-left-skew-right-skew-histograms",
-    "title": "Day 4",
-    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)",
-    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
-  },
-  {
-    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "title": "Day 4",
-    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)",
-    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
-  },
-  {
-    "objectID": "Day4.html#shape-boxplots",
-    "href": "Day4.html#shape-boxplots",
-    "title": "Day 4",
-    "section": "Shape: boxplots",
-    "text": "Shape: boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3)\nMedian: The middle value of the dataset, represented by a line inside the box\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR\nOutliers: Data points outside of the whiskers, often represented as individual points"
-  },
-  {
-    "objectID": "Day4.html#shape-boxplots-1",
-    "href": "Day4.html#shape-boxplots-1",
-    "title": "Day 4",
-    "section": "Shape: boxplots",
-    "text": "Shape: boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
-  },
-  {
-    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "title": "Day 4",
-    "section": "Elements of a Box Plot: Inner Fences",
-    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
-  },
-  {
-    "objectID": "Day4.html#elements-of-a-box-plot-outer-fences",
-    "href": "Day4.html#elements-of-a-box-plot-outer-fences",
-    "title": "Day 4",
-    "section": "Elements of a Box Plot: Outer Fences",
-    "text": "Elements of a Box Plot: Outer Fences\n\n\nLower Outer Fence: \\[ \\text{Lower outer fence} = Q_L - 3 \\times \\text{IQR} \\]\nUpper Outer Fence: \\[ \\text{Upper outer fence} = Q_U + 3 \\times \\text{IQR} \\]\nOuter fences help in spotting what are often considered extreme outliers. These are data points that are significantly distant from the typical data range, suggesting possible data entry errors, measurement errors, or novel findings worthy of further investigation."
-  },
-  {
-    "objectID": "Day4.html#outliers",
-    "href": "Day4.html#outliers",
-    "title": "Day 4",
-    "section": "Outliers",
-    "text": "Outliers\n\nMild Outliers fall between the inner and outer fences and Extreme Outliers fall beyond the outer fences.\nDifferentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. This categorization can impact the conclusions drawn from the data."
-  },
-  {
-    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
-    "href": "Day4.html#adding-a-qualitative-variable-stats",
-    "title": "Day 4",
-    "section": "Adding a qualitative variable: stats",
-    "text": "Adding a qualitative variable: stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable\n\n\nlibrary(dplyr)\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmoker have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
-  },
-  {
-    "objectID": "Day4.html#side-by-side-histogram",
-    "href": "Day4.html#side-by-side-histogram",
-    "title": "Day 4",
-    "section": "Side-by-side Histogram",
-    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(survey, aes(x=Pulse)) + \n  geom_histogram(binwidth = 4, fill=\"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)  # to plot by category of Smoke"
-  },
-  {
-    "objectID": "Day4.html#side-by-side-boxplot",
-    "href": "Day4.html#side-by-side-boxplot",
-    "title": "Day 4",
-    "section": "Side-by-side boxplot",
-    "text": "Side-by-side boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Create boxplots using facet_wrap()\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
-  },
-  {
-    "objectID": "Day4.html#stacked-bar-graph",
-    "href": "Day4.html#stacked-bar-graph",
-    "title": "Day 4",
-    "section": "Stacked bar graph",
-    "text": "Stacked bar graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
-  },
-  {
-    "objectID": "Day4.html#stacked-bar-graph-counts",
-    "href": "Day4.html#stacked-bar-graph-counts",
-    "title": "Day 4",
-    "section": "Stacked bar graph (counts)",
-    "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
-  },
-  {
-    "objectID": "Day7.html#the-multiplicative-rule",
-    "href": "Day7.html#the-multiplicative-rule",
-    "title": "Day 7",
-    "section": "The Multiplicative Rule",
-    "text": "The Multiplicative Rule\n\n\n\nThe probability of the intersection of two events, \\(A\\) and \\(B\\), can be calculated using the multiplicative rule. This rule uses conditional probabilities.\n\n\\[P(B|A)=\\frac{P(A\\cap B)}{P(A)} \\Rightarrow P(A\\cap B)=P(A)\\cdot P(B|A)\\]\n\nThe rule helps in understanding how the occurrence of event \\(A\\) influences the probability of event \\(B\\).\n\n\\[P(A|B)=\\frac{P(A\\cap B)}{P(B)} \\Rightarrow P(A\\cap B)=P(B)\\cdot P(A|B)\\]\nGiven \\(P(A)\\) and \\(P(B|A)\\), you can find \\(P(A\\cap B)\\)."
-  },
-  {
-    "objectID": "Day7.html#multiplicative-rule-of-probability",
-    "href": "Day7.html#multiplicative-rule-of-probability",
-    "title": "Day 7",
-    "section": "Multiplicative Rule of Probability",
-    "text": "Multiplicative Rule of Probability\n\n\n\nThe multiplicative rule determines the probability of the intersection of two events (A) and (B).\nIt is calculated in two ways, depending on which event’s probability is conditioned on the other.\n\n\\[P(A\\cap B)=P(A) \\cdot P(B|A)\\] \\[P(A\\cap B)=P(B) \\cdot P(A|B)\\]"
-  },
-  {
-    "objectID": "Day7.html#law-of-total-probability",
-    "href": "Day7.html#law-of-total-probability",
-    "title": "Day 7",
-    "section": "Law of Total Probability",
-    "text": "Law of Total Probability\n\n\n\nThe law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.\nIt divides the sample space into parts (\\(B\\)) and (\\(B^c\\)) (the complement of (\\(B\\))).\n\n\\[P(A)=P(B) \\cdot P(A|B)+P\\left(B^c\\right) \\cdot P\\left(A|B^c\\right)\\]"
-  },
-  {
-    "objectID": "Day7.html#section",
-    "href": "Day7.html#section",
-    "title": "Day 7",
-    "section": "",
-    "text": "Example 1: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?"
-  },
-  {
-    "objectID": "Day7.html#independence-in-probability",
-    "href": "Day7.html#independence-in-probability",
-    "title": "Day 7",
-    "section": "Independence in Probability",
-    "text": "Independence in Probability\n\n\nKnowing that event \\(B\\) has occurred may or may not alter the probability of event \\(A\\).\n\nIndependence: Events \\(A\\) and \\(B\\) are independent if the occurrence of \\(B\\) does not change the probability of \\(A\\).\n\n\\[P(A|B)=P(A)\\]\n\nReciprocal Independence: If \\(A\\) and \\(B\\) are independent, then the occurrence of \\(A\\) also does not affect the probability of \\(B\\).\n\n\\[P(B|A)=P(B)\\]\nEvents not satisfying these conditions are dependent, meaning the occurrence of one affects the probability of the other."
-  },
-  {
-    "objectID": "Day7.html#section-1",
-    "href": "Day7.html#section-1",
-    "title": "Day 7",
-    "section": "",
-    "text": "Example 2 Consider the experiment of tossing a fair die, and let \\[A= \\{\\text{Observe an even number.}\\}\\] \\[B= \\{\\text{Observe a number less than or equal to 4.}\\}\\] Are \\(A\\) and \\(B\\) independent events?"
-  },
-  {
-    "objectID": "Day7.html#key-points-on-independence",
-    "href": "Day7.html#key-points-on-independence",
-    "title": "Day 7",
-    "section": "Key Points on Independence",
-    "text": "Key Points on Independence\n\n\n\nIndependence vs. Intuition: Independence cannot be inferred visually through a Venn diagram—only through precise probability calculations.\nMutual Exclusivity and Dependence: Mutually exclusive events with nonzero probabilities (e.g., \\(A\\) and \\(B\\)) are dependent because the occurrence of one precludes the occurrence of the other.\n\\[P(A|B)=0\\]"
-  },
-  {
-    "objectID": "Day7.html#intersection-probability-rule",
-    "href": "Day7.html#intersection-probability-rule",
-    "title": "Day 7",
-    "section": "Intersection Probability Rule",
-    "text": "Intersection Probability Rule\n\n\n\nIndependence: Independence means \\(P(B|A)=P(B)\\).\nIntersection Rule: For independent events \\(A\\) and \\(B\\):\n\\[P(A\\cap B)=P(A) \\cdot P(B)\\]\nConverse Validity: If the intersection probability holds:\n\\[\\text{If } P(A\\cap B)=P(A) \\cdot P(B) \\text{ then } A \\& B \\text{ are independent.}\\]"
-  },
-  {
-    "objectID": "Day7.html#section-2",
-    "href": "Day7.html#section-2",
-    "title": "Day 7",
-    "section": "",
-    "text": "Example 3: The American Association for Marriage and Family Therapy (AAMFT) found that \\(25 \\%\\) of divorced couples are classified as “fiery foes” (i.e., they communicate through their children and are hostile toward each other).\n\n\nWhat is the probability that in a sample of 2 divorced couples, both are classified as “fiery foes”?\n\n\n\nWhat is the probability that in a sample of 10 divorced couples, all 10 are classified as “fiery foes”?"
-  },
-  {
-    "objectID": "Day7.html#bayess-rule-and-its-foundation",
-    "href": "Day7.html#bayess-rule-and-its-foundation",
-    "title": "Day 7",
-    "section": "Bayes’s Rule and Its Foundation",
-    "text": "Bayes’s Rule and Its Foundation\n\n\n\nRecall Multiplicative Rule:\n\\[P(A \\cap B)=P(A) P(B | A)\\] \\[P(A \\cap B)=P(B) P(A | B)\\] \\[P(A) P(B | A)=P(B) P(A | B)\\]\nDeriving Bayes’s Rule:\nDivide the multiplicative identity by \\(P(B)\\):\n\\[P(A | B)=\\frac{P(A) P(B | A)}{P(B)}\\]\nIncorporating the Law of Total Probability:\n\\[P(A | B)=\\frac{P(A) P(B | A)}{P(A) P(B | A)+P\\left(A^c\\right) P\\left(B | A^c\\right)}\\]"
-  },
-  {
-    "objectID": "Day7.html#bayes-rule-example",
-    "href": "Day7.html#bayes-rule-example",
-    "title": "Day 7",
-    "section": "Bayes Rule Example",
-    "text": "Bayes Rule Example\n\n\n\nScenario: Estimating the likelihood of liver disease in a patient who is an alcoholic.\nDefine Events:\n\n\\(A\\): Patient has liver disease.\n\\(B\\): Patient is an alcoholic.\n\nProbabilities:\n\n\\(P(A) = 0.10\\) (10% of patients have liver disease)\n\\(P(B) = 0.05\\) (5% of patients are alcoholics)"
-  },
-  {
-    "objectID": "Day7.html#application-of-bayess-rule",
-    "href": "Day7.html#application-of-bayess-rule",
-    "title": "Day 7",
-    "section": "Application of Bayes’s Rule",
-    "text": "Application of Bayes’s Rule\n\n\n\nGiven: You need to find \\(P(A | B)\\), the probability of liver disease if the patient is an alcoholic.\nAvailable Data: \\(P(B | A) = 0.07\\) (7% of those with liver disease are alcoholics)\nBayes’s Rule Calculation:\n\\[P(A | B) = P(A) \\cdot \\frac{P(B | A)}{P(B)} = 0.10 \\cdot \\frac{0.07}{0.05} = 0.14\\]\nInterpretation: A patient who is an alcoholic has a 14% chance of having liver disease, higher than the general clinic population."
-  },
-  {
-    "objectID": "Day7.html#section-3",
-    "href": "Day7.html#section-3",
-    "title": "Day 7",
-    "section": "",
-    "text": "Example 4: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is \\(r_1\\) (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of \\(r_2\\) that the test will give a positive response. If a person does not have the disease, there is a probability of \\(r_3\\) that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of paameters.\n\n\n\\(r_1=0.0001, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.9999, r_3=0.0001\\)"
-  },
-  {
-    "objectID": "Day7.html#section-5",
-    "href": "Day7.html#section-5",
-    "title": "Day 7",
-    "section": "",
-    "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials on this folder\n\n\n\n\n −+ 10:00"
   },
   {
     "objectID": "Day2.html#data-units-and-variables",
@@ -1155,6 +287,349 @@
     "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
   },
   {
+    "objectID": "Day5.html#introduction-to-probability",
+    "href": "Day5.html#introduction-to-probability",
+    "title": "Day 5",
+    "section": "Introduction to Probability",
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., Tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
+  },
+  {
+    "objectID": "Day5.html#definitions",
+    "href": "Day5.html#definitions",
+    "title": "Day 5",
+    "section": "Definitions",
+    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nIn Coin Toss: Each toss that results in H or T.\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nIn Coin Toss: {H, T}"
+  },
+  {
+    "objectID": "Day5.html#venn-diagram",
+    "href": "Day5.html#venn-diagram",
+    "title": "Day 5",
+    "section": "Venn Diagram",
+    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
+  },
+  {
+    "objectID": "Day5.html#experiments-and-their-sample-spaces",
+    "href": "Day5.html#experiments-and-their-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Their Sample Spaces",
+    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a coin}\\} \\\\\n&= \\{H, T\\} \\text{ (Head or Tail)}\n\\end{align*}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a die}\\} \\\\\n&= \\{1, 2, 3, 4, 5, 6\\} \\text{ (Numbers on the die)}\n\\end{align*}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the combination of faces of two coins}\\} \\\\\n&= \\{HH, HT, TH, TT\\} \\text{ (All possible combinations)}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "Day5.html#defining-probability",
+    "href": "Day5.html#defining-probability",
+    "title": "Day 5",
+    "section": "Defining Probability",
+    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRule 1: Range of Probabilities\n\nEach probability \\(p_i\\) must be: \\(0 \\leq p_i \\leq 1\\)\n\nRule 2: Sum of Probabilities\n\nTotal probability across all sample points: \\(\\sum_{\\text{all } i} p_i = 1\\)\nEnsures completeness of the sample space."
+  },
+  {
+    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Example: Calculating Winning Probability in a Dice Game",
+    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning } = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning } = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#event-definition",
+    "href": "Day5.html#event-definition",
+    "title": "Day 5",
+    "section": "Event Definition",
+    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
+  },
+  {
+    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
+    "href": "Day5.html#steps-for-calculating-event-probabilities",
+    "title": "Day 5",
+    "section": "Steps for Calculating Event Probabilities",
+    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
+  },
+  {
+    "objectID": "Day5.html#compound-events-unions",
+    "href": "Day5.html#compound-events-unions",
+    "title": "Day 5",
+    "section": "Compound Events: Unions",
+    "text": "Compound Events: Unions\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#compound-events-intersections",
+    "href": "Day5.html#compound-events-intersections",
+    "title": "Day 5",
+    "section": "Compound Events: Intersections",
+    "text": "Compound Events: Intersections\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "title": "Day 5",
+    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
+    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\nUnion and Intersection\n\nUnion (\\(A \\cup B\\)): Any number less than 6. \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): Only number both even and ≤ 3. \\[A \\cap B = \\{2\\}\\]\n\n\n\nProbability Calculations\n\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = P_1 + P_2 + P_3 + P_4 + P_6 = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = P_2 = \\frac{1}{6}\\]"
+  },
+  {
+    "objectID": "Day5.html#calculating-sample-points-using-combinations",
+    "href": "Day5.html#calculating-sample-points-using-combinations",
+    "title": "Day 5",
+    "section": "Calculating Sample Points Using Combinations",
+    "text": "Calculating Sample Points Using Combinations\n\n\n\nCombinations Rule: Calculate the number of possible samples drawn without replacement.\nFormula: \\(\\binom{N}{n} = \\frac{N!}{n!(N-n)!}\\) where \\(N\\) is the total number of elements, and \\(n\\) is the number of elements per sample.\n\nFactorial Explained\n\nNotation: \\(n!\\) (factorial of \\(n\\))\nDefinition: Product of all positive integers up to \\(n\\). \\[n! = n \\times (n-1) \\times \\dots \\times 1\\]\nExample: \\(5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\)"
+  },
+  {
+    "objectID": "Day5.html#your-odds-in-the-pick-6-lotto",
+    "href": "Day5.html#your-odds-in-the-pick-6-lotto",
+    "title": "Day 5",
+    "section": "Your Odds in the Pick-6 Lotto",
+    "text": "Your Odds in the Pick-6 Lotto\n\n\nIn Florida’s Pick-6 Lotto, you select six numbers from a set ranging from 1 to 53, aiming to match all to win.\n\nTotal Combinations: \\[\\binom{53}{6} = \\frac{53!}{6!(53-6)!} = \\frac{53 \\times 52 \\times 51 \\times 50 \\times 49 \\times 48}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 22,957,480\\]\nProbability of Winning: \\[P = \\frac{1}{22,957,480}\\]"
+  },
+  {
+    "objectID": "Day8.html#random-variables-rvs",
+    "href": "Day8.html#random-variables-rvs",
+    "title": "Day 8",
+    "section": "Random Variables (RVs)",
+    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
+  },
+  {
+    "objectID": "Day8.html#discrete-rvs",
+    "href": "Day8.html#discrete-rvs",
+    "title": "Day 8",
+    "section": "Discrete RVs",
+    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
+  },
+  {
+    "objectID": "Day8.html#continuous-rvs",
+    "href": "Day8.html#continuous-rvs",
+    "title": "Day 8",
+    "section": "Continuous RVs",
+    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
+  },
+  {
+    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
+    "href": "Day8.html#probability-distributions-for-discrete-rvs",
+    "title": "Day 8",
+    "section": "Probability Distributions for Discrete RVs",
+    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
+  },
+  {
+    "objectID": "Day8.html#section",
+    "href": "Day8.html#section",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
+  },
+  {
+    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "title": "Day 8",
+    "section": "Key Requirements for Discrete Probability Distributions",
+    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
+  },
+  {
+    "objectID": "Day8.html#section-1",
+    "href": "Day8.html#section-1",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\)\nFind \\(P(X&gt;-1)\\)\nFind \\(P(-1 \\leq X&lt;1)\\)\nFind \\(P(-1 \\leq X \\leq 1)\\)"
+  },
+  {
+    "objectID": "Day8.html#section-2",
+    "href": "Day8.html#section-2",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
+  },
+  {
+    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "title": "Day 8",
+    "section": "Expected Value: Mean of Discrete Random Variables",
+    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
+  },
+  {
+    "objectID": "Day8.html#section-3",
+    "href": "Day8.html#section-3",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
+  },
+  {
+    "objectID": "Day8.html#variance-and-standard-deviation",
+    "href": "Day8.html#variance-and-standard-deviation",
+    "title": "Day 8",
+    "section": "Variance and Standard Deviation",
+    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+  },
+  {
+    "objectID": "Day9.html#recap-variance-and-standard-deviation",
+    "href": "Day9.html#recap-variance-and-standard-deviation",
+    "title": "Day 9",
+    "section": "Recap: Variance and Standard Deviation",
+    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+  },
+  {
+    "objectID": "Day9.html#section-1",
+    "href": "Day9.html#section-1",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+  },
+  {
+    "objectID": "Day9.html#introduction-to-binomial-random-variables",
+    "href": "Day9.html#introduction-to-binomial-random-variables",
+    "title": "Day 9",
+    "section": "Introduction to Binomial Random Variables",
+    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
+  },
+  {
+    "objectID": "Day9.html#characteristics-of-binomial-experiments",
+    "href": "Day9.html#characteristics-of-binomial-experiments",
+    "title": "Day 9",
+    "section": "Characteristics of Binomial Experiments",
+    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-random-variable",
+    "href": "Day9.html#the-binomial-random-variable",
+    "title": "Day 9",
+    "section": "The Binomial Random Variable",
+    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-probability-formula",
+    "href": "Day9.html#the-binomial-probability-formula",
+    "title": "Day 9",
+    "section": "The Binomial Probability Formula",
+    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
+  },
+  {
+    "objectID": "Day9.html#section-2",
+    "href": "Day9.html#section-2",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
+  },
+  {
+    "objectID": "Day9.html#section-3",
+    "href": "Day9.html#section-3",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
+  },
+  {
+    "objectID": "Day9.html#observations-on-binomial-distributions",
+    "href": "Day9.html#observations-on-binomial-distributions",
+    "title": "Day 9",
+    "section": "Observations on Binomial Distributions",
+    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
+  },
+  {
+    "objectID": "Day9.html#section-5",
+    "href": "Day9.html#section-5",
+    "title": "Day 9",
+    "section": "",
+    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
+  },
+  {
+    "objectID": "Day9.html#statistics-of-binomial-distribution",
+    "href": "Day9.html#statistics-of-binomial-distribution",
+    "title": "Day 9",
+    "section": "Statistics of Binomial Distribution",
+    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
+  },
+  {
+    "objectID": "Day9.html#section-6",
+    "href": "Day9.html#section-6",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
+  },
+  {
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+  },
+  {
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: example",
+    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
     "objectID": "RandRStudio.html",
     "href": "RandRStudio.html",
     "title": "Setting Up R and RStudio",
@@ -1202,5 +677,530 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Day7.html#the-multiplicative-rule",
+    "href": "Day7.html#the-multiplicative-rule",
+    "title": "Day 7",
+    "section": "The Multiplicative Rule",
+    "text": "The Multiplicative Rule\n\n\n\nThe probability of the intersection of two events, \\(A\\) and \\(B\\), can be calculated using the multiplicative rule. This rule uses conditional probabilities.\n\n\\[P(B|A)=\\frac{P(A\\cap B)}{P(A)} \\Rightarrow P(A\\cap B)=P(A)\\cdot P(B|A)\\]\n\nThe rule helps in understanding how the occurrence of event \\(A\\) influences the probability of event \\(B\\).\n\n\\[P(A|B)=\\frac{P(A\\cap B)}{P(B)} \\Rightarrow P(A\\cap B)=P(B)\\cdot P(A|B)\\]\nGiven \\(P(A)\\) and \\(P(B|A)\\), you can find \\(P(A\\cap B)\\)."
+  },
+  {
+    "objectID": "Day7.html#multiplicative-rule-of-probability",
+    "href": "Day7.html#multiplicative-rule-of-probability",
+    "title": "Day 7",
+    "section": "Multiplicative Rule of Probability",
+    "text": "Multiplicative Rule of Probability\n\n\n\nThe multiplicative rule determines the probability of the intersection of two events (A) and (B).\nIt is calculated in two ways, depending on which event’s probability is conditioned on the other.\n\n\\[P(A\\cap B)=P(A) \\cdot P(B|A)\\] \\[P(A\\cap B)=P(B) \\cdot P(A|B)\\]"
+  },
+  {
+    "objectID": "Day7.html#law-of-total-probability",
+    "href": "Day7.html#law-of-total-probability",
+    "title": "Day 7",
+    "section": "Law of Total Probability",
+    "text": "Law of Total Probability\n\n\n\nThe law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.\nIt divides the sample space into parts (\\(B\\)) and (\\(B^c\\)) (the complement of (\\(B\\))).\n\n\\[P(A)=P(B) \\cdot P(A|B)+P\\left(B^c\\right) \\cdot P\\left(A|B^c\\right)\\]"
+  },
+  {
+    "objectID": "Day7.html#section",
+    "href": "Day7.html#section",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 1: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?"
+  },
+  {
+    "objectID": "Day7.html#independence-in-probability",
+    "href": "Day7.html#independence-in-probability",
+    "title": "Day 7",
+    "section": "Independence in Probability",
+    "text": "Independence in Probability\n\n\nKnowing that event \\(B\\) has occurred may or may not alter the probability of event \\(A\\).\n\nIndependence: Events \\(A\\) and \\(B\\) are independent if the occurrence of \\(B\\) does not change the probability of \\(A\\).\n\n\\[P(A|B)=P(A)\\]\n\nReciprocal Independence: If \\(A\\) and \\(B\\) are independent, then the occurrence of \\(A\\) also does not affect the probability of \\(B\\).\n\n\\[P(B|A)=P(B)\\]\nEvents not satisfying these conditions are dependent, meaning the occurrence of one affects the probability of the other."
+  },
+  {
+    "objectID": "Day7.html#section-1",
+    "href": "Day7.html#section-1",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 2 Consider the experiment of tossing a fair die, and let \\[A= \\{\\text{Observe an even number.}\\}\\] \\[B= \\{\\text{Observe a number less than or equal to 4.}\\}\\] Are \\(A\\) and \\(B\\) independent events?"
+  },
+  {
+    "objectID": "Day7.html#key-points-on-independence",
+    "href": "Day7.html#key-points-on-independence",
+    "title": "Day 7",
+    "section": "Key Points on Independence",
+    "text": "Key Points on Independence\n\n\n\nIndependence vs. Intuition: Independence cannot be inferred visually through a Venn diagram—only through precise probability calculations.\nMutual Exclusivity and Dependence: Mutually exclusive events with nonzero probabilities (e.g., \\(A\\) and \\(B\\)) are dependent because the occurrence of one precludes the occurrence of the other.\n\\[P(A|B)=0\\]"
+  },
+  {
+    "objectID": "Day7.html#intersection-probability-rule",
+    "href": "Day7.html#intersection-probability-rule",
+    "title": "Day 7",
+    "section": "Intersection Probability Rule",
+    "text": "Intersection Probability Rule\n\n\n\nIndependence: Independence means \\(P(B|A)=P(B)\\).\nIntersection Rule: For independent events \\(A\\) and \\(B\\):\n\\[P(A\\cap B)=P(A) \\cdot P(B)\\]\nConverse Validity: If the intersection probability holds:\n\\[\\text{If } P(A\\cap B)=P(A) \\cdot P(B) \\text{ then } A \\& B \\text{ are independent.}\\]"
+  },
+  {
+    "objectID": "Day7.html#section-2",
+    "href": "Day7.html#section-2",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 3: The American Association for Marriage and Family Therapy (AAMFT) found that \\(25 \\%\\) of divorced couples are classified as “fiery foes” (i.e., they communicate through their children and are hostile toward each other).\n\n\nWhat is the probability that in a sample of 2 divorced couples, both are classified as “fiery foes”?\n\n\n\nWhat is the probability that in a sample of 10 divorced couples, all 10 are classified as “fiery foes”?"
+  },
+  {
+    "objectID": "Day7.html#bayess-rule-and-its-foundation",
+    "href": "Day7.html#bayess-rule-and-its-foundation",
+    "title": "Day 7",
+    "section": "Bayes’s Rule and Its Foundation",
+    "text": "Bayes’s Rule and Its Foundation\n\n\n\nRecall Multiplicative Rule:\n\\[P(A \\cap B)=P(A) P(B | A)\\] \\[P(A \\cap B)=P(B) P(A | B)\\] \\[P(A) P(B | A)=P(B) P(A | B)\\]\nDeriving Bayes’s Rule:\nDivide the multiplicative identity by \\(P(B)\\):\n\\[P(A | B)=\\frac{P(A) P(B | A)}{P(B)}\\]\nIncorporating the Law of Total Probability:\n\\[P(A | B)=\\frac{P(A) P(B | A)}{P(A) P(B | A)+P\\left(A^c\\right) P\\left(B | A^c\\right)}\\]"
+  },
+  {
+    "objectID": "Day7.html#bayes-rule-example",
+    "href": "Day7.html#bayes-rule-example",
+    "title": "Day 7",
+    "section": "Bayes Rule Example",
+    "text": "Bayes Rule Example\n\n\n\nScenario: Estimating the likelihood of liver disease in a patient who is an alcoholic.\nDefine Events:\n\n\\(A\\): Patient has liver disease.\n\\(B\\): Patient is an alcoholic.\n\nProbabilities:\n\n\\(P(A) = 0.10\\) (10% of patients have liver disease)\n\\(P(B) = 0.05\\) (5% of patients are alcoholics)"
+  },
+  {
+    "objectID": "Day7.html#application-of-bayess-rule",
+    "href": "Day7.html#application-of-bayess-rule",
+    "title": "Day 7",
+    "section": "Application of Bayes’s Rule",
+    "text": "Application of Bayes’s Rule\n\n\n\nGiven: You need to find \\(P(A | B)\\), the probability of liver disease if the patient is an alcoholic.\nAvailable Data: \\(P(B | A) = 0.07\\) (7% of those with liver disease are alcoholics)\nBayes’s Rule Calculation:\n\\[P(A | B) = P(A) \\cdot \\frac{P(B | A)}{P(B)} = 0.10 \\cdot \\frac{0.07}{0.05} = 0.14\\]\nInterpretation: A patient who is an alcoholic has a 14% chance of having liver disease, higher than the general clinic population."
+  },
+  {
+    "objectID": "Day7.html#section-3",
+    "href": "Day7.html#section-3",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 4: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is \\(r_1\\) (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of \\(r_2\\) that the test will give a positive response. If a person does not have the disease, there is a probability of \\(r_3\\) that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of paameters.\n\n\n\\(r_1=0.0001, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.9999, r_3=0.0001\\)"
+  },
+  {
+    "objectID": "Day7.html#section-5",
+    "href": "Day7.html#section-5",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
+  },
+  {
+    "objectID": "Day3.html#one-qualitative-variable",
+    "href": "Day3.html#one-qualitative-variable",
+    "title": "Day 3",
+    "section": "One qualitative Variable",
+    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
+  },
+  {
+    "objectID": "Day3.html#frequency-table",
+    "href": "Day3.html#frequency-table",
+    "title": "Day 3",
+    "section": "Frequency Table",
+    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
+  },
+  {
+    "objectID": "Day3.html#proportion",
+    "href": "Day3.html#proportion",
+    "title": "Day 3",
+    "section": "Proportion",
+    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
+  },
+  {
+    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "title": "Day 3",
+    "section": "What proportion of adults sampled do not own a cell phone?",
+    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
+  },
+  {
+    "objectID": "Day3.html#bar-chartplotgraph",
+    "href": "Day3.html#bar-chartplotgraph",
+    "title": "Day 3",
+    "section": "Bar Chart/Plot/Graph",
+    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
+  },
+  {
+    "objectID": "Day3.html#two-qualitative-variables",
+    "href": "Day3.html#two-qualitative-variables",
+    "title": "Day 3",
+    "section": "Two qualitative Variables",
+    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender",
+    "href": "Day3.html#relationship-status-and-gender",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender-1",
+    "href": "Day3.html#relationship-status-and-gender-1",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
+  },
+  {
+    "objectID": "Day3.html#difference-in-proportions",
+    "href": "Day3.html#difference-in-proportions",
+    "title": "Day 3",
+    "section": "Difference in proportions",
+    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
+  },
+  {
+    "objectID": "Day3.html#student-survey",
+    "href": "Day3.html#student-survey",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+  },
+  {
+    "objectID": "Day3.html#distribution-1",
+    "href": "Day3.html#distribution-1",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
+  },
+  {
+    "objectID": "Day3.html#center-mean-or-average",
+    "href": "Day3.html#center-mean-or-average",
+    "title": "Day 3",
+    "section": "Center: Mean or Average",
+    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
+  },
+  {
+    "objectID": "Day3.html#student-survey-1",
+    "href": "Day3.html#student-survey-1",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#center-median",
+    "href": "Day3.html#center-median",
+    "title": "Day 3",
+    "section": "Center: Median",
+    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#variability-standard-deviation",
+    "href": "Day3.html#variability-standard-deviation",
+    "title": "Day 3",
+    "section": "Variability: Standard Deviation",
+    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
+  },
+  {
+    "objectID": "Day4.html#recap-student-survey",
+    "href": "Day4.html#recap-student-survey",
+    "title": "Day 4",
+    "section": "Recap: Student Survey",
+    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+  },
+  {
+    "objectID": "Day4.html#histogram",
+    "href": "Day4.html#histogram",
+    "title": "Day 4",
+    "section": "Histogram",
+    "text": "Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
+  },
+  {
+    "objectID": "Day4.html#histogram-shape",
+    "href": "Day4.html#histogram-shape",
+    "title": "Day 4",
+    "section": "Histogram: Shape",
+    "text": "Histogram: Shape\n\n\nHistogram: aggregates values into bins and counts how many cases fall into each bin\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
+  },
+  {
+    "objectID": "Day4.html#shape-and-stats",
+    "href": "Day4.html#shape-and-stats",
+    "title": "Day 4",
+    "section": "Shape and Stats",
+    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\n\n\nlibrary(dplyr)  # for data manipulation\nsurvey %&gt;% summarize(mean = mean(Pulse),\n                     sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
+  },
+  {
+    "objectID": "Day4.html#bell-shaped-distribution",
+    "href": "Day4.html#bell-shaped-distribution",
+    "title": "Day 4",
+    "section": "Bell-shaped distribution",
+    "text": "Bell-shaped distribution\n\nPlotQuiz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n75\n200\n25"
+  },
+  {
+    "objectID": "Day4.html#standardizing-data-z-score",
+    "href": "Day4.html#standardizing-data-z-score",
+    "title": "Day 4",
+    "section": "Standardizing data: z-score",
+    "text": "Standardizing data: z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[z = \\dfrac{x - \\text{mean}}{\\text{SD}}\\]\n\nE.g. if a value \\(x\\) has \\(z=-1.5\\) then the value \\(x\\) is 1.5 standard deviations below the mean.\n\n\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between ____ and _____."
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
+    "href": "Day4.html#shape-left-skew-right-skew-histograms",
+    "title": "Day 4",
+    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)",
+    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "title": "Day 4",
+    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)",
+    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots",
+    "href": "Day4.html#shape-boxplots",
+    "title": "Day 4",
+    "section": "Shape: boxplots",
+    "text": "Shape: boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3)\nMedian: The middle value of the dataset, represented by a line inside the box\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR\nOutliers: Data points outside of the whiskers, often represented as individual points"
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots-1",
+    "href": "Day4.html#shape-boxplots-1",
+    "title": "Day 4",
+    "section": "Shape: boxplots",
+    "text": "Shape: boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
+  },
+  {
+    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "title": "Day 4",
+    "section": "Elements of a Box Plot: Inner Fences",
+    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
+  },
+  {
+    "objectID": "Day4.html#elements-of-a-box-plot-outer-fences",
+    "href": "Day4.html#elements-of-a-box-plot-outer-fences",
+    "title": "Day 4",
+    "section": "Elements of a Box Plot: Outer Fences",
+    "text": "Elements of a Box Plot: Outer Fences\n\n\nLower Outer Fence: \\[ \\text{Lower outer fence} = Q_L - 3 \\times \\text{IQR} \\]\nUpper Outer Fence: \\[ \\text{Upper outer fence} = Q_U + 3 \\times \\text{IQR} \\]\nOuter fences help in spotting what are often considered extreme outliers. These are data points that are significantly distant from the typical data range, suggesting possible data entry errors, measurement errors, or novel findings worthy of further investigation."
+  },
+  {
+    "objectID": "Day4.html#outliers",
+    "href": "Day4.html#outliers",
+    "title": "Day 4",
+    "section": "Outliers",
+    "text": "Outliers\n\nMild Outliers fall between the inner and outer fences and Extreme Outliers fall beyond the outer fences.\nDifferentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. This categorization can impact the conclusions drawn from the data."
+  },
+  {
+    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
+    "href": "Day4.html#adding-a-qualitative-variable-stats",
+    "title": "Day 4",
+    "section": "Adding a qualitative variable: stats",
+    "text": "Adding a qualitative variable: stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable\n\n\nlibrary(dplyr)\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmoker have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
+  },
+  {
+    "objectID": "Day4.html#side-by-side-histogram",
+    "href": "Day4.html#side-by-side-histogram",
+    "title": "Day 4",
+    "section": "Side-by-side Histogram",
+    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(survey, aes(x=Pulse)) + \n  geom_histogram(binwidth = 4, fill=\"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)  # to plot by category of Smoke"
+  },
+  {
+    "objectID": "Day4.html#side-by-side-boxplot",
+    "href": "Day4.html#side-by-side-boxplot",
+    "title": "Day 4",
+    "section": "Side-by-side boxplot",
+    "text": "Side-by-side boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Create boxplots using facet_wrap()\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph",
+    "href": "Day4.html#stacked-bar-graph",
+    "title": "Day 4",
+    "section": "Stacked bar graph",
+    "text": "Stacked bar graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph-counts",
+    "href": "Day4.html#stacked-bar-graph-counts",
+    "title": "Day 4",
+    "section": "Stacked bar graph (counts)",
+    "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "Day14.html#introduction-to-assessing-normality",
+    "href": "Day14.html#introduction-to-assessing-normality",
+    "title": "Day 14",
+    "section": "Introduction to Assessing Normality",
+    "text": "Introduction to Assessing Normality\n\n\nObjective: Learn to determine if sample data originate from a normally distributed population, a prerequisite for many statistical analysis techniques.\nContext: Before applying statistical methods that assume normality, it’s crucial to verify that the assumption holds for your data."
+  },
+  {
+    "objectID": "Day14.html#applications-of-the-normal-distribution",
+    "href": "Day14.html#applications-of-the-normal-distribution",
+    "title": "Day 14",
+    "section": "Applications of the Normal Distribution",
+    "text": "Applications of the Normal Distribution\n\n\nHistogram and Density Plots: Begin by visualizing the distribution of your data. A histogram or density plot should reveal a bell-shaped curve, characteristic of a normal distribution. The symmetry and spread are your initial indicators.\nNormal Q-Q Plot: This plot displays your sample data against the expected quantiles of a normal distribution. If your data points align closely with the reference line (a 45-degree angle), your data likely follow a normal distribution. Deviations from this line indicate potential skewness or the presence of outliers."
+  },
+  {
+    "objectID": "Day14.html#the-empirical-rule-and-its-application",
+    "href": "Day14.html#the-empirical-rule-and-its-application",
+    "title": "Day 14",
+    "section": "The Empirical Rule and Its Application",
+    "text": "The Empirical Rule and Its Application\n\n\nUnderstanding the Rule: According to the empirical rule, if the data are normal:\n\nApproximately 68% of data should fall within one standard deviation (±1σ) of the mean.\nAbout 95% fall within two standard deviations (±2σ).\nNearly 99.7% should lie within three standard deviations (±3σ).\n\nApplication: Calculate these intervals for your data and check the percentages. Close alignment with these percentages supports the assumption of normality."
+  },
+  {
+    "objectID": "Day14.html#iqr-to-standard-deviation-ratio",
+    "href": "Day14.html#iqr-to-standard-deviation-ratio",
+    "title": "Day 14",
+    "section": "IQR to Standard Deviation Ratio",
+    "text": "IQR to Standard Deviation Ratio\n\nRationale: The ratio of the Interquartile Range (IQR) to the standard deviation (s) is another metric used to assess normality. For normally distributed data, this ratio should be approximately 1.3.\nMethod: Calculate the IQR (the range between the 25th and 75th percentiles) and the standard deviation of your sample. Compare their ratio to 1.3 to gain another perspective on your data’s normality."
+  },
+  {
+    "objectID": "Day14.html#statistical-tests-for-normality",
+    "href": "Day14.html#statistical-tests-for-normality",
+    "title": "Day 14",
+    "section": "Statistical Tests for Normality",
+    "text": "Statistical Tests for Normality\n\nShapiro-Wilk Test: This test is particularly effective for smaller data sets. It assesses whether the data’s arrangement is likely to be derived from a normal distribution.\nKolmogorov-Smirnov Test: Useful for comparing your sample with a specified normal distribution. This test checks the largest difference between the empirical and the theoretical cumulative distribution functions."
+  },
+  {
+    "objectID": "Day14.html#case-study-epa-ratings",
+    "href": "Day14.html#case-study-epa-ratings",
+    "title": "Day 14",
+    "section": "Case Study: EPA ratings",
+    "text": "Case Study: EPA ratings\n\n\nThe dataset consists of EPA gas mileage ratings for 100 cars. Each value represents the miles per gallon (MPG) that a particular car achieves under standardized testing conditions. This dataset can help understand how statistical methods are applied in real-world scenarios like assessing the fuel efficiency of vehicles."
+  },
+  {
+    "objectID": "Day14.html#section",
+    "href": "Day14.html#section",
+    "title": "Day 14",
+    "section": "",
+    "text": "DataR code\n\n\nEPA Gas Mileage Ratings for 100 Cars (miles per gallon)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncol1\ncol2\ncol3\ncol4\ncol5\ncol6\ncol7\ncol8\ncol9\ncol10\n\n\n\n\n36.3\n41.0\n36.9\n37.1\n44.9\n36.8\n30.0\n37.2\n42.1\n36.7\n\n\n32.7\n37.3\n41.2\n36.6\n32.9\n36.5\n33.2\n37.4\n37.5\n33.6\n\n\n40.5\n36.5\n37.6\n33.9\n40.2\n36.4\n37.7\n37.7\n40.0\n34.2\n\n\n36.2\n37.9\n36.0\n37.9\n35.9\n38.2\n38.3\n35.7\n35.6\n35.1\n\n\n38.5\n39.0\n35.5\n34.8\n38.6\n39.4\n35.3\n34.4\n38.8\n39.7\n\n\n36.3\n36.8\n32.5\n36.4\n40.5\n36.6\n36.1\n38.2\n38.4\n39.3\n\n\n41.0\n31.8\n37.3\n33.1\n37.0\n37.6\n37.0\n38.7\n39.0\n35.8\n\n\n37.0\n37.2\n40.7\n37.4\n37.1\n37.8\n35.9\n35.6\n36.7\n34.5\n\n\n37.1\n40.3\n36.7\n37.0\n33.9\n40.1\n38.0\n35.2\n34.8\n39.5\n\n\n39.9\n36.9\n32.9\n33.8\n39.8\n34.0\n36.8\n35.0\n38.1\n36.9\n\n\n\n\n\n\n# store 100 mpgs in an object called 'mpg'\nmpg &lt;- c(\n  36.3, 41.0, 36.9, 37.1, 44.9, 36.8, 30.0, 37.2, 42.1, 36.7,\n  32.7, 37.3, 41.2, 36.6, 32.9, 36.5, 33.2, 37.4, 37.5, 33.6,\n  40.5, 36.5, 37.6, 33.9, 40.2, 36.4, 37.7, 37.7, 40.0, 34.2,\n  36.2, 37.9, 36.0, 37.9, 35.9, 38.2, 38.3, 35.7, 35.6, 35.1,\n  38.5, 39.0, 35.5, 34.8, 38.6, 39.4, 35.3, 34.4, 38.8, 39.7,\n  36.3, 36.8, 32.5, 36.4, 40.5, 36.6, 36.1, 38.2, 38.4, 39.3,\n  41.0, 31.8, 37.3, 33.1, 37.0, 37.6, 37.0, 38.7, 39.0, 35.8,\n  37.0, 37.2, 40.7, 37.4, 37.1, 37.8, 35.9, 35.6, 36.7, 34.5,\n  37.1, 40.3, 36.7, 37.0, 33.9, 40.1, 38.0, 35.2, 34.8, 39.5,\n  39.9, 36.9, 32.9, 33.8, 39.8, 34.0, 36.8, 35.0, 38.1, 36.9\n)\n\nmpg_data &lt;- data.frame(mpg = mpg)"
+  },
+  {
+    "objectID": "Day14.html#section-1",
+    "href": "Day14.html#section-1",
+    "title": "Day 14",
+    "section": "",
+    "text": "HistogramR-Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(mpg_data, aes(x = mpg)) +\n  geom_histogram(aes(y = ..density..), bins = 25, fill = \"skyblue\", color = \"black\") +\n  geom_density(color = \"red\")"
+  },
+  {
+    "objectID": "Day14.html#section-2",
+    "href": "Day14.html#section-2",
+    "title": "Day 14",
+    "section": "",
+    "text": "QQ PlotR-Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(mpg_data, aes(sample = mpg)) +\n  stat_qq() +\n  stat_qq_line(col = \"blue\")"
+  },
+  {
+    "objectID": "Day14.html#tests-for-normality",
+    "href": "Day14.html#tests-for-normality",
+    "title": "Day 14",
+    "section": "Tests for Normality",
+    "text": "Tests for Normality\nShapiro-Wilk Normality Test\n\nshapiro.test(mpg_data$mpg)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mpg_data$mpg\nW = 0.98814, p-value = 0.5185\n\n\nKolmogorov-Smirnov Test\n\nks.test(mpg_data$mpg, \"pnorm\", mean = mean(mpg_data$mpg), sd = sd(mpg_data$mpg))\n\n\n    Asymptotic one-sample Kolmogorov-Smirnov test\n\ndata:  mpg_data$mpg\nD = 0.067046, p-value = 0.7597\nalternative hypothesis: two-sided"
+  },
+  {
+    "objectID": "Day14.html#summary-statistics",
+    "href": "Day14.html#summary-statistics",
+    "title": "Day 14",
+    "section": "Summary Statistics",
+    "text": "Summary Statistics\n\nlibrary(dplyr)\n\n# Calculate summary statistics\nsummary_stats &lt;- mpg_data %&gt;%\n  summarise(\n    Mean = mean(mpg),\n    IQR = IQR(mpg),\n    SD = sd(mpg),\n    Ratio = IQR(mpg) / sd(mpg),\n    Within_1sd = mean(mpg &gt;= (Mean - SD) & mpg &lt;= (Mean + SD)),\n    Within_2sd = mean(mpg &gt;= (Mean - 2 * SD) & mpg &lt;= (Mean + 2 * SD)),\n    Within_3sd = mean(mpg &gt;= (Mean - 3 * SD) & mpg &lt;= (Mean + 3 * SD))\n  )\n\nsummary_stats\n\n    Mean  IQR       SD    Ratio Within_1sd Within_2sd Within_3sd\n1 36.994 2.65 2.417897 1.095994       0.68       0.96       0.99"
+  },
+  {
+    "objectID": "Day10.html#introduction-to-poisson-random-variables",
+    "href": "Day10.html#introduction-to-poisson-random-variables",
+    "title": "Day 10",
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n \n\n\n\n\n\n\n\nDefinition\n\n\nA Poisson Random Variable is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter \\(\\lambda\\) (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area."
+  },
+  {
+    "objectID": "Day10.html#introduction-to-poisson-random-variables-1",
+    "href": "Day10.html#introduction-to-poisson-random-variables-1",
+    "title": "Day 10",
+    "section": "Introduction to Poisson Random Variables",
+    "text": "Introduction to Poisson Random Variables\n\n\n\nDiscrete Outcomes: Counts of events (0, 1, 2, …).\nRate of Occurrence: Governed by \\(\\lambda\\), which is both the mean and the variance of the distribution.\nIndependence: The occurrence of one event does not affect the probability of another event occurring in the same interval."
+  },
+  {
+    "objectID": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "href": "Day10.html#probability-distribution-mean-and-variance-of-poisson-random-variables",
+    "title": "Day 10",
+    "section": "Probability Distribution, Mean, and Variance of Poisson Random Variables",
+    "text": "Probability Distribution, Mean, and Variance of Poisson Random Variables\n\n\nFormula for Probability:\n\n\\[\\begin{align*}\np(x)&=\\frac{\\lambda^x e^{-\\lambda}}{x!}\\quad(x=0,1,2,\\ldots)\n\\end{align*}\\]\n\nMean and Variance:\n\nMean (\\(\\mu\\)): \\(\\mu=\\lambda\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2=\\lambda\\)"
+  },
+  {
+    "objectID": "Day10.html#example-1-traffic-monitoring",
+    "href": "Day10.html#example-1-traffic-monitoring",
+    "title": "Day 10",
+    "section": "Example 1: Traffic Monitoring",
+    "text": "Example 1: Traffic Monitoring\n\n\n\nScenario: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.\nQuestion: What is the probability of observing exactly 5 accidents in one month?\n\n\n\nSolution:\n\nUsing \\(\\lambda=3\\), \\[p(5)=\\frac{3^5 e^{-3}}{5!}\\approx0.1008\\]"
+  },
+  {
+    "objectID": "Day10.html#example-2-quality-control-in-manufacturing",
+    "href": "Day10.html#example-2-quality-control-in-manufacturing",
+    "title": "Day 10",
+    "section": "Example 2: Quality Control in Manufacturing",
+    "text": "Example 2: Quality Control in Manufacturing\n\n\nScenario: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.\nQuestion: What is the probability of finding no defects on a newly inspected vehicle?\n\n\n\nSolution:\n\nUsing \\(\\lambda=2\\), \\[p(0)=\\frac{2^0 e^{-2}}{0!}=e^{-2}\\approx0.1353\\]"
+  },
+  {
+    "objectID": "Day10.html#example-3-ecological-research",
+    "href": "Day10.html#example-3-ecological-research",
+    "title": "Day 10",
+    "section": "Example 3: Ecological Research",
+    "text": "Example 3: Ecological Research\n\n\nScenario: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.\na. Find the mean and standard deviation.\n \nb. Probability of exactly five sightings:\n \nc. Probability of fewer than two sightings:"
+  },
+  {
+    "objectID": "Day10.html#poisson-distribution-functions-in-r",
+    "href": "Day10.html#poisson-distribution-functions-in-r",
+    "title": "Day 10",
+    "section": "Poisson Distribution Functions in R",
+    "text": "Poisson Distribution Functions in R\n\nThe dpois function calculates the probability mass function of the Poisson distribution, useful for finding (P(X = x)).\n\nSyntax: dpois(x, lambda)\nExample: Calculate \\(P(X = 3)\\) for \\(\\lambda = 2.2\\)\n\n\nprobability_exactly_3 &lt;- dpois(3, lambda = 2.2)\nprobability_exactly_3\n\n[1] 0.1966387\n\n\nThe ppois function computes the cumulative probability \\(P(X \\leq x)\\) of the Poisson distribution.\n\nSyntax: ppois(q, lambda)\nExample: Calculate \\(P(X \\leq 3)\\) for \\(\\lambda=2.2\\)\n\n\nprobability_up_to_3 &lt;- ppois(3, lambda = 2.2)\nprobability_up_to_3\n\n[1] 0.8193524"
+  },
+  {
+    "objectID": "Day11.html#introduction-to-continuous-probability-distribution",
+    "href": "Day11.html#introduction-to-continuous-probability-distribution",
+    "title": "Day 11",
+    "section": "Introduction to Continuous Probability Distribution",
+    "text": "Introduction to Continuous Probability Distribution\n\n\n\nA continuous random variable, \\(X\\), can take any value within a specified range. It is graphically depicted by a smooth curve known as the Probability Density Function (PDF), \\(f(x)\\).\nKey Concepts of PDF:\n\nProbability of an Interval: The area under the curve between any two points \\(a\\) and \\(b\\) (\\(a \\leq x \\leq b\\)) represents the probability of \\(x\\) falling within that range.\nNon-negativity: \\(f(x)\\geq0\\) for all \\(x\\).\nTotal Probability: The integral of \\(f(x)\\) across its entire range equals 1, representing the total set of outcomes for \\(x\\).\nEndpoint Consideration: Including endpoints in an interval, like \\(x=a\\) or \\(x=b\\), does not change the computed probability since \\(P(x=a)=0\\) for any particular \\(a\\)."
+  },
+  {
+    "objectID": "Day11.html#properties-and-visualization-of-continuous-distributions",
+    "href": "Day11.html#properties-and-visualization-of-continuous-distributions",
+    "title": "Day 11",
+    "section": "Properties and Visualization of Continuous Distributions",
+    "text": "Properties and Visualization of Continuous Distributions\n\n\n\n\n\n\n\nFunction Representation: \\(f(x)\\) is often referred to as a density function or frequency function.\nCalculating Probabilities: The probability that \\(x\\) will fall between any two specific values, \\(a\\) and \\(b\\), is given by the area under \\(f(x)\\) between these points.\nGraphical Illustration: The shape of the distribution varies based on the data it models, reflecting different types of continuous random variables.\nZero Probability at a Point: A fundamental property of continuous variables: The probability of \\(x\\) assuming any exact value, such as \\(a\\), is zero, reinforcing that continuous variables span ranges rather than discrete points."
+  },
+  {
+    "objectID": "Day11.html#introduction-to-uniform-distribution",
+    "href": "Day11.html#introduction-to-uniform-distribution",
+    "title": "Day 11",
+    "section": "Introduction to Uniform Distribution",
+    "text": "Introduction to Uniform Distribution\n\n\n\n\n\n\n\nDefinition\n\n\nUniform distribution, or rectangular distribution, is a type of continuous probability distribution where every outcome in a specified range is equally likely.\n\nGraphical Representation: Depicted as a rectangle because the probability density function is constant within the bounds.\nBasic Formula: The probability density function (PDF) is \\(f(x) = \\frac{1}{b-a}\\) for \\(x\\) within the interval \\([a, b]\\)."
+  },
+  {
+    "objectID": "Day11.html#visualizing-and-calculating-probabilities",
+    "href": "Day11.html#visualizing-and-calculating-probabilities",
+    "title": "Day 11",
+    "section": "Visualizing and Calculating Probabilities",
+    "text": "Visualizing and Calculating Probabilities\n\n\n\n\n\n\n\n\nArea Calculation: Probabilities are calculated as the area under the PDF curve, simplifying to the width of the interval times the height of the PDF.\nExample: For an interval \\([c, d]\\), the probability that \\(x\\) falls within \\([a, b]\\) (where \\(a\\) and \\(b\\) are within \\(c\\) and \\(d\\)) is \\((a-b) \\times \\frac{1}{c-d}\\)."
+  },
+  {
+    "objectID": "Day11.html#statistical-measures",
+    "href": "Day11.html#statistical-measures",
+    "title": "Day 11",
+    "section": "Statistical Measures",
+    "text": "Statistical Measures\n\n\n\n\nMean and Median: The mean, \\(\\mu\\), and median of a uniform distribution are the same, given by \\(\\mu = \\frac{c+d}{2}\\).\nVariance: The variance, \\(\\sigma^2\\), is calculated as \\(\\sigma = \\frac{(d-c)^2}{12}\\)."
+  },
+  {
+    "objectID": "Day11.html#real-world-applications",
+    "href": "Day11.html#real-world-applications",
+    "title": "Day 11",
+    "section": "Real-World Applications",
+    "text": "Real-World Applications\n\n\n\n\nUniformity: Ideal for modelling scenarios where each outcome within a range is equally likely, such as random draws from a finite set or simulation inputs.\nExamples: Used in simulations, randomized algorithms, and systems modeling where equal likelihood is assumed for inputs or scenarios within a certain range."
+  },
+  {
+    "objectID": "Day11.html#section",
+    "href": "Day11.html#section",
+    "title": "Day 11",
+    "section": "",
+    "text": "Example 1: Example 1 An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let \\(x\\) represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.\n\n\nCalculate and interpret the mean and standard deviation of \\(X\\)."
+  },
+  {
+    "objectID": "Day11.html#section-1",
+    "href": "Day11.html#section-1",
+    "title": "Day 11",
+    "section": "",
+    "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
   }
 ]

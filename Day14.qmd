@@ -50,7 +50,7 @@ yt <- 0
 ## Introduction to Assessing Normality {.font80}
 
 
-::: cle2
+::: cle13
 
 - **Objective**: Learn to determine if sample data originate from a normally distributed population, a prerequisite for many statistical analysis techniques.
 
@@ -87,7 +87,7 @@ yt <- 0
 ## IQR to Standard Deviation Ratio {.font80}
 
 
-::: cle8
+::: cle9
 **Rationale**: The ratio of the Interquartile Range (IQR) to the standard deviation (s) is another metric used to assess normality. For normally distributed data, this ratio should be approximately 1.3.
 
 **Method**: Calculate the IQR (the range between the 25th and 75th percentiles) and the standard deviation of your sample. Compare their ratio to 1.3 to gain another perspective on your data's normality.
