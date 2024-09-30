@@ -199,6 +199,11 @@ qexp(0.9, rate = 1/6.25)
 
 > Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), $x$, of a magnetron tube has an exponential probability distribution with $\theta=6.25$.
 
+a. Find the mean and standard deviation of $x$.
+
+b. Suppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with $\theta=6.25$ is correct?
+
+c. What should the warranty period be if the manufacturer wants to replace only $27.5 \%$ of the tubes?
 
 ##
 

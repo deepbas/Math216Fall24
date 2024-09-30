@@ -1239,11 +1239,19 @@
     "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
   },
   {
+<<<<<<< Updated upstream
     "objectID": "RandRStudio.html#on-windows",
     "href": "RandRStudio.html#on-windows",
     "title": "Setting Up R and RStudio",
     "section": "On Windows",
     "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file."
+=======
+    "objectID": "Day15.html#section-1",
+    "href": "Day15.html#section-1",
+    "title": "Day 15",
+    "section": "",
+    "text": "Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\n\nFind the mean and standard deviation of \\(x\\).\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
+>>>>>>> Stashed changes
   },
   {
     "objectID": "RandRStudio.html#on-mac",
