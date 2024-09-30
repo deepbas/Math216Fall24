@@ -1202,5 +1202,159 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day15.html#introduction-to-assessing-normality",
+    "href": "Day15.html#introduction-to-assessing-normality",
+    "title": "Day 15",
+    "section": "Introduction to Assessing Normality",
+    "text": "Introduction to Assessing Normality"
+  },
+  {
+    "objectID": "Day15.html#applications-of-the-normal-distribution",
+    "href": "Day15.html#applications-of-the-normal-distribution",
+    "title": "Day 15",
+    "section": "Applications of the Normal Distribution",
+    "text": "Applications of the Normal Distribution"
+  },
+  {
+    "objectID": "Day15.html#the-empirical-rule-and-its-application",
+    "href": "Day15.html#the-empirical-rule-and-its-application",
+    "title": "Day 15",
+    "section": "The Empirical Rule and Its Application",
+    "text": "The Empirical Rule and Its Application"
+  },
+  {
+    "objectID": "Day15.html#iqr-to-standard-deviation-ratio",
+    "href": "Day15.html#iqr-to-standard-deviation-ratio",
+    "title": "Day 15",
+    "section": "IQR to Standard Deviation Ratio",
+    "text": "IQR to Standard Deviation Ratio"
+  },
+  {
+    "objectID": "Day15.html#statistical-tests-for-normality",
+    "href": "Day15.html#statistical-tests-for-normality",
+    "title": "Day 15",
+    "section": "Statistical Tests for Normality",
+    "text": "Statistical Tests for Normality"
+  },
+  {
+    "objectID": "Day15.html#case-study-epa-ratings",
+    "href": "Day15.html#case-study-epa-ratings",
+    "title": "Day 15",
+    "section": "Case Study: EPA ratings",
+    "text": "Case Study: EPA ratings\n\n\nThe dataset consists of EPA gas mileage ratings for 100 cars. Each value represents the miles per gallon (MPG) that a particular car achieves under standardized testing conditions. This dataset can help understand how statistical methods are applied in real-world scenarios like assessing the fuel efficiency of vehicles."
+  },
+  {
+    "objectID": "Day15.html#section",
+    "href": "Day15.html#section",
+    "title": "Day 15",
+    "section": "",
+    "text": "Example 1: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?"
+  },
+  {
+    "objectID": "Day15.html#section-1",
+    "href": "Day15.html#section-1",
+    "title": "Day 15",
+    "section": "",
+    "text": "Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\)."
+  },
+  {
+    "objectID": "Day15.html#section-2",
+    "href": "Day15.html#section-2",
+    "title": "Day 15",
+    "section": "",
+    "text": "QQ PlotR-Code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(mpg_data, aes(sample = mpg)) +\n  stat_qq() +\n  stat_qq_line(col = \"blue\")"
+  },
+  {
+    "objectID": "Day15.html#tests-for-normality",
+    "href": "Day15.html#tests-for-normality",
+    "title": "Day 15",
+    "section": "Tests for Normality",
+    "text": "Tests for Normality\nShapiro-Wilk Normality Test\n\nshapiro.test(mpg_data$mpg)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mpg_data$mpg\nW = 0.98814, p-value = 0.5185\n\n\nKolmogorov-Smirnov Test\n\nks.test(mpg_data$mpg, \"pnorm\", mean = mean(mpg_data$mpg), sd = sd(mpg_data$mpg))\n\n\n    Asymptotic one-sample Kolmogorov-Smirnov test\n\ndata:  mpg_data$mpg\nD = 0.067046, p-value = 0.7597\nalternative hypothesis: two-sided"
+  },
+  {
+    "objectID": "Day15.html#summary-statistics",
+    "href": "Day15.html#summary-statistics",
+    "title": "Day 15",
+    "section": "Summary Statistics",
+    "text": "Summary Statistics\n\nlibrary(dplyr)\n\n# Calculate summary statistics\nsummary_stats &lt;- mpg_data %&gt;%\n  summarise(\n    Mean = mean(mpg),\n    IQR = IQR(mpg),\n    SD = sd(mpg),\n    Ratio = IQR(mpg) / sd(mpg),\n    Within_1sd = mean(mpg &gt;= (Mean - SD) & mpg &lt;= (Mean + SD)),\n    Within_2sd = mean(mpg &gt;= (Mean - 2 * SD) & mpg &lt;= (Mean + 2 * SD)),\n    Within_3sd = mean(mpg &gt;= (Mean - 3 * SD) & mpg &lt;= (Mean + 3 * SD))\n  )\n\nsummary_stats\n\n    Mean  IQR       SD    Ratio Within_1sd Within_2sd Within_3sd\n1 36.994 2.65 2.417897 1.095994       0.68       0.96       0.99"
+  },
+  {
+    "objectID": "Day15.html#introduction-to-the-exponential-distribution",
+    "href": "Day15.html#introduction-to-the-exponential-distribution",
+    "title": "Day 15",
+    "section": "Introduction to the Exponential Distribution",
+    "text": "Introduction to the Exponential Distribution\n\n\nCommonly used to model waiting times\nExamples: Time between emergencies, equipment failures, and sighting rare species"
+  },
+  {
+    "objectID": "Day15.html#what-is-the-exponential-distribution",
+    "href": "Day15.html#what-is-the-exponential-distribution",
+    "title": "Day 15",
+    "section": "What is the Exponential Distribution?",
+    "text": "What is the Exponential Distribution?\n\n\nDescribes the time or distance between random events\nCalled the waiting-time distribution"
+  },
+  {
+    "objectID": "Day15.html#key-characteristics",
+    "href": "Day15.html#key-characteristics",
+    "title": "Day 15",
+    "section": "Key Characteristics",
+    "text": "Key Characteristics\n\n\nOnly one parameter: \\(\\theta\\)\nShape and scale determined by \\(\\theta\\)"
+  },
+  {
+    "objectID": "Day15.html#probability-density-function",
+    "href": "Day15.html#probability-density-function",
+    "title": "Day 15",
+    "section": "Probability Density Function",
+    "text": "Probability Density Function\n\n\\[f(x)=\\frac{1}{\\theta} \\exp \\left(-\\frac{x}{\\theta}\\right), \\quad x&gt;0\\]\n\n\\(\\theta\\): Scale parameter, affects the decay rate of the function"
+  },
+  {
+    "objectID": "Day15.html#parameters-of-the-exponential-distribution",
+    "href": "Day15.html#parameters-of-the-exponential-distribution",
+    "title": "Day 15",
+    "section": "Parameters of the Exponential Distribution",
+    "text": "Parameters of the Exponential Distribution\n\n\nMean: \\[\\mu=\\theta\\]\nRate: \\[\\lambda=\\frac{1}{\\theta}\\]\nStandard Deviation: \\[\\sigma=\\theta\\]\nVariance: \\[\\sigma^2=\\theta^2\\]"
+  },
+  {
+    "objectID": "Day15.html#visualizing-the-exponential-distribution",
+    "href": "Day15.html#visualizing-the-exponential-distribution",
+    "title": "Day 15",
+    "section": "Visualizing the Exponential Distribution",
+    "text": "Visualizing the Exponential Distribution\n\n\n \n\n\nThe shape becomes wider as \\(\\theta\\) increases\nExample: Plots for \\(\\theta=0.5, 1, 2\\)"
+  },
+  {
+    "objectID": "Day15.html#calculating-probabilities",
+    "href": "Day15.html#calculating-probabilities",
+    "title": "Day 15",
+    "section": "Calculating Probabilities",
+    "text": "Calculating Probabilities\n\n\nTo find the area to the right of a value \\(a\\): \\[P(X &gt; a) = \\exp\\left(-\\frac{a}{\\theta}\\right)\\]"
+  },
+  {
+    "objectID": "Day15.html#font60",
+    "href": "Day15.html#font60",
+    "title": "Day 15",
+    "section": "{font60}",
+    "text": "{font60}\n\nExample 1: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?"
+  },
+  {
+    "objectID": "Day15.html#font60-1",
+    "href": "Day15.html#font60-1",
+    "title": "Day 15",
+    "section": "{font60}",
+    "text": "{font60}\n\nExample 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\)."
+  },
+  {
+    "objectID": "Day15.html#calculating-probabilities-and-quantiles-in-r",
+    "href": "Day15.html#calculating-probabilities-and-quantiles-in-r",
+    "title": "Day 15",
+    "section": "Calculating Probabilities and Quantiles in R",
+    "text": "Calculating Probabilities and Quantiles in R\n\npexp: Calculates the cumulative probability for a given value.\n\nSyntax: pexp(q, rate = 1, lower.tail = TRUE)\nComputes \\(P(X \\leq x)\\) or \\(P(X &gt; x)\\) for an exponential distribution.\nExamples:\n\npexp(5, rate = 1/2) calculates \\(P(X \\leq 5)\\) for \\(\\theta = 2\\).\npexp(5, rate = 1/2, lower.tail = FALSE) for \\(P(X &gt; 5)\\).\n\n\nqexp: Computes the quantile for a specified probability.\n\nSyntax: qexp(p, rate = 1, lower.tail = TRUE)\nFinds the smallest \\(x\\) such that \\(P(X \\leq x) \\geq p\\).\nExamples:\n\nqexp(0.7, rate = 1/2) finds the time by which 70% of events are expected to occur for \\(\\theta = 2\\)."
+  },
+  {
+    "objectID": "Day15.html#application-examples",
+    "href": "Day15.html#application-examples",
+    "title": "Day 15",
+    "section": "Application Examples",
+    "text": "Application Examples\n\n\nHospital Emergencies:\n\nGiven \\(\\theta = 2\\), find \\(P(X &gt; 5)\\):\n\n\n\n1 - pexp(5, rate = 1/2)  # Method 1\n\n[1] 0.082085\n\npexp(5, rate = 1/2, lower.tail = FALSE)  # Method 2\n\n[1] 0.082085\n\n\n\nWarranty Period for Magnetron Tubes:\n\nWith \\(\\theta = 6.25\\), find the quantile for 90% reliability:\n\n\n\nqexp(0.9, rate = 1/6.25)\n\n[1] 14.39116"
   }
 ]
