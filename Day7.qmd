@@ -47,7 +47,7 @@ yt <- 0
 
 ## The Multiplicative Rule
 
-::: cle3
+::: cle6
 ::: font70
 
 - The probability of the intersection of two events, $A$ and $B$, can be calculated using the multiplicative rule. This rule uses conditional probabilities.
@@ -65,7 +65,7 @@ Given $P(A)$ and $P(B|A)$, you can find $P(A\cap B)$.
 
 ## Multiplicative Rule of Probability
 
-::: cle
+::: cle7
 ::: font70
 
 - The multiplicative rule determines the probability of the intersection of two events \(A\) and \(B\).
@@ -79,7 +79,7 @@ $$P(A\cap B)=P(B) \cdot P(A|B)$$
 
 ## Law of Total Probability
 
-::: cle
+::: cle8
 ::: font70
 
 - The law of total probability allows the calculation of the probability of an event based on exhaustive, mutually exclusive scenarios.
@@ -99,7 +99,7 @@ $$P(A)=P(B) \cdot P(A|B)+P\left(B^c\right) \cdot P\left(A|B^c\right)$$
 
 ## Independence in Probability
 
-::: cle
+::: cle9
 ::: font70
 Knowing that event $B$ has occurred may or may not alter the probability of event $A$.
 
@@ -127,7 +127,7 @@ Are $A$ and $B$ independent events?
 
 ## Key Points on Independence
 
-::: cle4
+::: cle10
 ::: font70
 
 - **Independence vs. Intuition**: Independence cannot be inferred visually through a Venn diagram—only through precise probability calculations.
@@ -141,7 +141,7 @@ Are $A$ and $B$ independent events?
 
 ## Intersection Probability Rule
 
-::: cle4
+::: cle11
 ::: font70
 
 - **Independence**: Independence means $P(B|A)=P(B)$.
@@ -173,7 +173,7 @@ b. What is the probability that in a sample of 10 divorced couples, all 10 are c
 
 ## Bayes's Rule and Its Foundation
 
-::: cle1
+::: cle12
 ::: font50
 
 - **Recall Multiplicative Rule**:

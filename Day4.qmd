@@ -100,7 +100,7 @@ ggplot(survey, aes(x = Pulse)) +
 
 ## Histogram: Shape
 
-::: cle5
+::: cle9
 - **Histogram:** aggregates values into bins and counts how many cases fall into each bin
 - Pulse rates are symmetrically distributed around a rate of about 70 beats per minute.
 - **Symmetric distributions** are "centered" around a mean and median that are roughly the same in value.

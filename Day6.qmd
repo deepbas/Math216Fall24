@@ -69,7 +69,7 @@ yt <- 0
 ## Complementary Events
 
 
-::: cle3
+::: cle6
 ::: font70
 ::: incremental
 
@@ -88,7 +88,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Calculating $P(A)$ for Coin Tosses
 
-::: cle4
+::: cle12
 ::: font60
 ::: incremental
 
@@ -111,7 +111,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Calculating $P(A)$ for Coin Tosses
 
-::: cle4
+::: cle8
 ::: font60
 ::: incremental
 
@@ -132,7 +132,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Additive Rule 
 
-::: cle2
+::: cle14
 ::: font60
 ::: incremental
 
@@ -150,7 +150,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 ## Hospital Admission Probabilities
 
 ::: incremental
-::: cle2
+::: cle13
 ::: font60
 
 ::: row
@@ -185,7 +185,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Mutually Exclusive Events
 
-::: cle2
+::: cle7
 ::: font60
 ::: incremental
 
@@ -205,7 +205,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
     Find the probability of observing at least one head when tossing two balanced coins?
 
-::: cle2
+::: cle10
 ::: font60
 ::: incremental
 
@@ -239,7 +239,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Conditional Probability
 
-::: cle2
+::: cle7
 ::: font70
 ::: incremental
 
@@ -252,10 +252,10 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 :::
 
 
-## Conditional Probability in Dice Throws
+## Conditional Probability in Dice Throws {.font80}
 
-::: cle1
-::: font60
+::: cle6
+::: font80
 ::: incremental
 
   - Consider the event $A$ (observing an even number) and $B$ (result less than or equal to $3$) on a die throw.

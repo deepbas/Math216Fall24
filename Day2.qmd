@@ -55,9 +55,7 @@ An experimental (or observational) unit is an object (e.g., person, thing, trans
 :::
 
 
-<br>
-
-::: bqt
+::: cle6
 Data is stored and presented in a dataset that comprises of variables measured on units 
 
 - A **variable** is any characteristic that is recorded for each unit
@@ -150,7 +148,7 @@ Can convert quantitative variable into qualitative groups
 ## Sampling and Inference
 
 
-::: cle4
+::: cle9
 
 - A **population** includes all
 individuals or objects of
@@ -180,7 +178,7 @@ about the population.
 
 
 ##
-::: cle
+::: cle8
 ::: font90
 
 **Population**
@@ -200,7 +198,7 @@ about the population.
 
 ## 
 
-::: cle
+::: cle3
 ::: font90
 
 **Variables**

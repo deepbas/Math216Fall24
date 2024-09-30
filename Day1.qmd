@@ -179,11 +179,10 @@ Allows us to make informed decisions in the face of uncertainty and let's us tak
 :::
 
 ::: footer
-[R Documentation](https://rmarkdown.rstudio.com/)
+[RMarkdown Documentation](https://rmarkdown.rstudio.com/)
 :::
 
 
-::: centered-content
 
 ## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
 
@@ -194,15 +193,15 @@ Allows us to make informed decisions in the face of uncertainty and let's us tak
 
 ::: right
 
-<br>
-
 ::: lqt
+::: font80
 -   Install R and RStudio on your machine
 -   Make a course folder called 'math216' on your local computer
 -   You will keep all of your class materials on this folder 
 :::
 :::
 :::
-
-`r countdown(minutes = 10, seconds = 00, top = 0 , left = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
 :::
+
+`r countdown(minutes = 10, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+

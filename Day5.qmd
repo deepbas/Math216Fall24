@@ -50,7 +50,7 @@ yt <- 0
 ## Introduction to Probability
 
 
-::: cle5
+::: cle6
 ::: font90
 
 - **Experiment**: Any act of observation with uncertain outcomes (e.g., Tossing a coin).
@@ -68,7 +68,7 @@ Mathematical Representation
 
 ## Definitions
 
-::: cle2
+::: cle15
 ::: font80
 
 ### Sample Point
@@ -102,8 +102,8 @@ Example: Coin Toss
 
 ## Experiments and Their Sample Spaces
 
-::: cle
-::: font50
+::: cle11
+::: font40
 
 Experiment: Tossing a Coin
 
@@ -134,7 +134,7 @@ Experiment: Tossing Two Coins
   
 ## Defining Probability
 
-::: cle4
+::: cle14
 ::: font70
 
 **Probability of a Sample Point**: Number between 0 and 1 indicating likelihood of the outcome.
@@ -156,7 +156,7 @@ Rule 2: Sum of Probabilities
   
 ## Example: Calculating Winning Probability in a Dice Game
 
-::: cle2
+::: cle13
 ::: font50
 
 ::: row
@@ -193,7 +193,7 @@ Calculation of Winning Probability
 
 ## Event Definition 
 
-::: cle
+::: cle3
 
 Definition of an Event
 
@@ -208,7 +208,7 @@ Probability of an Event
 
 ## Steps for Calculating Event Probabilities
 
-::: cle
+::: cle4
 ::: font60
 ::: row
 ::: left
@@ -238,7 +238,7 @@ Example
 
 ## Compound Events: Unions 
 
-::: cle
+::: cle8
 
 Unions
 
@@ -251,7 +251,7 @@ Unions
 
 ## Compound Events: Intersections
 
-::: cle
+::: cle9
 
 Intersections
 
@@ -265,7 +265,7 @@ Intersections
 ## Example: Calculating Unions and Intersections in a Die-Toss
 
 ::: font40
-::: cle
+::: cle10
 
 ::: row
 ::: left
@@ -304,7 +304,7 @@ Probability Calculations
 
 ## Calculating Sample Points Using Combinations
 
-::: cle
+::: cle8
 ::: font60
 
 - **Combinations Rule**: Calculate the number of possible samples drawn without replacement.

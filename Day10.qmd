@@ -65,7 +65,7 @@ A **Poisson Random Variable** is typically used to model the number of times an 
 
 <br>
 
-::: cle2
+::: cle6
 
 - **Discrete Outcomes**: Counts of events (0, 1, 2, ...).
 - **Rate of Occurrence**: Governed by $\lambda$, which is both the mean and the variance of the distribution.
@@ -78,7 +78,7 @@ A **Poisson Random Variable** is typically used to model the number of times an 
 ## Probability Distribution, Mean, and Variance of Poisson Random Variables {.font70}
 
 
-::: cle2
+::: cle7
 - **Formula for Probability**:
 
 \begin{align*}
@@ -102,7 +102,7 @@ p(x)&=\frac{\lambda^x e^{-\lambda}}{x!}\quad(x=0,1,2,\ldots)
 
 ## Example 1: Traffic Monitoring
 
-::: cle5
+::: cle8
 ::: font80
 
 - **Scenario**: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.
@@ -120,7 +120,7 @@ Using $\lambda=3$,
 
 ## Example 2: Quality Control in Manufacturing {.font80}
 
-::: cle5
+::: cle9
 
 - **Scenario**: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.
 - **Question**: What is the probability of finding no defects on a newly inspected vehicle?
