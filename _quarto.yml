@@ -90,8 +90,10 @@ website:
         menu:
           - text: "R and RStudio"
             href: RandRStudio.html
-          # - text: "Posit Tutorial"
-          #   href: posit.html
+      - text: "ShinyApps"
+        menu:
+          - text: "Sampling Distributions"
+            href: SamplingApp.html
           # - text: "Softwares"
           #   href: software.html
           # - text: "Github Tutorial"
