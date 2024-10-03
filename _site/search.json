@@ -1433,5 +1433,19 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day17.html#recap-steel-sheets-thickness",
+    "href": "Day17.html#recap-steel-sheets-thickness",
+    "title": "Day 17",
+    "section": "Recap: Steel Sheets Thickness",
+    "text": "Recap: Steel Sheets Thickness\n\n\nContext: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.\nExperiment Setup: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples."
+  },
+  {
+    "objectID": "Day17.html#sampling-distribution-for-barx",
+    "href": "Day17.html#sampling-distribution-for-barx",
+    "title": "Day 17",
+    "section": "Sampling distribution for \\(\\bar{x}\\)",
+    "text": "Sampling distribution for \\(\\bar{x}\\)"
   }
 ]

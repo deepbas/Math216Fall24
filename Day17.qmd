@@ -47,7 +47,7 @@ yt <- 0
 
 
 
-## Introduction  {.font80}
+## Recap: Steel Sheets Thickness{.font80}
 
 
 ::: cle13
@@ -64,7 +64,7 @@ yt <- 0
 
 ![](images/example6.1.png)
 
-## Example 6.1 {.font80}
+## Sampling distribution for $\bar{x}$ {.font80}
 
 ![](images/hist6.1.png)
 
