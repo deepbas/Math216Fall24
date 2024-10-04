@@ -117,7 +117,7 @@ yt <- 0
 ## Impact of Sample Size {.font80}
 
 ::: cle13
-- **Visualization**: Demonstrations of how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.
+- **Visualization**: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.
 - **Practical Implication**: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design.
 
 :::
