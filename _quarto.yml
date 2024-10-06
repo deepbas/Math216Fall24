@@ -59,12 +59,19 @@ website:
           - text: "Lecture 16"
             href: Day16.html
             target: "_blank"
-           # - text: "Lecture 8"
-           #  href: Day8.html
-           #  target: "_blank"
-           # - text: "Lecture 5"
-          #   href: Day5.html
+          - text: "Lecture 17"
+            href: Day17.html
+            target: "_blank"
+          - text: "Lecture 18"
+            href: Day18.html
+            target: "_blank"
+          # - text: "Lecture 16"
+          #   href: Day16.html
           #   target: "_blank"
+          # - text: "Lecture 16"
+          #   href: Day16.html
+          #   target: "_blank"
+
 
           # Add additional lectures here
       # - text: "Class Activities"

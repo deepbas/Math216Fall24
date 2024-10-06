@@ -1,0 +1,153 @@
+---
+title: "Day 18"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+## Sampling Distributions using Proportions {.font80}
+
+
+::: cle13
+
+- **Objective:** Understand how the sample proportion $\hat{p}$ estimates the population proportion $p$.
+- **Context:** Whether estimating voter preferences, customer behaviors, or biological occurrences, knowing how to infer population characteristics from sample data is crucial.
+:::
+
+
+## Motivation and Real-World Examples {.font80}
+
+::: cle10
+- **Voter Preference:** Estimate the proportion of voters in favor of a new bill.
+- **Customer Behavior:** Understand the percentage of customers using store credit cards.
+- **Conservation Efforts:** Track the fraction of endangered species born in captivity.
+:::
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+::: font80
+::: cle13
+- **Task:** In groups of two- three, discuss why it's important to estimate these proportions accurately.
+- **Question:** What might be some implications of inaccurate estimates in these scenarios?
+:::
+:::
+
+:::
+:::
+
+`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+## {.font50}
+
+> Example 1: (Example 6.5 - Textbook) Suppose we have selected a random sample of $n=36$ observations from a population with mean $\mu=80$ and standard deviation $\sigma=6$.
+
+<center>
+    <img src="images/table_6.5.png" width="50%" alt="Descriptive Alt Text">
+</center>
+
+
+## Sampling distribution for $\hat{p}$ {.font80}
+
+![](images/hist6.5.png)
+
+## Properties of Sampling Distribution of $\hat{p}$ {.font80}
+
+::: cle13
+1. **Mean of $\hat{p}$**
+   - The mean equals the population proportion $p$.
+   - $\hat{p}$ is an unbiased estimator of $p$.
+   $$ E(\hat{p}) = \mu_{\hat{p}} = p $$
+
+2. **Standard Deviation of $\hat{p}$**
+   - The variability of $\hat{p}$ decreases as sample size $n$ increases.
+   $$ \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} $$
+:::
+
+
+# Central Limit Theorem for $\hat{p}$ {.font80}
+
+::: cle13
+- **Approximately Normal:** For large samples, $\hat{p}$'s distribution is nearly normal.
+- **Rule of Thumb:**
+  - Consider large if $np \geq 15$ and $n(1-p) \geq 15$.
+  $$ n \cdot \hat{p} \geq 15 \quad \text{and} \quad n(1-\hat{p}) \geq 15 $$
+:::
+
+
+## {.font80}
+
+<iframe width="1280" height="900" src="https://stats.cpm.org/propsamples/"></iframe>
+
+::: footer
+Source: [CPM Educational Program](https://cpm.org/who-are-we/)
+:::
+
+
+## {.font60}
+
+> Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is $p=0.25$. A total of $n=70$ people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let $\hat{p}$ be the proportion that win a prize. Find the mean and standard deviation of $\hat{p}$.
+
+
+
+## {.font60}
+
+> Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for $27 \%$ of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?
+
+
+## {.font60}
+
+> Example 4: In the 2012 U.S. presidential election, $51 \%$ of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than $40 \%$ of them had voted for Barack Obama?
+
+
+##
