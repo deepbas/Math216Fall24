@@ -115,7 +115,7 @@ yt <- 0
 :::
 
 
-# Central Limit Theorem for $\hat{p}$ {.font80}
+## Central Limit Theorem for $\hat{p}$ {.font80}
 
 ::: cle13
 - **Approximately Normal:** For large samples, $\hat{p}$'s distribution is nearly normal.
