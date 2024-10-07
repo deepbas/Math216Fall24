@@ -90,7 +90,7 @@ yt <- 0
 
 ## {.font50}
 
-> Example 1: (Example 6.5 - Textbook) Suppose we have selected a random sample of $n=36$ observations from a population with mean $\mu=80$ and standard deviation $\sigma=6$.
+> Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that $60 \%$ of all the city's voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of $\hat{p}$, the sample proportion of voters in favor of the candidate. What properties do you observe?
 
 <center>
     <img src="images/table_6.5.png" width="50%" alt="Descriptive Alt Text">
@@ -127,11 +127,9 @@ yt <- 0
 
 ## {.font80}
 
-<iframe width="1280" height="900" src="https://stats.cpm.org/propsamples/"></iframe>
+<iframe width="1280" height="900" src=""></iframe>
 
-::: footer
-Source: [CPM Educational Program](https://cpm.org/who-are-we/)
-:::
+
 
 
 ## {.font60}
