@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 17</title>
+  <title>Math 216: Statistical Thinking – Day 19</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 17</h1>
+  <h1 class="title">Day 19</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,108 +340,150 @@ Bastola
 </div>
 
 </section>
-<section id="recap-steel-sheets-thickness" class="slide level2 font80">
-<h2>Recap: Steel Sheets Thickness</h2>
+<section id="estimation-in-statistics" class="slide level2 font80">
+<h2>Estimation in Statistics</h2>
 <div class="cle13">
 <ul>
-<li><strong>Context</strong>: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.</li>
-<li><strong>Experiment Setup</strong>: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples.</li>
+<li><strong>Objective:</strong> Use sample data to estimate population parameters.</li>
+<li><strong>Target Parameter:</strong> Unknown population parameter of interest.</li>
 </ul>
 </div>
 </section>
-<section id="example-6.1" class="slide level2 font80">
-<h2>Example 6.1</h2>
+<section id="target-parameters" class="slide level2 font80">
+<h2>Target Parameters</h2>
+<p><br></p>
 
-<img data-src="images/example6.1.png" class="r-stretch"></section>
-<section id="sampling-distribution-for-barx" class="slide level2 font80">
-<h2>Sampling distribution for <span class="math inline">\(\bar{x}\)</span></h2>
-
-<img data-src="images/hist6.1.png" class="r-stretch"></section>
-<section id="uniform-distribution-parameters" class="slide level2 font80">
-<h2>Uniform Distribution Parameters</h2>
-<div class="cle6">
+<img src="images/Day19-1.png" style="display: block; margin: auto;" width="50%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="types-of-estimators" class="slide level2 font80">
+<h2>Types of Estimators</h2>
+<div class="cle10">
 <ul>
-<li><strong>Distribution Type</strong>: Uniform, with each value between 150 and 200 mm equally likely.</li>
-<li><strong>Calculated Mean</strong>: <span class="math inline">\(\mu = \frac{150 + 200}{2} = 175\)</span> mm.</li>
-<li><strong>Calculated Standard Deviation</strong>: <span class="math inline">\(\sigma = \sqrt{\frac{(200 - 150)^2}{12}} \approx 14.43\)</span> mm.</li>
+<li><strong>Point Estimator:</strong> A single value estimate of a population parameter.
+<ul>
+<li>Example: <span class="math inline">\(\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i\)</span> estimates the population mean <span class="math inline">\(\mu\)</span>.</li>
+</ul></li>
+<li><strong>Interval Estimator (Confidence Interval):</strong> A range of values to estimate the parameter with a specified level of “confidence”.</li>
 </ul>
 </div>
 </section>
-<section id="sample-mean-and-estimation" class="slide level2 font80">
-<h2>Sample Mean and Estimation</h2>
-<div class="cle9">
+<section id="importance-of-confidence-intervals" class="slide level2 font80">
+<h2>Importance of Confidence Intervals</h2>
+<div class="cle10">
 <ul>
-<li><strong>Sample Mean</strong>: <span class="math inline">\(\bar{x} = \frac{\sum x}{11}\)</span></li>
-<li><strong>Role of Sample Mean</strong>: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.</li>
-<li><strong>Unbiased Estimator</strong>: <span class="math inline">\(\bar{X} = \frac{1}{n} \sum X_i\)</span> is unbiased, meaning <span class="math inline">\(E(\bar{x}) = \mu\)</span>.</li>
+<li><strong>Confidence Interval:</strong> Not just a point estimate, but an interval that likely contains the target parameter.</li>
+<li><strong>Reliability:</strong> Provides a measure of the reliability of the estimate.</li>
 </ul>
 </div>
 </section>
-<section id="properties-of-the-sampling-distribution" class="slide level2 font70">
-<h2>Properties of the Sampling Distribution</h2>
-<div class="cle13">
+<section id="calculating-a-confidence-interval" class="slide level2 font80">
+<h2>Calculating a Confidence Interval</h2>
+<div class="cle11">
 <ul>
-<li><strong>Mean of Sampling Distribution</strong>: Equals the population mean, i.e., <span class="math inline">\(E(\bar{x}) = \mu\)</span>.</li>
-<li><strong>Standard Error of the Mean (SE)</strong>: <span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span> for sample size (n).</li>
-<li><strong>Implication</strong>: The standard error quantifies the spread of the sampling distribution around the population mean.</li>
+<li><strong>Scenario:</strong> Estimating average hospital stay length.</li>
+<li><strong>Sample Data:</strong> Sample mean <span class="math inline">\(\bar{x}\)</span> from 100 patient records.</li>
+<li><strong>Central Limit Theorem:</strong> Assures that <span class="math inline">\(\bar{x}\)</span> is approximately normally distributed for large samples.</li>
 </ul>
 </div>
 </section>
-<section id="central-limit-theorem-clt" class="slide level2 font80">
-<h2>Central Limit Theorem (CLT)</h2>
-<div class="cle14">
+<section id="confidence-interval-formula" class="slide level2 font80">
+<h2>Confidence Interval Formula</h2>
+<div class="cle8">
+<div class="row">
+<div class="left">
 <ul>
-<li><strong>Theorem Statement</strong>: For any population with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, the sampling distribution of the sample mean <span class="math inline">\(\bar{x}\)</span> will be approximately normal if the sample size <span class="math inline">\(n\)</span> is sufficiently large (typically <span class="math inline">\(n \geq 30\)</span>).</li>
-<li><strong>Application</strong>: This theorem applies regardless of the original population’s distribution, making it a powerful tool in statistical inference.</li>
+<li><strong>95% Confidence Interval for <span class="math inline">\(\mu\)</span>:</strong> <span class="math display">\[
+95\% \text{ C.I.} = \left(\bar{x} - 1.96 \frac{\sigma}{\sqrt{n}}, \quad \bar{x} + 1.96 \frac{\sigma}{\sqrt{n}}\right)
+\]</span></li>
+<li><strong>Note:</strong> <span class="math inline">\(\sigma\)</span> is the standard deviation of the population, and <span class="math inline">\(n\)</span> is the sample size.</li>
 </ul>
 </div>
-</section>
-<section id="impact-of-sample-size" class="slide level2 font80">
-<h2>Impact of Sample Size</h2>
-<div class="cle13">
-<ul>
-<li><strong>Visualization</strong>: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.</li>
-<li><strong>Practical Implication</strong>: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design.</li>
-</ul>
+<div class="right">
+<p><img src="images/Day19-2.png" style="display: block; margin: auto;" width="140%" loading="lazy" decoding="async"></p>
+</div>
+</div>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section" class="slide level2 font60">
 <h2></h2>
-
-<img data-src="images/various_sampling_distr.png" class="r-stretch"></section>
+<blockquote>
+<p>Example 1: Consider the large hospital that wants to estimate the average length of stay of its patients, m . The hospital randomly samples <span class="math inline">\(n=100\)</span> of its patients and finds that the sample mean length of stay is <span class="math inline">\(\bar{x}=4.5\)</span> days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is <span class="math inline">\(\sigma=4\)</span> days. Use the interval estimator <span class="math inline">\(\bar{x} \pm 1.96 \sigma_{\bar{x}}\)</span> to calculate a confidence interval for the target parameter, <span class="math inline">\(\mu\)</span>.</p>
+</blockquote>
+</section>
 <section id="section-1" class="slide level2 font60">
 <h2></h2>
 <blockquote>
-<p>Example 1: Suppose we have selected a random sample of <span class="math inline">\(n=36\)</span> observations from a population with mean <span class="math inline">\(\mu=80\)</span> and standard deviation <span class="math inline">\(\sigma=6\)</span>.</p>
+<p>Example 2: Refer to Example 1 and the problem of estimating <span class="math inline">\(\mu\)</span>, the average length of stay of a hospital’s patients. The lengths of stay (in days) for the <span class="math inline">\(\mathrm{n}=100\)</span> sampled patients are shown in the following table. Use the data to find a <span class="math inline">\(95 \%\)</span> confidence interval for <span class="math inline">\(\mu\)</span> and interpret the result.</p>
 </blockquote>
-<ol type="a">
-<li>What is the value of the mean <span class="math inline">\(\mu_{\bar{x}}\)</span> and standard deviation (standard error) <span class="math inline">\(\sigma_{\bar{x}}\)</span> of the sampling distribution of the sample mean <span class="math inline">\(\bar{x}\)</span>.</li>
-</ol>
-<p><br> <br></p>
-<ol start="2" type="a">
-<li>What is the probability that the sample mean is greater than 82 ?</li>
-</ol>
-</section>
-<section id="section-2" class="slide level2 font60">
+
+<img src="images/Day19-3.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-2" class="slide level2">
 <h2></h2>
-<blockquote>
-<p>Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was <span class="math inline">\(\mu=25\)</span> years, with a standard deviation of <span class="math inline">\(\sigma=9.5\)</span> years.</p>
-</blockquote>
-<ol type="a">
-<li>Describe the sampling distribution of the mean of a sample of 125 students.</li>
-</ol>
-<p><br> <br></p>
-<ol start="2" type="a">
-<li>What is the probability that the sample mean age of the 125 students is greater than 26 years?</li>
-</ol>
+</section>
+<section id="understanding-confidence-intervals" class="slide level2 font70">
+<h2>Understanding Confidence Intervals</h2>
+<div class="cle6">
+<ul>
+<li><strong>Question:</strong> Is the true mean <span class="math inline">\(\mu\)</span> between 3.81 and 5.25?</li>
+<li><strong>Confidence Understanding:</strong>
+<ul>
+<li>No certainty that <span class="math inline">\(\mu\)</span> lies within this specific interval from a single sample.</li>
+<li>If repeated samples are taken, about 95% of such intervals would contain <span class="math inline">\(\mu\)</span>.</li>
+</ul></li>
+<li><strong>Correct Interpretation:</strong>
+<ul>
+<li>We don’t say <span class="math inline">\(\mu\)</span> is definitely in this interval based on one sample; the 95% level reflects how often these intervals capture <span class="math inline">\(\mu\)</span> across many samples.</li>
+</ul></li>
+<li><strong>Terminology:</strong>
+<ul>
+<li><strong>Confidence Coefficient (.95):</strong> Proportion of intervals that will contain <span class="math inline">\(\mu\)</span> over repeated sampling.</li>
+<li><strong>Confidence Level (95%):</strong> Indicates method reliability over many trials.</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
+<div class="row">
+<div class="left">
+<p><img src="images/Day19-5.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async"></p>
+</div>
+<div class="right">
+
+</div>
+</div>
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
+<div class="row">
+<div class="left">
 
-<div class="quarto-auto-generated-content">
+</div>
+<div class="right">
+<p><img src="images/Day19-6.png" style="display: block; margin: auto;" width="140%" loading="lazy" decoding="async"></p>
+<p><img src="images/Day19-7.png" style="display: block; margin: auto;" width="140%" loading="lazy" decoding="async"></p>
+</div>
+</div>
+</section>
+<section id="commonly-used-values-of-z_alpha" class="slide level2 font70">
+<h2>Commonly used values of <span class="math inline">\(z_{\alpha}\)</span></h2>
+<div class="cle6">
+<p>The value <span class="math inline">\(z_\alpha\)</span> is defined as the value of the standard normal random variable <span class="math inline">\(z\)</span> such that the area <span class="math inline">\(\alpha\)</span> will lie to its right. In other words, <span class="math inline">\(P\left(z&gt;z_\alpha\right)=\alpha\)</span>.</p>
+</div>
+
+<img src="images/Day19-8.png" style="display: block; margin: auto;" width="100%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="large-sample-confidence-interval-for-mu" class="slide level2 font80">
+<h2>Large Sample Confidence Interval for <span class="math inline">\(\mu\)</span></h2>
+
+<img src="images/Day19-9.png" style="display: block; margin: auto;" width="100%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="conditions-required" class="slide level2 font80">
+<h2>Conditions Required</h2>
+
+<img src="images/Day19-10.png" style="display: block; margin: auto;" width="100%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="interpretation-of-a-confidence-interval" class="slide level2 font80">
+<h2>Interpretation of a Confidence Interval</h2>
+
+
+<img src="images/Day19-11.png" style="display: block; margin: auto;" width="100%" loading="lazy" decoding="async" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>

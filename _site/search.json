@@ -1503,5 +1503,208 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day19.html#sampling-distributions-using-proportions",
+    "href": "Day19.html#sampling-distributions-using-proportions",
+    "title": "Day 19",
+    "section": "Sampling Distributions using Proportions",
+    "text": "Sampling Distributions using Proportions"
+  },
+  {
+    "objectID": "Day19.html#motivation-and-real-world-examples",
+    "href": "Day19.html#motivation-and-real-world-examples",
+    "title": "Day 19",
+    "section": "Motivation and Real-World Examples",
+    "text": "Motivation and Real-World Examples"
+  },
+  {
+    "objectID": "Day19.html#group-activity-1",
+    "href": "Day19.html#group-activity-1",
+    "title": "Day 19",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "Day19.html#section",
+    "href": "Day19.html#section",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 1: Consider the large hospital that wants to estimate the average length of stay of its patients, m . The hospital randomly samples \\(n=100\\) of its patients and finds that the sample mean length of stay is \\(\\bar{x}=4.5\\) days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is \\(\\sigma=4\\) days. Use the interval estimator \\(\\bar{x} \\pm 1.96 \\sigma_{\\bar{x}}\\) to calculate a confidence interval for the target parameter, \\(\\mu\\)."
+  },
+  {
+    "objectID": "Day19.html#sampling-distribution-for-hatp",
+    "href": "Day19.html#sampling-distribution-for-hatp",
+    "title": "Day 19",
+    "section": "Sampling distribution for \\(\\hat{p}\\)",
+    "text": "Sampling distribution for \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "Day19.html#properties-of-sampling-distribution-of-hatp",
+    "href": "Day19.html#properties-of-sampling-distribution-of-hatp",
+    "title": "Day 19",
+    "section": "Properties of Sampling Distribution of \\(\\hat{p}\\)",
+    "text": "Properties of Sampling Distribution of \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "Day19.html#central-limit-theorem-for-hatp",
+    "href": "Day19.html#central-limit-theorem-for-hatp",
+    "title": "Day 19",
+    "section": "Central Limit Theorem for \\(\\hat{p}\\)",
+    "text": "Central Limit Theorem for \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "Day19.html#section-2",
+    "href": "Day19.html#section-2",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+  },
+  {
+    "objectID": "Day19.html#section-3",
+    "href": "Day19.html#section-3",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+  },
+  {
+    "objectID": "Day19.html#section-4",
+    "href": "Day19.html#section-4",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+  },
+  {
+    "objectID": "Day19.html#target-parameters",
+    "href": "Day19.html#target-parameters",
+    "title": "Day 19",
+    "section": "Target Parameters",
+    "text": "Target Parameters"
+  },
+  {
+    "objectID": "Day19.html#estimation-in-statistics",
+    "href": "Day19.html#estimation-in-statistics",
+    "title": "Day 19",
+    "section": "Estimation in Statistics",
+    "text": "Estimation in Statistics\n\n\nObjective: Use sample data to estimate population parameters.\nTarget Parameter: Unknown population parameter of interest."
+  },
+  {
+    "objectID": "Day19.html#types-of-estimators",
+    "href": "Day19.html#types-of-estimators",
+    "title": "Day 19",
+    "section": "Types of Estimators",
+    "text": "Types of Estimators\n\n\nPoint Estimator: A single value estimate of a population parameter.\n\nExample: \\(\\bar{x} = \\frac{1}{n} \\sum_{i=1}^n x_i\\) estimates the population mean \\(\\mu\\).\n\nInterval Estimator (Confidence Interval): A range of values to estimate the parameter with a specified level of “confidence”."
+  },
+  {
+    "objectID": "Day19.html#importance-of-confidence-intervals",
+    "href": "Day19.html#importance-of-confidence-intervals",
+    "title": "Day 19",
+    "section": "Importance of Confidence Intervals",
+    "text": "Importance of Confidence Intervals\n\n\nConfidence Interval: Not just a point estimate, but an interval that likely contains the target parameter.\nReliability: Provides a measure of the reliability of the estimate."
+  },
+  {
+    "objectID": "Day19.html#calculating-a-confidence-interval",
+    "href": "Day19.html#calculating-a-confidence-interval",
+    "title": "Day 19",
+    "section": "Calculating a Confidence Interval",
+    "text": "Calculating a Confidence Interval\n\n\nScenario: Estimating average hospital stay length.\nSample Data: Sample mean \\(\\bar{x}\\) from 100 patient records.\nCentral Limit Theorem: Assures that \\(\\bar{x}\\) is approximately normally distributed for large samples."
+  },
+  {
+    "objectID": "Day19.html#confidence-interval-formula",
+    "href": "Day19.html#confidence-interval-formula",
+    "title": "Day 19",
+    "section": "Confidence Interval Formula",
+    "text": "Confidence Interval Formula\n\n\n\n\n95% Confidence Interval for \\(\\mu\\): \\[\n95\\% \\text{ C.I.} = \\left(\\bar{x} - 1.96 \\frac{\\sigma}{\\sqrt{n}}, \\quad \\bar{x} + 1.96 \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nNote: \\(\\sigma\\) is the standard deviation of the population, and \\(n\\) is the sample size."
+  },
+  {
+    "objectID": "Day19.html#slide-6-interpretation-of-confidence-intervals",
+    "href": "Day19.html#slide-6-interpretation-of-confidence-intervals",
+    "title": "Day 19",
+    "section": "Slide 6: Interpretation of Confidence Intervals",
+    "text": "Slide 6: Interpretation of Confidence Intervals\n\n\nMeaning: We are 95% confident that the interval contains the true mean length of hospital stays.\nApplication: Helps hospital administrators make informed decisions about healthcare management."
+  },
+  {
+    "objectID": "Day19.html#interpretation-of-confidence-intervals",
+    "href": "Day19.html#interpretation-of-confidence-intervals",
+    "title": "Day 19",
+    "section": "Interpretation of Confidence Intervals",
+    "text": "Interpretation of Confidence Intervals\n\n\nMeaning: We are 95% confident that the interval contains the true mean length of hospital stays.\nApplication: Helps hospital administrators make informed decisions about healthcare management."
+  },
+  {
+    "objectID": "Day19.html#section-1",
+    "href": "Day19.html#section-1",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 2: Refer to Example 1 and the problem of estimating \\(\\mu\\), the average length of stay of a hospital’s patients. The lengths of stay (in days) for the \\(\\mathrm{n}=100\\) sampled patients are shown in the following table. Use the data to find a \\(95 \\%\\) confidence interval for \\(\\mu\\) and interpret the result."
+  },
+  {
+    "objectID": "Day19.html#section-5",
+    "href": "Day19.html#section-5",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+  },
+  {
+    "objectID": "Day19.html#section-6",
+    "href": "Day19.html#section-6",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize. Find the mean and standard deviation of \\(\\hat{p}\\)."
+  },
+  {
+    "objectID": "Day19.html#understanding-confidence-intervals",
+    "href": "Day19.html#understanding-confidence-intervals",
+    "title": "Day 19",
+    "section": "Understanding Confidence Intervals",
+    "text": "Understanding Confidence Intervals\n\n\nQuestion: Is the true mean \\(\\mu\\) between 3.81 and 5.25?\nConfidence Understanding:\n\nNo certainty that \\(\\mu\\) lies within this specific interval from a single sample.\nIf repeated samples are taken, about 95% of such intervals would contain \\(\\mu\\).\n\nCorrect Interpretation:\n\nWe don’t say \\(\\mu\\) is definitely in this interval based on one sample; the 95% level reflects how often these intervals capture \\(\\mu\\) across many samples.\n\nTerminology:\n\nConfidence Coefficient (.95): Proportion of intervals that will contain \\(\\mu\\) over repeated sampling.\nConfidence Level (95%): Indicates method reliability over many trials."
+  },
+  {
+    "objectID": "Day19.html#section-7",
+    "href": "Day19.html#section-7",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize. Find the mean and standard deviation of \\(\\hat{p}\\)."
+  },
+  {
+    "objectID": "Day19.html#section-8",
+    "href": "Day19.html#section-8",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for \\(27 \\%\\) of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?"
+  },
+  {
+    "objectID": "Day19.html#section-9",
+    "href": "Day19.html#section-9",
+    "title": "Day 19",
+    "section": "",
+    "text": "Example 4: In the 2012 U.S. presidential election, \\(51 \\%\\) of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than \\(40 \\%\\) of them had voted for Barack Obama?"
+  },
+  {
+    "objectID": "Day19.html#commonly-used-values-of-z_alpha",
+    "href": "Day19.html#commonly-used-values-of-z_alpha",
+    "title": "Day 19",
+    "section": "Commonly used values of \\(z_{\\alpha}\\)",
+    "text": "Commonly used values of \\(z_{\\alpha}\\)\n\nThe value \\(z_\\alpha\\) is defined as the value of the standard normal random variable \\(z\\) such that the area \\(\\alpha\\) will lie to its right. In other words, \\(P\\left(z&gt;z_\\alpha\\right)=\\alpha\\)."
+  },
+  {
+    "objectID": "Day19.html#large-sample-confidence-interval-for-mu",
+    "href": "Day19.html#large-sample-confidence-interval-for-mu",
+    "title": "Day 19",
+    "section": "Large Sample Confidence Interval for \\(\\mu\\)",
+    "text": "Large Sample Confidence Interval for \\(\\mu\\)"
+  },
+  {
+    "objectID": "Day19.html#conditions-required",
+    "href": "Day19.html#conditions-required",
+    "title": "Day 19",
+    "section": "Conditions Required",
+    "text": "Conditions Required"
+  },
+  {
+    "objectID": "Day19.html#interpretation-of-a-confidence-interval",
+    "href": "Day19.html#interpretation-of-a-confidence-interval",
+    "title": "Day 19",
+    "section": "Interpretation of a Confidence Interval",
+    "text": "Interpretation of a Confidence Interval"
   }
 ]
