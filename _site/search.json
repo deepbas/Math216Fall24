@@ -1671,5 +1671,75 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Day20.html#sampling-distributions-using-proportions",
+    "href": "Day20.html#sampling-distributions-using-proportions",
+    "title": "Day 20",
+    "section": "Sampling Distributions using Proportions",
+    "text": "Sampling Distributions using Proportions\n\n\nObjective: Understand how the sample proportion \\(\\hat{p}\\) estimates the population proportion \\(p\\).\nContext: Whether estimating voter preferences, customer behaviors, or biological occurrences, knowing how to infer population characteristics from sample data is crucial."
+  },
+  {
+    "objectID": "Day20.html#motivation-and-real-world-examples",
+    "href": "Day20.html#motivation-and-real-world-examples",
+    "title": "Day 20",
+    "section": "Motivation and Real-World Examples",
+    "text": "Motivation and Real-World Examples\n\n\nVoter Preference: Estimate the proportion of voters in favor of a new bill.\nCustomer Behavior: Understand the percentage of customers using store credit cards.\nConservation Efforts: Track the fraction of endangered species born in captivity."
+  },
+  {
+    "objectID": "Day20.html#group-activity-1",
+    "href": "Day20.html#group-activity-1",
+    "title": "Day 20",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nTask: In groups of two- three, discuss why it’s important to estimate these proportions accurately.\nQuestion: What might be some implications of inaccurate estimates in these scenarios?\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "Day20.html#section",
+    "href": "Day20.html#section",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+  },
+  {
+    "objectID": "Day20.html#sampling-distribution-for-hatp",
+    "href": "Day20.html#sampling-distribution-for-hatp",
+    "title": "Day 20",
+    "section": "Sampling distribution for \\(\\hat{p}\\)",
+    "text": "Sampling distribution for \\(\\hat{p}\\)"
+  },
+  {
+    "objectID": "Day20.html#properties-of-sampling-distribution-of-hatp",
+    "href": "Day20.html#properties-of-sampling-distribution-of-hatp",
+    "title": "Day 20",
+    "section": "Properties of Sampling Distribution of \\(\\hat{p}\\)",
+    "text": "Properties of Sampling Distribution of \\(\\hat{p}\\)\n\n\nMean of \\(\\hat{p}\\)\n\nThe mean equals the population proportion \\(p\\).\n\\(\\hat{p}\\) is an unbiased estimator of \\(p\\). \\[ E(\\hat{p}) = \\mu_{\\hat{p}} = p \\]\n\nStandard Deviation of \\(\\hat{p}\\)\n\nThe variability of \\(\\hat{p}\\) decreases as sample size \\(n\\) increases. \\[ \\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}} \\]"
+  },
+  {
+    "objectID": "Day20.html#central-limit-theorem-for-hatp",
+    "href": "Day20.html#central-limit-theorem-for-hatp",
+    "title": "Day 20",
+    "section": "Central Limit Theorem for \\(\\hat{p}\\)",
+    "text": "Central Limit Theorem for \\(\\hat{p}\\)\n\n\nApproximately Normal: For large samples, \\(\\hat{p}\\)’s distribution is nearly normal.\nRule of Thumb:\n\nConsider large if \\(np \\geq 15\\) and \\(n(1-p) \\geq 15\\). \\[ n \\cdot \\hat{p} \\geq 15 \\quad \\text{and} \\quad n(1-\\hat{p}) \\geq 15 \\]"
+  },
+  {
+    "objectID": "Day20.html#section-2",
+    "href": "Day20.html#section-2",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize. Find the mean and standard deviation of \\(\\hat{p}\\)."
+  },
+  {
+    "objectID": "Day20.html#section-3",
+    "href": "Day20.html#section-3",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for \\(27 \\%\\) of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?"
+  },
+  {
+    "objectID": "Day20.html#section-4",
+    "href": "Day20.html#section-4",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 4: In the 2012 U.S. presidential election, \\(51 \\%\\) of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than \\(40 \\%\\) of them had voted for Barack Obama?"
   }
 ]
