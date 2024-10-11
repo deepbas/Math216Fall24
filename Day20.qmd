@@ -48,7 +48,7 @@ yt <- 0
 
 ## Introduction to Small Samples and the t-Statistic {.font80}
 
-::: cle13
+::: cle6
 - **Small Samples**: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.
 - **Need for a Different Approach**: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student's t-statistic, a better-suited approach for such scenarios.
 :::
@@ -62,7 +62,7 @@ yt <- 0
 
 ## Introducing the Student's t-Statistic {.font80}
 
-::: cle13
+::: cle14
 Given the issues identified with small samples, the Student's t-statistic offers a refined method for estimating population parameters:
 $$
 T = \frac{\bar{x} - \mu}{s / \sqrt{n}}
@@ -72,7 +72,7 @@ This formula adjusts for the additional uncertainty inherent in small samples.
 
 ## Comparison with the z-Statistic {.font80}
 
-::: cle13
+::: cle10
 The t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation $\sigma$ is known or the sample is large enough ($n \geq 30$) for reliable approximation:
 $$
 Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
@@ -81,7 +81,7 @@ $$
 
 ## Why Use the t-Distribution? {.font80}
 
-::: cle13
+::: cle11
 - **Degrees of Freedom**: The shape of the t-distribution and its variability depend on the degrees of freedom (df = $n-1$), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes.
 :::
 
