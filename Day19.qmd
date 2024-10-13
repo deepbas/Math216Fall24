@@ -115,7 +115,7 @@ yt <- 0
 
 ## {.font60}
 
-> Example 1: Consider the large hospital that wants to estimate the average length of stay of its patients, m . The hospital randomly samples $n=100$ of its patients and finds that the sample mean length of stay is $\bar{x}=4.5$ days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is $\sigma=4$ days. Use the interval estimator $\bar{x} \pm 1.96 \sigma_{\bar{x}}$ to calculate a confidence interval for the target parameter, $\mu$.
+> Example 1: Consider the large hospital that wants to estimate the average length of stay of its patients, $\mu$ . The hospital randomly samples $n=100$ of its patients and finds that the sample mean length of stay is $\bar{x}=4.5$ days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is $\sigma=4$ days. Use the interval estimator $\bar{x} \pm 1.96 \sigma_{\bar{x}}$ to calculate a confidence interval for the target parameter, $\mu$.
 
 
 

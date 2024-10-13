@@ -71,7 +71,25 @@ website:
           - text: "Lecture 20"
             href: Day20.html
             target: "_blank"            
-          # - text: "Lecture 16"
+          - text: "Lecture 21"
+            href: Day21.html
+            target: "_blank"            
+           # - text: "Lecture 20"
+           #  href: Day20.html
+           #  target: "_blank"            
+           # - text: "Lecture 20"
+           #  href: Day20.html
+           #  target: "_blank"            
+           # - text: "Lecture 20"
+           #  href: Day20.html
+           #  target: "_blank"            
+           # - text: "Lecture 20"
+           #  href: Day20.html
+           #  target: "_blank"            
+           # - text: "Lecture 20"
+           #  href: Day20.html
+           #  target: "_blank"            
+           # - text: "Lecture 16"
           #   href: Day16.html
           #   target: "_blank"
 
