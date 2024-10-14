@@ -347,7 +347,7 @@
     "href": "Day21.html#section-7",
     "title": "Day 21",
     "section": "",
-    "text": "Example 2: Building on the information and context from Example 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired margin of error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements?"
+    "text": "Example 2: Building on the information and context from Example 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?"
   },
   {
     "objectID": "about.html",
@@ -1839,5 +1839,12 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day21.html#section-5",
+    "href": "Day21.html#section-5",
+    "title": "Day 21",
+    "section": "",
+    "text": "Using the setup of Example 1, find the sample size needed for a SE of 0.01?"
   }
 ]

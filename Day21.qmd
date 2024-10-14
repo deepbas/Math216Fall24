@@ -133,7 +133,10 @@ Initial 95\% C.I.: $4.5 \pm 0.78$ days; width $=1.56$ days.
 <img src="images/Day21-6.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
 
-##
+## {.font60}
+
+Using the setup of Example 1, find the sample size needed for a SE of 0.01?
+
 
 <img src="images/Day21-8.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
@@ -167,7 +170,8 @@ Initial 95\% C.I.: $4.5 \pm 0.78$ days; width $=1.56$ days.
 ## {.font60}
 
 
-> Example 2: Building on the information and context from Example 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion $p$. Assume a desired margin of error of 0.03 at a $90 \%$ confidence level, maintaining the same population proportion estimate $(\hat{p}=0.65)$. How many individuals should be included in the new sample to meet these precision requirements?
+> Example 2: Building on the information and context from Example 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion $p$. Assume a desired sampling error of 0.03 at a $90 \%$ confidence level, maintaining the same population proportion estimate $(\hat{p}=0.65)$. How many individuals should be included in the new sample to meet these precision requirements? If you did not know $p$ in advance, how would you estimate the sample size in advance for the same sampling error?
+
 
 
 ##
