@@ -122,6 +122,8 @@ website:
         menu:
           - text: "Sampling Distributions"
             href: SamplingApp.html
+          - text: "Confidence Intervals"
+            href: ConfIntervalsApp.html
           # - text: "Softwares"
           #   href: software.html
           # - text: "Github Tutorial"
