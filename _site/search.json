@@ -329,6 +329,13 @@
     "text": "Recall Example 1 from Day 19 Slides\n\nConsider a large hospital that wants to estimate the average length of stay of its patients, \\(\\mu\\) . The hospital randomly samples \\(n=100\\) of its patients and finds that the sample mean length of stay is \\(\\bar{x}=4.5\\) days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is \\(\\sigma=4\\) days.\n\nInitial 95% C.I.: \\(4.5 \\pm 0.78\\) days; width \\(=1.56\\) days.\nAdjusting Sample Size for Precision\n\n\nGoal: Narrow C.I. width from 1.56 days to 0.50 day.\nCalculation leads to a required sample size of approximately ____ patients."
   },
   {
+    "objectID": "Day21.html#section-5",
+    "href": "Day21.html#section-5",
+    "title": "Day 21",
+    "section": "",
+    "text": "Using the setup of Example 1, find the sample size needed for a SE of 0.01?"
+  },
+  {
     "objectID": "Day21.html#recap-confidence-intervals",
     "href": "Day21.html#recap-confidence-intervals",
     "title": "Day 21",
@@ -581,284 +588,74 @@
     "text": "Hypothesis Test: Step-by-Step Procedure\n\n\nState the Hypotheses\n\nNull Hypothesis (\\(H_0\\)): Assume the status quo or a specific value (e.g., \\(\\mu = 2400\\)).\nAlternative Hypothesis (\\(H_a\\)): Proposes a different scenario (e.g., \\(\\mu &gt; 2400\\)).\n\nAssume \\(H_0\\) is True\n\nCollect data under the assumption that \\(H_0\\) holds.\n\nCompute the Test Statistic\n\nUse the formula: \\[\nz = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}\n\\]\n\\(\\bar{x}\\) is the sample mean, \\(\\mu_0\\) is the value under \\(H_0\\), \\(\\sigma\\) is the standard deviation, and \\(n\\) is the sample size.\n\nDetermine the Significance Level\n\nCommonly set at \\(\\alpha = 0.05\\).\nDecide if the computed \\(z\\) value suggests a rare event:\n\nIf \\(z &gt; 1.645\\), it’s considered unusual under the assumption that \\(H_0\\) is true.\n\n\nMake a Decision\n\nReject \\(H_0\\) if the test statistic falls in the rejection region (e.g., \\(z &gt; 1.645\\) for \\(\\alpha = 0.05\\)).\nIf not, fail to reject \\(H_0\\)."
   },
   {
-    "objectID": "Day9.html#recap-variance-and-standard-deviation",
-    "href": "Day9.html#recap-variance-and-standard-deviation",
-    "title": "Day 9",
-    "section": "Recap: Variance and Standard Deviation",
-    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+    "objectID": "Day17.html#recap-steel-sheets-thickness",
+    "href": "Day17.html#recap-steel-sheets-thickness",
+    "title": "Day 17",
+    "section": "Recap: Steel Sheets Thickness",
+    "text": "Recap: Steel Sheets Thickness\n\n\nContext: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.\nExperiment Setup: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples."
   },
   {
-    "objectID": "Day9.html#section-1",
-    "href": "Day9.html#section-1",
-    "title": "Day 9",
+    "objectID": "Day17.html#example-6.1",
+    "href": "Day17.html#example-6.1",
+    "title": "Day 17",
+    "section": "Example 6.1",
+    "text": "Example 6.1"
+  },
+  {
+    "objectID": "Day17.html#sampling-distribution-for-barx",
+    "href": "Day17.html#sampling-distribution-for-barx",
+    "title": "Day 17",
+    "section": "Sampling distribution for \\(\\bar{x}\\)",
+    "text": "Sampling distribution for \\(\\bar{x}\\)"
+  },
+  {
+    "objectID": "Day17.html#uniform-distribution-parameters",
+    "href": "Day17.html#uniform-distribution-parameters",
+    "title": "Day 17",
+    "section": "Uniform Distribution Parameters",
+    "text": "Uniform Distribution Parameters\n\n\nDistribution Type: Uniform, with each value between 150 and 200 mm equally likely.\nCalculated Mean: \\(\\mu = \\frac{150 + 200}{2} = 175\\) mm.\nCalculated Standard Deviation: \\(\\sigma = \\sqrt{\\frac{(200 - 150)^2}{12}} \\approx 14.43\\) mm."
+  },
+  {
+    "objectID": "Day17.html#sample-mean-and-estimation",
+    "href": "Day17.html#sample-mean-and-estimation",
+    "title": "Day 17",
+    "section": "Sample Mean and Estimation",
+    "text": "Sample Mean and Estimation\n\n\nSample Mean: \\(\\bar{x} = \\frac{\\sum x}{11}\\)\nRole of Sample Mean: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.\nUnbiased Estimator: \\(\\bar{X} = \\frac{1}{n} \\sum X_i\\) is unbiased, meaning \\(E(\\bar{x}) = \\mu\\)."
+  },
+  {
+    "objectID": "Day17.html#properties-of-the-sampling-distribution",
+    "href": "Day17.html#properties-of-the-sampling-distribution",
+    "title": "Day 17",
+    "section": "Properties of the Sampling Distribution",
+    "text": "Properties of the Sampling Distribution\n\n\nMean of Sampling Distribution: Equals the population mean, i.e., \\(E(\\bar{x}) = \\mu\\).\nStandard Error of the Mean (SE): \\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\) for sample size (n).\nImplication: The standard error quantifies the spread of the sampling distribution around the population mean."
+  },
+  {
+    "objectID": "Day17.html#central-limit-theorem-clt",
+    "href": "Day17.html#central-limit-theorem-clt",
+    "title": "Day 17",
+    "section": "Central Limit Theorem (CLT)",
+    "text": "Central Limit Theorem (CLT)\n\n\nTheorem Statement: For any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the sampling distribution of the sample mean \\(\\bar{x}\\) will be approximately normal if the sample size \\(n\\) is sufficiently large (typically \\(n \\geq 30\\)).\nApplication: This theorem applies regardless of the original population’s distribution, making it a powerful tool in statistical inference."
+  },
+  {
+    "objectID": "Day17.html#impact-of-sample-size",
+    "href": "Day17.html#impact-of-sample-size",
+    "title": "Day 17",
+    "section": "Impact of Sample Size",
+    "text": "Impact of Sample Size\n\n\nVisualization: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.\nPractical Implication: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design."
+  },
+  {
+    "objectID": "Day17.html#section-1",
+    "href": "Day17.html#section-1",
+    "title": "Day 17",
     "section": "",
-    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+    "text": "Example 1: Suppose we have selected a random sample of \\(n=36\\) observations from a population with mean \\(\\mu=80\\) and standard deviation \\(\\sigma=6\\).\n\n\nWhat is the value of the mean \\(\\mu_{\\bar{x}}\\) and standard deviation (standard error) \\(\\sigma_{\\bar{x}}\\) of the sampling distribution of the sample mean \\(\\bar{x}\\).\n\n \n\nWhat is the probability that the sample mean is greater than 82 ?"
   },
   {
-    "objectID": "Day9.html#introduction-to-binomial-random-variables",
-    "href": "Day9.html#introduction-to-binomial-random-variables",
-    "title": "Day 9",
-    "section": "Introduction to Binomial Random Variables",
-    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
-  },
-  {
-    "objectID": "Day9.html#characteristics-of-binomial-experiments",
-    "href": "Day9.html#characteristics-of-binomial-experiments",
-    "title": "Day 9",
-    "section": "Characteristics of Binomial Experiments",
-    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
-  },
-  {
-    "objectID": "Day9.html#the-binomial-random-variable",
-    "href": "Day9.html#the-binomial-random-variable",
-    "title": "Day 9",
-    "section": "The Binomial Random Variable",
-    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
-  },
-  {
-    "objectID": "Day9.html#the-binomial-probability-formula",
-    "href": "Day9.html#the-binomial-probability-formula",
-    "title": "Day 9",
-    "section": "The Binomial Probability Formula",
-    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
-  },
-  {
-    "objectID": "Day9.html#section-2",
-    "href": "Day9.html#section-2",
-    "title": "Day 9",
+    "objectID": "Day17.html#section-2",
+    "href": "Day17.html#section-2",
+    "title": "Day 17",
     "section": "",
-    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
-  },
-  {
-    "objectID": "Day9.html#section-3",
-    "href": "Day9.html#section-3",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
-  },
-  {
-    "objectID": "Day9.html#observations-on-binomial-distributions",
-    "href": "Day9.html#observations-on-binomial-distributions",
-    "title": "Day 9",
-    "section": "Observations on Binomial Distributions",
-    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
-  },
-  {
-    "objectID": "Day9.html#section-5",
-    "href": "Day9.html#section-5",
-    "title": "Day 9",
-    "section": "",
-    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
-  },
-  {
-    "objectID": "Day9.html#statistics-of-binomial-distribution",
-    "href": "Day9.html#statistics-of-binomial-distribution",
-    "title": "Day 9",
-    "section": "Statistics of Binomial Distribution",
-    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
-  },
-  {
-    "objectID": "Day9.html#section-6",
-    "href": "Day9.html#section-6",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
-  },
-  {
-    "objectID": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
-    "href": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
-    "title": "Day 20",
-    "section": "Introduction to Small Samples and the t-Statistic",
-    "text": "Introduction to Small Samples and the t-Statistic\n\n\nSmall Samples: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.\nNeed for a Different Approach: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student’s t-statistic, a better-suited approach for such scenarios."
-  },
-  {
-    "objectID": "Day20.html#challenges-with-small-samples",
-    "href": "Day20.html#challenges-with-small-samples",
-    "title": "Day 20",
-    "section": "Challenges with Small Samples",
-    "text": "Challenges with Small Samples\n\n\nNormality Assumption: For samples smaller than 30, the distribution of the population must be approximately normal for the sample mean \\(\\bar{x}\\) to be considered normally distributed. For example, if you’re studying the heights of a rare species of plant, and can only find a few samples, the underlying distribution of these heights must be normal for standard approaches to work.\nStandard Deviation Issues: When using the sample standard deviation \\(s\\) in place of the population standard deviation \\(\\sigma\\), the estimate becomes less reliable with smaller samples. Consider a scenario where you measure the amount of a chemical in water samples from different locations. With only a few samples, the variability in your measurements could significantly affect the reliability of your estimates, leading to potentially misleading conclusions."
-  },
-  {
-    "objectID": "Day20.html#introducing-the-students-t-statistic",
-    "href": "Day20.html#introducing-the-students-t-statistic",
-    "title": "Day 20",
-    "section": "Introducing the Student’s t-Statistic",
-    "text": "Introducing the Student’s t-Statistic\n\nGiven the issues identified with small samples, the Student’s t-statistic offers a refined method for estimating population parameters: \\[\nT = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}\n\\] This formula adjusts for the additional uncertainty inherent in small samples."
-  },
-  {
-    "objectID": "Day20.html#comparison-with-the-z-statistic",
-    "href": "Day20.html#comparison-with-the-z-statistic",
-    "title": "Day 20",
-    "section": "Comparison with the z-Statistic",
-    "text": "Comparison with the z-Statistic\n\nThe t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation \\(\\sigma\\) is known or the sample is large enough (\\(n \\geq 30\\)) for reliable approximation: \\[\nZ = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}\n\\]"
-  },
-  {
-    "objectID": "Day20.html#why-use-the-t-distribution",
-    "href": "Day20.html#why-use-the-t-distribution",
-    "title": "Day 20",
-    "section": "Why Use the t-Distribution?",
-    "text": "Why Use the t-Distribution?\n\n\nDegrees of Freedom: The shape of the t-distribution and its variability depend on the degrees of freedom (df = \\(n-1\\)), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes."
-  },
-  {
-    "objectID": "Day20.html#section-3",
-    "href": "Day20.html#section-3",
-    "title": "Day 20",
-    "section": "",
-    "text": "Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n \\(=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{align*}\n\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\n\\end{align*}\\]\n(From R/hand calculation, \\(\\bar{x}=2.283, s=0.950\\) )"
-  },
-  {
-    "objectID": "Day20.html#section-5",
-    "href": "Day20.html#section-5",
-    "title": "Day 20",
-    "section": "",
-    "text": "Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests \\(n=15\\) printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.\n\n\n(From R/hand calculation, \\(\\bar{x}=1.23867, s=0.19316\\) )\n\nForm a \\(99 \\%\\) confidence interval for the mean number of characters printed before the printhead fails. Interpret the result."
-  },
-  {
-    "objectID": "Day20.html#section-6",
-    "href": "Day20.html#section-6",
-    "title": "Day 20",
-    "section": "",
-    "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
-  },
-  {
-    "objectID": "Day6.html#key-probability-concepts-recap",
-    "href": "Day6.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
-  },
-  {
-    "objectID": "Day6.html#complementary-events",
-    "href": "Day6.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
-    "href": "Day6.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
-  },
-  {
-    "objectID": "Day6.html#additive-rule",
-    "href": "Day6.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
-  },
-  {
-    "objectID": "Day6.html#hospital-admission-probabilities",
-    "href": "Day6.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events",
-    "href": "Day6.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events-example",
-    "href": "Day6.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: example",
-    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
-  },
-  {
-    "objectID": "Day6.html#conditional-probability",
-    "href": "Day6.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
-  },
-  {
-    "objectID": "Day6.html#conditional-probability-in-dice-throws",
-    "href": "Day6.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
-  },
-  {
-    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
-    "href": "Day6.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
-  },
-  {
-    "objectID": "RandRStudio.html",
-    "href": "RandRStudio.html",
-    "title": "Setting Up R and RStudio",
-    "section": "",
-    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
-  },
-  {
-    "objectID": "RandRStudio.html#on-windows",
-    "href": "RandRStudio.html#on-windows",
-    "title": "Setting Up R and RStudio",
-    "section": "On Windows",
-    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file."
-  },
-  {
-    "objectID": "RandRStudio.html#on-mac",
-    "href": "RandRStudio.html#on-mac",
-    "title": "Setting Up R and RStudio",
-    "section": "On Mac",
-    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder."
-  },
-  {
-    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
-    "href": "RandRStudio.html#understanding-r-markdown-documents",
-    "title": "Setting Up R and RStudio",
-    "section": "Understanding R Markdown Documents",
-    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
-  },
-  {
-    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "title": "Setting Up R and RStudio",
-    "section": "Managing .Rmd Files and Setting the Working Directory",
-    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your RStudio account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized.\n\n\nText Portions\nText in R Markdown is written using standard markdown syntax. This allows you to add headers, lists, links, and other styling features to create dynamic reports."
-  },
-  {
-    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
-    "href": "RandRStudio.html#text-formatting-in-r-markdown",
-    "title": "Setting Up R and RStudio",
-    "section": "Text Formatting in R Markdown",
-    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/66117)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\\```\nThis is a code block\n\\```\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
-  },
-  {
-    "objectID": "RandRStudio.html#r-code-chunk-options",
-    "href": "RandRStudio.html#r-code-chunk-options",
-    "title": "Setting Up R and RStudio",
-    "section": "R Code Chunk Options",
-    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+    "text": "Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was \\(\\mu=25\\) years, with a standard deviation of \\(\\sigma=9.5\\) years.\n\n\nDescribe the sampling distribution of the mean of a sample of 125 students.\n\n \n\nWhat is the probability that the sample mean age of the 125 students is greater than 26 years?"
   },
   {
     "objectID": "Day7.html#the-multiplicative-rule",
@@ -959,74 +756,284 @@
     "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
   },
   {
-    "objectID": "Day17.html#recap-steel-sheets-thickness",
-    "href": "Day17.html#recap-steel-sheets-thickness",
-    "title": "Day 17",
-    "section": "Recap: Steel Sheets Thickness",
-    "text": "Recap: Steel Sheets Thickness\n\n\nContext: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.\nExperiment Setup: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples."
-  },
-  {
-    "objectID": "Day17.html#example-6.1",
-    "href": "Day17.html#example-6.1",
-    "title": "Day 17",
-    "section": "Example 6.1",
-    "text": "Example 6.1"
-  },
-  {
-    "objectID": "Day17.html#sampling-distribution-for-barx",
-    "href": "Day17.html#sampling-distribution-for-barx",
-    "title": "Day 17",
-    "section": "Sampling distribution for \\(\\bar{x}\\)",
-    "text": "Sampling distribution for \\(\\bar{x}\\)"
-  },
-  {
-    "objectID": "Day17.html#uniform-distribution-parameters",
-    "href": "Day17.html#uniform-distribution-parameters",
-    "title": "Day 17",
-    "section": "Uniform Distribution Parameters",
-    "text": "Uniform Distribution Parameters\n\n\nDistribution Type: Uniform, with each value between 150 and 200 mm equally likely.\nCalculated Mean: \\(\\mu = \\frac{150 + 200}{2} = 175\\) mm.\nCalculated Standard Deviation: \\(\\sigma = \\sqrt{\\frac{(200 - 150)^2}{12}} \\approx 14.43\\) mm."
-  },
-  {
-    "objectID": "Day17.html#sample-mean-and-estimation",
-    "href": "Day17.html#sample-mean-and-estimation",
-    "title": "Day 17",
-    "section": "Sample Mean and Estimation",
-    "text": "Sample Mean and Estimation\n\n\nSample Mean: \\(\\bar{x} = \\frac{\\sum x}{11}\\)\nRole of Sample Mean: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.\nUnbiased Estimator: \\(\\bar{X} = \\frac{1}{n} \\sum X_i\\) is unbiased, meaning \\(E(\\bar{x}) = \\mu\\)."
-  },
-  {
-    "objectID": "Day17.html#properties-of-the-sampling-distribution",
-    "href": "Day17.html#properties-of-the-sampling-distribution",
-    "title": "Day 17",
-    "section": "Properties of the Sampling Distribution",
-    "text": "Properties of the Sampling Distribution\n\n\nMean of Sampling Distribution: Equals the population mean, i.e., \\(E(\\bar{x}) = \\mu\\).\nStandard Error of the Mean (SE): \\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\) for sample size (n).\nImplication: The standard error quantifies the spread of the sampling distribution around the population mean."
-  },
-  {
-    "objectID": "Day17.html#central-limit-theorem-clt",
-    "href": "Day17.html#central-limit-theorem-clt",
-    "title": "Day 17",
-    "section": "Central Limit Theorem (CLT)",
-    "text": "Central Limit Theorem (CLT)\n\n\nTheorem Statement: For any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the sampling distribution of the sample mean \\(\\bar{x}\\) will be approximately normal if the sample size \\(n\\) is sufficiently large (typically \\(n \\geq 30\\)).\nApplication: This theorem applies regardless of the original population’s distribution, making it a powerful tool in statistical inference."
-  },
-  {
-    "objectID": "Day17.html#impact-of-sample-size",
-    "href": "Day17.html#impact-of-sample-size",
-    "title": "Day 17",
-    "section": "Impact of Sample Size",
-    "text": "Impact of Sample Size\n\n\nVisualization: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.\nPractical Implication: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design."
-  },
-  {
-    "objectID": "Day17.html#section-1",
-    "href": "Day17.html#section-1",
-    "title": "Day 17",
+    "objectID": "RandRStudio.html",
+    "href": "RandRStudio.html",
+    "title": "Setting Up R and RStudio",
     "section": "",
-    "text": "Example 1: Suppose we have selected a random sample of \\(n=36\\) observations from a population with mean \\(\\mu=80\\) and standard deviation \\(\\sigma=6\\).\n\n\nWhat is the value of the mean \\(\\mu_{\\bar{x}}\\) and standard deviation (standard error) \\(\\sigma_{\\bar{x}}\\) of the sampling distribution of the sample mean \\(\\bar{x}\\).\n\n \n\nWhat is the probability that the sample mean is greater than 82 ?"
+    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
   },
   {
-    "objectID": "Day17.html#section-2",
-    "href": "Day17.html#section-2",
-    "title": "Day 17",
+    "objectID": "RandRStudio.html#on-windows",
+    "href": "RandRStudio.html#on-windows",
+    "title": "Setting Up R and RStudio",
+    "section": "On Windows",
+    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file."
+  },
+  {
+    "objectID": "RandRStudio.html#on-mac",
+    "href": "RandRStudio.html#on-mac",
+    "title": "Setting Up R and RStudio",
+    "section": "On Mac",
+    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder."
+  },
+  {
+    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
+    "href": "RandRStudio.html#understanding-r-markdown-documents",
+    "title": "Setting Up R and RStudio",
+    "section": "Understanding R Markdown Documents",
+    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+  },
+  {
+    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "title": "Setting Up R and RStudio",
+    "section": "Managing .Rmd Files and Setting the Working Directory",
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your RStudio account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized.\n\n\nText Portions\nText in R Markdown is written using standard markdown syntax. This allows you to add headers, lists, links, and other styling features to create dynamic reports."
+  },
+  {
+    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
+    "href": "RandRStudio.html#text-formatting-in-r-markdown",
+    "title": "Setting Up R and RStudio",
+    "section": "Text Formatting in R Markdown",
+    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/66117)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\\```\nThis is a code block\n\\```\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
+  },
+  {
+    "objectID": "RandRStudio.html#r-code-chunk-options",
+    "href": "RandRStudio.html#r-code-chunk-options",
+    "title": "Setting Up R and RStudio",
+    "section": "R Code Chunk Options",
+    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+  },
+  {
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: example",
+    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
+    "objectID": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
+    "href": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
+    "title": "Day 20",
+    "section": "Introduction to Small Samples and the t-Statistic",
+    "text": "Introduction to Small Samples and the t-Statistic\n\n\nSmall Samples: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.\nNeed for a Different Approach: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student’s t-statistic, a better-suited approach for such scenarios."
+  },
+  {
+    "objectID": "Day20.html#challenges-with-small-samples",
+    "href": "Day20.html#challenges-with-small-samples",
+    "title": "Day 20",
+    "section": "Challenges with Small Samples",
+    "text": "Challenges with Small Samples\n\n\nNormality Assumption: For samples smaller than 30, the distribution of the population must be approximately normal for the sample mean \\(\\bar{x}\\) to be considered normally distributed. For example, if you’re studying the heights of a rare species of plant, and can only find a few samples, the underlying distribution of these heights must be normal for standard approaches to work.\nStandard Deviation Issues: When using the sample standard deviation \\(s\\) in place of the population standard deviation \\(\\sigma\\), the estimate becomes less reliable with smaller samples. Consider a scenario where you measure the amount of a chemical in water samples from different locations. With only a few samples, the variability in your measurements could significantly affect the reliability of your estimates, leading to potentially misleading conclusions."
+  },
+  {
+    "objectID": "Day20.html#introducing-the-students-t-statistic",
+    "href": "Day20.html#introducing-the-students-t-statistic",
+    "title": "Day 20",
+    "section": "Introducing the Student’s t-Statistic",
+    "text": "Introducing the Student’s t-Statistic\n\nGiven the issues identified with small samples, the Student’s t-statistic offers a refined method for estimating population parameters: \\[\nT = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}\n\\] This formula adjusts for the additional uncertainty inherent in small samples."
+  },
+  {
+    "objectID": "Day20.html#comparison-with-the-z-statistic",
+    "href": "Day20.html#comparison-with-the-z-statistic",
+    "title": "Day 20",
+    "section": "Comparison with the z-Statistic",
+    "text": "Comparison with the z-Statistic\n\nThe t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation \\(\\sigma\\) is known or the sample is large enough (\\(n \\geq 30\\)) for reliable approximation: \\[\nZ = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}\n\\]"
+  },
+  {
+    "objectID": "Day20.html#why-use-the-t-distribution",
+    "href": "Day20.html#why-use-the-t-distribution",
+    "title": "Day 20",
+    "section": "Why Use the t-Distribution?",
+    "text": "Why Use the t-Distribution?\n\n\nDegrees of Freedom: The shape of the t-distribution and its variability depend on the degrees of freedom (df = \\(n-1\\)), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes."
+  },
+  {
+    "objectID": "Day20.html#section-3",
+    "href": "Day20.html#section-3",
+    "title": "Day 20",
     "section": "",
-    "text": "Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was \\(\\mu=25\\) years, with a standard deviation of \\(\\sigma=9.5\\) years.\n\n\nDescribe the sampling distribution of the mean of a sample of 125 students.\n\n \n\nWhat is the probability that the sample mean age of the 125 students is greater than 26 years?"
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n \\(=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{align*}\n\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\n\\end{align*}\\]\n(From R/hand calculation, \\(\\bar{x}=2.283, s=0.950\\) )"
+  },
+  {
+    "objectID": "Day20.html#section-5",
+    "href": "Day20.html#section-5",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests \\(n=15\\) printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.\n\n\n(From R/hand calculation, \\(\\bar{x}=1.23867, s=0.19316\\) )\n\nForm a \\(99 \\%\\) confidence interval for the mean number of characters printed before the printhead fails. Interpret the result."
+  },
+  {
+    "objectID": "Day20.html#section-6",
+    "href": "Day20.html#section-6",
+    "title": "Day 20",
+    "section": "",
+    "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
+  },
+  {
+    "objectID": "Day9.html#recap-variance-and-standard-deviation",
+    "href": "Day9.html#recap-variance-and-standard-deviation",
+    "title": "Day 9",
+    "section": "Recap: Variance and Standard Deviation",
+    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+  },
+  {
+    "objectID": "Day9.html#section-1",
+    "href": "Day9.html#section-1",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+  },
+  {
+    "objectID": "Day9.html#introduction-to-binomial-random-variables",
+    "href": "Day9.html#introduction-to-binomial-random-variables",
+    "title": "Day 9",
+    "section": "Introduction to Binomial Random Variables",
+    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
+  },
+  {
+    "objectID": "Day9.html#characteristics-of-binomial-experiments",
+    "href": "Day9.html#characteristics-of-binomial-experiments",
+    "title": "Day 9",
+    "section": "Characteristics of Binomial Experiments",
+    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-random-variable",
+    "href": "Day9.html#the-binomial-random-variable",
+    "title": "Day 9",
+    "section": "The Binomial Random Variable",
+    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-probability-formula",
+    "href": "Day9.html#the-binomial-probability-formula",
+    "title": "Day 9",
+    "section": "The Binomial Probability Formula",
+    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
+  },
+  {
+    "objectID": "Day9.html#section-2",
+    "href": "Day9.html#section-2",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
+  },
+  {
+    "objectID": "Day9.html#section-3",
+    "href": "Day9.html#section-3",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
+  },
+  {
+    "objectID": "Day9.html#observations-on-binomial-distributions",
+    "href": "Day9.html#observations-on-binomial-distributions",
+    "title": "Day 9",
+    "section": "Observations on Binomial Distributions",
+    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
+  },
+  {
+    "objectID": "Day9.html#section-5",
+    "href": "Day9.html#section-5",
+    "title": "Day 9",
+    "section": "",
+    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
+  },
+  {
+    "objectID": "Day9.html#statistics-of-binomial-distribution",
+    "href": "Day9.html#statistics-of-binomial-distribution",
+    "title": "Day 9",
+    "section": "Statistics of Binomial Distribution",
+    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
+  },
+  {
+    "objectID": "Day9.html#section-6",
+    "href": "Day9.html#section-6",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
   },
   {
     "objectID": "Day3.html#one-qualitative-variable",
@@ -1839,12 +1846,5 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
-  },
-  {
-    "objectID": "Day21.html#section-5",
-    "href": "Day21.html#section-5",
-    "title": "Day 21",
-    "section": "",
-    "text": "Using the setup of Example 1, find the sample size needed for a SE of 0.01?"
   }
 ]
