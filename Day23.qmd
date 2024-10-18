@@ -46,19 +46,17 @@ yt <- 0
 ```
 
 
-##
+## Null and Allternate Hypotheses {.font80}
 
 <img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
 
-##
+## Direction of Alternate Hypotheses {.font80}
 
 <img src="images/Day23-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
 <img src="images/Day23-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
-
-##
 
 <img src="images/Day23-4.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
@@ -75,7 +73,7 @@ yt <- 0
 
 ## Statistical Significance
 
-::: cle6 
+::: cle15
 - A smaller $p$-value indicates stronger evidence against $H_0$ and in support of the alternative hypothesis ($H_a$).
 - Common thresholds for $p$-values are 0.05, 0.01, or 0.001, where a $p$-value less than these thresholds typically leads to rejecting $H_0$.
 
@@ -83,19 +81,32 @@ yt <- 0
 
 ## Calculation of P-Value
 
-::: cle6
+::: cle7
 - The $p$-value is calculated based on the distribution of the test statistic under the null hypothesis.
-- For a right-tailed test, if $t$ is the observed test statistic, $p = P(T \geq t | H_0)$.
+- For a right-tailed test, if $z$ is the observed test statistic, $p = P(Z \geq z | H_0)$.
 
 :::
+
+
+## {.font80}
+
+<img src="images/Day23-5.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+<img src="images/Day23-6.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
 
 ## Example 1: Testing Mean Breaking Strength {.font60}
 
 - **Null Hypothesis ($H_0$)**: $\mu \leq 2400$ (lbs/ft)
 - **Alternative Hypothesis ($H_a$)**: $\mu > 2400$ (lbs/ft)
-- Suppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests $\mu > 2400$.
+- Suppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests $\mu > 2400$. 
+  - Mean strength ($\bar{x}$): 2,460 pounds per linear foot
+  - Standard deviation ($s$): 200 pounds per linear foot
 
-Calculate the $p$-value for this test using the sample mean and standard deviation obtained from these 50 measurements.
+
+Calculate the $p$-value for this test using the sample mean and standard deviation obtained from these 50 measurements. 
 
 ##
 
@@ -110,10 +121,13 @@ a. Suppose the test statistic is $z=1.44$. Find the $p$-value of the test and th
 ::: custom-space
 :::
 
+
+
+## {.font60}
+
 b. Suppose the test statistic is $z=3.01$. Find the $p$-value of the test and the rejection region for the test when $\alpha=.05$. Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value.
 
 
 ##
-
 
 
