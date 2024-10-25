@@ -102,7 +102,32 @@ sd(x)   #s, sample standard deviation
 qt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1
 ```
 
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+Say hi to your neighbor and think about your approach to solve example 1.
+
+:::
+:::
+:::
+
+`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
 ##
+
+
 
 
 ## Calculation of P-Value {.font80}
@@ -126,6 +151,28 @@ qt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1
 ```{r}
 qt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1
 ```
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+Say hi to your neighbor and think about your approach to solve example 2.
+
+:::
+:::
+:::
+
+`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
 
 
 
