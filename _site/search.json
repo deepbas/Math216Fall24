@@ -1276,58 +1276,58 @@
   {
     "objectID": "Day26_Prelim.html#null-and-allternate-hypotheses",
     "href": "Day26_Prelim.html#null-and-allternate-hypotheses",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "Null and Allternate Hypotheses",
     "text": "Null and Allternate Hypotheses"
   },
   {
     "objectID": "Day26_Prelim.html#direction-of-alternate-hypotheses",
     "href": "Day26_Prelim.html#direction-of-alternate-hypotheses",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "Direction of Alternate Hypotheses",
     "text": "Direction of Alternate Hypotheses"
   },
   {
     "objectID": "Day26_Prelim.html#p-value-in-hypothesis-testing",
     "href": "Day26_Prelim.html#p-value-in-hypothesis-testing",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "P-Value in Hypothesis Testing",
     "text": "P-Value in Hypothesis Testing\n\nWhat is a P-Value?\n\nThe \\(p\\)-value quantifies the level of disagreement between the sample data and the null hypothesis (\\(H_0\\)).\nIt is the probability, assuming \\(H_0\\) is true, of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data."
   },
   {
     "objectID": "Day26_Prelim.html#statistical-significance",
     "href": "Day26_Prelim.html#statistical-significance",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "Statistical Significance",
     "text": "Statistical Significance\n\n\nA smaller \\(p\\)-value indicates stronger evidence against \\(H_0\\) and in support of the alternative hypothesis (\\(H_a\\)).\nCommon thresholds for \\(p\\)-values are 0.05, 0.01, or 0.001, where a \\(p\\)-value less than these thresholds typically leads to rejecting \\(H_0\\)."
   },
   {
     "objectID": "Day26_Prelim.html#calculation-of-p-value",
     "href": "Day26_Prelim.html#calculation-of-p-value",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "Calculation of P-Value",
-    "text": "Calculation of P-Value\n\n\nThe \\(p\\)-value is calculated based on the distribution of the test statistic under the null hypothesis.\nFor a right-tailed test, if \\(z\\) is the observed test statistic, \\(p = P(Z \\geq z | H_0)\\)."
+    "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
   },
   {
     "objectID": "Day26_Prelim.html#example-1-testing-mean-breaking-strength",
     "href": "Day26_Prelim.html#example-1-testing-mean-breaking-strength",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "Example 1: Testing Mean Breaking Strength",
-    "text": "Example 1: Testing Mean Breaking Strength\n\nNull Hypothesis (\\(H_0\\)): \\(\\mu \\leq 2400\\) (lbs/ft)\nAlternative Hypothesis (\\(H_a\\)): \\(\\mu &gt; 2400\\) (lbs/ft)\nSuppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests \\(\\mu &gt; 2400\\).\n\nMean strength (\\(\\bar{x}\\)): 2,460 pounds per linear foot\nStandard deviation (\\(s\\)): 200 pounds per linear foot\n\n\nCalculate the \\(p\\)-value for this test using the sample mean and standard deviation obtained from these 50 measurements."
+    "text": "Example 1: Testing Mean Breaking Strength"
   },
   {
     "objectID": "Day26_Prelim.html#section-2",
     "href": "Day26_Prelim.html#section-2",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "",
-    "text": "Example 2: Consider the one-tailed test of hypothesis, \\(H_0: \\mu=100\\) versus \\(H_a: \\mu&gt;100\\).\n\n\nSuppose the test statistic is \\(z=1.44\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
+    "text": "Example 2:"
   },
   {
     "objectID": "Day26_Prelim.html#section-3",
     "href": "Day26_Prelim.html#section-3",
-    "title": "Day 23",
+    "title": "Day 26",
     "section": "",
-    "text": "Suppose the test statistic is \\(z=3.01\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
+    "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
   },
   {
     "objectID": "Day17.html#recap-steel-sheets-thickness",
@@ -1979,5 +1979,89 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day26_Prelim.html#recap-hypothesis-testing",
+    "href": "Day26_Prelim.html#recap-hypothesis-testing",
+    "title": "Day 26",
+    "section": "Recap: Hypothesis Testing",
+    "text": "Recap: Hypothesis Testing\n\n\nGoal: Compare the population mean \\(\\mu\\) with a specified value \\(\\mu_{0}\\).\nStep 1: Set the null hypothesis \\(H_{0}: \\mu = \\mu_{0}\\).\nAlternative Hypothesis: Set based on the problem \\((H_{a}: \\mu &lt; \\mu_{0}, \\mu &gt; \\mu_{0},\\) or \\(\\mu \\neq \\mu_{0})\\).\nType I Error \\((\\alpha)\\): Probability of rejecting \\(H_{0}\\) when it is true."
+  },
+  {
+    "objectID": "Day26_Prelim.html#determining-evidence-strength",
+    "href": "Day26_Prelim.html#determining-evidence-strength",
+    "title": "Day 26",
+    "section": "Determining Evidence Strength",
+    "text": "Determining Evidence Strength\n\n\nStrong Evidence: If the calculated statistic falls into the rejection region or its p-value is less than \\(\\alpha\\), we reject \\(H_{0}\\).\nFor Large Samples \\((n \\geq 30)\\): Use \\(z\\)-statistic, approximated by: \\[\nz = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]"
+  },
+  {
+    "objectID": "Day26_Prelim.html#small-sample-considerations",
+    "href": "Day26_Prelim.html#small-sample-considerations",
+    "title": "Day 26",
+    "section": "Small-Sample Considerations",
+    "text": "Small-Sample Considerations\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
+  },
+  {
+    "objectID": "Day26_Prelim.html#section-1",
+    "href": "Day26_Prelim.html#section-1",
+    "title": "Day 26",
+    "section": "",
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
+  },
+  {
+    "objectID": "Day26_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "href": "Day26_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "title": "Day 26",
+    "section": "Introduction to Small Sample Confidence Intervals",
+    "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
+  },
+  {
+    "objectID": "Day26_Prelim.html#adjusting-for-small-samples",
+    "href": "Day26_Prelim.html#adjusting-for-small-samples",
+    "title": "Day 26",
+    "section": "Adjusting for Small Samples",
+    "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
+  },
+  {
+    "objectID": "Day26_Prelim.html#t-distribution-characteristics",
+    "href": "Day26_Prelim.html#t-distribution-characteristics",
+    "title": "Day 26",
+    "section": "t-Distribution Characteristics",
+    "text": "t-Distribution Characteristics\n\n\nVariability: More variability in \\(t\\)-distribution compared to the normal distribution, decreasing as \\(df\\) increases.\nAs \\(df\\) increases: The \\(t\\)-distribution approaches the normal distribution, particularly for \\(n \\geq 200\\)."
+  },
+  {
+    "objectID": "Day26_Prelim.html#confidence-interval-using-students-t-statistic",
+    "href": "Day26_Prelim.html#confidence-interval-using-students-t-statistic",
+    "title": "Day 26",
+    "section": "Confidence Interval Using Student’s t-Statistic",
+    "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
+  },
+  {
+    "objectID": "Day26_Prelim.html#section",
+    "href": "Day26_Prelim.html#section",
+    "title": "Day 26",
+    "section": "",
+    "text": "Example 1:"
+  },
+  {
+    "objectID": "Day26_Prelim.html#example-2-testing-mean-breaking-strength",
+    "href": "Day26_Prelim.html#example-2-testing-mean-breaking-strength",
+    "title": "Day 26",
+    "section": "Example 2: Testing Mean Breaking Strength",
+    "text": "Example 2: Testing Mean Breaking Strength"
+  },
+  {
+    "objectID": "Day26_Prelim.html#section-4",
+    "href": "Day26_Prelim.html#section-4",
+    "title": "Day 26",
+    "section": "",
+    "text": "Example 3:"
+  },
+  {
+    "objectID": "Day26_Prelim.html#section-5",
+    "href": "Day26_Prelim.html#section-5",
+    "title": "Day 26",
+    "section": "",
+    "text": "Example 3:"
   }
 ]
