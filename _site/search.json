@@ -735,151 +735,305 @@
     "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
-    "objectID": "Day8.html#random-variables-rvs",
-    "href": "Day8.html#random-variables-rvs",
-    "title": "Day 8",
-    "section": "Random Variables (RVs)",
-    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
+    "objectID": "Day26.html#introduction-to-small-sample-confidence-intervals",
+    "href": "Day26.html#introduction-to-small-sample-confidence-intervals",
+    "title": "Day 26",
+    "section": "Introduction to Small Sample Confidence Intervals",
+    "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
   },
   {
-    "objectID": "Day8.html#discrete-rvs",
-    "href": "Day8.html#discrete-rvs",
-    "title": "Day 8",
-    "section": "Discrete RVs",
-    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
+    "objectID": "Day26.html#adjusting-for-small-samples",
+    "href": "Day26.html#adjusting-for-small-samples",
+    "title": "Day 26",
+    "section": "Adjusting for Small Samples",
+    "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
   },
   {
-    "objectID": "Day8.html#continuous-rvs",
-    "href": "Day8.html#continuous-rvs",
-    "title": "Day 8",
-    "section": "Continuous RVs",
-    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
+    "objectID": "Day26.html#confidence-interval-using-students-t-statistic",
+    "href": "Day26.html#confidence-interval-using-students-t-statistic",
+    "title": "Day 26",
+    "section": "Confidence Interval Using Student’s t-Statistic",
+    "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
   },
   {
-    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
-    "href": "Day8.html#probability-distributions-for-discrete-rvs",
-    "title": "Day 8",
-    "section": "Probability Distributions for Discrete RVs",
-    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
-  },
-  {
-    "objectID": "Day8.html#section",
-    "href": "Day8.html#section",
-    "title": "Day 8",
+    "objectID": "Day26.html#section-1",
+    "href": "Day26.html#section-1",
+    "title": "Day 26",
     "section": "",
-    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
   },
   {
-    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
-    "title": "Day 8",
-    "section": "Key Requirements for Discrete Probability Distributions",
-    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
+    "objectID": "Day26.html#group-activity-1",
+    "href": "Day26.html#group-activity-1",
+    "title": "Day 26",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 1.\n\n\n\n\n−+\n03:00"
   },
   {
-    "objectID": "Day8.html#section-1",
-    "href": "Day8.html#section-1",
-    "title": "Day 8",
+    "objectID": "Day26.html#calculation-of-p-value",
+    "href": "Day26.html#calculation-of-p-value",
+    "title": "Day 26",
+    "section": "Calculation of P-Value",
+    "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
+  },
+  {
+    "objectID": "Day26.html#section-3",
+    "href": "Day26.html#section-3",
+    "title": "Day 26",
     "section": "",
-    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\)\nFind \\(P(X&gt;-1)\\)\nFind \\(P(-1 \\leq X&lt;1)\\)\nFind \\(P(-1 \\leq X \\leq 1)\\)"
+    "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
   },
   {
-    "objectID": "Day8.html#section-2",
-    "href": "Day8.html#section-2",
-    "title": "Day 8",
+    "objectID": "Day26.html#group-activity-2",
+    "href": "Day26.html#group-activity-2",
+    "title": "Day 26",
+    "section": " Group Activity 2",
+    "text": "Group Activity 2\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 2.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "Day3.html#one-qualitative-variable",
+    "href": "Day3.html#one-qualitative-variable",
+    "title": "Day 3",
+    "section": "One qualitative Variable",
+    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
+  },
+  {
+    "objectID": "Day3.html#frequency-table",
+    "href": "Day3.html#frequency-table",
+    "title": "Day 3",
+    "section": "Frequency Table",
+    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
+  },
+  {
+    "objectID": "Day3.html#proportion",
+    "href": "Day3.html#proportion",
+    "title": "Day 3",
+    "section": "Proportion",
+    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
+  },
+  {
+    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "title": "Day 3",
+    "section": "What proportion of adults sampled do not own a cell phone?",
+    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
+  },
+  {
+    "objectID": "Day3.html#bar-chartplotgraph",
+    "href": "Day3.html#bar-chartplotgraph",
+    "title": "Day 3",
+    "section": "Bar Chart/Plot/Graph",
+    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
+  },
+  {
+    "objectID": "Day3.html#two-qualitative-variables",
+    "href": "Day3.html#two-qualitative-variables",
+    "title": "Day 3",
+    "section": "Two qualitative Variables",
+    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender",
+    "href": "Day3.html#relationship-status-and-gender",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
+  },
+  {
+    "objectID": "Day3.html#relationship-status-and-gender-1",
+    "href": "Day3.html#relationship-status-and-gender-1",
+    "title": "Day 3",
+    "section": "Relationship status and Gender",
+    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
+  },
+  {
+    "objectID": "Day3.html#difference-in-proportions",
+    "href": "Day3.html#difference-in-proportions",
+    "title": "Day 3",
+    "section": "Difference in proportions",
+    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
+  },
+  {
+    "objectID": "Day3.html#student-survey",
+    "href": "Day3.html#student-survey",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+  },
+  {
+    "objectID": "Day3.html#distribution-1",
+    "href": "Day3.html#distribution-1",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
+  },
+  {
+    "objectID": "Day3.html#center-mean-or-average",
+    "href": "Day3.html#center-mean-or-average",
+    "title": "Day 3",
+    "section": "Center: Mean or Average",
+    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
+  },
+  {
+    "objectID": "Day3.html#student-survey-1",
+    "href": "Day3.html#student-survey-1",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#center-median",
+    "href": "Day3.html#center-median",
+    "title": "Day 3",
+    "section": "Center: Median",
+    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
+  },
+  {
+    "objectID": "Day3.html#variability-standard-deviation",
+    "href": "Day3.html#variability-standard-deviation",
+    "title": "Day 3",
+    "section": "Variability: Standard Deviation",
+    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
+  },
+  {
+    "objectID": "Day23.html#null-and-allternate-hypotheses",
+    "href": "Day23.html#null-and-allternate-hypotheses",
+    "title": "Day 23",
+    "section": "Null and Allternate Hypotheses",
+    "text": "Null and Allternate Hypotheses"
+  },
+  {
+    "objectID": "Day23.html#direction-of-alternate-hypotheses",
+    "href": "Day23.html#direction-of-alternate-hypotheses",
+    "title": "Day 23",
+    "section": "Direction of Alternate Hypotheses",
+    "text": "Direction of Alternate Hypotheses"
+  },
+  {
+    "objectID": "Day23.html#p-value-in-hypothesis-testing",
+    "href": "Day23.html#p-value-in-hypothesis-testing",
+    "title": "Day 23",
+    "section": "P-Value in Hypothesis Testing",
+    "text": "P-Value in Hypothesis Testing\n\nWhat is a P-Value?\n\nThe \\(p\\)-value quantifies the level of disagreement between the sample data and the null hypothesis (\\(H_0\\)).\nIt is the probability, assuming \\(H_0\\) is true, of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data."
+  },
+  {
+    "objectID": "Day23.html#statistical-significance",
+    "href": "Day23.html#statistical-significance",
+    "title": "Day 23",
+    "section": "Statistical Significance",
+    "text": "Statistical Significance\n\n\nA smaller \\(p\\)-value indicates stronger evidence against \\(H_0\\) and in support of the alternative hypothesis (\\(H_a\\)).\nCommon thresholds for \\(p\\)-values are 0.05, 0.01, or 0.001, where a \\(p\\)-value less than these thresholds typically leads to rejecting \\(H_0\\)."
+  },
+  {
+    "objectID": "Day23.html#calculation-of-p-value",
+    "href": "Day23.html#calculation-of-p-value",
+    "title": "Day 23",
+    "section": "Calculation of P-Value",
+    "text": "Calculation of P-Value\n\n\nThe \\(p\\)-value is calculated based on the distribution of the test statistic under the null hypothesis.\nFor a right-tailed test, if \\(z\\) is the observed test statistic, \\(p = P(Z \\geq z | H_0)\\)."
+  },
+  {
+    "objectID": "Day23.html#example-1-testing-mean-breaking-strength",
+    "href": "Day23.html#example-1-testing-mean-breaking-strength",
+    "title": "Day 23",
+    "section": "Example 1: Testing Mean Breaking Strength",
+    "text": "Example 1: Testing Mean Breaking Strength\n\nNull Hypothesis (\\(H_0\\)): \\(\\mu \\leq 2400\\) (lbs/ft)\nAlternative Hypothesis (\\(H_a\\)): \\(\\mu &gt; 2400\\) (lbs/ft)\nSuppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests \\(\\mu &gt; 2400\\).\n\nMean strength (\\(\\bar{x}\\)): 2,460 pounds per linear foot\nStandard deviation (\\(s\\)): 200 pounds per linear foot\n\n\nCalculate the \\(p\\)-value for this test using the sample mean and standard deviation obtained from these 50 measurements."
+  },
+  {
+    "objectID": "Day23.html#section-2",
+    "href": "Day23.html#section-2",
+    "title": "Day 23",
     "section": "",
-    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
+    "text": "Example 2: Consider the one-tailed test of hypothesis, \\(H_0: \\mu=100\\) versus \\(H_a: \\mu&gt;100\\).\n\n\nSuppose the test statistic is \\(z=1.44\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
   },
   {
-    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
-    "title": "Day 8",
-    "section": "Expected Value: Mean of Discrete Random Variables",
-    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
-  },
-  {
-    "objectID": "Day8.html#section-3",
-    "href": "Day8.html#section-3",
-    "title": "Day 8",
+    "objectID": "Day23.html#section-3",
+    "href": "Day23.html#section-3",
+    "title": "Day 23",
     "section": "",
-    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
+    "text": "Suppose the test statistic is \\(z=3.01\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
   },
   {
-    "objectID": "Day8.html#variance-and-standard-deviation",
-    "href": "Day8.html#variance-and-standard-deviation",
-    "title": "Day 8",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+    "objectID": "Day9.html#recap-variance-and-standard-deviation",
+    "href": "Day9.html#recap-variance-and-standard-deviation",
+    "title": "Day 9",
+    "section": "Recap: Variance and Standard Deviation",
+    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
   },
   {
-    "objectID": "Day17.html#recap-steel-sheets-thickness",
-    "href": "Day17.html#recap-steel-sheets-thickness",
-    "title": "Day 17",
-    "section": "Recap: Steel Sheets Thickness",
-    "text": "Recap: Steel Sheets Thickness\n\n\nContext: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.\nExperiment Setup: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples."
-  },
-  {
-    "objectID": "Day17.html#example-6.1",
-    "href": "Day17.html#example-6.1",
-    "title": "Day 17",
-    "section": "Example 6.1",
-    "text": "Example 6.1"
-  },
-  {
-    "objectID": "Day17.html#sampling-distribution-for-barx",
-    "href": "Day17.html#sampling-distribution-for-barx",
-    "title": "Day 17",
-    "section": "Sampling distribution for \\(\\bar{x}\\)",
-    "text": "Sampling distribution for \\(\\bar{x}\\)"
-  },
-  {
-    "objectID": "Day17.html#uniform-distribution-parameters",
-    "href": "Day17.html#uniform-distribution-parameters",
-    "title": "Day 17",
-    "section": "Uniform Distribution Parameters",
-    "text": "Uniform Distribution Parameters\n\n\nDistribution Type: Uniform, with each value between 150 and 200 mm equally likely.\nCalculated Mean: \\(\\mu = \\frac{150 + 200}{2} = 175\\) mm.\nCalculated Standard Deviation: \\(\\sigma = \\sqrt{\\frac{(200 - 150)^2}{12}} \\approx 14.43\\) mm."
-  },
-  {
-    "objectID": "Day17.html#sample-mean-and-estimation",
-    "href": "Day17.html#sample-mean-and-estimation",
-    "title": "Day 17",
-    "section": "Sample Mean and Estimation",
-    "text": "Sample Mean and Estimation\n\n\nSample Mean: \\(\\bar{x} = \\frac{\\sum x}{11}\\)\nRole of Sample Mean: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.\nUnbiased Estimator: \\(\\bar{X} = \\frac{1}{n} \\sum X_i\\) is unbiased, meaning \\(E(\\bar{x}) = \\mu\\)."
-  },
-  {
-    "objectID": "Day17.html#properties-of-the-sampling-distribution",
-    "href": "Day17.html#properties-of-the-sampling-distribution",
-    "title": "Day 17",
-    "section": "Properties of the Sampling Distribution",
-    "text": "Properties of the Sampling Distribution\n\n\nMean of Sampling Distribution: Equals the population mean, i.e., \\(E(\\bar{x}) = \\mu\\).\nStandard Error of the Mean (SE): \\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\) for sample size (n).\nImplication: The standard error quantifies the spread of the sampling distribution around the population mean."
-  },
-  {
-    "objectID": "Day17.html#central-limit-theorem-clt",
-    "href": "Day17.html#central-limit-theorem-clt",
-    "title": "Day 17",
-    "section": "Central Limit Theorem (CLT)",
-    "text": "Central Limit Theorem (CLT)\n\n\nTheorem Statement: For any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the sampling distribution of the sample mean \\(\\bar{x}\\) will be approximately normal if the sample size \\(n\\) is sufficiently large (typically \\(n \\geq 30\\)).\nApplication: This theorem applies regardless of the original population’s distribution, making it a powerful tool in statistical inference."
-  },
-  {
-    "objectID": "Day17.html#impact-of-sample-size",
-    "href": "Day17.html#impact-of-sample-size",
-    "title": "Day 17",
-    "section": "Impact of Sample Size",
-    "text": "Impact of Sample Size\n\n\nVisualization: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.\nPractical Implication: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design."
-  },
-  {
-    "objectID": "Day17.html#section-1",
-    "href": "Day17.html#section-1",
-    "title": "Day 17",
+    "objectID": "Day9.html#section-1",
+    "href": "Day9.html#section-1",
+    "title": "Day 9",
     "section": "",
-    "text": "Example 1: Suppose we have selected a random sample of \\(n=36\\) observations from a population with mean \\(\\mu=80\\) and standard deviation \\(\\sigma=6\\).\n\n\nWhat is the value of the mean \\(\\mu_{\\bar{x}}\\) and standard deviation (standard error) \\(\\sigma_{\\bar{x}}\\) of the sampling distribution of the sample mean \\(\\bar{x}\\).\n\n \n\nWhat is the probability that the sample mean is greater than 82 ?"
+    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
   },
   {
-    "objectID": "Day17.html#section-2",
-    "href": "Day17.html#section-2",
-    "title": "Day 17",
+    "objectID": "Day9.html#introduction-to-binomial-random-variables",
+    "href": "Day9.html#introduction-to-binomial-random-variables",
+    "title": "Day 9",
+    "section": "Introduction to Binomial Random Variables",
+    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
+  },
+  {
+    "objectID": "Day9.html#characteristics-of-binomial-experiments",
+    "href": "Day9.html#characteristics-of-binomial-experiments",
+    "title": "Day 9",
+    "section": "Characteristics of Binomial Experiments",
+    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-random-variable",
+    "href": "Day9.html#the-binomial-random-variable",
+    "title": "Day 9",
+    "section": "The Binomial Random Variable",
+    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
+  },
+  {
+    "objectID": "Day9.html#the-binomial-probability-formula",
+    "href": "Day9.html#the-binomial-probability-formula",
+    "title": "Day 9",
+    "section": "The Binomial Probability Formula",
+    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
+  },
+  {
+    "objectID": "Day9.html#section-2",
+    "href": "Day9.html#section-2",
+    "title": "Day 9",
     "section": "",
-    "text": "Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was \\(\\mu=25\\) years, with a standard deviation of \\(\\sigma=9.5\\) years.\n\n\nDescribe the sampling distribution of the mean of a sample of 125 students.\n\n \n\nWhat is the probability that the sample mean age of the 125 students is greater than 26 years?"
+    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
+  },
+  {
+    "objectID": "Day9.html#section-3",
+    "href": "Day9.html#section-3",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
+  },
+  {
+    "objectID": "Day9.html#observations-on-binomial-distributions",
+    "href": "Day9.html#observations-on-binomial-distributions",
+    "title": "Day 9",
+    "section": "Observations on Binomial Distributions",
+    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
+  },
+  {
+    "objectID": "Day9.html#section-5",
+    "href": "Day9.html#section-5",
+    "title": "Day 9",
+    "section": "",
+    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
+  },
+  {
+    "objectID": "Day9.html#statistics-of-binomial-distribution",
+    "href": "Day9.html#statistics-of-binomial-distribution",
+    "title": "Day 9",
+    "section": "Statistics of Binomial Distribution",
+    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
+  },
+  {
+    "objectID": "Day9.html#section-6",
+    "href": "Day9.html#section-6",
+    "title": "Day 9",
+    "section": "",
+    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
   },
   {
     "objectID": "Day7.html#the-multiplicative-rule",
@@ -1029,6 +1183,62 @@
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
   },
   {
+    "objectID": "Day27.html#recap",
+    "href": "Day27.html#recap",
+    "title": "Day 27",
+    "section": "Recap",
+    "text": "Recap"
+  },
+  {
+    "objectID": "Day27.html#challenges-with-non-normal-distributions",
+    "href": "Day27.html#challenges-with-non-normal-distributions",
+    "title": "Day 27",
+    "section": "Challenges with Non-normal Distributions",
+    "text": "Challenges with Non-normal Distributions\n\nWhat if the population data is decidedly nonnormal?\nNonnormal Distributions\n\nSmall sample sizes (\\(n&lt;30\\)) and nonnormal data can undermine the reliability of typical tests like t-tests.\nThis often leads to increased Type I errors: rejecting \\(H_0\\) when it is true.\n\nNonparametric Statistics\n\nNonparametric tests do not assume a normal distribution of the sampled population.\nThey rely on the ranks of measurements, such as the median, which are less sensitive to extreme values."
+  },
+  {
+    "objectID": "Day27.html#nonparametric-sign-test",
+    "href": "Day27.html#nonparametric-sign-test",
+    "title": "Day 27",
+    "section": "Nonparametric Sign Test",
+    "text": "Nonparametric Sign Test\n\n\nThe sign test offers a straightforward method to test hypotheses about the median of a nonnormal distribution.\nIt focuses on the median rather than the mean, providing a more robust measure of central tendency."
+  },
+  {
+    "objectID": "Day27.html#how-it-works",
+    "href": "Day27.html#how-it-works",
+    "title": "Day 27",
+    "section": "How It Works",
+    "text": "How It Works\n\nBegin with the null hypothesis that the median is at a specific value (\\(\\eta_0\\)). Classify each observation in the sample as either above or below this median value.\n\nAssume \\(H_0: \\eta = \\eta_0\\) is true.\nCount the number of sample observations above (\\(S_A\\)) and below (\\(S_B\\)) the median \\(\\eta_0\\).\n\n\n# R Code to perform Sign Test\nlibrary(BSDA)\nSIGN.test(x = data, md = eta_0, alternative = \"less\", conf.level = 0.95)"
+  },
+  {
+    "objectID": "Day27.html#decision-making-in-sign-test",
+    "href": "Day27.html#decision-making-in-sign-test",
+    "title": "Day 27",
+    "section": "Decision Making in Sign Test",
+    "text": "Decision Making in Sign Test\n\nDecision Rule\n\nReject \\(H_0\\) if the p-value is less than the significance level \\(\\alpha\\).\nThe p-value is computed using the binomial distribution with parameters \\(n\\) (total number of non-zero differences) and \\(p=0.5\\) (probability under the null hypothesis)."
+  },
+  {
+    "objectID": "Day27.html#section-1",
+    "href": "Day27.html#section-1",
+    "title": "Day 27",
+    "section": "",
+    "text": "Example 1: Increasing numbers of both private and public agencies are requiring their employees to submit to tests for substance abuse. One laboratory that conducts such testing has developed a system with a normalized measurement scale in which values less than 1.00 indicate “normal” ranges and values equal to or greater than 1.00 are indicative of potential substance abuse. The lab reports a normal result as long as the median level for an individual is less than 1.00. Eight independent measurements of each individual’s sample are made. One individual’s results are shown in the following table. Determine whether the population median is less than 1.00 . Use \\(\\alpha=0.05\\)."
+  },
+  {
+    "objectID": "Day27.html#group-activity-1",
+    "href": "Day27.html#group-activity-1",
+    "title": "Day 27",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nWork in a group to determine if a one-hour study session has significantly improved quiz scores among students.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "Day27.html#section-3",
+    "href": "Day27.html#section-3",
+    "title": "Day 27",
+    "section": "",
+    "text": "Before and after quiz scores for 10 students:\n\n\n\nStudent\nBefore Study Session (Score)\nAfter Study Session (Score)\n\n\n\n\n1\n70\n75\n\n\n2\n65\n68\n\n\n3\n80\n75\n\n\n4\n58\n60\n\n\n5\n77\n76\n\n\n6\n82\n84\n\n\n7\n55\n58\n\n\n8\n90\n95\n\n\n9\n62\n65\n\n\n10\n83\n88\n\n\n\nActivity Steps\n\nCalculate the Differences: Students calculate the difference for each pair of scores (After - Before).\nAssign Signs: Assign a plus (+) if the difference is positive (score increased) and a minus (-) if negative (score decreased).\nCount Signs: Count the total number of positive and negative signs."
+  },
+  {
     "objectID": "Day6.html#key-probability-concepts-recap",
     "href": "Day6.html#key-probability-concepts-recap",
     "title": "Day 6",
@@ -1176,303 +1386,261 @@
     "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
   },
   {
-    "objectID": "Day9.html#recap-variance-and-standard-deviation",
-    "href": "Day9.html#recap-variance-and-standard-deviation",
-    "title": "Day 9",
-    "section": "Recap: Variance and Standard Deviation",
-    "text": "Recap: Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
-  },
-  {
-    "objectID": "Day9.html#section-1",
-    "href": "Day9.html#section-1",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 1: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
-  },
-  {
-    "objectID": "Day9.html#introduction-to-binomial-random-variables",
-    "href": "Day9.html#introduction-to-binomial-random-variables",
-    "title": "Day 9",
-    "section": "Introduction to Binomial Random Variables",
-    "text": "Introduction to Binomial Random Variables\n\n\n\nContext of Binomial Experiments:\n\nUsed to model situations with two distinct outcomes.\nExample: Flipping a coin results in either a Head (Success, \\(S\\)) or Tail (Failure, \\(F\\)).\n\n\nTwo Possible Outcomes:\n\nSuccess \\((S)\\)\nFailure \\((F)\\)\n\nConsistent Probability:\n\nProbability of success \\((p)\\)\nProbability of failure \\((q = 1 - p)\\)"
-  },
-  {
-    "objectID": "Day9.html#characteristics-of-binomial-experiments",
-    "href": "Day9.html#characteristics-of-binomial-experiments",
-    "title": "Day 9",
-    "section": "Characteristics of Binomial Experiments",
-    "text": "Characteristics of Binomial Experiments\n\n\n\nEssential Features:\n\nFixed Number of Trials \\((n)\\): Each experiment consists of \\(n\\) identical and independent trials.\nStable Probabilities: The probability of success \\((p)\\) and failure \\((q = 1 - p)\\) remains constant across trials.\n\n\nKey Points:\n\nIndependence of Trials: Each trial’s outcome does not influence another.\nIdentical Trials: All trials follow the same probability model."
-  },
-  {
-    "objectID": "Day9.html#the-binomial-random-variable",
-    "href": "Day9.html#the-binomial-random-variable",
-    "title": "Day 9",
-    "section": "The Binomial Random Variable",
-    "text": "The Binomial Random Variable\n\n\n\nDefining the Variable:\n\nA binomial random variable \\(X\\) counts the number of successes in \\(n\\) trials.\nNotation: \\(X \\sim \\operatorname{Bin}(n, p)\\), where \\(p\\) is the probability of a success on any given trial.\n\n\nUnderstanding \\(X\\):\n\nRepresents the sum of successes in the experiment.\nCan take values from 0 (no success) to \\(n\\) (all successes)."
-  },
-  {
-    "objectID": "Day9.html#the-binomial-probability-formula",
-    "href": "Day9.html#the-binomial-probability-formula",
-    "title": "Day 9",
-    "section": "The Binomial Probability Formula",
-    "text": "The Binomial Probability Formula\n\n\n\nCalculating Probabilities:\n\nThe probability of exactly \\(x\\) successes in \\(n\\) trials is given by the binomial formula:\n\n\n\\[\nP(x) = \\binom{n}{x} p^x q^{n-x}, \\quad x = 0, 1, 2, \\ldots, n\n\\]\nComponents:\n\n\\(\\binom{n}{x}\\): The number of ways to choose \\(x\\) successes from \\(n\\) trials.\n\\(p^x\\): The probability of \\(x\\) successes.\n\\(q^{n-x}\\): The probability of \\(n-x\\) failures."
-  },
-  {
-    "objectID": "Day9.html#section-2",
-    "href": "Day9.html#section-2",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 2: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
-  },
-  {
-    "objectID": "Day9.html#section-3",
-    "href": "Day9.html#section-3",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of \\(x\\), where \\(x\\) is the number of adults who pass the fitness test.\n\n\\[\\begin{align*}\n\\begin{aligned}\n& p(0)=\\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(4 \\cdot 3 \\cdot 2 \\cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\\\\n& p(1)=\\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(1)(3 \\cdot 2 \\cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\\\\n& p(2)=\\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(2 \\cdot 1)(2 \\cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\\\\n& p(3)=\\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(3 \\cdot 2 \\cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\\\\n& p(4)=\\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{(4 \\cdot 3 \\cdot 2 \\cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001\n\\end{aligned}\n\\end{align*}\\]\nBased on the above result, what is \\(P(X&lt;3), P(X \\geq 2), P(1 \\leq X&lt;3)\\)?"
-  },
-  {
-    "objectID": "Day9.html#observations-on-binomial-distributions",
-    "href": "Day9.html#observations-on-binomial-distributions",
-    "title": "Day 9",
-    "section": "Observations on Binomial Distributions",
-    "text": "Observations on Binomial Distributions\n\n\n\nUnimodal Distribution:\n\nRegardless of the value of \\(p\\), the distribution exhibits a single peak.\n\nSkewness Based on ( p ):\n\nRight Skew (p &lt; 0.5): The distribution skews to the right, indicating more low-value outcomes.\nSymmetry (p = 0.5): The distribution is symmetric, with equal probabilities on both sides of the mean.\nLeft Skew (p &gt; 0.5): The distribution skews to the left, indicating more high-value outcomes."
-  },
-  {
-    "objectID": "Day9.html#section-5",
-    "href": "Day9.html#section-5",
-    "title": "Day 9",
-    "section": "",
-    "text": "As \\(n\\) increases, the binomial distribution approximates a bell-shaped curve."
-  },
-  {
-    "objectID": "Day9.html#statistics-of-binomial-distribution",
-    "href": "Day9.html#statistics-of-binomial-distribution",
-    "title": "Day 9",
-    "section": "Statistics of Binomial Distribution",
-    "text": "Statistics of Binomial Distribution\n\n\n\n\nStatistical Properties:\n\nMean (\\(\\mu\\)): \\(\\mu = np\\)\nVariance (\\(\\sigma^2\\)): \\(\\sigma^2 = np(1-p)\\)\nStandard Deviation (\\(\\sigma\\)): \\(\\sigma = \\sqrt{np(1-p)}\\)\n\n\n\nInsights:\n\nThe mean indicates the expected number of successes.\nVariance and standard deviation provide insight into the spread of the distribution around the mean."
-  },
-  {
-    "objectID": "Day9.html#section-6",
-    "href": "Day9.html#section-6",
-    "title": "Day 9",
-    "section": "",
-    "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
-  },
-  {
-    "objectID": "Day23.html#null-and-allternate-hypotheses",
-    "href": "Day23.html#null-and-allternate-hypotheses",
-    "title": "Day 23",
-    "section": "Null and Allternate Hypotheses",
-    "text": "Null and Allternate Hypotheses"
-  },
-  {
-    "objectID": "Day23.html#direction-of-alternate-hypotheses",
-    "href": "Day23.html#direction-of-alternate-hypotheses",
-    "title": "Day 23",
-    "section": "Direction of Alternate Hypotheses",
-    "text": "Direction of Alternate Hypotheses"
-  },
-  {
-    "objectID": "Day23.html#p-value-in-hypothesis-testing",
-    "href": "Day23.html#p-value-in-hypothesis-testing",
-    "title": "Day 23",
-    "section": "P-Value in Hypothesis Testing",
-    "text": "P-Value in Hypothesis Testing\n\nWhat is a P-Value?\n\nThe \\(p\\)-value quantifies the level of disagreement between the sample data and the null hypothesis (\\(H_0\\)).\nIt is the probability, assuming \\(H_0\\) is true, of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data."
-  },
-  {
-    "objectID": "Day23.html#statistical-significance",
-    "href": "Day23.html#statistical-significance",
-    "title": "Day 23",
-    "section": "Statistical Significance",
-    "text": "Statistical Significance\n\n\nA smaller \\(p\\)-value indicates stronger evidence against \\(H_0\\) and in support of the alternative hypothesis (\\(H_a\\)).\nCommon thresholds for \\(p\\)-values are 0.05, 0.01, or 0.001, where a \\(p\\)-value less than these thresholds typically leads to rejecting \\(H_0\\)."
-  },
-  {
-    "objectID": "Day23.html#calculation-of-p-value",
-    "href": "Day23.html#calculation-of-p-value",
-    "title": "Day 23",
-    "section": "Calculation of P-Value",
-    "text": "Calculation of P-Value\n\n\nThe \\(p\\)-value is calculated based on the distribution of the test statistic under the null hypothesis.\nFor a right-tailed test, if \\(z\\) is the observed test statistic, \\(p = P(Z \\geq z | H_0)\\)."
-  },
-  {
-    "objectID": "Day23.html#example-1-testing-mean-breaking-strength",
-    "href": "Day23.html#example-1-testing-mean-breaking-strength",
-    "title": "Day 23",
-    "section": "Example 1: Testing Mean Breaking Strength",
-    "text": "Example 1: Testing Mean Breaking Strength\n\nNull Hypothesis (\\(H_0\\)): \\(\\mu \\leq 2400\\) (lbs/ft)\nAlternative Hypothesis (\\(H_a\\)): \\(\\mu &gt; 2400\\) (lbs/ft)\nSuppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests \\(\\mu &gt; 2400\\).\n\nMean strength (\\(\\bar{x}\\)): 2,460 pounds per linear foot\nStandard deviation (\\(s\\)): 200 pounds per linear foot\n\n\nCalculate the \\(p\\)-value for this test using the sample mean and standard deviation obtained from these 50 measurements."
-  },
-  {
-    "objectID": "Day23.html#section-2",
-    "href": "Day23.html#section-2",
-    "title": "Day 23",
-    "section": "",
-    "text": "Example 2: Consider the one-tailed test of hypothesis, \\(H_0: \\mu=100\\) versus \\(H_a: \\mu&gt;100\\).\n\n\nSuppose the test statistic is \\(z=1.44\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
-  },
-  {
-    "objectID": "Day23.html#section-3",
-    "href": "Day23.html#section-3",
-    "title": "Day 23",
-    "section": "",
-    "text": "Suppose the test statistic is \\(z=3.01\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
-  },
-  {
-    "objectID": "Day3.html#one-qualitative-variable",
-    "href": "Day3.html#one-qualitative-variable",
-    "title": "Day 3",
-    "section": "One qualitative Variable",
-    "text": "One qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
-  },
-  {
-    "objectID": "Day3.html#frequency-table",
-    "href": "Day3.html#frequency-table",
-    "title": "Day 3",
-    "section": "Frequency Table",
-    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
-  },
-  {
-    "objectID": "Day3.html#proportion",
-    "href": "Day3.html#proportion",
-    "title": "Day 3",
-    "section": "Proportion",
-    "text": "Proportion\nThe proportion in a category is found by \\[\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\\]\n\nPercentages/proportions (relative frequencies)\n\n\\(p\\) = proportion for a population (parameter)\n\\(\\hat{p}\\) = proportion for a sample (statistic) (“p-hat”)"
-  },
-  {
-    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "title": "Day 3",
-    "section": "What proportion of adults sampled do not own a cell phone?",
-    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.41\n\n\nNo Cell Phone\n293\n0.13\n\n\nTotal\n2253\n1.000\n\n\n\n\nProportions and percentages can be used interchangeably"
-  },
-  {
-    "objectID": "Day3.html#bar-chartplotgraph",
-    "href": "Day3.html#bar-chartplotgraph",
-    "title": "Day 3",
-    "section": "Bar Chart/Plot/Graph",
-    "text": "Bar Chart/Plot/Graph\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category"
-  },
-  {
-    "objectID": "Day3.html#two-qualitative-variables",
-    "href": "Day3.html#two-qualitative-variables",
-    "title": "Day 3",
-    "section": "Two qualitative Variables",
-    "text": "Two qualitative Variables\nLook at the relationship between two qualitative variables - Relationship status - Gender\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169\n\n\n\n\nWe add a second dimension to a frequency table to account for the second qualitative variable"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender",
-    "href": "Day3.html#relationship-status-and-gender",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female,2)\n\n[1] 0.76\n\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male,2)\n\n[1] 0.24"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender-1",
-    "href": "Day3.html#relationship-status-and-gender-1",
-    "title": "Day 3",
-    "section": "Relationship status and Gender",
-    "text": "Relationship status and Gender\n\nProportion of males that are in a relationship?\n\nprop.male &lt;- 10/62\nround(prop.male,2) \n\n[1] 0.16\n\n\nProportion of females that are in a relationship?\n\nprop.female &lt;- 32/107\nround(prop.female,2)\n\n[1] 0.3\n\n\n\nStatkey for Data Visualization: https://www.lock5stat.com/StatKey/index.html"
-  },
-  {
-    "objectID": "Day3.html#difference-in-proportions",
-    "href": "Day3.html#difference-in-proportions",
-    "title": "Day 3",
-    "section": "Difference in proportions",
-    "text": "Difference in proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable\n\nExample: Difference in proportions of male and female that are in a relationship:\n\n\\[\n\\begin{align*}\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\end{align*}\n\\]\n\n# R-code\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff,2) \n\n[1] 0.14"
-  },
-  {
-    "objectID": "Day3.html#student-survey",
-    "href": "Day3.html#student-survey",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
-  },
-  {
-    "objectID": "Day3.html#distribution-1",
-    "href": "Day3.html#distribution-1",
-    "title": "Day 3",
-    "section": "Distribution",
-    "text": "Distribution\n\n\n“The distribution of the variable Y”\n\ndescribes its center, variability and shape\nuse both numbers and graphics"
-  },
-  {
-    "objectID": "Day3.html#center-mean-or-average",
-    "href": "Day3.html#center-mean-or-average",
-    "title": "Day 3",
-    "section": "Center: Mean or Average",
-    "text": "Center: Mean or Average\n\nMean: average value in a sample or population\n\n\\(\\bar{y} = \\dfrac{\\sum_{i=1}^ny_i}{n}\\) is an average of \\(n\\) values \\(y_i\\) in a sample\n\\(\\mu\\) is an average value of \\(y\\) in a population"
-  },
-  {
-    "objectID": "Day3.html#student-survey-1",
-    "href": "Day3.html#student-survey-1",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\n\n\nsurvey &lt;- read.csv(\"https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv\")\nmean(survey$Pulse) # the command `mean` computes an average\n\n[1] 69.57459\n\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#center-median",
-    "href": "Day3.html#center-median",
-    "title": "Day 3",
-    "section": "Center: Median",
-    "text": "Center: Median\n\nMedian: the middle value when the data are ordered\n\nThe median splits the data in half\n\\(m\\) is the median value in a sample\n\\(M\\) is the median value in a population\n\n\n\nmedian(survey$Pulse) # the command `median` computes an median\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#variability-standard-deviation",
-    "href": "Day3.html#variability-standard-deviation",
-    "title": "Day 3",
-    "section": "Variability: Standard Deviation",
-    "text": "Variability: Standard Deviation\n\nStandard Devation (SD): average deviation from center in a sample or population\n\n\\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n(y_i - \\overline{y})^2}{n-1}}\\) is the SD of \\(n\\) values \\(y_i\\) in a sample\n\\(\\sigma\\) is the SD of values of \\(y\\) in a population\n\n\n\nsd(survey$Pulse) # the command `sd` computes an average\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
-  },
-  {
-    "objectID": "Day26.html#introduction-to-small-sample-confidence-intervals",
-    "href": "Day26.html#introduction-to-small-sample-confidence-intervals",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "href": "Day28_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "title": "Day 28",
     "section": "Introduction to Small Sample Confidence Intervals",
     "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
   },
   {
-    "objectID": "Day26.html#adjusting-for-small-samples",
-    "href": "Day26.html#adjusting-for-small-samples",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#adjusting-for-small-samples",
+    "href": "Day28_Prelim.html#adjusting-for-small-samples",
+    "title": "Day 28",
     "section": "Adjusting for Small Samples",
     "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
   },
   {
-    "objectID": "Day26.html#confidence-interval-using-students-t-statistic",
-    "href": "Day26.html#confidence-interval-using-students-t-statistic",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#confidence-interval-using-students-t-statistic",
+    "href": "Day28_Prelim.html#confidence-interval-using-students-t-statistic",
+    "title": "Day 28",
     "section": "Confidence Interval Using Student’s t-Statistic",
     "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
   },
   {
-    "objectID": "Day26.html#section-1",
-    "href": "Day26.html#section-1",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#section-1",
+    "href": "Day28_Prelim.html#section-1",
+    "title": "Day 28",
     "section": "",
     "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
   },
   {
-    "objectID": "Day26.html#group-activity-1",
-    "href": "Day26.html#group-activity-1",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#group-activity-1",
+    "href": "Day28_Prelim.html#group-activity-1",
+    "title": "Day 28",
     "section": " Group Activity 1",
     "text": "Group Activity 1\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 1.\n\n\n\n\n−+\n03:00"
   },
   {
-    "objectID": "Day26.html#calculation-of-p-value",
-    "href": "Day26.html#calculation-of-p-value",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#calculation-of-p-value",
+    "href": "Day28_Prelim.html#calculation-of-p-value",
+    "title": "Day 28",
     "section": "Calculation of P-Value",
     "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
   },
   {
-    "objectID": "Day26.html#section-3",
-    "href": "Day26.html#section-3",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#section-3",
+    "href": "Day28_Prelim.html#section-3",
+    "title": "Day 28",
     "section": "",
     "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
   },
   {
-    "objectID": "Day26.html#group-activity-2",
-    "href": "Day26.html#group-activity-2",
-    "title": "Day 26",
+    "objectID": "Day28_Prelim.html#group-activity-2",
+    "href": "Day28_Prelim.html#group-activity-2",
+    "title": "Day 28",
+    "section": " Group Activity 2",
+    "text": "Group Activity 2\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 2.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "Day17.html#recap-steel-sheets-thickness",
+    "href": "Day17.html#recap-steel-sheets-thickness",
+    "title": "Day 17",
+    "section": "Recap: Steel Sheets Thickness",
+    "text": "Recap: Steel Sheets Thickness\n\n\nContext: We revisit the scenario from Section 6.1 where a steel manufacturer’s rolling machine produces sheets of varying thickness, distributed uniformly between 150 and 200 millimeters.\nExperiment Setup: Random sampling of 11 steel sheets to measure thickness, repeated across 1000 samples."
+  },
+  {
+    "objectID": "Day17.html#example-6.1",
+    "href": "Day17.html#example-6.1",
+    "title": "Day 17",
+    "section": "Example 6.1",
+    "text": "Example 6.1"
+  },
+  {
+    "objectID": "Day17.html#sampling-distribution-for-barx",
+    "href": "Day17.html#sampling-distribution-for-barx",
+    "title": "Day 17",
+    "section": "Sampling distribution for \\(\\bar{x}\\)",
+    "text": "Sampling distribution for \\(\\bar{x}\\)"
+  },
+  {
+    "objectID": "Day17.html#uniform-distribution-parameters",
+    "href": "Day17.html#uniform-distribution-parameters",
+    "title": "Day 17",
+    "section": "Uniform Distribution Parameters",
+    "text": "Uniform Distribution Parameters\n\n\nDistribution Type: Uniform, with each value between 150 and 200 mm equally likely.\nCalculated Mean: \\(\\mu = \\frac{150 + 200}{2} = 175\\) mm.\nCalculated Standard Deviation: \\(\\sigma = \\sqrt{\\frac{(200 - 150)^2}{12}} \\approx 14.43\\) mm."
+  },
+  {
+    "objectID": "Day17.html#sample-mean-and-estimation",
+    "href": "Day17.html#sample-mean-and-estimation",
+    "title": "Day 17",
+    "section": "Sample Mean and Estimation",
+    "text": "Sample Mean and Estimation\n\n\nSample Mean: \\(\\bar{x} = \\frac{\\sum x}{11}\\)\nRole of Sample Mean: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.\nUnbiased Estimator: \\(\\bar{X} = \\frac{1}{n} \\sum X_i\\) is unbiased, meaning \\(E(\\bar{x}) = \\mu\\)."
+  },
+  {
+    "objectID": "Day17.html#properties-of-the-sampling-distribution",
+    "href": "Day17.html#properties-of-the-sampling-distribution",
+    "title": "Day 17",
+    "section": "Properties of the Sampling Distribution",
+    "text": "Properties of the Sampling Distribution\n\n\nMean of Sampling Distribution: Equals the population mean, i.e., \\(E(\\bar{x}) = \\mu\\).\nStandard Error of the Mean (SE): \\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\) for sample size (n).\nImplication: The standard error quantifies the spread of the sampling distribution around the population mean."
+  },
+  {
+    "objectID": "Day17.html#central-limit-theorem-clt",
+    "href": "Day17.html#central-limit-theorem-clt",
+    "title": "Day 17",
+    "section": "Central Limit Theorem (CLT)",
+    "text": "Central Limit Theorem (CLT)\n\n\nTheorem Statement: For any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the sampling distribution of the sample mean \\(\\bar{x}\\) will be approximately normal if the sample size \\(n\\) is sufficiently large (typically \\(n \\geq 30\\)).\nApplication: This theorem applies regardless of the original population’s distribution, making it a powerful tool in statistical inference."
+  },
+  {
+    "objectID": "Day17.html#impact-of-sample-size",
+    "href": "Day17.html#impact-of-sample-size",
+    "title": "Day 17",
+    "section": "Impact of Sample Size",
+    "text": "Impact of Sample Size\n\n\nVisualization: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.\nPractical Implication: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design."
+  },
+  {
+    "objectID": "Day17.html#section-1",
+    "href": "Day17.html#section-1",
+    "title": "Day 17",
+    "section": "",
+    "text": "Example 1: Suppose we have selected a random sample of \\(n=36\\) observations from a population with mean \\(\\mu=80\\) and standard deviation \\(\\sigma=6\\).\n\n\nWhat is the value of the mean \\(\\mu_{\\bar{x}}\\) and standard deviation (standard error) \\(\\sigma_{\\bar{x}}\\) of the sampling distribution of the sample mean \\(\\bar{x}\\).\n\n \n\nWhat is the probability that the sample mean is greater than 82 ?"
+  },
+  {
+    "objectID": "Day17.html#section-2",
+    "href": "Day17.html#section-2",
+    "title": "Day 17",
+    "section": "",
+    "text": "Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was \\(\\mu=25\\) years, with a standard deviation of \\(\\sigma=9.5\\) years.\n\n\nDescribe the sampling distribution of the mean of a sample of 125 students.\n\n \n\nWhat is the probability that the sample mean age of the 125 students is greater than 26 years?"
+  },
+  {
+    "objectID": "Day8.html#random-variables-rvs",
+    "href": "Day8.html#random-variables-rvs",
+    "title": "Day 8",
+    "section": "Random Variables (RVs)",
+    "text": "Random Variables (RVs)\n\n\n\nRandom variables (\\(x\\)) represent outcomes of experiments, akin to variables in algebra.\nTotal probability must sum to 1 across all sample points.\nFinite sample spaces: straightforward probability assignment.\nInfinite sample spaces: require probability models for practical application."
+  },
+  {
+    "objectID": "Day8.html#discrete-rvs",
+    "href": "Day8.html#discrete-rvs",
+    "title": "Day 8",
+    "section": "Discrete RVs",
+    "text": "Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nDiscrete Random Variables: Assume a countable number of values.\nExamples\n\nSeizures per Week: Number of seizures a patient has (\\(x=0, 1, 2, \\ldots\\)).\nVoters Favoring Impeachment: Out of a sample of 500 (\\(x=0, 1, 2, \\ldots, 500\\)).\nTennis Player Shoe Sizes: Possible shoe sizes (\\(x=5, 5\\frac{1}{2}, 6, 6\\frac{1}{2}, \\ldots\\)).\nChange Received: Possible amounts of change given ($x=1¢, 2¢, 3¢, , $1, $1.01, $1.02, ).\nWaiting Customers: Number of customers waiting in a restaurant (\\(x=0, 1, 2, \\ldots\\))."
+  },
+  {
+    "objectID": "Day8.html#continuous-rvs",
+    "href": "Day8.html#continuous-rvs",
+    "title": "Day 8",
+    "section": "Continuous RVs",
+    "text": "Continuous RVs\n\n\n\n\n\n\n\nDefinition\n\n\nContinuous Random Variables: Assume values from any point within an interval.\nExamples\n\nTime Between Hospital Arrivals: Time in seconds (\\(0 \\leq x &lt; \\infty\\)).\nTime to Complete an Exam: Time in minutes for a one-hour exam (\\(0 \\leq x \\leq 60\\)).\nBeverage Amount in a Can: Ounces in a 12-ounce can (\\(0 \\leq x \\leq 12\\)).\nOil-Drilling Depth: Depth in feet until oil is struck (\\(0 \\leq x \\leq c\\), where \\(c\\) is the max depth).\nWeight of Food Item: Weight in pounds of a supermarket item (\\(0 \\leq x \\leq 500\\))."
+  },
+  {
+    "objectID": "Day8.html#probability-distributions-for-discrete-rvs",
+    "href": "Day8.html#probability-distributions-for-discrete-rvs",
+    "title": "Day 8",
+    "section": "Probability Distributions for Discrete RVs",
+    "text": "Probability Distributions for Discrete RVs\n\n\n\n\n\n\n\nDefinition\n\n\nProbability Distribution: Specifies all possible values and the probabilities of a discrete random variable.\nExample: Roll of a Die\n\nPossible Values: \\(x = 1, 2, 3, 4, 5, 6\\)\nProbability of Each Value: \\(P(x = k) = \\frac{1}{6}\\) for \\(k = 1, 2, 3, 4, 5, 6\\)\n\nThis distribution fully describes the likelihood of each outcome when a fair die is rolled."
+  },
+  {
+    "objectID": "Day8.html#section",
+    "href": "Day8.html#section",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 1: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair."
+  },
+  {
+    "objectID": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "href": "Day8.html#key-requirements-for-discrete-probability-distributions",
+    "title": "Day 8",
+    "section": "Key Requirements for Discrete Probability Distributions",
+    "text": "Key Requirements for Discrete Probability Distributions\n\n\n\nProbability Range: \\(0 \\leq p(x) \\leq 1\\) for each outcome \\(x\\).\nTotal Probability: Sum of all probabilities must be 1: \\[\n\\sum_{\\text{all } x} p(x) = 1\n\\]"
+  },
+  {
+    "objectID": "Day8.html#section-1",
+    "href": "Day8.html#section-1",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 2: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\)\nFind \\(P(X&gt;-1)\\)\nFind \\(P(-1 \\leq X&lt;1)\\)\nFind \\(P(-1 \\leq X \\leq 1)\\)"
+  },
+  {
+    "objectID": "Day8.html#section-2",
+    "href": "Day8.html#section-2",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 3: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula\n\n\\[\\begin{align*}\np(x)=(.3)(.7)^{x-1}, x=1, 2,3, \\ldots\n\\end{align*}\\]\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\n\n\nWhat is the probability that NO more than 2 years must be sampled?"
+  },
+  {
+    "objectID": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "href": "Day8.html#expected-value-mean-of-discrete-random-variables",
+    "title": "Day 8",
+    "section": "Expected Value: Mean of Discrete Random Variables",
+    "text": "Expected Value: Mean of Discrete Random Variables\n\n\n\n\n\n\n\nDefinition\n\n\nThe expected value (\\(E(X)\\)), or mean, is the weighted average of all possible values.\nFormula\n\\[\n\\mu = E(X) = \\sum_{\\text{all } x_i} x_i p(x_i) = x_1 p(x_1) + x_2 p(x_2) + \\cdots\n\\]\nMotivation\n\nRepresents the “center” or typical value you expect if the random experiment is repeated many times."
+  },
+  {
+    "objectID": "Day8.html#section-3",
+    "href": "Day8.html#section-3",
+    "title": "Day 8",
+    "section": "",
+    "text": "Example 4: Suppose you work for an insurance company and you sell a \\(\\$ 10,000\\) one-year term insurance policy at an annual premium of \\(\\$ 290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is .001 . What is the expected gain (amount of money made by the company) for a policy of this type?"
+  },
+  {
+    "objectID": "Day8.html#variance-and-standard-deviation",
+    "href": "Day8.html#variance-and-standard-deviation",
+    "title": "Day 8",
+    "section": "Variance and Standard Deviation",
+    "text": "Variance and Standard Deviation\n\n\n\n\n\n\n\nDefinition\n\n\nVariance measures the spread of values around the mean. \\[\n  \\sigma^2 = \\operatorname{Var}(x) = E\\left[(x-\\mu)^2\\right] = \\sum_{\\text{all } x_i}\\left(x_i-\\mu\\right)^2 p(x_i) = \\left[\\sum_{\\text{all } x_i} x_i^2 p(x_i)\\right] - \\mu^2\n  \\]\nStandard Deviation is the square root of variance, indicates typical deviation from the mean.\n\\[\n  \\sigma = \\sqrt{\\operatorname{Var}(x)}\n  \\]"
+  },
+  {
+    "objectID": "Day29_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "href": "Day29_Prelim.html#introduction-to-small-sample-confidence-intervals",
+    "title": "Day 29",
+    "section": "Introduction to Small Sample Confidence Intervals",
+    "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
+  },
+  {
+    "objectID": "Day29_Prelim.html#adjusting-for-small-samples",
+    "href": "Day29_Prelim.html#adjusting-for-small-samples",
+    "title": "Day 29",
+    "section": "Adjusting for Small Samples",
+    "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
+  },
+  {
+    "objectID": "Day29_Prelim.html#confidence-interval-using-students-t-statistic",
+    "href": "Day29_Prelim.html#confidence-interval-using-students-t-statistic",
+    "title": "Day 29",
+    "section": "Confidence Interval Using Student’s t-Statistic",
+    "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
+  },
+  {
+    "objectID": "Day29_Prelim.html#section-1",
+    "href": "Day29_Prelim.html#section-1",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
+  },
+  {
+    "objectID": "Day29_Prelim.html#group-activity-1",
+    "href": "Day29_Prelim.html#group-activity-1",
+    "title": "Day 29",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 1.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "Day29_Prelim.html#calculation-of-p-value",
+    "href": "Day29_Prelim.html#calculation-of-p-value",
+    "title": "Day 29",
+    "section": "Calculation of P-Value",
+    "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
+  },
+  {
+    "objectID": "Day29_Prelim.html#section-3",
+    "href": "Day29_Prelim.html#section-3",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
+  },
+  {
+    "objectID": "Day29_Prelim.html#group-activity-2",
+    "href": "Day29_Prelim.html#group-activity-2",
+    "title": "Day 29",
     "section": " Group Activity 2",
     "text": "Group Activity 2\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 2.\n\n\n\n\n−+\n03:00"
   },

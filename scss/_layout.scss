@@ -65,10 +65,11 @@ html, body {
   box-shadow: 0 0 8px rgba(0,0,0,0.07); // Subtle shadow for depth
   white-space: pre-wrap; // Allows code to wrap and respects white spaces
   word-wrap: break-word; // Prevents long words from forcing a horizontal scroll
-  overflow-x: auto; // Only show horizontal scroll when necessary
-  overflow-y: auto; // Usually, vertical scroll isn't necessary
-  max-height: 800px; // Optional: Set a max height for very long code blocks
+  overflow-x: visible; // No horizontal scroll, content extends beyond container
+  overflow-y: visible; // No vertical scroll, content extends beyond container
+  max-height: none; // Removes the maximum height restriction
 }
+
 
 
 .row {
