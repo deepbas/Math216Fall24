@@ -405,8 +405,8 @@ Bastola
 </div>
 
 </section>
-<section id="comparing-two-population-means-paired-difference" class="slide level2 font80">
-<h2>Comparing Two Population Means: Paired Difference</h2>
+<section id="comparing-two-population-means-paired-difference-example" class="slide level2 font80">
+<h2>Comparing Two Population Means: Paired Difference Example</h2>
 <div class="cle1">
 <ul>
 <li>Objective: Assess the effectiveness of two training programs in skill enhancement.</li>
@@ -616,7 +616,7 @@ Bastola
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day28_Prelim_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+<p><img data-src="Day28_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -677,6 +677,14 @@ alternative hypothesis: true mean difference is not equal to 0
 sample estimates:
 mean difference 
           -0.85 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">sd</span>(differences) <span class="co"># s_d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.92336</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">qt</span>(<span class="fl">0.975</span>, <span class="at">df =</span> <span class="dv">20</span> <span class="sc">-</span><span class="dv">1</span>) <span class="co"># critical value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.093024</code></pre>
 </div>
 </div>
 </section>

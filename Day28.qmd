@@ -47,7 +47,7 @@ yt <- 0
 ```
 
 
-## Comparing Two Population Means: Paired Difference {.font80}
+## Comparing Two Population Means: Paired Difference Example {.font80}
 
 ::: cle1
 
@@ -230,6 +230,8 @@ ad.test(differences)
 
 # Perform the paired t-test
 t.test(methodA, methodB, paired = TRUE, alternate = "greater")
+sd(differences) # s_d
+qt(0.975, df = 20 -1) # critical value
 ```
 
 
