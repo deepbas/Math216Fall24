@@ -47,139 +47,198 @@ yt <- 0
 ```
 
 
-## Introduction to Small Sample Confidence Intervals {.font80}
+## Comparing Two Population Means: Paired Difference {.font80}
 
-::: cle6
-- **Background**: Confidence intervals and hypothesis testing for large samples ($n \geq 30$) rely on the $z$-statistic.
-- **Challenge**: What happens with a small sample size ($n < 30$) where the Central Limit Theorem does not apply?
+::: cle1
+
+- Objective: Assess the effectiveness of two training programs in skill enhancement.
+- Design Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison.
+
+:::
+
+## Conceptual Foundation for Paired Samples {.font80}
+
+::: cle2
+
+- Paired designs minimize variability by controlling for individual differences.
+- This approach is crucial in settings where participants have inherent variability in initial abilities.
 
 :::
 
-## Adjusting for Small Samples {.font70}
+## Hypotheses Framework {.font80}
 
-::: cle6
-- **Population Distribution**: If the sample comes from an approximately normal distribution, we can use the $t$-statistic.
-- **Standard Deviation**: When the population standard deviation $\sigma$ is unknown and $n < 30$, using the sample standard deviation $s$ to approximate $\sigma$ is unreliable.
-- **Solution**:
-  $$
-  t=\frac{\bar{x}-\mu}{s / \sqrt{n}}
-  $$
-  - Follows a $t$-distribution with degrees of freedom, $df = n-1$.
-:::
+::: cle3
 
-
-
-## Confidence Interval Using Student's t-Statistic {.font80}
-
-::: cle9
-- **When $\sigma$ is unknown**: Use the $t$-statistic for confidence intervals.
-  - For a $95\%$ confidence interval:
-    $$
-    \bar{x} \pm t_{\alpha/2} \left(\frac{s}{\sqrt{n}}\right)
-    $$
-    where $t_{\alpha/2}$ is determined from the $t$-distribution table for $df = n-1$.
-:::
-
-
-## {.font60}
-
-<img src="images/t-table.png" style="display: block; margin: auto;" width="90%"  loading="lazy" decoding="async">
-
-
-## {.font60} 
-
-> Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the $n=6$ patients in the human testing phase are shown in the following. Use this information to construct a $95 \%$ confidence interval for $\mu$, the mean increase in blood pressure associated with the new drug for all patients in the population.
-
-\begin{array}{llllll}
-1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1
-\end{array}
-
-
-```{r}
-x <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)
-mean(x) # x.bar, sample mean
-sd(x)   #s, sample standard deviation
-qt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1
-```
-
-
-## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
-
-::: row
-::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
-:::
-
-::: right
-
-<br>
-
-::: lqt
-
-Say hi to your neighbor and think about your approach to solve example 1.
+- **Null Hypothesis** $(H_0)$: $\mu_{\text{A}} = \mu_{\text{B}}$ (no difference in means between two methods).
+- **Alternative Hypothesis** $(H_a)$: $\mu_{\text{A}} > \mu_{\text{B}}$ (Method A outperforms Method B).
 
 :::
-:::
-:::
-
-`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
-
 
 ##
 
+<img src="images/Day28-2.png" style="display: block; margin: auto;" width="70%"  loading="lazy" decoding="async">
 
 
 
-## Calculation of P-Value {.font80}
+## Data Overview {.font70}
+
+::: {.columns}
+::: {.column width="50%"}
+| Pair | Method A | Method B |
+|------|----------|----------|
+| 1    | 85       | 83       |
+| 2    | 88       | 89       |
+| 3    | 90       | 87       |
+| 4    | 92       | 84       |
+| 5    | 91       | 92       |
+| 6    | 89       | 90       |
+| 7    | 93       | 85       |
+| 8    | 95       | 91       |
+| 9    | 96       | 98       |
+| 10   | 97       | 94       |
+
+:::
+::: {.column width="50%"}
+| Pair | Method A | Method B |
+|------|----------|----------|
+| 11   | 98       | 100      |
+| 12   | 99       | 101      |
+| 13   | 100      | 99       |
+| 14   | 101      | 111      |
+| 15   | 102      | 111      |
+| 16   | 103      | 106      |
+| 17   | 104      | 109      |
+| 18   | 105      | 103      |
+| 19   | 106      | 111      |
+| 20   | 107      | 114      |
+:::
+:::
+
+
+
+## Transition to Paired Analysis {.font80}
+
+::: cle5
+
+- Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.
+- Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.
+
+:::
+
+## Statistical Techniques and Conditions {.font80}
+
+::: cle6
+
+### Known vs. Unknown Standard Deviations
+
+- Use $z$-tests when standard deviations are known and sample sizes are large.
+- Employ $t$-tests when standard deviations are unknown and sample sizes are small.
+
+### Normality and Non-Normal Data
+
+- For normally distributed differences, use $t$-tests.
+- For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.
+
+:::
+
+## Selecting Appropriate Statistical Tests {.font80}
 
 ::: cle7
-- **When $n<30$** and $\sigma$ is unknown:
-  - **Use Case**: If the population is approximately normally distributed.
-  - **Student's t-Statistic**:
-    $$
-    t = \frac{\bar{x} - \mu_{0}}{s / \sqrt{n}}
-    $$
-    - Follows a $t$-distribution with $df = n - 1$.
+
+- **For Normal Distributions**: Apply the paired $t$-test.
+- **For Non-Normal Distributions**: Use non-parametric methods that do not assume a normal distribution.
 :::
+
+## Results Interpretation and Confidence Intervals {.font80}
+
+::: cle8
+
+Evaluate the p-value against the significance level to decide on rejecting the null hypothesis.
+Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.
+:::
+
+<img src="images/Day28-1.png" style="display: block; margin: auto;" width="70%"  loading="lazy" decoding="async">
+
+
+
+## {.font70}
+
+::: panel-tabset
+
+
+### Diagnostic Plots
+
+```{r, echo=FALSE}
+library(gridExtra)
+
+# Define the scores for Method A and Method B
+methodA <- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)
+methodB <- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)
+
+# Calculate differences
+differences <- methodA - methodB
+
+# Generate a QQ plot for normality check
+library(ggplot2)
+qq_norm <- ggplot(data = as.data.frame(differences), aes(sample = differences)) +
+  stat_qq() + stat_qq_line() +
+  ggtitle("QQ Plot of Differences")
+
+# Generate a histogram for normality check
+histogram <- ggplot(data = as.data.frame(differences), aes(x = differences)) +
+  geom_histogram(bins = 10, color = "maroon", fill = "gold") +
+  ggtitle("Histogram of Differences")
+
+grid.arrange(qq_norm,histogram, ncol = 2)
+```
+
+### R-code
+
+```{r, eval=FALSE}
+library(gridExtra)
+
+# Define the scores for Method A and Method B
+methodA <- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)
+methodB <- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)
+
+# Calculate differences
+differences <- methodA - methodB
+
+# Generate a QQ plot for normality check
+library(ggplot2)
+qq_norm <- ggplot(data = as.data.frame(differences), aes(sample = differences)) +
+  stat_qq() + stat_qq_line() +
+  ggtitle("QQ Plot of Differences")
+
+# Generate a histogram for normality check
+histogram <- ggplot(data = as.data.frame(differences), aes(x = differences)) +
+  geom_histogram(bins = 10, color = "black", fill = "blue") +
+  ggtitle("Histogram of Differences")
+
+grid.arrange(qq_norm,histogram, ncol = 2)
+```
+
+:::
+
+
+## Tests in R {.font80}
+
+```{r}
+# Perform the Anderson-Darling test for normality
+library(nortest)
+ad.test(differences)
+
+# Perform the paired t-test
+t.test(methodA, methodB, paired = TRUE, alternate = "greater")
+```
 
 
 
 ## {.font60}
 
-> Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour's test results, based on 17 water samples at this plant, are $\bar{x}=8.42$ and $s=0.16$. Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with $\alpha = 0.05$.
+> Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use $\alpha=0.05$, perform hypothesis test to see if the data provide sufficient evidence to support "the male average starting salary is greater than female average starting salary".
 
-```{r}
-qt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1
-```
-
-
-## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
-
-::: row
-::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
-:::
-
-::: right
-
-<br>
-
-::: lqt
-
-Say hi to your neighbor and think about your approach to solve example 2.
-
-:::
-:::
-:::
-
-`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
-
-
+<img src="images/Day28-3.png" style="display: block; margin: auto;" width="70%"  loading="lazy" decoding="async">
 
 ##
-
-
-
-
-
 

@@ -1411,7 +1411,7 @@
     "href": "Day28_Prelim.html#section-1",
     "title": "Day 28",
     "section": "",
-    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
+    "text": "Diagnostic PlotsR-code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(gridExtra)\n\n# Define the scores for Method A and Method B\nmethodA &lt;- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)\nmethodB &lt;- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)\n\n# Calculate differences\ndifferences &lt;- methodA - methodB\n\n# Generate a QQ plot for normality check\nlibrary(ggplot2)\nqq_norm &lt;- ggplot(data = as.data.frame(differences), aes(sample = differences)) +\n  stat_qq() + stat_qq_line() +\n  ggtitle(\"QQ Plot of Differences\")\n\n# Generate a histogram for normality check\nhistogram &lt;- ggplot(data = as.data.frame(differences), aes(x = differences)) +\n  geom_histogram(bins = 10, color = \"black\", fill = \"blue\") +\n  ggtitle(\"Histogram of Differences\")\n\ngrid.arrange(qq_norm,histogram, ncol = 2)"
   },
   {
     "objectID": "Day28_Prelim.html#group-activity-1",
@@ -2147,5 +2147,173 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show oneand two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day28_Prelim.html#comparing-two-population-means-paired-difference-experiments",
+    "href": "Day28_Prelim.html#comparing-two-population-means-paired-difference-experiments",
+    "title": "Day 28",
+    "section": "Comparing Two Population Means: Paired Difference Experiments",
+    "text": "Comparing Two Population Means: Paired Difference Experiments\n\n\nExplore the effectiveness of two different training programs on skill enhancement.\nParticipants are paired based on initial assessment scores to ensure comparability."
+  },
+  {
+    "objectID": "Day28_Prelim.html#motivation-for-using-paired-samples",
+    "href": "Day28_Prelim.html#motivation-for-using-paired-samples",
+    "title": "Day 28",
+    "section": "Motivation for Using Paired Samples",
+    "text": "Motivation for Using Paired Samples\n\n\nPaired sample designs control for individual variability, improving the accuracy of the results.\nThis method is particularly useful in educational and training settings where initial abilities may vary."
+  },
+  {
+    "objectID": "Day28_Prelim.html#understanding-hypotheses",
+    "href": "Day28_Prelim.html#understanding-hypotheses",
+    "title": "Day 28",
+    "section": "Understanding Hypotheses",
+    "text": "Understanding Hypotheses\n\n\nNull Hypothesis \\((H_0)\\): No difference in mean performance scores between the two methods.\nAlternative Hypothesis \\((H_a)\\): One method results in higher mean performance scores."
+  },
+  {
+    "objectID": "Day28_Prelim.html#data-representation",
+    "href": "Day28_Prelim.html#data-representation",
+    "title": "Day 28",
+    "section": "Data Representation",
+    "text": "Data Representation\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n1\n85\n82\n\n\n2\n88\n85\n\n\n…\n…\n…\n\n\n8\n90\n\\(\\mu_B\\)"
+  },
+  {
+    "objectID": "Day28_Prelim.html#transition-from-one-to-two-samples",
+    "href": "Day28_Prelim.html#transition-from-one-to-two-samples",
+    "title": "Day 28",
+    "section": "Transition from One to Two Samples",
+    "text": "Transition from One to Two Samples\n\n\nMove from testing a single group’s mean to comparing means of two related groups.\nEnhance understanding by leveraging knowledge of single-sample tests in a two-sample scenario."
+  },
+  {
+    "objectID": "Day28_Prelim.html#statistical-approach-difference-of-pairs",
+    "href": "Day28_Prelim.html#statistical-approach-difference-of-pairs",
+    "title": "Day 28",
+    "section": "Statistical Approach: Difference of Pairs",
+    "text": "Statistical Approach: Difference of Pairs\n\n\nCompute the difference for each pair: \\(X_{\\text{A}} - X_{\\text{B}}\\).\nAnalyze these differences as a single sample to test the hypothesis."
+  },
+  {
+    "objectID": "Day28_Prelim.html#validity-conditions",
+    "href": "Day28_Prelim.html#validity-conditions",
+    "title": "Day 28",
+    "section": "Validity Conditions",
+    "text": "Validity Conditions\n\nLarge Sample Conditions\n\nSample differences must be randomly selected.\nSample size should ideally be large enough for \\(Z\\)-statistics.\n\nSmall Sample Conditions\n\nDifferences should follow a normal distribution.\nFor small samples, normality must be checked."
+  },
+  {
+    "objectID": "Day28_Prelim.html#choosing-the-right-statistical-test",
+    "href": "Day28_Prelim.html#choosing-the-right-statistical-test",
+    "title": "Day 28",
+    "section": "Choosing the Right Statistical Test",
+    "text": "Choosing the Right Statistical Test\n\nSmall Samples: t-Test\n\nUse t-distribution if sample size is small and distribution of differences is approximately normal.\n\nConfidence Intervals\n\nCalculate confidence intervals for the mean difference to understand the range of effect."
+  },
+  {
+    "objectID": "Day28_Prelim.html#interpretation-of-results",
+    "href": "Day28_Prelim.html#interpretation-of-results",
+    "title": "Day 28",
+    "section": "Interpretation of Results",
+    "text": "Interpretation of Results\n\n\nDetermine whether to reject the null hypothesis based on the p-value and test statistic.\nDiscuss the implications of the findings for practice and future research."
+  },
+  {
+    "objectID": "Day28_Prelim.html#conclusion-and-implications",
+    "href": "Day28_Prelim.html#conclusion-and-implications",
+    "title": "Day 28",
+    "section": "Conclusion and Implications",
+    "text": "Conclusion and Implications\n\n\nIf evidence supports the alternative hypothesis, consider adopting the superior training method.\nEncourage further studies with diverse groups to confirm findings."
+  },
+  {
+    "objectID": "Day28_Prelim.html#comparing-two-population-means-paired-difference",
+    "href": "Day28_Prelim.html#comparing-two-population-means-paired-difference",
+    "title": "Day 28",
+    "section": "Comparing Two Population Means: Paired Difference",
+    "text": "Comparing Two Population Means: Paired Difference\n\n\nObjective: Assess the effectiveness of two training programs in skill enhancement.\nDesign Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison."
+  },
+  {
+    "objectID": "Day28_Prelim.html#section-2",
+    "href": "Day28_Prelim.html#section-2",
+    "title": "Day 28",
+    "section": "",
+    "text": "Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use \\(\\alpha=0.05\\), perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”."
+  },
+  {
+    "objectID": "Day28_Prelim.html#introduction-to-experiment-design",
+    "href": "Day28_Prelim.html#introduction-to-experiment-design",
+    "title": "Day 28",
+    "section": "Introduction to Experiment Design",
+    "text": "Introduction to Experiment Design\n\n\nObjective: Assess the effectiveness of two training programs in skill enhancement.\nDesign Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison."
+  },
+  {
+    "objectID": "Day28_Prelim.html#conceptual-foundation-for-paired-samples",
+    "href": "Day28_Prelim.html#conceptual-foundation-for-paired-samples",
+    "title": "Day 28",
+    "section": "Conceptual Foundation for Paired Samples",
+    "text": "Conceptual Foundation for Paired Samples\n\n\nPaired designs minimize variability by controlling for individual differences.\nThis approach is crucial in settings where participants have inherent variability in initial abilities."
+  },
+  {
+    "objectID": "Day28_Prelim.html#hypotheses-framework",
+    "href": "Day28_Prelim.html#hypotheses-framework",
+    "title": "Day 28",
+    "section": "Hypotheses Framework",
+    "text": "Hypotheses Framework\n\n\nNull Hypothesis \\((H_0)\\): \\(\\mu_{\\text{A}} = \\mu_{\\text{B}}\\) (no difference in means between two methods).\nAlternative Hypothesis \\((H_a)\\): \\(\\mu_{\\text{A}} &gt; \\mu_{\\text{B}}\\) (Method A outperforms Method B)."
+  },
+  {
+    "objectID": "Day28_Prelim.html#data-overview",
+    "href": "Day28_Prelim.html#data-overview",
+    "title": "Day 28",
+    "section": "Data Overview",
+    "text": "Data Overview\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n1\n85\n83\n\n\n2\n88\n89\n\n\n3\n90\n87\n\n\n4\n92\n84\n\n\n5\n91\n92\n\n\n6\n89\n90\n\n\n7\n93\n85\n\n\n8\n95\n91\n\n\n9\n96\n98\n\n\n10\n97\n94\n\n\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n11\n98\n100\n\n\n12\n99\n101\n\n\n13\n100\n99\n\n\n14\n101\n111\n\n\n15\n102\n111\n\n\n16\n103\n106\n\n\n17\n104\n109\n\n\n18\n105\n103\n\n\n19\n106\n111\n\n\n20\n107\n114"
+  },
+  {
+    "objectID": "Day28_Prelim.html#transition-to-paired-analysis",
+    "href": "Day28_Prelim.html#transition-to-paired-analysis",
+    "title": "Day 28",
+    "section": "Transition to Paired Analysis",
+    "text": "Transition to Paired Analysis\n\n\nTransition from single-sample to paired-sample testing involves considering the dependency between paired observations.\nIndependence within pairs is crucial; the pairing itself should not influence the measured outcomes."
+  },
+  {
+    "objectID": "Day28_Prelim.html#statistical-techniques-and-conditions",
+    "href": "Day28_Prelim.html#statistical-techniques-and-conditions",
+    "title": "Day 28",
+    "section": "Statistical Techniques and Conditions",
+    "text": "Statistical Techniques and Conditions\n\nKnown vs. Unknown Standard Deviations\n\nUse \\(z\\)-tests when standard deviations are known and sample sizes are large.\nEmploy \\(t\\)-tests when standard deviations are unknown and sample sizes are small.\n\nNormality and Non-Normal Data\n\nFor normally distributed differences, use \\(t\\)-tests.\nFor non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test."
+  },
+  {
+    "objectID": "Day28_Prelim.html#selecting-appropriate-statistical-tests",
+    "href": "Day28_Prelim.html#selecting-appropriate-statistical-tests",
+    "title": "Day 28",
+    "section": "Selecting Appropriate Statistical Tests",
+    "text": "Selecting Appropriate Statistical Tests\n\n\nFor Normal Distributions: Apply the paired \\(t\\)-test.\nFor Non-Normal Distributions: Use non-parametric methods that do not assume a normal distribution."
+  },
+  {
+    "objectID": "Day28_Prelim.html#results-interpretation-and-confidence-intervals",
+    "href": "Day28_Prelim.html#results-interpretation-and-confidence-intervals",
+    "title": "Day 28",
+    "section": "Results Interpretation and Confidence Intervals",
+    "text": "Results Interpretation and Confidence Intervals\n\nEvaluate the p-value against the significance level to decide on rejecting the null hypothesis. Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance."
+  },
+  {
+    "objectID": "Day28_Prelim.html#conclusions-and-further-research",
+    "href": "Day28_Prelim.html#conclusions-and-further-research",
+    "title": "Day 28",
+    "section": "Conclusions and Further Research",
+    "text": "Conclusions and Further Research\n\nA significant test result supports the adoption of the superior training method. Future studies should explore different populations and settings to validate and generalize the findings."
+  },
+  {
+    "objectID": "Day28_Prelim.html#section",
+    "href": "Day28_Prelim.html#section",
+    "title": "Day 28",
+    "section": "",
+    "text": "Diagnostic PlotsR-code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(gridExtra)\n\n# Define the scores for Method A and Method B\nmethodA &lt;- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)\nmethodB &lt;- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)\n\n# Calculate differences\ndifferences &lt;- methodA - methodB\n\n# Generate a QQ plot for normality check\nlibrary(ggplot2)\nqq_norm &lt;- ggplot(data = as.data.frame(differences), aes(sample = differences)) +\n  stat_qq() +\n  ggtitle(\"QQ Plot of Differences\")\n\n# Generate a histogram for normality check\nhistogram &lt;- ggplot(data = as.data.frame(differences), aes(x = differences)) +\n  geom_histogram(bins = 10, color = \"black\", fill = \"blue\") +\n  ggtitle(\"Histogram of Differences\")\n\ngrid.arrange(qq_norm,histogram, ncol = 2)"
+  },
+  {
+    "objectID": "Day28_Prelim.html#r-code",
+    "href": "Day28_Prelim.html#r-code",
+    "title": "Day 28",
+    "section": "R-code",
+    "text": "R-code\n\nlibrary(gridExtra)\n\n# Define the scores for Method A and Method B\nmethodA &lt;- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)\nmethodB &lt;- c(82, 85, 88, 89, 88, 86, 90, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104)\n\n# Calculate differences\ndifferences &lt;- methodA - methodB\n\n# Generate a QQ plot for normality check\nlibrary(ggplot2)\nqq_norm &lt;- ggplot(data = as.data.frame(differences), aes(sample = differences)) +\n  stat_qq() +\n  ggtitle(\"QQ Plot of Differences\")\n\n# Generate a histogram for normality check\nhistogram &lt;- ggplot(data = as.data.frame(differences), aes(x = differences)) +\n  geom_histogram(bins = 10, color = \"black\", fill = \"blue\") +\n  ggtitle(\"Histogram of Differences\")\n\ngrid.arrange(qq_norm,histogram, ncol = 2)"
+  },
+  {
+    "objectID": "Day28_Prelim.html#tests-in-r",
+    "href": "Day28_Prelim.html#tests-in-r",
+    "title": "Day 28",
+    "section": "Tests in R",
+    "text": "Tests in R\n\n# Perform the Anderson-Darling test for normality\nlibrary(nortest)\nad.test(differences)\n\n\n    Anderson-Darling normality test\n\ndata:  differences\nA = 0.2269, p-value = 0.787\n\n# Perform the paired t-test\nt.test(methodA, methodB, paired = TRUE, alternate = \"greater\")\n\n\n    Paired t-test\n\ndata:  methodA and methodB\nt = -0.7721, df = 19, p-value = 0.4496\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n -3.154203  1.454203\nsample estimates:\nmean difference \n          -0.85"
   }
 ]

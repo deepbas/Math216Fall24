@@ -387,8 +387,6 @@
       margin-right: 0; 
     }
   </style>
-  <link href="site_libs/countdown/countdown.css" rel="stylesheet">
-  <script src="site_libs/countdown/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -407,140 +405,289 @@ Bastola
 </div>
 
 </section>
-<section id="introduction-to-small-sample-confidence-intervals" class="slide level2 font80">
-<h2>Introduction to Small Sample Confidence Intervals</h2>
-<div class="cle6">
+<section id="comparing-two-population-means-paired-difference" class="slide level2 font80">
+<h2>Comparing Two Population Means: Paired Difference</h2>
+<div class="cle1">
 <ul>
-<li><strong>Background</strong>: Confidence intervals and hypothesis testing for large samples (<span class="math inline">\(n \geq 30\)</span>) rely on the <span class="math inline">\(z\)</span>-statistic.</li>
-<li><strong>Challenge</strong>: What happens with a small sample size (<span class="math inline">\(n &lt; 30\)</span>) where the Central Limit Theorem does not apply?</li>
+<li>Objective: Assess the effectiveness of two training programs in skill enhancement.</li>
+<li>Design Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison.</li>
 </ul>
 </div>
 </section>
-<section id="adjusting-for-small-samples" class="slide level2 font70">
-<h2>Adjusting for Small Samples</h2>
-<div class="cle6">
+<section id="conceptual-foundation-for-paired-samples" class="slide level2 font80">
+<h2>Conceptual Foundation for Paired Samples</h2>
+<div class="cle2">
 <ul>
-<li><strong>Population Distribution</strong>: If the sample comes from an approximately normal distribution, we can use the <span class="math inline">\(t\)</span>-statistic.</li>
-<li><strong>Standard Deviation</strong>: When the population standard deviation <span class="math inline">\(\sigma\)</span> is unknown and <span class="math inline">\(n &lt; 30\)</span>, using the sample standard deviation <span class="math inline">\(s\)</span> to approximate <span class="math inline">\(\sigma\)</span> is unreliable.</li>
-<li><strong>Solution</strong>: <span class="math display">\[
-t=\frac{\bar{x}-\mu}{s / \sqrt{n}}
-\]</span>
-<ul>
-<li>Follows a <span class="math inline">\(t\)</span>-distribution with degrees of freedom, <span class="math inline">\(df = n-1\)</span>.</li>
-</ul></li>
+<li>Paired designs minimize variability by controlling for individual differences.</li>
+<li>This approach is crucial in settings where participants have inherent variability in initial abilities.</li>
 </ul>
 </div>
 </section>
-<section id="confidence-interval-using-students-t-statistic" class="slide level2 font80">
-<h2>Confidence Interval Using Student’s t-Statistic</h2>
-<div class="cle9">
+<section id="hypotheses-framework" class="slide level2 font80">
+<h2>Hypotheses Framework</h2>
+<div class="cle3">
 <ul>
-<li><strong>When <span class="math inline">\(\sigma\)</span> is unknown</strong>: Use the <span class="math inline">\(t\)</span>-statistic for confidence intervals.
-<ul>
-<li>For a <span class="math inline">\(95\%\)</span> confidence interval: <span class="math display">\[
-\bar{x} \pm t_{\alpha/2} \left(\frac{s}{\sqrt{n}}\right)
-\]</span> where <span class="math inline">\(t_{\alpha/2}\)</span> is determined from the <span class="math inline">\(t\)</span>-distribution table for <span class="math inline">\(df = n-1\)</span>.</li>
-</ul></li>
+<li><strong>Null Hypothesis</strong> <span class="math inline">\((H_0)\)</span>: <span class="math inline">\(\mu_{\text{A}} = \mu_{\text{B}}\)</span> (no difference in means between two methods).</li>
+<li><strong>Alternative Hypothesis</strong> <span class="math inline">\((H_a)\)</span>: <span class="math inline">\(\mu_{\text{A}} &gt; \mu_{\text{B}}\)</span> (Method A outperforms Method B).</li>
 </ul>
 </div>
 </section>
-<section id="section" class="slide level2 font60">
+<section id="section" class="slide level2">
 <h2></h2>
 
-<img src="images/t-table.png" style="display: block; margin: auto;" width="90%" loading="lazy" decoding="async" class="r-stretch"></section>
-<section id="section-1" class="slide level2 font60">
-<h2></h2>
-<blockquote>
-<p>Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the <span class="math inline">\(n=6\)</span> patients in the human testing phase are shown in the following. Use this information to construct a <span class="math inline">\(95 \%\)</span> confidence interval for <span class="math inline">\(\mu\)</span>, the mean increase in blood pressure associated with the new drug for all patients in the population.</p>
-</blockquote>
-<span class="math display">\[\begin{array}{llllll}
-1.7 &amp; 3.0 &amp; 0.8 &amp; 3.4 &amp; 2.7 &amp; 2.1
-\end{array}\]</span>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.7</span>, <span class="fl">3.0</span>, <span class="fl">0.8</span>, <span class="fl">3.4</span>, <span class="fl">2.7</span>, <span class="fl">2.1</span>)</span>
-<span id="cb1-2"><a></a><span class="fu">mean</span>(x) <span class="co"># x.bar, sample mean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.283333</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">sd</span>(x)   <span class="co">#s, sample standard deviation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.9495613</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">qt</span>(<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.05</span><span class="sc">/</span><span class="dv">2</span>, <span class="at">df =</span> <span class="dv">6</span> <span class="sc">-</span> <span class="dv">1</span>) <span class="co"># t_alpha/2 for df = n - 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.570582</code></pre>
+<img src="images/Day28-2.png" style="display: block; margin: auto;" width="70%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="data-overview" class="slide level2 font70">
+<h2>Data Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<table>
+<thead>
+<tr class="header">
+<th>Pair</th>
+<th>Method A</th>
+<th>Method B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>85</td>
+<td>83</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>88</td>
+<td>89</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>90</td>
+<td>87</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>92</td>
+<td>84</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>91</td>
+<td>92</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>89</td>
+<td>90</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>93</td>
+<td>85</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>95</td>
+<td>91</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>96</td>
+<td>98</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>97</td>
+<td>94</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<table>
+<thead>
+<tr class="header">
+<th>Pair</th>
+<th>Method A</th>
+<th>Method B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11</td>
+<td>98</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>99</td>
+<td>101</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>100</td>
+<td>99</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>101</td>
+<td>111</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>102</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>103</td>
+<td>106</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>104</td>
+<td>109</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>105</td>
+<td>103</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>106</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>107</td>
+<td>114</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
-<section id="group-activity-1" class="slide level2" data-background="#ffdf9e">
-<h2><i class="fa fa-pencil-square-o" style="font-size:48px;color:purple">&nbsp;Group&nbsp;Activity&nbsp;1</i></h2>
-<div class="row">
-<div class="left">
-<p><img data-src="https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif"></p>
-</div>
-<div class="right">
-<p><br></p>
-<div class="lqt">
-<p>Say hi to your neighbor and think about your approach to solve example 1.</p>
-</div>
-</div>
-</div>
-<p></p><div class="countdown" id="timer_d5e7d61b" data-update-every="1" tabindex="0" style="top:0;right:0;padding:3px 4px;font-size:1em;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div><p></p>
-</section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-</section>
-<section id="calculation-of-p-value" class="slide level2 font80">
-<h2>Calculation of P-Value</h2>
-<div class="cle7">
+<section id="transition-to-paired-analysis" class="slide level2 font80">
+<h2>Transition to Paired Analysis</h2>
+<div class="cle5">
 <ul>
-<li><strong>When <span class="math inline">\(n&lt;30\)</span></strong> and <span class="math inline">\(\sigma\)</span> is unknown:
-<ul>
-<li><strong>Use Case</strong>: If the population is approximately normally distributed.</li>
-<li><strong>Student’s t-Statistic</strong>: <span class="math display">\[
-t = \frac{\bar{x} - \mu_{0}}{s / \sqrt{n}}
-\]</span>
-<ul>
-<li>Follows a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(df = n - 1\)</span>.</li>
-</ul></li>
-</ul></li>
+<li>Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.</li>
+<li>Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.</li>
 </ul>
 </div>
 </section>
-<section id="section-3" class="slide level2 font60">
+<section id="statistical-techniques-and-conditions" class="slide level2 font80">
+<h2>Statistical Techniques and Conditions</h2>
+<div class="cle6">
+<h3 id="known-vs.-unknown-standard-deviations">Known vs.&nbsp;Unknown Standard Deviations</h3>
+<ul>
+<li>Use <span class="math inline">\(z\)</span>-tests when standard deviations are known and sample sizes are large.</li>
+<li>Employ <span class="math inline">\(t\)</span>-tests when standard deviations are unknown and sample sizes are small.</li>
+</ul>
+<h3 id="normality-and-non-normal-data">Normality and Non-Normal Data</h3>
+<ul>
+<li>For normally distributed differences, use <span class="math inline">\(t\)</span>-tests.</li>
+<li>For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.</li>
+</ul>
+</div>
+</section>
+<section id="selecting-appropriate-statistical-tests" class="slide level2 font80">
+<h2>Selecting Appropriate Statistical Tests</h2>
+<div class="cle7">
+<ul>
+<li><strong>For Normal Distributions</strong>: Apply the paired <span class="math inline">\(t\)</span>-test.</li>
+<li><strong>For Non-Normal Distributions</strong>: Use non-parametric methods that do not assume a normal distribution.</li>
+</ul>
+</div>
+</section>
+<section id="results-interpretation-and-confidence-intervals" class="slide level2 font80">
+<h2>Results Interpretation and Confidence Intervals</h2>
+<div class="cle8">
+<p>Evaluate the p-value against the significance level to decide on rejecting the null hypothesis. Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.</p>
+</div>
+
+<img src="images/Day28-1.png" style="display: block; margin: auto;" width="70%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-1" class="slide level2 font70">
+<h2></h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Diagnostic Plots</a></li><li><a href="#tabset-1-2">R-code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day28_Prelim_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(gridExtra)</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="co"># Define the scores for Method A and Method B</span></span>
+<span id="cb1-4"><a></a>methodA <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">85</span>, <span class="dv">88</span>, <span class="dv">90</span>, <span class="dv">92</span>, <span class="dv">91</span>, <span class="dv">89</span>, <span class="dv">93</span>, <span class="dv">95</span>, <span class="dv">96</span>, <span class="dv">97</span>, <span class="dv">98</span>, <span class="dv">99</span>, <span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>, <span class="dv">106</span>, <span class="dv">107</span>)</span>
+<span id="cb1-5"><a></a>methodB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">83</span>, <span class="dv">89</span>, <span class="dv">87</span>, <span class="dv">84</span>, <span class="dv">92</span>, <span class="dv">90</span>, <span class="dv">85</span>, <span class="dv">91</span>, <span class="dv">98</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">99</span>, <span class="dv">111</span>, <span class="dv">111</span>, <span class="dv">106</span>, <span class="dv">109</span>, <span class="dv">103</span>, <span class="dv">111</span>, <span class="dv">114</span>)</span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a><span class="co"># Calculate differences</span></span>
+<span id="cb1-8"><a></a>differences <span class="ot">&lt;-</span> methodA <span class="sc">-</span> methodB</span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># Generate a QQ plot for normality check</span></span>
+<span id="cb1-11"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-12"><a></a>qq_norm <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">as.data.frame</span>(differences), <span class="fu">aes</span>(<span class="at">sample =</span> differences)) <span class="sc">+</span></span>
+<span id="cb1-13"><a></a>  <span class="fu">stat_qq</span>() <span class="sc">+</span> <span class="fu">stat_qq_line</span>() <span class="sc">+</span></span>
+<span id="cb1-14"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"QQ Plot of Differences"</span>)</span>
+<span id="cb1-15"><a></a></span>
+<span id="cb1-16"><a></a><span class="co"># Generate a histogram for normality check</span></span>
+<span id="cb1-17"><a></a>histogram <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">as.data.frame</span>(differences), <span class="fu">aes</span>(<span class="at">x =</span> differences)) <span class="sc">+</span></span>
+<span id="cb1-18"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb1-19"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"Histogram of Differences"</span>)</span>
+<span id="cb1-20"><a></a></span>
+<span id="cb1-21"><a></a><span class="fu">grid.arrange</span>(qq_norm,histogram, <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tests-in-r" class="slide level2 font80">
+<h2>Tests in R</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Perform the Anderson-Darling test for normality</span></span>
+<span id="cb2-2"><a></a><span class="fu">library</span>(nortest)</span>
+<span id="cb2-3"><a></a><span class="fu">ad.test</span>(differences)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Anderson-Darling normality test
+
+data:  differences
+A = 0.2269, p-value = 0.787</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Perform the paired t-test</span></span>
+<span id="cb4-2"><a></a><span class="fu">t.test</span>(methodA, methodB, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">alternate =</span> <span class="st">"greater"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Paired t-test
+
+data:  methodA and methodB
+t = -0.7721, df = 19, p-value = 0.4496
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -3.154203  1.454203
+sample estimates:
+mean difference 
+          -0.85 </code></pre>
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2 font60">
 <h2></h2>
 <blockquote>
-<p>Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are <span class="math inline">\(\bar{x}=8.42\)</span> and <span class="math inline">\(s=0.16\)</span>. Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with <span class="math inline">\(\alpha = 0.05\)</span>.</p>
+<p>Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use <span class="math inline">\(\alpha=0.05\)</span>, perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”.</p>
 </blockquote>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">qt</span>(<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.05</span><span class="sc">/</span><span class="dv">2</span>, <span class="at">df =</span> <span class="dv">17</span> <span class="sc">-</span><span class="dv">1</span>)  <span class="co"># critical value for t_alpha/2, df = n-1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2.119905</code></pre>
-</div>
-</div>
-</section>
-<section id="group-activity-2" class="slide level2" data-background="#ffdf9e">
-<h2><i class="fa fa-pencil-square-o" style="font-size:48px;color:purple">&nbsp;Group&nbsp;Activity&nbsp;2</i></h2>
-<div class="row">
-<div class="left">
-<p><img data-src="https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif"></p>
-</div>
-<div class="right">
-<p><br></p>
-<div class="lqt">
-<p>Say hi to your neighbor and think about your approach to solve example 2.</p>
-</div>
-</div>
-</div>
-<p></p><div class="countdown" id="timer_9b207bb4" data-update-every="1" tabindex="0" style="top:0;right:0;padding:3px 4px;font-size:1em;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div><p></p>
-</section>
-<section id="section-4" class="slide level2">
+
+<img src="images/Day28-3.png" style="display: block; margin: auto;" width="70%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
 <h2></h2>
 
 <div class="quarto-auto-generated-content">
