@@ -690,7 +690,7 @@
     "href": "Day29_Prelim.html#section-1",
     "title": "Day 29",
     "section": "",
-    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
+    "text": "Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:"
   },
   {
     "objectID": "Day29_Prelim.html#group-activity-1",
@@ -2175,5 +2175,117 @@
     "title": "Day 28",
     "section": "Comparing Two Population Means: Paired Difference Example",
     "text": "Comparing Two Population Means: Paired Difference Example\n\n\nObjective: Assess the effectiveness of two training programs in skill enhancement.\nDesign Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison."
+  },
+  {
+    "objectID": "Day29_Prelim.html#math-216-001-statistical-thinkings-note-24",
+    "href": "Day29_Prelim.html#math-216-001-statistical-thinkings-note-24",
+    "title": "Day 29",
+    "section": "Math 216-001 Statistical Thinkings: Note 24",
+    "text": "Math 216-001 Statistical Thinkings: Note 24\n\nComparing Two Population Means: Independent Sampling\nInstructor: Dr. Jiacheng Cai\nDate: \\(11 / 09 / 2023\\)"
+  },
+  {
+    "objectID": "Day29_Prelim.html#section-9.2-independent-sampling-overview",
+    "href": "Day29_Prelim.html#section-9.2-independent-sampling-overview",
+    "title": "Day 29",
+    "section": "Section 9.2: Independent Sampling Overview",
+    "text": "Section 9.2: Independent Sampling Overview\n\nWhen samples cannot be paired, they are treated as independent. For two independent samples:\n\nSample 1: Size \\(n_1\\), mean \\(\\bar{x}_1\\), variance \\(s_1^2\\)\n\nSample 2: Size \\(n_2\\), mean \\(\\bar{x}_2\\), variance \\(s_2^2\\)\n\nConditions to check:\n\nSample sizes (\\(n_1 \\geq 30\\), \\(n_2 \\geq 30\\))\n\nNormality (for smaller samples)\n\nKnown variances (or assume equal variance under normality)"
+  },
+  {
+    "objectID": "Day29_Prelim.html#properties-of-sampling-distribution",
+    "href": "Day29_Prelim.html#properties-of-sampling-distribution",
+    "title": "Day 29",
+    "section": "Properties of Sampling Distribution",
+    "text": "Properties of Sampling Distribution\n\nFor large samples or small but normally distributed samples:\n\nMean of the distribution of \\((\\bar{x}_1 - \\bar{x}_2)\\): \\((\\mu_1 - \\mu_2)\\)\n\nStandard deviation: \\(\\sigma_{(\\bar{x}_1-\\bar{x}_2)} = \\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}\\)\n\nDistribution assumption: Approximately normal by the Central Limit Theorem."
+  },
+  {
+    "objectID": "Day29_Prelim.html#confidence-interval-for-mu_1---mu_2",
+    "href": "Day29_Prelim.html#confidence-interval-for-mu_1---mu_2",
+    "title": "Day 29",
+    "section": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)",
+    "text": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)\n\n\nKnown variances: \\((\\bar{x}_1 - \\bar{x}_2) \\pm z_{\\alpha/2} \\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}\\)\n\nUnknown variances: Use pooled standard deviation \\(s_p = \\sqrt{\\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}\\):\n\\[(\\bar{x}_1 - \\bar{x}_2) \\pm t_{\\alpha/2, n_1+n_2-2} \\cdot s_p \\cdot \\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}\\]"
+  },
+  {
+    "objectID": "Day29_Prelim.html#hypothesis-testing",
+    "href": "Day29_Prelim.html#hypothesis-testing",
+    "title": "Day 29",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\n\nNull Hypothesis (\\(H_0\\)): \\(\\mu_1 = \\mu_2\\) (no difference in means)\n\nAlternative Hypothesis (\\(H_a\\)): \\(\\mu_1 \\neq \\mu_2\\) (means are different)\n\nTest statistic for equal variances:\n\\[t = \\frac{\\bar{x}_1 - \\bar{x}_2}{s_p \\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}}\\]\n\nDegrees of freedom: \\(n_1 + n_2 - 2\\)\n\nReject \\(H_0\\) if \\(p\\)-value &lt; \\(\\alpha\\) (commonly 0.05)"
+  },
+  {
+    "objectID": "Day29_Prelim.html#practical-example",
+    "href": "Day29_Prelim.html#practical-example",
+    "title": "Day 29",
+    "section": "Practical Example",
+    "text": "Practical Example\n\nA study comparing two diets:\n\nLow-fat diet: \\(n_1 = 100\\), \\(\\bar{x}_1 = 9.31\\), \\(s_1 = 4.67\\)\n\nRegular diet: \\(n_2 = 100\\), \\(\\bar{x}_2 = 7.40\\), \\(s_2 = 4.04\\)\n\nForm 95% CI for the difference in mean weight loss and conduct a hypothesis test at \\(\\alpha = 0.05\\) to see if the low-fat diet is more effective."
+  },
+  {
+    "objectID": "Day29_Prelim.html#example-1",
+    "href": "Day29_Prelim.html#example-1",
+    "title": "Day 29",
+    "section": "Example 1",
+    "text": "Example 1\n\nA study comparing two diets:\n\nLow-fat diet: \\(n_1 = 100\\), \\(\\bar{x}_1 = 9.31\\), \\(s_1 = 4.67\\)\n\nRegular diet: \\(n_2 = 100\\), \\(\\bar{x}_2 = 7.40\\), \\(s_2 = 4.04\\)\n\nForm 95% CI for the difference in mean weight loss and conduct a hypothesis test at \\(\\alpha = 0.05\\) to see if the low-fat diet is more effective."
+  },
+  {
+    "objectID": "Day29_Prelim.html#section",
+    "href": "Day29_Prelim.html#section",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 1: A study comparing two diets:\n- Low-fat diet: \\(n_1 = 100\\), \\(\\bar{x}_1 = 9.31\\), \\(s_1 = 4.67\\)\n- Regular diet: \\(n_2 = 100\\), \\(\\bar{x}_2 = 7.40\\), \\(s_2 = 4.04\\)\nForm 95% CI for the difference in mean weight loss and conduct a hypothesis test at \\(\\alpha = 0.05\\) to see if the low-fat diet is more effective."
+  },
+  {
+    "objectID": "Day29_Prelim.html#section-2",
+    "href": "Day29_Prelim.html#section-2",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:"
+  },
+  {
+    "objectID": "Day29_Prelim.html#independent-sampling-overview",
+    "href": "Day29_Prelim.html#independent-sampling-overview",
+    "title": "Day 29",
+    "section": "Independent Sampling Overview",
+    "text": "Independent Sampling Overview\n\nWhen samples cannot be paired, they are treated as independent. For two independent samples:\n\nSample 1: Size \\(n_1\\), mean \\(\\bar{x}_1\\), variance \\(s_1^2\\)\n\nSample 2: Size \\(n_2\\), mean \\(\\bar{x}_2\\), variance \\(s_2^2\\)\n\nConditions to check:\n\nSample sizes (\\(n_1 \\geq 30\\), \\(n_2 \\geq 30\\))\n\nNormality (for smaller samples)\n\nKnown variances (or assume equal variance under normality)"
+  },
+  {
+    "objectID": "Day29.html#independent-sampling-overview",
+    "href": "Day29.html#independent-sampling-overview",
+    "title": "Day 29",
+    "section": "Independent Sampling Overview",
+    "text": "Independent Sampling Overview\n\nWhen samples cannot be paired, they are treated as independent. For two independent samples:\n\nSample 1: Size \\(n_1\\), mean \\(\\bar{x}_1\\), variance \\(s_1^2\\)\n\nSample 2: Size \\(n_2\\), mean \\(\\bar{x}_2\\), variance \\(s_2^2\\)\n\nConditions to check:\n\nSample sizes (\\(n_1 \\geq 30\\), \\(n_2 \\geq 30\\))\n\nNormality (for smaller samples)\n\nKnown variances (or assume equal variance under normality)"
+  },
+  {
+    "objectID": "Day29.html#properties-of-sampling-distribution",
+    "href": "Day29.html#properties-of-sampling-distribution",
+    "title": "Day 29",
+    "section": "Properties of Sampling Distribution",
+    "text": "Properties of Sampling Distribution\n\nFor large samples or small but normally distributed samples:\n\nMean of the distribution of \\((\\bar{x}_1 - \\bar{x}_2)\\): \\((\\mu_1 - \\mu_2)\\)\n\nStandard deviation: \\(\\sigma_{(\\bar{x}_1-\\bar{x}_2)} = \\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}\\)\n\nDistribution assumption: Approximately normal by the Central Limit Theorem."
+  },
+  {
+    "objectID": "Day29.html#confidence-interval-for-mu_1---mu_2",
+    "href": "Day29.html#confidence-interval-for-mu_1---mu_2",
+    "title": "Day 29",
+    "section": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)",
+    "text": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)\n\n\nKnown variances: \\((\\bar{x}_1 - \\bar{x}_2) \\pm z_{\\alpha/2} \\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}\\)\n\nUnknown variances: Use pooled standard deviation \\(s_p = \\sqrt{\\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}\\):\n\\[(\\bar{x}_1 - \\bar{x}_2) \\pm t_{\\alpha/2, n_1+n_2-2} \\cdot s_p \\cdot \\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}\\]"
+  },
+  {
+    "objectID": "Day29.html#hypothesis-testing",
+    "href": "Day29.html#hypothesis-testing",
+    "title": "Day 29",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\n\nNull Hypothesis (\\(H_0\\)): \\(\\mu_1 = \\mu_2\\) (no difference in means)\n\nAlternative Hypothesis (\\(H_a\\)): \\(\\mu_1 \\neq \\mu_2\\) (means are different)\n\nTest statistic for equal variances:\n\\[t = \\frac{\\bar{x}_1 - \\bar{x}_2}{s_p \\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}}\\]\n\nDegrees of freedom: \\(n_1 + n_2 - 2\\)\n\nReject \\(H_0\\) if \\(p\\)-value &lt; \\(\\alpha\\) (commonly 0.05)"
+  },
+  {
+    "objectID": "Day29.html#section",
+    "href": "Day29.html#section",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 1: A study comparing two diets:\n- Low-fat diet: \\(n_1 = 100\\), \\(\\bar{x}_1 = 9.31\\), \\(s_1 = 4.67\\)\n- Regular diet: \\(n_2 = 100\\), \\(\\bar{x}_2 = 7.40\\), \\(s_2 = 4.04\\)\nForm 95% CI for the difference in mean weight loss and conduct a hypothesis test at \\(\\alpha = 0.05\\) to see if the low-fat diet is more effective."
+  },
+  {
+    "objectID": "Day29.html#section-1",
+    "href": "Day29.html#section-1",
+    "title": "Day 29",
+    "section": "",
+    "text": "Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:"
   }
 ]
