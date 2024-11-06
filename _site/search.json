@@ -861,300 +861,6 @@
     "text": "Example 4: What is the mean, variance, and standard deviation of \\(Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]\\)?"
   },
   {
-    "objectID": "Day36_prelim.html#title",
-    "href": "Day36_prelim.html#title",
-    "title": "Day 32",
-    "section": "Title",
-    "text": "Title"
-  },
-  {
-    "objectID": "Day36_prelim.html#confidence-interval-for-mu_1---mu_2",
-    "href": "Day36_prelim.html#confidence-interval-for-mu_1---mu_2",
-    "title": "Day 32",
-    "section": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)",
-    "text": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)"
-  },
-  {
-    "objectID": "Day36_prelim.html#hypothesis-testing",
-    "href": "Day36_prelim.html#hypothesis-testing",
-    "title": "Day 32",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing"
-  },
-  {
-    "objectID": "RandRStudio.html",
-    "href": "RandRStudio.html",
-    "title": "Setting Up R and RStudio",
-    "section": "",
-    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
-  },
-  {
-    "objectID": "RandRStudio.html#on-windows",
-    "href": "RandRStudio.html#on-windows",
-    "title": "Setting Up R and RStudio",
-    "section": "On Windows",
-    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file."
-  },
-  {
-    "objectID": "RandRStudio.html#on-mac",
-    "href": "RandRStudio.html#on-mac",
-    "title": "Setting Up R and RStudio",
-    "section": "On Mac",
-    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder."
-  },
-  {
-    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
-    "href": "RandRStudio.html#understanding-r-markdown-documents",
-    "title": "Setting Up R and RStudio",
-    "section": "Understanding R Markdown Documents",
-    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
-  },
-  {
-    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "title": "Setting Up R and RStudio",
-    "section": "Managing .Rmd Files and Setting the Working Directory",
-    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your RStudio account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized.\n\n\nText Portions\nText in R Markdown is written using standard markdown syntax. This allows you to add headers, lists, links, and other styling features to create dynamic reports."
-  },
-  {
-    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
-    "href": "RandRStudio.html#text-formatting-in-r-markdown",
-    "title": "Setting Up R and RStudio",
-    "section": "Text Formatting in R Markdown",
-    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/66117)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\\```\nThis is a code block\n\\```\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
-  },
-  {
-    "objectID": "RandRStudio.html#r-code-chunk-options",
-    "href": "RandRStudio.html#r-code-chunk-options",
-    "title": "Setting Up R and RStudio",
-    "section": "R Code Chunk Options",
-    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "Day27.html#recap",
-    "href": "Day27.html#recap",
-    "title": "Day 27",
-    "section": "Recap",
-    "text": "Recap"
-  },
-  {
-    "objectID": "Day27.html#challenges-with-non-normal-distributions",
-    "href": "Day27.html#challenges-with-non-normal-distributions",
-    "title": "Day 27",
-    "section": "Challenges with Non-normal Distributions",
-    "text": "Challenges with Non-normal Distributions\n\nWhat if the population data is decidedly nonnormal?\nNonnormal Distributions\n\nSmall sample sizes (\\(n&lt;30\\)) and nonnormal data can undermine the reliability of typical tests like t-tests.\nThis often leads to increased Type I errors: rejecting \\(H_0\\) when it is true.\n\nNonparametric Statistics\n\nNonparametric tests do not assume a normal distribution of the sampled population.\nThey rely on the ranks of measurements, such as the median, which are less sensitive to extreme values."
-  },
-  {
-    "objectID": "Day27.html#nonparametric-sign-test",
-    "href": "Day27.html#nonparametric-sign-test",
-    "title": "Day 27",
-    "section": "Nonparametric Sign Test",
-    "text": "Nonparametric Sign Test\n\n\nThe sign test offers a straightforward method to test hypotheses about the median of a nonnormal distribution.\nIt focuses on the median rather than the mean, providing a more robust measure of central tendency."
-  },
-  {
-    "objectID": "Day27.html#how-it-works",
-    "href": "Day27.html#how-it-works",
-    "title": "Day 27",
-    "section": "How It Works",
-    "text": "How It Works\n\nBegin with the null hypothesis that the median is at a specific value (\\(\\eta_0\\)). Classify each observation in the sample as either above or below this median value.\n\nAssume \\(H_0: \\eta = \\eta_0\\) is true.\nCount the number of sample observations above (\\(S_A\\)) and below (\\(S_B\\)) the median \\(\\eta_0\\).\n\n\n# R Code to perform Sign Test\nlibrary(BSDA)\nSIGN.test(x = data, md = eta_0, alternative = \"less\", conf.level = 0.95)"
-  },
-  {
-    "objectID": "Day27.html#decision-making-in-sign-test",
-    "href": "Day27.html#decision-making-in-sign-test",
-    "title": "Day 27",
-    "section": "Decision Making in Sign Test",
-    "text": "Decision Making in Sign Test\n\nDecision Rule\n\nReject \\(H_0\\) if the p-value is less than the significance level \\(\\alpha\\).\nThe p-value is computed using the binomial distribution with parameters \\(n\\) (total number of non-zero differences) and \\(p=0.5\\) (probability under the null hypothesis)."
-  },
-  {
-    "objectID": "Day27.html#section-1",
-    "href": "Day27.html#section-1",
-    "title": "Day 27",
-    "section": "",
-    "text": "Example 1: Increasing numbers of both private and public agencies are requiring their employees to submit to tests for substance abuse. One laboratory that conducts such testing has developed a system with a normalized measurement scale in which values less than 1.00 indicate “normal” ranges and values equal to or greater than 1.00 are indicative of potential substance abuse. The lab reports a normal result as long as the median level for an individual is less than 1.00. Eight independent measurements of each individual’s sample are made. One individual’s results are shown in the following table. Determine whether the population median is less than 1.00 . Use \\(\\alpha=0.05\\)."
-  },
-  {
-    "objectID": "Day27.html#group-activity-1",
-    "href": "Day27.html#group-activity-1",
-    "title": "Day 27",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\nWork in a group to determine if a one-hour study session has significantly improved quiz scores among students.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "Day27.html#section-3",
-    "href": "Day27.html#section-3",
-    "title": "Day 27",
-    "section": "",
-    "text": "Before and after quiz scores for 10 students:\n\n\n\nStudent\nBefore Study Session (Score)\nAfter Study Session (Score)\n\n\n\n\n1\n70\n75\n\n\n2\n65\n68\n\n\n3\n80\n75\n\n\n4\n58\n60\n\n\n5\n77\n76\n\n\n6\n82\n84\n\n\n7\n55\n58\n\n\n8\n90\n95\n\n\n9\n62\n65\n\n\n10\n83\n88\n\n\n\nActivity Steps\n\nCalculate the Differences: Students calculate the difference for each pair of scores (After - Before).\nAssign Signs: Assign a plus (+) if the difference is positive (score increased) and a minus (-) if negative (score decreased).\nCount Signs: Count the total number of positive and negative signs."
-  },
-  {
-    "objectID": "Day31_Prelim.html#title",
-    "href": "Day31_Prelim.html#title",
-    "title": "Day 31",
-    "section": "Title",
-    "text": "Title"
-  },
-  {
-    "objectID": "Day31_Prelim.html#confidence-interval-for-mu_1---mu_2",
-    "href": "Day31_Prelim.html#confidence-interval-for-mu_1---mu_2",
-    "title": "Day 31",
-    "section": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)",
-    "text": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)"
-  },
-  {
-    "objectID": "Day31_Prelim.html#hypothesis-testing",
-    "href": "Day31_Prelim.html#hypothesis-testing",
-    "title": "Day 31",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing"
-  },
-  {
-    "objectID": "Day6.html#key-probability-concepts-recap",
-    "href": "Day6.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
-  },
-  {
-    "objectID": "Day6.html#complementary-events",
-    "href": "Day6.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
-    "href": "Day6.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
-  },
-  {
-    "objectID": "Day6.html#additive-rule",
-    "href": "Day6.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
-  },
-  {
-    "objectID": "Day6.html#hospital-admission-probabilities",
-    "href": "Day6.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events",
-    "href": "Day6.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events-example",
-    "href": "Day6.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: example",
-    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
-  },
-  {
-    "objectID": "Day6.html#conditional-probability",
-    "href": "Day6.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
-  },
-  {
-    "objectID": "Day6.html#conditional-probability-in-dice-throws",
-    "href": "Day6.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
-  },
-  {
-    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
-    "href": "Day6.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
-  },
-  {
-    "objectID": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
-    "href": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
-    "title": "Day 20",
-    "section": "Introduction to Small Samples and the t-Statistic",
-    "text": "Introduction to Small Samples and the t-Statistic\n\n\nSmall Samples: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.\nNeed for a Different Approach: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student’s t-statistic, a better-suited approach for such scenarios."
-  },
-  {
-    "objectID": "Day20.html#challenges-with-small-samples",
-    "href": "Day20.html#challenges-with-small-samples",
-    "title": "Day 20",
-    "section": "Challenges with Small Samples",
-    "text": "Challenges with Small Samples\n\n\nNormality Assumption: For samples smaller than 30, the distribution of the population must be approximately normal for the sample mean \\(\\bar{x}\\) to be considered normally distributed. For example, if you’re studying the heights of a rare species of plant, and can only find a few samples, the underlying distribution of these heights must be normal for standard approaches to work.\nStandard Deviation Issues: When using the sample standard deviation \\(s\\) in place of the population standard deviation \\(\\sigma\\), the estimate becomes less reliable with smaller samples. Consider a scenario where you measure the amount of a chemical in water samples from different locations. With only a few samples, the variability in your measurements could significantly affect the reliability of your estimates, leading to potentially misleading conclusions."
-  },
-  {
-    "objectID": "Day20.html#introducing-the-students-t-statistic",
-    "href": "Day20.html#introducing-the-students-t-statistic",
-    "title": "Day 20",
-    "section": "Introducing the Student’s t-Statistic",
-    "text": "Introducing the Student’s t-Statistic\n\nGiven the issues identified with small samples, the Student’s t-statistic offers a refined method for estimating population parameters: \\[\nT = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}\n\\] This formula adjusts for the additional uncertainty inherent in small samples."
-  },
-  {
-    "objectID": "Day20.html#comparison-with-the-z-statistic",
-    "href": "Day20.html#comparison-with-the-z-statistic",
-    "title": "Day 20",
-    "section": "Comparison with the z-Statistic",
-    "text": "Comparison with the z-Statistic\n\nThe t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation \\(\\sigma\\) is known or the sample is large enough (\\(n \\geq 30\\)) for reliable approximation: \\[\nZ = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}\n\\]"
-  },
-  {
-    "objectID": "Day20.html#why-use-the-t-distribution",
-    "href": "Day20.html#why-use-the-t-distribution",
-    "title": "Day 20",
-    "section": "Why Use the t-Distribution?",
-    "text": "Why Use the t-Distribution?\n\n\nDegrees of Freedom: The shape of the t-distribution and its variability depend on the degrees of freedom (df = \\(n-1\\)), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes."
-  },
-  {
-    "objectID": "Day20.html#section-3",
-    "href": "Day20.html#section-3",
-    "title": "Day 20",
-    "section": "",
-    "text": "Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n \\(=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{align*}\n\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\n\\end{align*}\\]\n(From R/hand calculation, \\(\\bar{x}=2.283, s=0.950\\) )"
-  },
-  {
-    "objectID": "Day20.html#section-5",
-    "href": "Day20.html#section-5",
-    "title": "Day 20",
-    "section": "",
-    "text": "Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests \\(n=15\\) printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.\n\n\n(From R/hand calculation, \\(\\bar{x}=1.23867, s=0.19316\\) )\n\nForm a \\(99 \\%\\) confidence interval for the mean number of characters printed before the printhead fails. Interpret the result."
-  },
-  {
-    "objectID": "Day20.html#section-6",
-    "href": "Day20.html#section-6",
-    "title": "Day 20",
-    "section": "",
-    "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
-  },
-  {
     "objectID": "Day7.html#the-multiplicative-rule",
     "href": "Day7.html#the-multiplicative-rule",
     "title": "Day 7",
@@ -1251,6 +957,356 @@
     "title": "Day 7",
     "section": "",
     "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
+  },
+  {
+    "objectID": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
+    "href": "Day20.html#introduction-to-small-samples-and-the-t-statistic",
+    "title": "Day 20",
+    "section": "Introduction to Small Samples and the t-Statistic",
+    "text": "Introduction to Small Samples and the t-Statistic\n\n\nSmall Samples: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.\nNeed for a Different Approach: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student’s t-statistic, a better-suited approach for such scenarios."
+  },
+  {
+    "objectID": "Day20.html#challenges-with-small-samples",
+    "href": "Day20.html#challenges-with-small-samples",
+    "title": "Day 20",
+    "section": "Challenges with Small Samples",
+    "text": "Challenges with Small Samples\n\n\nNormality Assumption: For samples smaller than 30, the distribution of the population must be approximately normal for the sample mean \\(\\bar{x}\\) to be considered normally distributed. For example, if you’re studying the heights of a rare species of plant, and can only find a few samples, the underlying distribution of these heights must be normal for standard approaches to work.\nStandard Deviation Issues: When using the sample standard deviation \\(s\\) in place of the population standard deviation \\(\\sigma\\), the estimate becomes less reliable with smaller samples. Consider a scenario where you measure the amount of a chemical in water samples from different locations. With only a few samples, the variability in your measurements could significantly affect the reliability of your estimates, leading to potentially misleading conclusions."
+  },
+  {
+    "objectID": "Day20.html#introducing-the-students-t-statistic",
+    "href": "Day20.html#introducing-the-students-t-statistic",
+    "title": "Day 20",
+    "section": "Introducing the Student’s t-Statistic",
+    "text": "Introducing the Student’s t-Statistic\n\nGiven the issues identified with small samples, the Student’s t-statistic offers a refined method for estimating population parameters: \\[\nT = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}\n\\] This formula adjusts for the additional uncertainty inherent in small samples."
+  },
+  {
+    "objectID": "Day20.html#comparison-with-the-z-statistic",
+    "href": "Day20.html#comparison-with-the-z-statistic",
+    "title": "Day 20",
+    "section": "Comparison with the z-Statistic",
+    "text": "Comparison with the z-Statistic\n\nThe t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation \\(\\sigma\\) is known or the sample is large enough (\\(n \\geq 30\\)) for reliable approximation: \\[\nZ = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}\n\\]"
+  },
+  {
+    "objectID": "Day20.html#why-use-the-t-distribution",
+    "href": "Day20.html#why-use-the-t-distribution",
+    "title": "Day 20",
+    "section": "Why Use the t-Distribution?",
+    "text": "Why Use the t-Distribution?\n\n\nDegrees of Freedom: The shape of the t-distribution and its variability depend on the degrees of freedom (df = \\(n-1\\)), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes."
+  },
+  {
+    "objectID": "Day20.html#section-3",
+    "href": "Day20.html#section-3",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n \\(=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{align*}\n\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\n\\end{align*}\\]\n(From R/hand calculation, \\(\\bar{x}=2.283, s=0.950\\) )"
+  },
+  {
+    "objectID": "Day20.html#section-5",
+    "href": "Day20.html#section-5",
+    "title": "Day 20",
+    "section": "",
+    "text": "Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests \\(n=15\\) printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.\n\n\n(From R/hand calculation, \\(\\bar{x}=1.23867, s=0.19316\\) )\n\nForm a \\(99 \\%\\) confidence interval for the mean number of characters printed before the printhead fails. Interpret the result."
+  },
+  {
+    "objectID": "Day20.html#section-6",
+    "href": "Day20.html#section-6",
+    "title": "Day 20",
+    "section": "",
+    "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
+  },
+  {
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+  },
+  {
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: example",
+    "text": "Mutually Exclusive Events: example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\varnothing\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golg, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
+    "objectID": "Day27.html#recap",
+    "href": "Day27.html#recap",
+    "title": "Day 27",
+    "section": "Recap",
+    "text": "Recap"
+  },
+  {
+    "objectID": "Day27.html#challenges-with-non-normal-distributions",
+    "href": "Day27.html#challenges-with-non-normal-distributions",
+    "title": "Day 27",
+    "section": "Challenges with Non-normal Distributions",
+    "text": "Challenges with Non-normal Distributions\n\nWhat if the population data is decidedly nonnormal?\nNonnormal Distributions\n\nSmall sample sizes (\\(n&lt;30\\)) and nonnormal data can undermine the reliability of typical tests like t-tests.\nThis often leads to increased Type I errors: rejecting \\(H_0\\) when it is true.\n\nNonparametric Statistics\n\nNonparametric tests do not assume a normal distribution of the sampled population.\nThey rely on the ranks of measurements, such as the median, which are less sensitive to extreme values."
+  },
+  {
+    "objectID": "Day27.html#nonparametric-sign-test",
+    "href": "Day27.html#nonparametric-sign-test",
+    "title": "Day 27",
+    "section": "Nonparametric Sign Test",
+    "text": "Nonparametric Sign Test\n\n\nThe sign test offers a straightforward method to test hypotheses about the median of a nonnormal distribution.\nIt focuses on the median rather than the mean, providing a more robust measure of central tendency."
+  },
+  {
+    "objectID": "Day27.html#how-it-works",
+    "href": "Day27.html#how-it-works",
+    "title": "Day 27",
+    "section": "How It Works",
+    "text": "How It Works\n\nBegin with the null hypothesis that the median is at a specific value (\\(\\eta_0\\)). Classify each observation in the sample as either above or below this median value.\n\nAssume \\(H_0: \\eta = \\eta_0\\) is true.\nCount the number of sample observations above (\\(S_A\\)) and below (\\(S_B\\)) the median \\(\\eta_0\\).\n\n\n# R Code to perform Sign Test\nlibrary(BSDA)\nSIGN.test(x = data, md = eta_0, alternative = \"less\", conf.level = 0.95)"
+  },
+  {
+    "objectID": "Day27.html#decision-making-in-sign-test",
+    "href": "Day27.html#decision-making-in-sign-test",
+    "title": "Day 27",
+    "section": "Decision Making in Sign Test",
+    "text": "Decision Making in Sign Test\n\nDecision Rule\n\nReject \\(H_0\\) if the p-value is less than the significance level \\(\\alpha\\).\nThe p-value is computed using the binomial distribution with parameters \\(n\\) (total number of non-zero differences) and \\(p=0.5\\) (probability under the null hypothesis)."
+  },
+  {
+    "objectID": "Day27.html#section-1",
+    "href": "Day27.html#section-1",
+    "title": "Day 27",
+    "section": "",
+    "text": "Example 1: Increasing numbers of both private and public agencies are requiring their employees to submit to tests for substance abuse. One laboratory that conducts such testing has developed a system with a normalized measurement scale in which values less than 1.00 indicate “normal” ranges and values equal to or greater than 1.00 are indicative of potential substance abuse. The lab reports a normal result as long as the median level for an individual is less than 1.00. Eight independent measurements of each individual’s sample are made. One individual’s results are shown in the following table. Determine whether the population median is less than 1.00 . Use \\(\\alpha=0.05\\)."
+  },
+  {
+    "objectID": "Day27.html#group-activity-1",
+    "href": "Day27.html#group-activity-1",
+    "title": "Day 27",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nWork in a group to determine if a one-hour study session has significantly improved quiz scores among students.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "Day27.html#section-3",
+    "href": "Day27.html#section-3",
+    "title": "Day 27",
+    "section": "",
+    "text": "Before and after quiz scores for 10 students:\n\n\n\nStudent\nBefore Study Session (Score)\nAfter Study Session (Score)\n\n\n\n\n1\n70\n75\n\n\n2\n65\n68\n\n\n3\n80\n75\n\n\n4\n58\n60\n\n\n5\n77\n76\n\n\n6\n82\n84\n\n\n7\n55\n58\n\n\n8\n90\n95\n\n\n9\n62\n65\n\n\n10\n83\n88\n\n\n\nActivity Steps\n\nCalculate the Differences: Students calculate the difference for each pair of scores (After - Before).\nAssign Signs: Assign a plus (+) if the difference is positive (score increased) and a minus (-) if negative (score decreased).\nCount Signs: Count the total number of positive and negative signs."
+  },
+  {
+    "objectID": "RandRStudio.html",
+    "href": "RandRStudio.html",
+    "title": "Setting Up R and RStudio",
+    "section": "",
+    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
+  },
+  {
+    "objectID": "RandRStudio.html#on-windows",
+    "href": "RandRStudio.html#on-windows",
+    "title": "Setting Up R and RStudio",
+    "section": "On Windows",
+    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file."
+  },
+  {
+    "objectID": "RandRStudio.html#on-mac",
+    "href": "RandRStudio.html#on-mac",
+    "title": "Setting Up R and RStudio",
+    "section": "On Mac",
+    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder."
+  },
+  {
+    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
+    "href": "RandRStudio.html#understanding-r-markdown-documents",
+    "title": "Setting Up R and RStudio",
+    "section": "Understanding R Markdown Documents",
+    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+  },
+  {
+    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "title": "Setting Up R and RStudio",
+    "section": "Managing .Rmd Files and Setting the Working Directory",
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your RStudio account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized.\n\n\nText Portions\nText in R Markdown is written using standard markdown syntax. This allows you to add headers, lists, links, and other styling features to create dynamic reports."
+  },
+  {
+    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
+    "href": "RandRStudio.html#text-formatting-in-r-markdown",
+    "title": "Setting Up R and RStudio",
+    "section": "Text Formatting in R Markdown",
+    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/66117)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\\```\nThis is a code block\n\\```\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
+  },
+  {
+    "objectID": "RandRStudio.html#r-code-chunk-options",
+    "href": "RandRStudio.html#r-code-chunk-options",
+    "title": "Setting Up R and RStudio",
+    "section": "R Code Chunk Options",
+    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Day36_prelim.html#title",
+    "href": "Day36_prelim.html#title",
+    "title": "Day 32",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "Day36_prelim.html#confidence-interval-for-mu_1---mu_2",
+    "href": "Day36_prelim.html#confidence-interval-for-mu_1---mu_2",
+    "title": "Day 32",
+    "section": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)",
+    "text": "Confidence Interval for \\((\\mu_1 - \\mu_2)\\)"
+  },
+  {
+    "objectID": "Day36_prelim.html#hypothesis-testing",
+    "href": "Day36_prelim.html#hypothesis-testing",
+    "title": "Day 32",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing"
+  },
+  {
+    "objectID": "Day31.html#review-mean-vs.-proportion",
+    "href": "Day31.html#review-mean-vs.-proportion",
+    "title": "Day 31",
+    "section": "Review: Mean vs. Proportion",
+    "text": "Review: Mean vs. Proportion\n\n\nPreviously studied: Confidence intervals (C.I.) and hypothesis tests for population means.\nNon-parametric tests were focused on population medians."
+  },
+  {
+    "objectID": "Day31.html#transition-to-proportions",
+    "href": "Day31.html#transition-to-proportions",
+    "title": "Day 31",
+    "section": "Transition to Proportions",
+    "text": "Transition to Proportions\n\n\nNow focusing on population proportion (e.g., “What percentage of voters favor candidate A?”)\nApplies similar principles as the Central Limit Theorem for means, using properties of the sampling distribution of \\(\\hat{p}\\)."
+  },
+  {
+    "objectID": "Day31.html#properties-of-hatp",
+    "href": "Day31.html#properties-of-hatp",
+    "title": "Day 31",
+    "section": "Properties of \\(\\hat{p}\\)",
+    "text": "Properties of \\(\\hat{p}\\)\n\n\nMean: The expected value (mean) of \\(\\hat{p}\\) is equal to the true population proportion \\(p\\). \\[\nE(\\hat{p}) = p\n\\]\nStandard Deviation: For large samples, approximated by \\[\n\\sigma_{\\hat{p}} \\approx \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\n\\]\nDistribution: Becomes approximately normal with large sample sizes."
+  },
+  {
+    "objectID": "Day31.html#large-sample-hypothesis-testing",
+    "href": "Day31.html#large-sample-hypothesis-testing",
+    "title": "Day 31",
+    "section": "Large-Sample Hypothesis Testing",
+    "text": "Large-Sample Hypothesis Testing\n\n\nTest Statistic: Normal (z) statistic for \\(H_0: p = p_0\\): \\[\nz_c = \\frac{(\\hat{p} - p_0)}{\\sqrt{\\frac{p_0(1-p_0)}{n}}}\n\\]\nDecision Rule: Reject \\(H_0\\) if p-value \\(&lt; \\alpha\\), or if \\(z_c\\) falls into the rejection region."
+  },
+  {
+    "objectID": "Day31.html#hypothesis-test-types",
+    "href": "Day31.html#hypothesis-test-types",
+    "title": "Day 31",
+    "section": "Hypothesis Test Types",
+    "text": "Hypothesis Test Types\n\n\nOne-Tailed Test:\n\n\\(H_a: p &lt; p_0\\) or \\(H_a: p &gt; p_0\\)\nRejection region: \\(z_c &lt; -z_{\\alpha}\\) or \\(z_c &gt; z_{\\alpha}\\)\n\nTwo-Tailed Test:\n\n\\(H_a: p \\neq p_0\\)\nRejection region: \\(z_c &lt; -z_{\\alpha/2}\\) or \\(z_c &gt; z_{\\alpha/2}\\)"
+  },
+  {
+    "objectID": "Day31.html#conditions-for-testing",
+    "href": "Day31.html#conditions-for-testing",
+    "title": "Day 31",
+    "section": "Conditions for Testing",
+    "text": "Conditions for Testing\n\n\nRandom sample from the population.\nLarge enough sample size, typically \\(n\\hat{p} \\geq 15\\) and \\(n\\hat{q} \\geq 15\\)."
+  },
+  {
+    "objectID": "Day31.html#confidence-interval-for-hatp",
+    "href": "Day31.html#confidence-interval-for-hatp",
+    "title": "Day 31",
+    "section": "Confidence Interval for \\(\\hat{p}\\)",
+    "text": "Confidence Interval for \\(\\hat{p}\\)\n\n\nLarge-sample confidence interval: \\[\n\\hat{p} \\pm z_{\\alpha/2} \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\n\\]\nValid when \\(n\\) is large for normal approximation."
+  },
+  {
+    "objectID": "Day31.html#sample-size-determination",
+    "href": "Day31.html#sample-size-determination",
+    "title": "Day 31",
+    "section": "Sample Size Determination",
+    "text": "Sample Size Determination\n\n\nTo specify sampling error (SE) and confidence level: \\[\nn = \\frac{(z_{\\alpha/2})^2 \\hat{p}(1-\\hat{p})}{SE^2}\n\\]\nConservative estimate uses \\(p \\approx 0.5\\) when \\(\\hat{p}\\) is unknown."
+  },
+  {
+    "objectID": "Day31.html#section-2",
+    "href": "Day31.html#section-2",
+    "title": "Day 31",
+    "section": "",
+    "text": "Example 1: Many public polling agencies conduct surveys to determine the current consumer sentiment concerning the state of the economy. For example, the Bureau of Economic and Business Research (BEBR) at the University of Florida conducts quarterly surveys to gauge consumer sentiment in the Sunshine State. Suppose that BEBR randomly samples 484 consumers and finds that only 157 are optimistic about the state of the economy. Use a \\(90 \\%\\) confidence interval to estimate the proportion of all consumers in Florida who are optimistic about the state of the economy. Based on the confidence interval, can BEBR infer that a minority of Florida consumers is optimistic about the economy?"
+  },
+  {
+    "objectID": "Day31.html#section-4",
+    "href": "Day31.html#section-4",
+    "title": "Day 31",
+    "section": "",
+    "text": "Example 2: The reputations (and hence sales) of many businesses can be severely damaged by shipments of manufactured items that contain a large percentage of defectives. For example, a manufacturer of alkaline batteries may want to be reasonably certain that less than \\(5 \\%\\) of its batteries are defective. Suppose 300 batteries are randomly selected from a very large shipment; each is tested and 10 defective batteries are found. Does this outcome provide sufficient evidence for the manufacturer to conclude that the fraction."
+  },
+  {
+    "objectID": "Day31.html#section-6",
+    "href": "Day31.html#section-6",
+    "title": "Day 31",
+    "section": "",
+    "text": "Example 3: A cellular telephone manufacturer that entered the post-regulation market quickly has an initial problem with excessive customer complaints and consequent returns of cell phones for repair or replacement. The manufacturer wants to estimate the magnitude of the problem in order to design a quality control program. How many cellular telephones should be sampled and checked in order to estimate the fraction defective, p, to within .01 with \\(90 \\%\\) confidence?"
   },
   {
     "objectID": "Day29.html#independent-sampling-overview",

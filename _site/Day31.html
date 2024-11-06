@@ -340,45 +340,129 @@ Bastola
 </div>
 
 </section>
-<section class="slide level2">
-
-<!--
-
-## Title {.font80}
-
-::: cle6
-
-
-:::
-
--->
-</section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="review-mean-vs.-proportion" class="slide level2 font80">
+<h2>Review: Mean vs.&nbsp;Proportion</h2>
 <div class="cle6">
-
+<ul>
+<li>Previously studied: Confidence intervals (C.I.) and hypothesis tests for population <strong>means</strong>.</li>
+<li>Non-parametric tests were focused on <strong>population medians</strong>.</li>
+</ul>
 </div>
 </section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font80">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
-<div class="cle6">
-
+<section id="transition-to-proportions" class="slide level2 font80">
+<h2>Transition to Proportions</h2>
+<div class="cle1">
+<ul>
+<li>Now focusing on population <strong>proportion</strong> (e.g., “What percentage of voters favor candidate A?”)</li>
+<li>Applies similar principles as the Central Limit Theorem for means, using properties of the sampling distribution of <span class="math inline">\(\hat{p}\)</span>.</li>
+</ul>
 </div>
 </section>
-<section id="hypothesis-testing" class="slide level2 font80">
-<h2>Hypothesis Testing</h2>
-<div class="cle12">
-
+<section id="properties-of-hatp" class="slide level2 font80">
+<h2>Properties of <span class="math inline">\(\hat{p}\)</span></h2>
+<div class="cle3">
+<ol type="1">
+<li><strong>Mean</strong>: The expected value (mean) of <span class="math inline">\(\hat{p}\)</span> is equal to the true population proportion <span class="math inline">\(p\)</span>. <span class="math display">\[
+E(\hat{p}) = p
+\]</span></li>
+<li><strong>Standard Deviation</strong>: For large samples, approximated by <span class="math display">\[
+\sigma_{\hat{p}} \approx \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]</span></li>
+<li><strong>Distribution</strong>: Becomes approximately normal with large sample sizes.</li>
+</ol>
 </div>
 </section>
-<section id="section" class="slide level2 font60">
+<section id="large-sample-hypothesis-testing" class="slide level2 font80">
+<h2>Large-Sample Hypothesis Testing</h2>
+<div class="cle9">
+<ul>
+<li><strong>Test Statistic</strong>: Normal (z) statistic for <span class="math inline">\(H_0: p = p_0\)</span>: <span class="math display">\[
+z_c = \frac{(\hat{p} - p_0)}{\sqrt{\frac{p_0(1-p_0)}{n}}}
+\]</span></li>
+<li><strong>Decision Rule</strong>: Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(&lt; \alpha\)</span>, or if <span class="math inline">\(z_c\)</span> falls into the rejection region.</li>
+</ul>
+</div>
+</section>
+<section id="hypothesis-test-types" class="slide level2 font80">
+<h2>Hypothesis Test Types</h2>
+<div class="cle15">
+<ul>
+<li><strong>One-Tailed Test</strong>:
+<ul>
+<li><span class="math inline">\(H_a: p &lt; p_0\)</span> or <span class="math inline">\(H_a: p &gt; p_0\)</span></li>
+<li>Rejection region: <span class="math inline">\(z_c &lt; -z_{\alpha}\)</span> or <span class="math inline">\(z_c &gt; z_{\alpha}\)</span></li>
+</ul></li>
+<li><strong>Two-Tailed Test</strong>:
+<ul>
+<li><span class="math inline">\(H_a: p \neq p_0\)</span></li>
+<li>Rejection region: <span class="math inline">\(z_c &lt; -z_{\alpha/2}\)</span> or <span class="math inline">\(z_c &gt; z_{\alpha/2}\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img src="images/Day31-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="conditions-for-testing" class="slide level2 font80">
+<h2>Conditions for Testing</h2>
+<div class="cle14">
+<ol type="1">
+<li><strong>Random sample</strong> from the population.</li>
+<li>Large enough sample size, typically <span class="math inline">\(n\hat{p} \geq 15\)</span> and <span class="math inline">\(n\hat{q} \geq 15\)</span>.</li>
+</ol>
+</div>
+
+<img src="images/Day31-2.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="confidence-interval-for-hatp" class="slide level2 font80">
+<h2>Confidence Interval for <span class="math inline">\(\hat{p}\)</span></h2>
+<div class="cle9">
+<ul>
+<li>Large-sample confidence interval: <span class="math display">\[
+\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\]</span></li>
+<li>Valid when <span class="math inline">\(n\)</span> is large for normal approximation.</li>
+</ul>
+</div>
+</section>
+<section id="sample-size-determination" class="slide level2 font80">
+<h2>Sample Size Determination</h2>
+<div class="cle10">
+<ul>
+<li>To specify sampling error (SE) and confidence level: <span class="math display">\[
+n = \frac{(z_{\alpha/2})^2 \hat{p}(1-\hat{p})}{SE^2}
+\]</span></li>
+<li>Conservative estimate uses <span class="math inline">\(p \approx 0.5\)</span> when <span class="math inline">\(\hat{p}\)</span> is unknown.</li>
+</ul>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img src="images/Day31-3.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-2" class="slide level2 font60">
+<h2></h2>
+<blockquote>
+<p>Example 1: Many public polling agencies conduct surveys to determine the current consumer sentiment concerning the state of the economy. For example, the Bureau of Economic and Business Research (BEBR) at the University of Florida conducts quarterly surveys to gauge consumer sentiment in the Sunshine State. Suppose that BEBR randomly samples 484 consumers and finds that only 157 are optimistic about the state of the economy. Use a <span class="math inline">\(90 \%\)</span> confidence interval to estimate the proportion of all consumers in Florida who are optimistic about the state of the economy. Based on the confidence interval, can BEBR infer that a minority of Florida consumers is optimistic about the economy?</p>
+</blockquote>
+</section>
+<section id="section-3" class="slide level2">
 <h2></h2>
 </section>
-<section id="section-1" class="slide level2 font60">
+<section id="section-4" class="slide level2 font60">
+<h2></h2>
+<blockquote>
+<p>Example 2: The reputations (and hence sales) of many businesses can be severely damaged by shipments of manufactured items that contain a large percentage of defectives. For example, a manufacturer of alkaline batteries may want to be reasonably certain that less than <span class="math inline">\(5 \%\)</span> of its batteries are defective. Suppose 300 batteries are randomly selected from a very large shipment; each is tested and 10 defective batteries are found. Does this outcome provide sufficient evidence for the manufacturer to conclude that the fraction.</p>
+</blockquote>
+</section>
+<section id="section-5" class="slide level2">
 <h2></h2>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-6" class="slide level2 font50">
 <h2></h2>
+<blockquote>
+<p>Example 3: A cellular telephone manufacturer that entered the post-regulation market quickly has an initial problem with excessive customer complaints and consequent returns of cell phones for repair or replacement. The manufacturer wants to estimate the magnitude of the problem in order to design a quality control program. How many cellular telephones should be sampled and checked in order to estimate the fraction defective, p, to within .01 with <span class="math inline">\(90 \%\)</span> confidence?</p>
+</blockquote>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
