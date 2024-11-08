@@ -340,44 +340,128 @@ Bastola
 </div>
 
 </section>
-<section class="slide level2">
-
-<!--
-
-## Title {.font80}
-
-::: cle6
-
-
-:::
-
--->
-</section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="understanding-type-ii-errors-and-power-in-hypothesis-testing" class="slide level2 font80">
+<h2>Understanding Type II Errors and Power in Hypothesis Testing</h2>
 <div class="cle6">
-
-</div>
-</section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font80">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
-<div class="cle6">
-
-</div>
-</section>
-<section id="hypothesis-testing" class="slide level2 font80">
-<h2>Hypothesis Testing</h2>
-<div class="cle12">
-
+<ul>
+<li><p><strong>Type I Error (<span class="math inline">\(\alpha\)</span>):</strong> Rejecting the null hypothesis <span class="math inline">\(H_0\)</span> when it is true. The probability of making a Type I error is controlled by the rejection region.</p></li>
+<li><p><strong>Type II Error (<span class="math inline">\(\beta\)</span>):</strong> Accepting the null hypothesis <span class="math inline">\(H_0\)</span> when it is false. Unlike <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> is not as easily controllable and varies with the true value of the parameter being tested against <span class="math inline">\(H_0\)</span>.</p></li>
+</ul>
 </div>
 </section>
 <section id="section" class="slide level2 font60">
 <h2></h2>
+<p><br></p>
+<p><strong>Error Types Table</strong></p>
+<table class="caption">
+<caption>Error Types and their Probabilities</caption>
+<colgroup>
+<col style="width: 54%">
+<col style="width: 21%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Decision / Null Hypothesis</strong></th>
+<th style="text-align: left;"><strong><span class="math inline">\(H_0\)</span> True</strong></th>
+<th style="text-align: left;"><strong><span class="math inline">\(H_0\)</span> False</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Fail to Reject <span class="math inline">\(H_0\)</span></strong></td>
+<td style="text-align: left;">Correct Inference (True Negative) Probability = 1 - <span class="math inline">\(\alpha\)</span></td>
+<td style="text-align: left;">Type II Error (False Negative) Probability = <span class="math inline">\(\beta\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Reject <span class="math inline">\(H_0\)</span></strong></td>
+<td style="text-align: left;">Type I Error (False Positive) Probability = <span class="math inline">\(\alpha\)</span></td>
+<td style="text-align: left;">Correct Inference (True Positive) Probability = 1 - <span class="math inline">\(\beta\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-hypothesis-setup" class="slide level2 font80">
+<h2>Example Hypothesis Setup</h2>
+<div class="cle8">
+<ul>
+<li><p>Null Hypothesis (<span class="math inline">\(H_0\)</span>): <span class="math inline">\(\mu = 2400\)</span></p></li>
+<li><p>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>): <span class="math inline">\(\mu &gt; 2400\)</span></p></li>
+<li><p>Test Statistic: <span class="math display">\[
+z = \frac{\bar{x} - 2400}{\sigma / \sqrt{n}}
+\]</span></p></li>
+<li><p>Suppose <span class="math inline">\(\sigma_{\bar{x}} = 28.267\)</span> and <span class="math inline">\(\bar{x} \sim N(\mu, 28.267)\)</span>.</p></li>
+<li><p>Rejection region for <span class="math inline">\(\alpha = 0.05\)</span> is <span class="math inline">\(z &gt; 1.645\)</span>.</p></li>
+</ul>
+</div>
+</section>
+<section id="visualization-of-the-rejection-region" class="slide level2 font70">
+<h2>Visualization of the Rejection Region</h2>
+<div class="row">
+<div class="left">
+<div class="cle3">
+<p>The area in the rejection region under the null distribution (assuming <span class="math inline">\(H_0\)</span> is true) is 0.05. This area represents <span class="math inline">\(\alpha\)</span>, the probability of rejecting <span class="math inline">\(H_0\)</span> when it is in fact true.</p>
+<ul>
+<li>The figures illustrate <span class="math inline">\(\beta\)</span> for <span class="math inline">\(\mu = 2425, 2450, 2475\)</span>.</li>
+<li>As <span class="math inline">\(\mu\)</span> increases, <span class="math inline">\(\beta\)</span> decreases, reflecting a lower risk of incorrectly accepting <span class="math inline">\(H_0\)</span> as the true mean strength moves farther from <span class="math inline">\(2400\)</span>.</li>
+</ul>
+</div>
+</div>
+<div class="right">
+<p><img src="images/Day32-1.png" style="display: block; margin: auto;" width="70%" loading="lazy" decoding="async"></p>
+</div>
+</div>
+</section>
+<section id="calculating-beta-for-different-mu-values" class="slide level2 font80">
+<h2>Calculating <span class="math inline">\(\beta\)</span> for Different <span class="math inline">\(\mu\)</span> Values</h2>
+<div class="cle12">
+<ul>
+<li>The probability of a Type II error, <span class="math inline">\(\beta\)</span>, is defined under the assumption that the null hypothesis is false.</li>
+<li><span class="math inline">\(\beta\)</span> is calculated for each <span class="math inline">\(\mu &gt; 2400\)</span>, reflecting the risk of accepting <span class="math inline">\(H_0\)</span> when it is false.
+<ul>
+<li>For <span class="math inline">\(\mu = 2425\)</span>, we find <span class="math inline">\(\beta\)</span> as the area under the curve to the left of <span class="math inline">\(\bar{x} = 2446.5\)</span>:</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\beta = \operatorname{Prob}\left[\bar{x} &lt; 2446.5 \mid \mu = 2425\right] = 0.7764
+\]</span></p>
+</div>
+</section>
+<section id="the-power-of-the-test" class="slide level2 font80">
+<h2>The Power of the Test</h2>
+<div class="cle2">
+<ul>
+<li>The power of a test is the probability that the test correctly rejects <span class="math inline">\(H_0\)</span> for a specific <span class="math inline">\(\mu\)</span> in <span class="math inline">\(H_a\)</span>.
+<ul>
+<li>Calculated as <span class="math inline">\(1 - beta\)</span>, the power increases as <span class="math inline">\(\beta\)</span> decreases.</li>
+</ul></li>
+<li>Understanding <span class="math inline">\(\beta\)</span> and the power of a test is crucial for assessing the effectiveness of hypothesis tests, especially when the true parameter differs significantly from the null hypothesis value.</li>
+</ul>
+</div>
 </section>
 <section id="section-1" class="slide level2 font60">
 <h2></h2>
+<blockquote>
+<p>Example1: The effect of drugs and alcohol on the nervous system has been the subject of considerable research. Suppose a research neurologist is testing the effect of a drug on response time by injecting 100 rats with a unit dose of the drug, subjecting each rat to a neurological stimulus, and recording its response time. The neurologist knows that the mean response time for rats not injected with the drug (the “control” mean) is 1.2 seconds. She wishes to test whether the mean response time for drug-injected rats differs from 1.2 seconds. Set up the test of hypothesis for this experiment, using <span class="math inline">\(\alpha=.01\)</span>.</p>
+</blockquote>
+<div class="custom-space">
+
+</div>
+<ol type="a">
+<li>Suppose drug-injected rats have a mean response time of 1.1 seconds; that is, <span class="math inline">\(\mu=1.1\)</span>. Calculate the values of <span class="math inline">\(\beta\)</span> corresponding to the two rejection regions. Discuss the relationship between the values of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</li>
+</ol>
 </section>
 <section id="section-2" class="slide level2">
+<h2></h2>
+
+<img src="images/Day32-3.png" style="display: block; margin-right: 0;" width="50%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-3" class="slide level2 font60">
+<h2></h2>
+<ol start="2" type="a">
+<li>Calculate the power of the test for each of the rejection regions when <span class="math inline">\(\mu=1.1\)</span>.</li>
+</ol>
+</section>
+<section id="section-4" class="slide level2">
 <h2></h2>
 
 <div class="quarto-auto-generated-content">
