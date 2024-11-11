@@ -1,5 +1,5 @@
 ---
-title: "Day 32"
+title: "Day 36"
 title-slide-attributes:
   data-background-image: images/lake.jpg
   data-background-size: contain
@@ -47,49 +47,72 @@ yt <- 0
 ```
 
 
-
-<!--
-
-## Title {.font80}
+## Review of Simple Linear Regression Model Estimation {.font80}
 
 ::: cle6
-
-
+- **Recap**: From the last session, we learned to estimate the simple linear regression line $\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x$ from a sample.
+- **Further Analysis Needs**: To conduct deeper analysis, we adhere to key assumptions about the regression model.
 :::
 
--->
+## Key Assumptions for Linear Regression {.font80}
 
-## Title {.font80}
-
-::: cle6
-
-
+::: cle7
+- **Simple Linear Regression Model**:
+  - $y = \beta_0 + \beta_1 x + \varepsilon$
+- **Assumptions**:
+  1. **Mean of Errors ($\varepsilon$)**: The mean of the probability distribution of $\varepsilon$ is 0, aligning the expected value of $y$ with $\beta_0 + \beta_1 x$ for any $x$.
+  2. **Constant Variance**: The variance of $\varepsilon$ is constant across all values of $x$, denoted as $\sigma^2$.
+  3. **Normal Distribution of Errors**: $\varepsilon$ follows a normal distribution.
+  4. **Independence of Errors**: The errors associated with different $y$ values are independent.
 :::
 
-## Confidence Interval for $(\mu_1 - \mu_2)$ {.font80}
-
-::: cle6
-
-
-:::
-
-## Hypothesis Testing {.font80}
+## Making Inferences About the Slope $\beta_1$ {.font80}
 
 ::: cle12
-
-
+- **Objective**: Assess the significance of the slope $\beta_1$ to understand the contribution of $x$ in predicting $y$.
+- **Statistical Test**:
+  - Null Hypothesis ($H_0$): $\beta_1 = 0$ (No relationship)
+  - Alternative Hypothesis ($H_a$): $\beta_1 \neq 0$ (Significant relationship)
+- **Using R for Hypothesis Testing**:
+  - Perform t-tests to decide whether to reject $H_0$. A significant $p$-value (< alpha level) indicates a meaningful contribution of $x$ to predicting $y$.
 :::
 
+## Practical Steps Using R {.font80}
+
+::: cle6
+- **Conducting the Test**:
+  1. Estimate $\hat{\beta}_0$ and $\hat{\beta}_1$ using the least squares method.
+  2. Compute the standard error and perform a t-test to check the significance of $\hat{\beta}_1$.
+  3. Interpret the results: A significant test suggests that changes in $x$ systematically relate to changes in $y$.
+:::
+
+## Coefficient of Correlation and Determination {.font80}
+
+::: cle12
+- **Coefficient of Correlation ($r$)**:
+  - Measures the strength of the linear relationship between $x$ and $y$.
+  - Computed as $r = \frac{\text{SS}_{xy}}{\sqrt{\text{SS}_{xx} \text{SS}_{yy}}}$, providing a scale-free measure ranging from -1 to +1.
+- **Coefficient of Determination ($r^2$)**:
+  - Represents the proportion of variability in $y$ explained by the linear relationship with $x$.
+  - $r^2 = 1 - \frac{\text{SSE}}{\text{SS}_{yy}}$, indicating how well the model fits the data.
+:::
+
+## Application and Interpretation {.font80}
+
+::: cle6
+- **Application**:
+  - Use $r^2$ to quantify how much of the change in $y$ can be explained by its linear relationship with $x$.
+  - Interpret $r$ and $r^2$ to evaluate the strength and adequacy of the model.
+- **Using R to Calculate $r$ and $r^2$**:
+  - Employ R functions like `cor()` for correlation and derive $r^2$ to assess model fit.
+:::
+
+
+
+
 ## {.font60}
 
-
-
-
-
-
-
-## {.font60}
-
+> Example 2: 
 
 
 ##

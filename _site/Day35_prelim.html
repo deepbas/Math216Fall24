@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 32</title>
+  <title>Math 216: Statistical Thinking – Day 35</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 32</h1>
+  <h1 class="title">Day 35</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,44 +340,109 @@ Bastola
 </div>
 
 </section>
-<section class="slide level2">
-
-<!--
-
-## Title {.font80}
-
-::: cle6
-
-
-:::
-
--->
-</section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="introduction-to-linear-relationships-in-populations" class="slide level2 font80">
+<h2>Introduction to Linear Relationships in Populations</h2>
 <div class="cle6">
-
+<ul>
+<li><strong>From Constants to Variables</strong>: Transition from treating population means as constants to viewing them as variables dependent on other factors.</li>
+<li><strong>Example</strong>: Mean sale price of residences depending on square footage.
+<ul>
+<li>Equation: <span class="math inline">\(y = \$30,000 + \$60 \times (\text{Square feet})\)</span></li>
+<li>This models the sale price as increasing with the living space in the residence.</li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font80">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
-<div class="cle6">
-
+<section id="probabilistic-models-in-statistics" class="slide level2 font80">
+<h2>Probabilistic Models in Statistics</h2>
+<div class="cle7">
+<ul>
+<li><strong>Deterministic vs.&nbsp;Probabilistic Models</strong>:
+<ul>
+<li><strong>Deterministic Model</strong>: Assumes a perfect, predictable relationship without error, e.g., <span class="math inline">\(y = 1.5x\)</span>.</li>
+<li><strong>Probabilistic Model</strong>: Incorporates randomness, modeling <span class="math inline">\(y\)</span> as <span class="math inline">\(y = 1.5x + \text{random error}\)</span>.</li>
+</ul></li>
+<li><strong>General Form</strong>:
+<ul>
+<li><span class="math inline">\(y = \text{Deterministic component} + \text{Random error}\)</span></li>
+<li>Assumes mean of random error is 0, aligning <span class="math inline">\(E(y)\)</span> with the deterministic component.</li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="hypothesis-testing" class="slide level2 font80">
-<h2>Hypothesis Testing</h2>
+<section id="simple-linear-regression-the-straight-line-model" class="slide level2 font80">
+<h2>Simple Linear Regression: The Straight-Line Model</h2>
 <div class="cle12">
-
+<ul>
+<li><strong>Fitting the Model</strong>: Uses simple linear regression to relate the mean value of <span class="math inline">\(y\)</span> to <span class="math inline">\(x\)</span>.
+<ul>
+<li>Steps involve hypothesizing the relationship, estimating parameters, and evaluating the model’s usefulness.</li>
+</ul></li>
+<li><strong>Key Steps</strong>:
+<ul>
+<li><ol type="1">
+<li>Hypothesize the deterministic component (e.g., <span class="math inline">\(E(y) = \beta_0 + \beta_1x\)</span>).</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Estimate model parameters using least squares.</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Assess the fit and use the model for prediction.</li>
+</ol></li>
+</ul></li>
+</ul>
 </div>
+</section>
+<section id="implementing-regression-analysis" class="slide level2 font80">
+<h2>Implementing Regression Analysis</h2>
+<div class="cle6">
+<ul>
+<li><strong>Practical Example</strong>: Analyzing drug effectiveness based on dosage percentage.
+<ul>
+<li>Model reaction time as a function of drug concentration in the bloodstream.</li>
+</ul></li>
+<li><strong>Methodology</strong>:
+<ul>
+<li>Use observed data to fit a linear model predicting reaction times.</li>
+<li>Calculate deviations to measure model fit and adjust parameters accordingly.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="step-by-step-least-squares-estimation" class="slide level2 font80">
+<h2>Step-by-Step: Least Squares Estimation</h2>
+<div class="cle12">
+<blockquote>
+<p>Example 1: Drug Effectiveness Study</p>
+</blockquote>
+<ul>
+<li>Given data on drug dosage and reaction times, fit a linear model to predict effects.</li>
+<li>Initial model: <span class="math inline">\(y = -1 + x\)</span>, refined by least squares to minimize prediction errors.</li>
+<li>Evaluate the model by calculating the sum of squared errors (SSE) and using it to adjust the model.</li>
+</ul>
+</div>
+</section>
+<section id="step-by-step-least-squares-estimation-1" class="slide level2 font80">
+<h2>Step-by-Step: Least Squares Estimation</h2>
+<div class="cle13">
+<blockquote>
+<p>Example 2: Relationship between Variables</p>
+</blockquote>
+<ul>
+<li>Consider a hypothetical study on political affiliation and support for policies.</li>
+<li>Use regression to understand how one variable predicts another within a population sample.</li>
+</ul>
+</div>
+<p>]</p>
 </section>
 <section id="section" class="slide level2 font60">
 <h2></h2>
-</section>
-<section id="section-1" class="slide level2 font60">
-<h2></h2>
-</section>
-<section id="section-2" class="slide level2">
+<blockquote>
+<p>Example 2:</p>
+</blockquote>
+
+<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-1" class="slide level2">
 <h2></h2>
 
 <div class="quarto-auto-generated-content">

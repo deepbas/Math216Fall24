@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 29</title>
+  <title>Math 216: Statistical Thinking – Day 33</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -328,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 29</h1>
+  <h1 class="title">Day 33</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,83 +405,324 @@ Bastola
 </div>
 
 </section>
-<section id="independent-sampling-overview" class="slide level2 font80">
-<h2>Independent Sampling Overview</h2>
-<div class="cle6">
-<p>When samples cannot be paired, they are treated as independent. For two independent samples:</p>
-<ul>
-<li><strong>Sample 1:</strong> Size <span class="math inline">\(n_1\)</span>, mean <span class="math inline">\(\bar{x}_1\)</span>, variance <span class="math inline">\(s_1^2\)</span><br>
-</li>
-<li><strong>Sample 2:</strong> Size <span class="math inline">\(n_2\)</span>, mean <span class="math inline">\(\bar{x}_2\)</span>, variance <span class="math inline">\(s_2^2\)</span></li>
-</ul>
-<p>Conditions to check:</p>
-<ul>
-<li>Sample sizes (<span class="math inline">\(n_1 \geq 30\)</span>, <span class="math inline">\(n_2 \geq 30\)</span>)<br>
-</li>
-<li>Normality (for smaller samples)<br>
-</li>
-<li>Known variances (or assume equal variance under normality)</li>
-</ul>
-</div>
-</section>
-<section id="properties-of-sampling-distribution" class="slide level2 font80">
-<h2>Properties of Sampling Distribution</h2>
-<div class="cle7">
-<p>For large samples or small but normally distributed samples:</p>
-<ul>
-<li>Mean of the distribution of <span class="math inline">\((\bar{x}_1 - \bar{x}_2)\)</span>: <span class="math inline">\((\mu_1 - \mu_2)\)</span><br>
-</li>
-<li>Standard deviation: <span class="math inline">\(\sigma_{(\bar{x}_1-\bar{x}_2)} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\)</span><br>
-</li>
-<li>Distribution assumption: Approximately normal by the Central Limit Theorem.</li>
-</ul>
-</div>
-</section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font80">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
+<section id="introduction-to-categorical-data-analysis" class="slide level2 font80">
+<h2>Introduction to Categorical Data Analysis</h2>
 <div class="cle6">
 <ul>
-<li><strong>Known variances:</strong> <span class="math inline">\((\bar{x}_1 - \bar{x}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\)</span><br>
-</li>
-<li><strong>Unknown variances:</strong> Use pooled standard deviation <span class="math inline">\(s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}\)</span>:<br>
-<span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2, n_1+n_2-2} \cdot s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}\]</span></li>
+<li><strong>Quantitative vs.&nbsp;Qualitative Data</strong>: Transition from numerical to categorical data, which includes discrete categories like opinions or health status.</li>
+<li><strong>Examples</strong>: Opinions range from Excellent to Poor; Health Status is either Sick or Healthy; Vaccination Status can be Yes or No.</li>
+<li><strong>Data Presentation</strong>: Often shown in tables counting occurrences across categories.</li>
 </ul>
 </div>
 </section>
-<section id="hypothesis-testing" class="slide level2 font80">
-<h2>Hypothesis Testing</h2>
+<section id="categorical-data-representation" class="slide level2 font60">
+<h2>Categorical Data Representation</h2>
+<div class="row">
+<div class="left">
+<p>Table 1: Opinions on Pricing</p>
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pay much more</td>
+<td>218</td>
+</tr>
+<tr class="even">
+<td>Pay somewhat more</td>
+<td>497</td>
+</tr>
+<tr class="odd">
+<td>Pay the same</td>
+<td>425</td>
+</tr>
+<tr class="even">
+<td>Pay less</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="right">
+<p>Table 2: Vaccination vs.&nbsp;Flu Status</p>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>No Vaccine</th>
+<th>One Shot</th>
+<th>Two Shot</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flu</td>
+<td>24</td>
+<td>9</td>
+<td>13</td>
+<td>46</td>
+</tr>
+<tr class="even">
+<td>No flu</td>
+<td>289</td>
+<td>100</td>
+<td>565</td>
+<td>954</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>313</td>
+<td>109</td>
+<td>578</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="hypothesis-setup" class="slide level2 font80">
+<h2>Hypothesis Setup</h2>
 <div class="cle12">
 <ul>
-<li><strong>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</strong> <span class="math inline">\(\mu_1 = \mu_2\)</span> (no difference in means)<br>
-</li>
-<li><strong>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>):</strong> <span class="math inline">\(\mu_1 \neq \mu_2\)</span> (means are different)<br>
-</li>
-<li>Test statistic for equal variances:<br>
-<span class="math display">\[t = \frac{\bar{x}_1 - \bar{x}_2}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}\]</span><br>
-</li>
-<li>Degrees of freedom: <span class="math inline">\(n_1 + n_2 - 2\)</span><br>
-</li>
-<li>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value &lt; <span class="math inline">\(\alpha\)</span> (commonly 0.05)</li>
+<li><strong>Scenario</strong>: Evaluating gender distribution in a university STEM program against a regional expectation of a 50:50 male-to-female ratio.</li>
+<li><strong>Null Hypothesis (<span class="math inline">\(H_0\)</span>)</strong>: <span class="math inline">\(p_f = p_m = \frac{1}{2}\)</span></li>
+<li><strong>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>)</strong>: <span class="math inline">\(p_f \neq p_m\)</span></li>
 </ul>
 </div>
 </section>
-<section id="section" class="slide level2 font60">
-<h2></h2>
-<blockquote>
-<p>Example 1: A study comparing two diets:<br>
-- <strong>Low-fat diet:</strong> <span class="math inline">\(n_1 = 100\)</span>, <span class="math inline">\(\bar{x}_1 = 9.31\)</span>, <span class="math inline">\(s_1 = 4.67\)</span><br>
-- <strong>Regular diet:</strong> <span class="math inline">\(n_2 = 100\)</span>, <span class="math inline">\(\bar{x}_2 = 7.40\)</span>, <span class="math inline">\(s_2 = 4.04\)</span><br>
-Form 95% CI for the difference in mean weight loss and conduct a hypothesis test at <span class="math inline">\(\alpha = 0.05\)</span> to see if the low-fat diet is more effective.</p>
-</blockquote>
+<section id="data-overview" class="slide level2 font80">
+<h2>Data Overview</h2>
+<div class="cle7">
+<ul>
+<li><strong>Total Students</strong>: 500 (200 female, 300 male)</li>
+<li><strong>Expected under <span class="math inline">\(H_0\)</span></strong>: Each gender = <span class="math inline">\(500 \times \frac{1}{2} = 250\)</span></li>
+</ul>
+</div>
 </section>
-<section id="section-1" class="slide level2 font60">
+<section id="chi-square-test-statistic" class="slide level2 font80">
+<h2>Chi-Square Test Statistic</h2>
+<div class="cle12">
+<ul>
+<li><strong>Test Statistic (<span class="math inline">\(T\)</span>)</strong>: A test statistic is one number, computed from the data, which we can use to assess the null hypothesis. Measures divergence of observed counts from expected counts under <span class="math inline">\(H_0\)</span>.</li>
+<li><strong>Calculation</strong>: Sum of the squared differences between observed and expected counts, normalized by expected counts.</li>
+</ul>
+<span class="math display">\[\begin{aligned}
+\chi^2 = \sum{\frac{(observed - expected)^2}{expected}} = \sum{\frac{(O - E)^2}{E}}
+\end{aligned}\]</span>
+</div>
+</section>
+<section id="chi-square-distribution" class="slide level2">
+<h2>Chi-Square Distribution</h2>
+<center>
+<img src="images/chisquare.png" width="65%" height="65%"><br>
+</center>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img src="images/Day33-1.png" style="display: block; margin-left: 0;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="chi-square-test-table" class="slide level2 font80">
+<h2>Chi-Square Test Table</h2>
+<span class="math display">\[\begin{array}{|c|c|c|c|c|}
+\hline \textbf{Category} &amp; \hat{p}_j &amp; \textbf{Expected, } E_j &amp; \textbf{Observed, } O_j \\
+\hline \text{Female} &amp; \frac{1}{2} &amp; 250 &amp; 200 \\
+\hline \text{Male} &amp; \frac{1}{2} &amp; 250 &amp; 300 \\
+\hline
+\end{array}\]</span>
+</section>
+<section id="chi-square-test-data-table" class="slide level2 font60">
+<h2>Chi-Square Test Data Table</h2>
+<div class="cle12">
+<ul>
+<li>This table displays the categorical distribution of data for hypothesis testing.
+<ul>
+<li><strong><span class="math inline">\(j\)</span></strong>: Category index</li>
+<li><strong>Category</strong>: Description of each category</li>
+<li><strong><span class="math inline">\(\hat{p}_j\)</span></strong>: Estimated proportion for each category</li>
+<li><strong>Expected, <span class="math inline">\(E_j\)</span></strong>: Expected count under null hypothesis = <span class="math inline">\(n \hat{p}_j\)</span></li>
+<li><strong>Observed, <span class="math inline">\(O_j\)</span></strong>: Observed count in sample</li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(j\)</span></th>
+<th style="text-align: center;">Category</th>
+<th style="text-align: center;"><span class="math inline">\(\hat{p}_j\)</span></th>
+<th style="text-align: center;">Expected, <span class="math inline">\(E_j\)</span></th>
+<th style="text-align: center;">Observed, <span class="math inline">\(O_j\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="math inline">\(\mathbf{C 1}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{p}_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n \hat{p}_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n_1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><span class="math inline">\(\mathbf{C 2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{p}_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n \hat{p}_2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n_2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(k\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mathbf{C k}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{p}_k\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n \hat{p}_k\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n_k\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="summary-of-the-steps" class="slide level2 font80">
+<h2>Summary of the Steps</h2>
+<div class="cle12">
+<ul>
+<li>State Hypothesis</li>
+<li>Calculate a test statistic, based on your sample data</li>
+<li>Create a distribution of this statistic, as it would be observed if the null hypothesis were true</li>
+<li>Measure how extreme your test statistic is, as compared to the distribution generated under null</li>
+<li><strong>Decision</strong>: Reject or fail to reject <span class="math inline">\(H_0\)</span> based on the Chi-Square test value compared to critical values from Chi-Square distribution tables.</li>
+<li><strong>Implication</strong>: Determines if there is a statistically significant difference in gender distribution compared to regional expectations.</li>
+</ul>
+</div>
+</section>
+<section id="example-testing-the-fairness-of-a-die" class="slide level2 font80">
+<h2>Example: Testing the Fairness of a Die</h2>
+<div class="cle7">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome (Category)</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+<th style="text-align: right;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Observed</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Objective</strong>: Test whether the outcome of die rolls matches a fair die’s expected distribution.</li>
+<li><strong>Method</strong>: Use the Chi-Square test to compare observed outcomes against the expected frequencies for a fair die.</li>
+</ul>
+</div>
+</section>
+<section id="testing-the-fairness-of-a-die-r-code" class="slide level2 font80">
+<h2>Testing the Fairness of a Die: R-code</h2>
+<div class="cle2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Assuming the die is fair, each of the 6 sides should appear with equal probability.</span></span>
+<span id="cb1-2"><a></a>observed_counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">7</span>, <span class="dv">14</span>, <span class="dv">15</span>, <span class="dv">4</span>, <span class="dv">8</span>)</span>
+<span id="cb1-3"><a></a>expected_probabilities <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>, <span class="dv">6</span>)</span>
+<span id="cb1-4"><a></a><span class="fu">chisq.test</span>(<span class="at">x=</span>observed_counts, <span class="at">p=</span>expected_probabilities)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  observed_counts
+X-squared = 9.4, df = 5, p-value = 0.09413</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Expected:</strong> Each side of the die should appear 10 times out of 60 rolls under the assumption of fairness.</li>
+<li><strong>Analysis:</strong> Perform the Chi-Square test and review the p-value to determine if there is significant evidence to reject the fairness assumption</li>
+</ul>
+</div>
+</section>
+<section id="section-1" class="slide level2 font50">
 <h2></h2>
 <blockquote>
-<p>Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:</p>
+<p>Example1: In a Rock-Paper-Scissors game, 85 rounds are played resulting in the following counts for each outcome:</p>
 </blockquote>
-
-<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rock</td>
+<td>36</td>
+</tr>
+<tr class="even">
+<td>Paper</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>Scissors</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
+<p>The expected frequency for each category under the assumption of equal likelihood is 28.33. Using a Chi-Square test, determine if the observed frequencies significantly differ from what is expected at a 0.05 significance level.</p>
+</section>
+<section id="section-2" class="slide level2 font50">
+<h2></h2>
+<blockquote>
+<p>Example 2: A poll conducted by the General Social Survey asked 1155 people whether they thought that people with high incomes should pay a greater or smaller percentage of their income in tax than low-income people. The results are presented in the following table.</p>
+</blockquote>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Pay much more</td>
+<td style="text-align: left;">218</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pay somewhat more</td>
+<td style="text-align: left;">497</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pay the same</td>
+<td style="text-align: left;">425</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pay less</td>
+<td style="text-align: left;">15</td>
+</tr>
+</tbody>
+</table>
+<p>Five years earlier, it was determined that <span class="math inline">\(18.5 \%\)</span> believed that the rich should pay much more, <span class="math inline">\(39.2 \%\)</span> believed they should pay somewhat more, <span class="math inline">\(41.2 \%\)</span> believed they should pay the same, and <span class="math inline">\(1.1 \%\)</span> believed they should pay less. Can we conclude that the current percentages differ from these? Use <span class="math inline">\(\alpha=0.05\)</span> level of significance.</p>
+</section>
+<section id="section-3" class="slide level2">
 <h2></h2>
 
 <div class="quarto-auto-generated-content">

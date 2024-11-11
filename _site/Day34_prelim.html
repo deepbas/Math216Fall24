@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 32</title>
+  <title>Math 216: Statistical Thinking – Day 34</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 32</h1>
+  <h1 class="title">Day 34</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -340,44 +340,88 @@ Bastola
 </div>
 
 </section>
-<section class="slide level2">
-
-<!--
-
-## Title {.font80}
-
-::: cle6
-
-
-:::
-
--->
-</section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="contingency-table" class="slide level2 font80">
+<h2>Contingency Table</h2>
 <div class="cle6">
-
+<ul>
+<li><strong>Chi-Square Test Application</strong>: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.</li>
+<li><strong>Contingency Table Format</strong>:
+<ul>
+<li><span class="math inline">\(n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} C_j\)</span></li>
+<li>Rows (<span class="math inline">\(r\)</span>) and columns (<span class="math inline">\(c\)</span>) represent different categorical classifications.</li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font80">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
-<div class="cle6">
-
+<section id="hypothesis-testing-using-contingency-tables" class="slide level2 font70">
+<h2>Hypothesis Testing Using Contingency Tables</h2>
+<div class="cle7">
+<ul>
+<li><strong>Goal</strong>: Determine if there is independence or dependence between row and column classifications.</li>
+<li><strong>Hypotheses</strong>:
+<ul>
+<li><span class="math inline">\(H_0\)</span>: Row and column classifications are independent.</li>
+<li>Probability of belonging to both the <span class="math inline">\(i^{th}\)</span> row and <span class="math inline">\(j^{th}\)</span> column:
+<ul>
+<li><span class="math inline">\(\operatorname{Prob}(R_i \cap C_j) = P(R_i) \cdot P(C_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right)\)</span></li>
+</ul></li>
+<li>Expected count for cell <span class="math inline">\((i, j)\)</span>:
+<ul>
+<li><span class="math inline">\(e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right) = \frac{r_i C_j}{n}\)</span></li>
+</ul></li>
+</ul></li>
+<li><strong>Test Statistic</strong>:
+<ul>
+<li><span class="math inline">\(T = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(n_{ij}-e_{ij})^2}{e_{ij}} \sim \chi^2_{1-\alpha} \text{ with df } = (r-1) \cdot (c-1)\)</span></li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="hypothesis-testing" class="slide level2 font80">
-<h2>Hypothesis Testing</h2>
+<section id="r-code-for-contingency-table-analysis" class="slide level2 font80">
+<h2>R Code for Contingency Table Analysis</h2>
 <div class="cle12">
-
+<ul>
+<li><strong>Using R for Calculations</strong>:
+<ul>
+<li>Prepare data in matrix format and use Chi-Square test without Yates’ correction.</li>
+<li><code>tab &lt;- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)</code></li>
+<li><code>chisq.test(tab, correct = FALSE)</code></li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="section" class="slide level2 font60">
+<section id="section" class="slide level2 font80">
 <h2></h2>
+<div class="cle6">
+<blockquote>
+<p>Example 1: Evaluating Flu Vaccine Effectiveness</p>
+</blockquote>
+<ul>
+<li>Survey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.</li>
+<li>Analysis suggests a significant dependence, with <span class="math inline">\(p\)</span>-value = 0.000174.</li>
+</ul>
+</div>
 </section>
-<section id="section-1" class="slide level2 font60">
+<section id="section-1" class="slide level2 font80">
 <h2></h2>
+<div class="cle6">
+<blockquote>
+<p>Example 2: Political Affiliation and Support for Space Exploration</p>
+</blockquote>
+<ul>
+<li>Survey of 100 individuals regarding political views and support for space programs.</li>
+<li>Chi-Square test shows no significant dependence, <span class="math inline">\(p\)</span>-value = 0.3379.</li>
+</ul>
+</div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-2" class="slide level2 font60">
+<h2></h2>
+<blockquote>
+<p>Example 2:</p>
+</blockquote>
+
+<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
 <h2></h2>
 
 <div class="quarto-auto-generated-content">

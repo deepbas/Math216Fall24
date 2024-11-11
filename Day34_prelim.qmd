@@ -1,5 +1,5 @@
 ---
-title: "Day 32"
+title: "Day 34"
 title-slide-attributes:
   data-background-image: images/lake.jpg
   data-background-size: contain
@@ -47,49 +47,87 @@ yt <- 0
 ```
 
 
-
-<!--
-
-## Title {.font80}
+## Chi-Square Test for Two Groups - Contingency Table {.font80}
 
 ::: cle6
-
-
+- **Objective**: To check for independence between two categorical variables.
+- **Example**: Relationship between flu contraction and vaccination status.
+- **Analysis Approach**: Analyze frequencies within a contingency table to identify significant associations.
 :::
 
--->
 
-## Title {.font80}
-
-::: cle6
-
-
-:::
-
-## Confidence Interval for $(\mu_1 - \mu_2)$ {.font80}
-
-::: cle6
-
-
-:::
-
-## Hypothesis Testing {.font80}
+##  {.font80}
 
 ::: cle12
+> Example 2: Taxation Opinion Poll
 
+  - Compare recent survey data against historical expectations.
+  - Test whether public opinion on taxation by income level has shifted.
+  - R Code: `chisq.test(observed, p = expected)`
+:::
+
+
+
+## Contingency Table {.font80}
+
+::: cle6
+- **Chi-Square Test Application**: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.
+- **Contingency Table Format**:
+  - $n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} C_j$
+  - Rows ($r$) and columns ($c$) represent different categorical classifications.
+:::
+
+## Hypothesis Testing Using Contingency Tables {.font70}
+
+::: cle7
+- **Goal**: Determine if there is independence or dependence between row and column classifications.
+- **Hypotheses**:
+  - $H_0$: Row and column classifications are independent.
+  - Probability of belonging to both the $i^{th}$ row and $j^{th}$ column:
+    - $\operatorname{Prob}(R_i \cap C_j) = P(R_i) \cdot P(C_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right)$
+  - Expected count for cell $(i, j)$:
+    - $e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right) = \frac{r_i C_j}{n}$
+- **Test Statistic**:
+  - $T = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(n_{ij}-e_{ij})^2}{e_{ij}} \sim \chi^2_{1-\alpha} \text{ with df } = (r-1) \cdot (c-1)$
+:::
+
+## R Code for Contingency Table Analysis {.font80}
+
+::: cle12
+- **Using R for Calculations**:
+  - Prepare data in matrix format and use Chi-Square test without Yates' correction.
+  - `tab <- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)`
+  - `chisq.test(tab, correct = FALSE)`
+:::
+
+##  {.font80}
+
+::: cle6
+> Example 1: Evaluating Flu Vaccine Effectiveness
+
+  - Survey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.
+  - Analysis suggests a significant dependence, with $p$-value = 0.000174.
 
 :::
 
+
+##  {.font80}
+
+::: cle6
+> Example 2: Political Affiliation and Support for Space Exploration
+
+  - Survey of 100 individuals regarding political views and support for space programs.
+  - Chi-Square test shows no significant dependence, $p$-value = 0.3379.
+:::
+
+
+
 ## {.font60}
 
+> Example 2: 
 
 
-
-
-
-
-## {.font60}
-
+<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
 
 ##
