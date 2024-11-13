@@ -56,16 +56,15 @@ yt <- 0
 :::
 
 
-##  {.font80}
+## Contingency Table {.font70}
 
-::: cle12
-> Example 2: Taxation Opinion Poll
-
-  - Compare recent survey data against historical expectations.
-  - Test whether public opinion on taxation by income level has shifted.
-  - R Code: `chisq.test(observed, p = expected)`
-:::
-
+|       | Column 1 | Column 2 | ... | Column c | Total |
+|-------|----------|----------|-----|----------|-------|
+| Row 1 | $n_{11}$ | $n_{12}$ | ... | $n_{1c}$ | $r_1$ |
+| Row 2 | $n_{21}$ | $n_{22}$ | ... | $n_{2c}$ | $r_2$ |
+| ...   | $\vdots$ | $\vdots$ | ... | $\vdots$ | $\vdots$ |
+| Row r | $n_{r1}$ | $n_{r2}$ | ... | $n_{rc}$ | $r_r$ |
+| Total | $c_1$    | $c_2$    | ... | $c_c$    | $n$    |
 
 
 ## Contingency Table {.font80}
@@ -73,7 +72,7 @@ yt <- 0
 ::: cle6
 - **Chi-Square Test Application**: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.
 - **Contingency Table Format**:
-  - $n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} C_j$
+  - $n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} c_j$
   - Rows ($r$) and columns ($c$) represent different categorical classifications.
 :::
 
@@ -84,51 +83,101 @@ yt <- 0
 - **Hypotheses**:
   - $H_0$: Row and column classifications are independent.
   - Probability of belonging to both the $i^{th}$ row and $j^{th}$ column:
-    - $\operatorname{Prob}(R_i \cap C_j) = P(R_i) \cdot P(C_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right)$
+    - $\operatorname{Prob}(r_i \cap c_j) = P(r_i) \cdot P(c_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{c_j}{n}\right)$
   - Expected count for cell $(i, j)$:
-    - $e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right) = \frac{r_i C_j}{n}$
+    - $e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{c_j}{n}\right) = \frac{r_i c_j}{n}$
 - **Test Statistic**:
   - $T = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(n_{ij}-e_{ij})^2}{e_{ij}} \sim \chi^2_{1-\alpha} \text{ with df } = (r-1) \cdot (c-1)$
 :::
 
-## R Code for Contingency Table Analysis {.font80}
+## R Code for Contingency Table Analysis {.font70}
 
 ::: cle12
 - **Using R for Calculations**:
-  - Prepare data in matrix format and use Chi-Square test without Yates' correction.
-  - `tab <- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)`
-  - `chisq.test(tab, correct = FALSE)`
+  - Prepare data in matrix format and use Chi-Square test without Yates' continuity correction.
+  
+```r
+# Create a matrix from the data
+tab <- matrix(c(data1, data2, ...), 
+              nrow = ...,  # specify the number of rows
+              ncol = ...,  # specify the number of columns
+              byrow = TRUE)  # fill the matrix by rows
+
+# Perform a chi-squared test without continuity correction
+chisq.test(tab, correct = FALSE)
+```
+
 :::
 
-##  {.font80}
+##  {.font60}
 
-::: cle6
-> Example 1: Evaluating Flu Vaccine Effectiveness
+> Example 1: A survey was conducted to evaluate the effectiveness of a new flu vaccine that had been administered in a small community. The vaccine was provided free of charge in a two-shot sequence over a period of 2 weeks to those wishing to avail themselves of it. Some people receive the two-shot sequence, some appeared only for the first shot, and the others received neither.
 
-  - Survey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.
-  - Analysis suggests a significant dependence, with $p$-value = 0.000174.
+A survey of 1000 local inhabitants in the following spring provided the information shown in the following table. Do the data present sufficient evidence to indicate a dependence between the two classifications - vaccine category and occurrence/nonoccurrence of flu? 
 
-:::
-
-
-##  {.font80}
-
-::: cle6
-> Example 2: Political Affiliation and Support for Space Exploration
-
-  - Survey of 100 individuals regarding political views and support for space programs.
-  - Chi-Square test shows no significant dependence, $p$-value = 0.3379.
-:::
-
-
-
-## {.font60}
-
-> Example 2: 
-
-
-<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+| Status  | No Vaccine | One Shot | Two Shot | Total |
+|---------|------------|----------|----------|-------|
+| Flu     | 24         | 9        | 13       | 46    |
+| No flu  | 289        | 100      | 565      | 954   |
+| Total   | 313        | 109      | 578      | 1000  |
 
 
 ##
 
+
+
+## Example 1: R-code to verify answers {.font70}
+
+::: cle7
+
+```{r}
+# Enter each row into a vector
+data1 <- c(24, 9, 13)
+data2 <- c(289, 100, 565)
+# Create a matrix from the data
+tab <- matrix(c(data1, data2), 
+              nrow = 2,  # specify the number of rows
+              ncol = 3,  # specify the number of columns
+              byrow = TRUE)  # fill the matrix by rows
+
+# Perform a chi-squared test without continuity correction
+chisq.test(tab, correct = FALSE)
+```
+
+:::
+
+##  {.font60}
+
+> Example 2: A survey is taken to determine whether there is a relationship between political affiliation and strength of support for space exploration. We randomly select 100 individuals and ask their political affiliation and their support level to obtain the data in the following table. Perform the contingency table analysis at $\alpha=0.10$.
+
+| Support Level | Republican | Democrat | Independent | Total |
+|---------------|------------|----------|-------------|-------|
+| Strong        | 8          | 10       | 12          | 30    |
+| Moderate      | 12         | 17       | 6           | 35    |
+| Weak          | 10         | 13       | 12          | 35    |
+| Total         | 30         | 40       | 30          | 100   |
+
+
+##
+
+
+## Example 2: R-code to verify answers {.font70}
+
+::: cle7
+
+```{r}
+# Enter each row into a vector
+data1 <- c(8, 10, 12)
+data2 <- c(12, 17, 6)
+data3 <- c(10, 13, 12)
+# Create a matrix from the data
+tab <- matrix(c(data1, data2, data3), 
+              nrow = 3,  # specify the number of rows
+              ncol = 3,  # specify the number of columns
+              byrow = TRUE)  # fill the matrix by rows
+
+# Perform a chi-squared test without continuity correction
+chisq.test(tab, correct = FALSE)
+```
+
+:::

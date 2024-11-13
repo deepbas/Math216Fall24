@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.25">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Bastola">
   <title>Math 216: Statistical Thinking – Day 34</title>
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -340,14 +405,81 @@ Bastola
 </div>
 
 </section>
-<section id="contingency-table" class="slide level2 font80">
+<section id="chi-square-test-for-two-groups---contingency-table" class="slide level2 font80">
+<h2>Chi-Square Test for Two Groups - Contingency Table</h2>
+<div class="cle6">
+<ul>
+<li><strong>Objective</strong>: To check for independence between two categorical variables.</li>
+<li><strong>Example</strong>: Relationship between flu contraction and vaccination status.</li>
+<li><strong>Analysis Approach</strong>: Analyze frequencies within a contingency table to identify significant associations.</li>
+</ul>
+</div>
+</section>
+<section id="contingency-table" class="slide level2 font70">
+<h2>Contingency Table</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>…</th>
+<th>Column c</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Row 1</td>
+<td><span class="math inline">\(n_{11}\)</span></td>
+<td><span class="math inline">\(n_{12}\)</span></td>
+<td>…</td>
+<td><span class="math inline">\(n_{1c}\)</span></td>
+<td><span class="math inline">\(r_1\)</span></td>
+</tr>
+<tr class="even">
+<td>Row 2</td>
+<td><span class="math inline">\(n_{21}\)</span></td>
+<td><span class="math inline">\(n_{22}\)</span></td>
+<td>…</td>
+<td><span class="math inline">\(n_{2c}\)</span></td>
+<td><span class="math inline">\(r_2\)</span></td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td><span class="math inline">\(\vdots\)</span></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+<td>…</td>
+<td><span class="math inline">\(\vdots\)</span></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td>Row r</td>
+<td><span class="math inline">\(n_{r1}\)</span></td>
+<td><span class="math inline">\(n_{r2}\)</span></td>
+<td>…</td>
+<td><span class="math inline">\(n_{rc}\)</span></td>
+<td><span class="math inline">\(r_r\)</span></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td><span class="math inline">\(c_1\)</span></td>
+<td><span class="math inline">\(c_2\)</span></td>
+<td>…</td>
+<td><span class="math inline">\(c_c\)</span></td>
+<td><span class="math inline">\(n\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contingency-table-1" class="slide level2 font80">
 <h2>Contingency Table</h2>
 <div class="cle6">
 <ul>
 <li><strong>Chi-Square Test Application</strong>: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.</li>
 <li><strong>Contingency Table Format</strong>:
 <ul>
-<li><span class="math inline">\(n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} C_j\)</span></li>
+<li><span class="math inline">\(n=\sum_{i=1}^{r} r_i = \sum_{j=1}^{c} c_j\)</span></li>
 <li>Rows (<span class="math inline">\(r\)</span>) and columns (<span class="math inline">\(c\)</span>) represent different categorical classifications.</li>
 </ul></li>
 </ul>
@@ -363,11 +495,11 @@ Bastola
 <li><span class="math inline">\(H_0\)</span>: Row and column classifications are independent.</li>
 <li>Probability of belonging to both the <span class="math inline">\(i^{th}\)</span> row and <span class="math inline">\(j^{th}\)</span> column:
 <ul>
-<li><span class="math inline">\(\operatorname{Prob}(R_i \cap C_j) = P(R_i) \cdot P(C_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right)\)</span></li>
+<li><span class="math inline">\(\operatorname{Prob}(r_i \cap c_j) = P(r_i) \cdot P(c_j) = \left(\frac{r_i}{n}\right) \cdot \left(\frac{c_j}{n}\right)\)</span></li>
 </ul></li>
 <li>Expected count for cell <span class="math inline">\((i, j)\)</span>:
 <ul>
-<li><span class="math inline">\(e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{C_j}{n}\right) = \frac{r_i C_j}{n}\)</span></li>
+<li><span class="math inline">\(e_{ij} = n \cdot \left(\frac{r_i}{n}\right) \cdot \left(\frac{c_j}{n}\right) = \frac{r_i c_j}{n}\)</span></li>
 </ul></li>
 </ul></li>
 <li><strong>Test Statistic</strong>:
@@ -377,52 +509,169 @@ Bastola
 </ul>
 </div>
 </section>
-<section id="r-code-for-contingency-table-analysis" class="slide level2 font80">
+<section id="r-code-for-contingency-table-analysis" class="slide level2 font70">
 <h2>R Code for Contingency Table Analysis</h2>
 <div class="cle12">
 <ul>
 <li><strong>Using R for Calculations</strong>:
 <ul>
-<li>Prepare data in matrix format and use Chi-Square test without Yates’ correction.</li>
-<li><code>tab &lt;- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)</code></li>
-<li><code>chisq.test(tab, correct = FALSE)</code></li>
+<li>Prepare data in matrix format and use Chi-Square test without Yates’ continuity correction.</li>
 </ul></li>
 </ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Create a matrix from the data</span></span>
+<span id="cb1-2"><a></a>tab <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(data1, data2, ...), </span>
+<span id="cb1-3"><a></a>              <span class="at">nrow =</span> ...,  <span class="co"># specify the number of rows</span></span>
+<span id="cb1-4"><a></a>              <span class="at">ncol =</span> ...,  <span class="co"># specify the number of columns</span></span>
+<span id="cb1-5"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a><span class="co"># Perform a chi-squared test without continuity correction</span></span>
+<span id="cb1-8"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section" class="slide level2 font80">
+<section id="section" class="slide level2 font60">
 <h2></h2>
-<div class="cle6">
 <blockquote>
-<p>Example 1: Evaluating Flu Vaccine Effectiveness</p>
+<p>Example 1: A survey was conducted to evaluate the effectiveness of a new flu vaccine that had been administered in a small community. The vaccine was provided free of charge in a two-shot sequence over a period of 2 weeks to those wishing to avail themselves of it. Some people receive the two-shot sequence, some appeared only for the first shot, and the others received neither.</p>
 </blockquote>
-<ul>
-<li>Survey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.</li>
-<li>Analysis suggests a significant dependence, with <span class="math inline">\(p\)</span>-value = 0.000174.</li>
-</ul>
-</div>
+<p>A survey of 1000 local inhabitants in the following spring provided the information shown in the following table. Do the data present sufficient evidence to indicate a dependence between the two classifications - vaccine category and occurrence/nonoccurrence of flu?</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>No Vaccine</th>
+<th>One Shot</th>
+<th>Two Shot</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flu</td>
+<td>24</td>
+<td>9</td>
+<td>13</td>
+<td>46</td>
+</tr>
+<tr class="even">
+<td>No flu</td>
+<td>289</td>
+<td>100</td>
+<td>565</td>
+<td>954</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>313</td>
+<td>109</td>
+<td>578</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="section-1" class="slide level2 font80">
+<section id="section-1" class="slide level2">
 <h2></h2>
-<div class="cle6">
-<blockquote>
-<p>Example 2: Political Affiliation and Support for Space Exploration</p>
-</blockquote>
-<ul>
-<li>Survey of 100 individuals regarding political views and support for space programs.</li>
-<li>Chi-Square test shows no significant dependence, <span class="math inline">\(p\)</span>-value = 0.3379.</li>
-</ul>
+</section>
+<section id="example-1-r-code-to-verify-answers" class="slide level2 font70">
+<h2>Example 1: R-code to verify answers</h2>
+<div class="cle7">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Enter each row into a vector</span></span>
+<span id="cb2-2"><a></a>data1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">24</span>, <span class="dv">9</span>, <span class="dv">13</span>)</span>
+<span id="cb2-3"><a></a>data2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">289</span>, <span class="dv">100</span>, <span class="dv">565</span>)</span>
+<span id="cb2-4"><a></a><span class="co"># Create a matrix from the data</span></span>
+<span id="cb2-5"><a></a>tab <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(data1, data2), </span>
+<span id="cb2-6"><a></a>              <span class="at">nrow =</span> <span class="dv">2</span>,  <span class="co"># specify the number of rows</span></span>
+<span id="cb2-7"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
+<span id="cb2-8"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
+<span id="cb2-9"><a></a></span>
+<span id="cb2-10"><a></a><span class="co"># Perform a chi-squared test without continuity correction</span></span>
+<span id="cb2-11"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  tab
+X-squared = 17.313, df = 2, p-value = 0.000174</code></pre>
+</div>
+</div>
 </div>
 </section>
 <section id="section-2" class="slide level2 font60">
 <h2></h2>
 <blockquote>
-<p>Example 2:</p>
+<p>Example 2: A survey is taken to determine whether there is a relationship between political affiliation and strength of support for space exploration. We randomly select 100 individuals and ask their political affiliation and their support level to obtain the data in the following table. Perform the contingency table analysis at <span class="math inline">\(\alpha=0.10\)</span>.</p>
 </blockquote>
-
-<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Support Level</th>
+<th>Republican</th>
+<th>Democrat</th>
+<th>Independent</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strong</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Moderate</td>
+<td>12</td>
+<td>17</td>
+<td>6</td>
+<td>35</td>
+</tr>
+<tr class="odd">
+<td>Weak</td>
+<td>10</td>
+<td>13</td>
+<td>12</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td>30</td>
+<td>40</td>
+<td>30</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="section-3" class="slide level2">
 <h2></h2>
+</section>
+<section id="example-2-r-code-to-verify-answers" class="slide level2 font70">
+<h2>Example 2: R-code to verify answers</h2>
+<div class="cle7">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Enter each row into a vector</span></span>
+<span id="cb4-2"><a></a>data1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>)</span>
+<span id="cb4-3"><a></a>data2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">17</span>, <span class="dv">6</span>)</span>
+<span id="cb4-4"><a></a>data3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">13</span>, <span class="dv">12</span>)</span>
+<span id="cb4-5"><a></a><span class="co"># Create a matrix from the data</span></span>
+<span id="cb4-6"><a></a>tab <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(data1, data2, data3), </span>
+<span id="cb4-7"><a></a>              <span class="at">nrow =</span> <span class="dv">3</span>,  <span class="co"># specify the number of rows</span></span>
+<span id="cb4-8"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
+<span id="cb4-9"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
+<span id="cb4-10"><a></a></span>
+<span id="cb4-11"><a></a><span class="co"># Perform a chi-squared test without continuity correction</span></span>
+<span id="cb4-12"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  tab
+X-squared = 4.5397, df = 4, p-value = 0.3379</code></pre>
+</div>
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
