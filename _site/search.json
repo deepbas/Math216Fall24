@@ -448,207 +448,277 @@
     "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
   },
   {
-    "objectID": "Day28.html#comparing-two-population-means-paired-difference-example",
-    "href": "Day28.html#comparing-two-population-means-paired-difference-example",
-    "title": "Day 28",
-    "section": "Comparing Two Population Means: Paired Difference Example",
-    "text": "Comparing Two Population Means: Paired Difference Example\n\n\nObjective: Assess the effectiveness of two training programs in skill enhancement.\nDesign Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison."
+    "objectID": "Day34.html#chi-square-test-for-two-groups---contingency-table",
+    "href": "Day34.html#chi-square-test-for-two-groups---contingency-table",
+    "title": "Day 34",
+    "section": "Chi-Square Test for Two Groups - Contingency Table",
+    "text": "Chi-Square Test for Two Groups - Contingency Table\n\n\nObjective: To check for independence between two categorical variables.\nExample: Relationship between flu contraction and vaccination status.\nAnalysis Approach: Analyze frequencies within a contingency table to identify significant associations."
   },
   {
-    "objectID": "Day28.html#conceptual-foundation-for-paired-samples",
-    "href": "Day28.html#conceptual-foundation-for-paired-samples",
-    "title": "Day 28",
-    "section": "Conceptual Foundation for Paired Samples",
-    "text": "Conceptual Foundation for Paired Samples\n\n\nPaired designs minimize variability by controlling for individual differences.\nThis approach is crucial in settings where participants have inherent variability in initial abilities."
-  },
-  {
-    "objectID": "Day28.html#hypotheses-framework",
-    "href": "Day28.html#hypotheses-framework",
-    "title": "Day 28",
-    "section": "Hypotheses Framework",
-    "text": "Hypotheses Framework\n\n\nNull Hypothesis \\((H_0)\\): \\(\\mu_{\\text{A}} = \\mu_{\\text{B}}\\) (no difference in means between two methods).\nAlternative Hypothesis \\((H_a)\\): \\(\\mu_{\\text{A}} &gt; \\mu_{\\text{B}}\\) (Method A outperforms Method B)."
-  },
-  {
-    "objectID": "Day28.html#data-overview",
-    "href": "Day28.html#data-overview",
-    "title": "Day 28",
-    "section": "Data Overview",
-    "text": "Data Overview\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n1\n85\n83\n\n\n2\n88\n89\n\n\n3\n90\n87\n\n\n4\n92\n84\n\n\n5\n91\n92\n\n\n6\n89\n90\n\n\n7\n93\n85\n\n\n8\n95\n91\n\n\n9\n96\n98\n\n\n10\n97\n94\n\n\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n11\n98\n100\n\n\n12\n99\n101\n\n\n13\n100\n99\n\n\n14\n101\n111\n\n\n15\n102\n111\n\n\n16\n103\n106\n\n\n17\n104\n109\n\n\n18\n105\n103\n\n\n19\n106\n111\n\n\n20\n107\n114"
-  },
-  {
-    "objectID": "Day28.html#transition-to-paired-analysis",
-    "href": "Day28.html#transition-to-paired-analysis",
-    "title": "Day 28",
-    "section": "Transition to Paired Analysis",
-    "text": "Transition to Paired Analysis\n\n\nTransition from single-sample to paired-sample testing involves considering the dependency between paired observations.\nIndependence within pairs is crucial; the pairing itself should not influence the measured outcomes."
-  },
-  {
-    "objectID": "Day28.html#statistical-techniques-and-conditions",
-    "href": "Day28.html#statistical-techniques-and-conditions",
-    "title": "Day 28",
-    "section": "Statistical Techniques and Conditions",
-    "text": "Statistical Techniques and Conditions\n\nKnown vs. Unknown Standard Deviations\n\nUse \\(z\\)-tests when standard deviations are known and sample sizes are large.\nEmploy \\(t\\)-tests when standard deviations are unknown and sample sizes are small.\n\nNormality and Non-Normal Data\n\nFor normally distributed differences, use \\(t\\)-tests.\nFor non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test."
-  },
-  {
-    "objectID": "Day28.html#selecting-appropriate-statistical-tests",
-    "href": "Day28.html#selecting-appropriate-statistical-tests",
-    "title": "Day 28",
-    "section": "Selecting Appropriate Statistical Tests",
-    "text": "Selecting Appropriate Statistical Tests\n\n\nFor Normal Distributions: Apply the paired \\(t\\)-test.\nFor Non-Normal Distributions: Use non-parametric methods that do not assume a normal distribution."
-  },
-  {
-    "objectID": "Day28.html#results-interpretation-and-confidence-intervals",
-    "href": "Day28.html#results-interpretation-and-confidence-intervals",
-    "title": "Day 28",
-    "section": "Results Interpretation and Confidence Intervals",
-    "text": "Results Interpretation and Confidence Intervals\n\nEvaluate the p-value against the significance level to decide on rejecting the null hypothesis. Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance."
-  },
-  {
-    "objectID": "Day28.html#section-1",
-    "href": "Day28.html#section-1",
-    "title": "Day 28",
+    "objectID": "Day34.html#section",
+    "href": "Day34.html#section",
+    "title": "Day 34",
     "section": "",
-    "text": "Diagnostic PlotsR-code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(gridExtra)\n\n# Define the scores for Method A and Method B\nmethodA &lt;- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)\nmethodB &lt;- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)\n\n# Calculate differences\ndifferences &lt;- methodA - methodB\n\n# Generate a QQ plot for normality check\nlibrary(ggplot2)\nqq_norm &lt;- ggplot(data = as.data.frame(differences), aes(sample = differences)) +\n  stat_qq() + stat_qq_line() +\n  ggtitle(\"QQ Plot of Differences\")\n\n# Generate a histogram for normality check\nhistogram &lt;- ggplot(data = as.data.frame(differences), aes(x = differences)) +\n  geom_histogram(bins = 10, color = \"black\", fill = \"blue\") +\n  ggtitle(\"Histogram of Differences\")\n\ngrid.arrange(qq_norm,histogram, ncol = 2)"
+    "text": "Example 2: Taxation Opinion Poll\n\n\nCompare recent survey data against historical expectations.\nTest whether public opinion on taxation by income level has shifted.\nR Code: chisq.test(observed, p = expected)"
   },
   {
-    "objectID": "Day28.html#tests-in-r",
-    "href": "Day28.html#tests-in-r",
-    "title": "Day 28",
-    "section": "Tests in R",
-    "text": "Tests in R\n\n# Perform the Anderson-Darling test for normality\nlibrary(nortest)\nad.test(differences)\n\n\n    Anderson-Darling normality test\n\ndata:  differences\nA = 0.2269, p-value = 0.787\n\n# Perform the paired t-test\nt.test(methodA, methodB, paired = TRUE, alternate = \"greater\")\n\n\n    Paired t-test\n\ndata:  methodA and methodB\nt = -0.7721, df = 19, p-value = 0.4496\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n -3.154203  1.454203\nsample estimates:\nmean difference \n          -0.85 \n\nsd(differences) # s_d\n\n[1] 4.92336\n\nqt(0.975, df = 20 -1) # critical value\n\n[1] 2.093024"
+    "objectID": "Day34.html#contingency-table",
+    "href": "Day34.html#contingency-table",
+    "title": "Day 34",
+    "section": "Contingency Table",
+    "text": "Contingency Table\n\n\nChi-Square Test Application: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.\nContingency Table Format:\n\n\\(n=\\sum_{i=1}^{r} r_i = \\sum_{j=1}^{c} C_j\\)\nRows (\\(r\\)) and columns (\\(c\\)) represent different categorical classifications."
   },
   {
-    "objectID": "Day28.html#section-2",
-    "href": "Day28.html#section-2",
-    "title": "Day 28",
+    "objectID": "Day34.html#hypothesis-testing-using-contingency-tables",
+    "href": "Day34.html#hypothesis-testing-using-contingency-tables",
+    "title": "Day 34",
+    "section": "Hypothesis Testing Using Contingency Tables",
+    "text": "Hypothesis Testing Using Contingency Tables\n\n\nGoal: Determine if there is independence or dependence between row and column classifications.\nHypotheses:\n\n\\(H_0\\): Row and column classifications are independent.\nProbability of belonging to both the \\(i^{th}\\) row and \\(j^{th}\\) column:\n\n\\(\\operatorname{Prob}(R_i \\cap C_j) = P(R_i) \\cdot P(C_j) = \\left(\\frac{r_i}{n}\\right) \\cdot \\left(\\frac{C_j}{n}\\right)\\)\n\nExpected count for cell \\((i, j)\\):\n\n\\(e_{ij} = n \\cdot \\left(\\frac{r_i}{n}\\right) \\cdot \\left(\\frac{C_j}{n}\\right) = \\frac{r_i C_j}{n}\\)\n\n\nTest Statistic:\n\n\\(T = \\sum_{i=1}^{r} \\sum_{j=1}^{c} \\frac{(n_{ij}-e_{ij})^2}{e_{ij}} \\sim \\chi^2_{1-\\alpha} \\text{ with df } = (r-1) \\cdot (c-1)\\)"
+  },
+  {
+    "objectID": "Day34.html#r-code-for-contingency-table-analysis",
+    "href": "Day34.html#r-code-for-contingency-table-analysis",
+    "title": "Day 34",
+    "section": "R Code for Contingency Table Analysis",
+    "text": "R Code for Contingency Table Analysis\n\n\nUsing R for Calculations:\n\nPrepare data in matrix format and use Chi-Square test without Yates’ correction.\ntab &lt;- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)\nchisq.test(tab, correct = FALSE)"
+  },
+  {
+    "objectID": "Day34.html#section-1",
+    "href": "Day34.html#section-1",
+    "title": "Day 34",
     "section": "",
-    "text": "Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use \\(\\alpha=0.05\\), perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”."
+    "text": "Example 1: Evaluating Flu Vaccine Effectiveness\n\n\nSurvey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.\nAnalysis suggests a significant dependence, with \\(p\\)-value = 0.000174."
   },
   {
-    "objectID": "Day18.html#sampling-distributions-using-proportions",
-    "href": "Day18.html#sampling-distributions-using-proportions",
-    "title": "Day 18",
-    "section": "Sampling Distributions using Proportions",
-    "text": "Sampling Distributions using Proportions\n\n\nObjective: Understand how the sample proportion \\(\\hat{p}\\) estimates the population proportion \\(p\\).\nContext: Whether estimating voter preferences, customer behaviors, or biological occurrences, knowing how to infer population characteristics from sample data is crucial."
-  },
-  {
-    "objectID": "Day18.html#motivation-and-real-world-examples",
-    "href": "Day18.html#motivation-and-real-world-examples",
-    "title": "Day 18",
-    "section": "Motivation and Real-World Examples",
-    "text": "Motivation and Real-World Examples\n\n\nVoter Preference: Estimate the proportion of voters in favor of a new bill.\nCustomer Behavior: Understand the percentage of customers using store credit cards.\nConservation Efforts: Track the fraction of endangered species born in captivity."
-  },
-  {
-    "objectID": "Day18.html#group-activity-1",
-    "href": "Day18.html#group-activity-1",
-    "title": "Day 18",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nTask: In groups of two- three, discuss why it’s important to estimate these proportions accurately.\nQuestion: What might be some implications of inaccurate estimates in these scenarios?\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "Day18.html#section",
-    "href": "Day18.html#section",
-    "title": "Day 18",
+    "objectID": "Day34.html#section-2",
+    "href": "Day34.html#section-2",
+    "title": "Day 34",
     "section": "",
-    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
+    "text": "Example 2: Political Affiliation and Support for Space Exploration\n\n\nSurvey of 100 individuals regarding political views and support for space programs.\nChi-Square test shows no significant dependence, \\(p\\)-value = 0.3379."
   },
   {
-    "objectID": "Day18.html#sampling-distribution-for-hatp",
-    "href": "Day18.html#sampling-distribution-for-hatp",
-    "title": "Day 18",
-    "section": "Sampling distribution for \\(\\hat{p}\\)",
-    "text": "Sampling distribution for \\(\\hat{p}\\)"
-  },
-  {
-    "objectID": "Day18.html#properties-of-sampling-distribution-of-hatp",
-    "href": "Day18.html#properties-of-sampling-distribution-of-hatp",
-    "title": "Day 18",
-    "section": "Properties of Sampling Distribution of \\(\\hat{p}\\)",
-    "text": "Properties of Sampling Distribution of \\(\\hat{p}\\)\n\n\nMean of \\(\\hat{p}\\)\n\nThe mean equals the population proportion \\(p\\).\n\\(\\hat{p}\\) is an unbiased estimator of \\(p\\). \\[ E(\\hat{p}) = \\mu_{\\hat{p}} = p \\]\n\nStandard Deviation of \\(\\hat{p}\\)\n\nThe variability of \\(\\hat{p}\\) decreases as sample size \\(n\\) increases. \\[ \\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}} \\]"
-  },
-  {
-    "objectID": "Day18.html#central-limit-theorem-for-hatp",
-    "href": "Day18.html#central-limit-theorem-for-hatp",
-    "title": "Day 18",
-    "section": "Central Limit Theorem for \\(\\hat{p}\\)",
-    "text": "Central Limit Theorem for \\(\\hat{p}\\)\n\n\nApproximately Normal: For large samples, \\(\\hat{p}\\)’s distribution is nearly normal.\nRule of Thumb:\n\nConsider large if \\(np \\geq 15\\) and \\(n(1-p) \\geq 15\\). \\[ n \\cdot \\hat{p} \\geq 15 \\quad \\text{and} \\quad n(1-\\hat{p}) \\geq 15 \\]"
-  },
-  {
-    "objectID": "Day18.html#section-2",
-    "href": "Day18.html#section-2",
-    "title": "Day 18",
+    "objectID": "Day34.html#section-3",
+    "href": "Day34.html#section-3",
+    "title": "Day 34",
     "section": "",
-    "text": "Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize. Find the mean and standard deviation of \\(\\hat{p}\\)."
+    "text": "Example 2:"
   },
   {
-    "objectID": "Day18.html#section-3",
-    "href": "Day18.html#section-3",
-    "title": "Day 18",
-    "section": "",
-    "text": "Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for \\(27 \\%\\) of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?"
+    "objectID": "Day5.html#introduction-to-probability",
+    "href": "Day5.html#introduction-to-probability",
+    "title": "Day 5",
+    "section": "Introduction to Probability",
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., Tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
   },
   {
-    "objectID": "Day18.html#section-4",
-    "href": "Day18.html#section-4",
-    "title": "Day 18",
-    "section": "",
-    "text": "Example 4: In the 2012 U.S. presidential election, \\(51 \\%\\) of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than \\(40 \\%\\) of them had voted for Barack Obama?"
+    "objectID": "Day5.html#definitions",
+    "href": "Day5.html#definitions",
+    "title": "Day 5",
+    "section": "Definitions",
+    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nIn Coin Toss: Each toss that results in H or T.\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nIn Coin Toss: {H, T}"
   },
   {
-    "objectID": "Day26.html#introduction-to-small-sample-confidence-intervals",
-    "href": "Day26.html#introduction-to-small-sample-confidence-intervals",
-    "title": "Day 26",
-    "section": "Introduction to Small Sample Confidence Intervals",
-    "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
+    "objectID": "Day5.html#venn-diagram",
+    "href": "Day5.html#venn-diagram",
+    "title": "Day 5",
+    "section": "Venn Diagram",
+    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
   },
   {
-    "objectID": "Day26.html#adjusting-for-small-samples",
-    "href": "Day26.html#adjusting-for-small-samples",
-    "title": "Day 26",
-    "section": "Adjusting for Small Samples",
-    "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
+    "objectID": "Day5.html#experiments-and-their-sample-spaces",
+    "href": "Day5.html#experiments-and-their-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Their Sample Spaces",
+    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a coin}\\} \\\\\n&= \\{H, T\\} \\text{ (Head or Tail)}\n\\end{align*}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a die}\\} \\\\\n&= \\{1, 2, 3, 4, 5, 6\\} \\text{ (Numbers on the die)}\n\\end{align*}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the combination of faces of two coins}\\} \\\\\n&= \\{HH, HT, TH, TT\\} \\text{ (All possible combinations)}\n\\end{align*}\\]"
   },
   {
-    "objectID": "Day26.html#confidence-interval-using-students-t-statistic",
-    "href": "Day26.html#confidence-interval-using-students-t-statistic",
-    "title": "Day 26",
-    "section": "Confidence Interval Using Student’s t-Statistic",
-    "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
+    "objectID": "Day5.html#defining-probability",
+    "href": "Day5.html#defining-probability",
+    "title": "Day 5",
+    "section": "Defining Probability",
+    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRule 1: Range of Probabilities\n\nEach probability \\(p_i\\) must be: \\(0 \\leq p_i \\leq 1\\)\n\nRule 2: Sum of Probabilities\n\nTotal probability across all sample points: \\(\\sum_{\\text{all } i} p_i = 1\\)\nEnsures completeness of the sample space."
   },
   {
-    "objectID": "Day26.html#section-1",
-    "href": "Day26.html#section-1",
-    "title": "Day 26",
-    "section": "",
-    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
+    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Example: Calculating Winning Probability in a Dice Game",
+    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning } = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning } = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
   },
   {
-    "objectID": "Day26.html#group-activity-1",
-    "href": "Day26.html#group-activity-1",
-    "title": "Day 26",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 1.\n\n\n\n\n−+\n03:00"
+    "objectID": "Day5.html#event-definition",
+    "href": "Day5.html#event-definition",
+    "title": "Day 5",
+    "section": "Event Definition",
+    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
   },
   {
-    "objectID": "Day26.html#calculation-of-p-value",
-    "href": "Day26.html#calculation-of-p-value",
-    "title": "Day 26",
-    "section": "Calculation of P-Value",
-    "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
+    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
+    "href": "Day5.html#steps-for-calculating-event-probabilities",
+    "title": "Day 5",
+    "section": "Steps for Calculating Event Probabilities",
+    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
   },
   {
-    "objectID": "Day26.html#section-3",
-    "href": "Day26.html#section-3",
-    "title": "Day 26",
-    "section": "",
-    "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
+    "objectID": "Day5.html#compound-events-unions",
+    "href": "Day5.html#compound-events-unions",
+    "title": "Day 5",
+    "section": "Compound Events: Unions",
+    "text": "Compound Events: Unions\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
   },
   {
-    "objectID": "Day26.html#group-activity-2",
-    "href": "Day26.html#group-activity-2",
-    "title": "Day 26",
-    "section": " Group Activity 2",
-    "text": "Group Activity 2\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 2.\n\n\n\n\n−+\n03:00"
+    "objectID": "Day5.html#compound-events-intersections",
+    "href": "Day5.html#compound-events-intersections",
+    "title": "Day 5",
+    "section": "Compound Events: Intersections",
+    "text": "Compound Events: Intersections\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "title": "Day 5",
+    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
+    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\nUnion and Intersection\n\nUnion (\\(A \\cup B\\)): Any number less than 6. \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): Only number both even and ≤ 3. \\[A \\cap B = \\{2\\}\\]\n\n\n\nProbability Calculations\n\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = P_1 + P_2 + P_3 + P_4 + P_6 = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = P_2 = \\frac{1}{6}\\]"
+  },
+  {
+    "objectID": "Day5.html#calculating-sample-points-using-combinations",
+    "href": "Day5.html#calculating-sample-points-using-combinations",
+    "title": "Day 5",
+    "section": "Calculating Sample Points Using Combinations",
+    "text": "Calculating Sample Points Using Combinations\n\n\n\nCombinations Rule: Calculate the number of possible samples drawn without replacement.\nFormula: \\(\\binom{N}{n} = \\frac{N!}{n!(N-n)!}\\) where \\(N\\) is the total number of elements, and \\(n\\) is the number of elements per sample.\n\nFactorial Explained\n\nNotation: \\(n!\\) (factorial of \\(n\\))\nDefinition: Product of all positive integers up to \\(n\\). \\[n! = n \\times (n-1) \\times \\dots \\times 1\\]\nExample: \\(5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\)"
+  },
+  {
+    "objectID": "Day5.html#your-odds-in-the-pick-6-lotto",
+    "href": "Day5.html#your-odds-in-the-pick-6-lotto",
+    "title": "Day 5",
+    "section": "Your Odds in the Pick-6 Lotto",
+    "text": "Your Odds in the Pick-6 Lotto\n\n\nIn Florida’s Pick-6 Lotto, you select six numbers from a set ranging from 1 to 53, aiming to match all to win.\n\nTotal Combinations: \\[\\binom{53}{6} = \\frac{53!}{6!(53-6)!} = \\frac{53 \\times 52 \\times 51 \\times 50 \\times 49 \\times 48}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 22,957,480\\]\nProbability of Winning: \\[P = \\frac{1}{22,957,480}\\]"
+  },
+  {
+    "objectID": "Day4.html#recap-student-survey",
+    "href": "Day4.html#recap-student-survey",
+    "title": "Day 4",
+    "section": "Recap: Student Survey",
+    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+  },
+  {
+    "objectID": "Day4.html#histogram",
+    "href": "Day4.html#histogram",
+    "title": "Day 4",
+    "section": "Histogram",
+    "text": "Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
+  },
+  {
+    "objectID": "Day4.html#histogram-shape",
+    "href": "Day4.html#histogram-shape",
+    "title": "Day 4",
+    "section": "Histogram: Shape",
+    "text": "Histogram: Shape\n\n\nHistogram: aggregates values into bins and counts how many cases fall into each bin\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
+  },
+  {
+    "objectID": "Day4.html#shape-and-stats",
+    "href": "Day4.html#shape-and-stats",
+    "title": "Day 4",
+    "section": "Shape and Stats",
+    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\n\n\nlibrary(dplyr)  # for data manipulation\nsurvey %&gt;% summarize(mean = mean(Pulse),\n                     sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
+  },
+  {
+    "objectID": "Day4.html#bell-shaped-distribution",
+    "href": "Day4.html#bell-shaped-distribution",
+    "title": "Day 4",
+    "section": "Bell-shaped distribution",
+    "text": "Bell-shaped distribution\n\nPlotQuiz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n75\n200\n25"
+  },
+  {
+    "objectID": "Day4.html#standardizing-data-z-score",
+    "href": "Day4.html#standardizing-data-z-score",
+    "title": "Day 4",
+    "section": "Standardizing data: z-score",
+    "text": "Standardizing data: z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[z = \\dfrac{x - \\text{mean}}{\\text{SD}}\\]\n\nE.g. if a value \\(x\\) has \\(z=-1.5\\) then the value \\(x\\) is 1.5 standard deviations below the mean.\n\n\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between ____ and _____."
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
+    "href": "Day4.html#shape-left-skew-right-skew-histograms",
+    "title": "Day 4",
+    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)",
+    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "title": "Day 4",
+    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)",
+    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots",
+    "href": "Day4.html#shape-boxplots",
+    "title": "Day 4",
+    "section": "Shape: boxplots",
+    "text": "Shape: boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3)\nMedian: The middle value of the dataset, represented by a line inside the box\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR\nOutliers: Data points outside of the whiskers, often represented as individual points"
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots-1",
+    "href": "Day4.html#shape-boxplots-1",
+    "title": "Day 4",
+    "section": "Shape: boxplots",
+    "text": "Shape: boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
+  },
+  {
+    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "title": "Day 4",
+    "section": "Elements of a Box Plot: Inner Fences",
+    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
+  },
+  {
+    "objectID": "Day4.html#elements-of-a-box-plot-outer-fences",
+    "href": "Day4.html#elements-of-a-box-plot-outer-fences",
+    "title": "Day 4",
+    "section": "Elements of a Box Plot: Outer Fences",
+    "text": "Elements of a Box Plot: Outer Fences\n\n\nLower Outer Fence: \\[ \\text{Lower outer fence} = Q_L - 3 \\times \\text{IQR} \\]\nUpper Outer Fence: \\[ \\text{Upper outer fence} = Q_U + 3 \\times \\text{IQR} \\]\nOuter fences help in spotting what are often considered extreme outliers. These are data points that are significantly distant from the typical data range, suggesting possible data entry errors, measurement errors, or novel findings worthy of further investigation."
+  },
+  {
+    "objectID": "Day4.html#outliers",
+    "href": "Day4.html#outliers",
+    "title": "Day 4",
+    "section": "Outliers",
+    "text": "Outliers\n\nMild Outliers fall between the inner and outer fences and Extreme Outliers fall beyond the outer fences.\nDifferentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. This categorization can impact the conclusions drawn from the data."
+  },
+  {
+    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
+    "href": "Day4.html#adding-a-qualitative-variable-stats",
+    "title": "Day 4",
+    "section": "Adding a qualitative variable: stats",
+    "text": "Adding a qualitative variable: stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable\n\n\nlibrary(dplyr)\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmoker have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
+  },
+  {
+    "objectID": "Day4.html#side-by-side-histogram",
+    "href": "Day4.html#side-by-side-histogram",
+    "title": "Day 4",
+    "section": "Side-by-side Histogram",
+    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(survey, aes(x=Pulse)) + \n  geom_histogram(binwidth = 4, fill=\"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)  # to plot by category of Smoke"
+  },
+  {
+    "objectID": "Day4.html#side-by-side-boxplot",
+    "href": "Day4.html#side-by-side-boxplot",
+    "title": "Day 4",
+    "section": "Side-by-side boxplot",
+    "text": "Side-by-side boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Create boxplots using facet_wrap()\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph",
+    "href": "Day4.html#stacked-bar-graph",
+    "title": "Day 4",
+    "section": "Stacked bar graph",
+    "text": "Stacked bar graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph-counts",
+    "href": "Day4.html#stacked-bar-graph-counts",
+    "title": "Day 4",
+    "section": "Stacked bar graph (counts)",
+    "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
     "objectID": "Day8.html#random-variables-rvs",
@@ -1708,263 +1778,207 @@
     "text": "Example 2: A poll conducted by the General Social Survey asked 1155 people whether they thought that people with high incomes should pay a greater or smaller percentage of their income in tax than low-income people. The results are presented in the following table.\n\n\n\n\nCategory\nObserved\n\n\n\n\nPay much more\n218\n\n\nPay somewhat more\n497\n\n\nPay the same\n425\n\n\nPay less\n15\n\n\n\nFive years earlier, it was determined that \\(18.5 \\%\\) believed that the rich should pay much more, \\(39.2 \\%\\) believed they should pay somewhat more, \\(41.2 \\%\\) believed they should pay the same, and \\(1.1 \\%\\) believed they should pay less. Can we conclude that the current percentages differ from these? Use \\(\\alpha=0.05\\) level of significance."
   },
   {
-    "objectID": "Day34_prelim.html#contingency-table",
-    "href": "Day34_prelim.html#contingency-table",
-    "title": "Day 34",
-    "section": "Contingency Table",
-    "text": "Contingency Table\n\n\nChi-Square Test Application: Extends the analysis of count data to assess the dependence of two classification methods on the same subjects.\nContingency Table Format:\n\n\\(n=\\sum_{i=1}^{r} r_i = \\sum_{j=1}^{c} C_j\\)\nRows (\\(r\\)) and columns (\\(c\\)) represent different categorical classifications."
+    "objectID": "Day26.html#introduction-to-small-sample-confidence-intervals",
+    "href": "Day26.html#introduction-to-small-sample-confidence-intervals",
+    "title": "Day 26",
+    "section": "Introduction to Small Sample Confidence Intervals",
+    "text": "Introduction to Small Sample Confidence Intervals\n\n\nBackground: Confidence intervals and hypothesis testing for large samples (\\(n \\geq 30\\)) rely on the \\(z\\)-statistic.\nChallenge: What happens with a small sample size (\\(n &lt; 30\\)) where the Central Limit Theorem does not apply?"
   },
   {
-    "objectID": "Day34_prelim.html#hypothesis-testing-using-contingency-tables",
-    "href": "Day34_prelim.html#hypothesis-testing-using-contingency-tables",
-    "title": "Day 34",
-    "section": "Hypothesis Testing Using Contingency Tables",
-    "text": "Hypothesis Testing Using Contingency Tables\n\n\nGoal: Determine if there is independence or dependence between row and column classifications.\nHypotheses:\n\n\\(H_0\\): Row and column classifications are independent.\nProbability of belonging to both the \\(i^{th}\\) row and \\(j^{th}\\) column:\n\n\\(\\operatorname{Prob}(R_i \\cap C_j) = P(R_i) \\cdot P(C_j) = \\left(\\frac{r_i}{n}\\right) \\cdot \\left(\\frac{C_j}{n}\\right)\\)\n\nExpected count for cell \\((i, j)\\):\n\n\\(e_{ij} = n \\cdot \\left(\\frac{r_i}{n}\\right) \\cdot \\left(\\frac{C_j}{n}\\right) = \\frac{r_i C_j}{n}\\)\n\n\nTest Statistic:\n\n\\(T = \\sum_{i=1}^{r} \\sum_{j=1}^{c} \\frac{(n_{ij}-e_{ij})^2}{e_{ij}} \\sim \\chi^2_{1-\\alpha} \\text{ with df } = (r-1) \\cdot (c-1)\\)"
+    "objectID": "Day26.html#adjusting-for-small-samples",
+    "href": "Day26.html#adjusting-for-small-samples",
+    "title": "Day 26",
+    "section": "Adjusting for Small Samples",
+    "text": "Adjusting for Small Samples\n\n\nPopulation Distribution: If the sample comes from an approximately normal distribution, we can use the \\(t\\)-statistic.\nStandard Deviation: When the population standard deviation \\(\\sigma\\) is unknown and \\(n &lt; 30\\), using the sample standard deviation \\(s\\) to approximate \\(\\sigma\\) is unreliable.\nSolution: \\[\nt=\\frac{\\bar{x}-\\mu}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with degrees of freedom, \\(df = n-1\\)."
   },
   {
-    "objectID": "Day34_prelim.html#r-code-for-contingency-table-analysis",
-    "href": "Day34_prelim.html#r-code-for-contingency-table-analysis",
-    "title": "Day 34",
-    "section": "R Code for Contingency Table Analysis",
-    "text": "R Code for Contingency Table Analysis\n\n\nUsing R for Calculations:\n\nPrepare data in matrix format and use Chi-Square test without Yates’ correction.\ntab &lt;- matrix(c(data1, data2, ...), nrow = ..., ncol = ..., byrow = TRUE)\nchisq.test(tab, correct = FALSE)"
+    "objectID": "Day26.html#confidence-interval-using-students-t-statistic",
+    "href": "Day26.html#confidence-interval-using-students-t-statistic",
+    "title": "Day 26",
+    "section": "Confidence Interval Using Student’s t-Statistic",
+    "text": "Confidence Interval Using Student’s t-Statistic\n\n\nWhen \\(\\sigma\\) is unknown: Use the \\(t\\)-statistic for confidence intervals.\n\nFor a \\(95\\%\\) confidence interval: \\[\n\\bar{x} \\pm t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right)\n\\] where \\(t_{\\alpha/2}\\) is determined from the \\(t\\)-distribution table for \\(df = n-1\\)."
   },
   {
-    "objectID": "Day34_prelim.html#section",
-    "href": "Day34_prelim.html#section",
-    "title": "Day 34",
+    "objectID": "Day26.html#section-1",
+    "href": "Day26.html#section-1",
+    "title": "Day 26",
     "section": "",
-    "text": "Example 1: Evaluating Flu Vaccine Effectiveness\n\n\nSurvey data from a community after free vaccine distribution. Assess if vaccination status relates to flu occurrence.\nAnalysis suggests a significant dependence, with \\(p\\)-value = 0.000174."
+    "text": "Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the \\(n=6\\) patients in the human testing phase are shown in the following. Use this information to construct a \\(95 \\%\\) confidence interval for \\(\\mu\\), the mean increase in blood pressure associated with the new drug for all patients in the population.\n\n\\[\\begin{array}{llllll}\n1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1\n\\end{array}\\]\n\nx &lt;- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\nmean(x) # x.bar, sample mean\n\n[1] 2.283333\n\nsd(x)   #s, sample standard deviation\n\n[1] 0.9495613\n\nqt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1\n\n[1] 2.570582"
   },
   {
-    "objectID": "Day34_prelim.html#section-1",
-    "href": "Day34_prelim.html#section-1",
-    "title": "Day 34",
+    "objectID": "Day26.html#group-activity-1",
+    "href": "Day26.html#group-activity-1",
+    "title": "Day 26",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 1.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "Day26.html#calculation-of-p-value",
+    "href": "Day26.html#calculation-of-p-value",
+    "title": "Day 26",
+    "section": "Calculation of P-Value",
+    "text": "Calculation of P-Value\n\n\nWhen \\(n&lt;30\\) and \\(\\sigma\\) is unknown:\n\nUse Case: If the population is approximately normally distributed.\nStudent’s t-Statistic: \\[\nt = \\frac{\\bar{x} - \\mu_{0}}{s / \\sqrt{n}}\n\\]\n\nFollows a \\(t\\)-distribution with \\(df = n - 1\\)."
+  },
+  {
+    "objectID": "Day26.html#section-3",
+    "href": "Day26.html#section-3",
+    "title": "Day 26",
     "section": "",
-    "text": "Example 2: Political Affiliation and Support for Space Exploration\n\n\nSurvey of 100 individuals regarding political views and support for space programs.\nChi-Square test shows no significant dependence, \\(p\\)-value = 0.3379."
+    "text": "Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour’s test results, based on 17 water samples at this plant, are \\(\\bar{x}=8.42\\) and \\(s=0.16\\). Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with \\(\\alpha = 0.05\\).\n\n\nqt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1\n\n[1] 2.119905"
   },
   {
-    "objectID": "Day34_prelim.html#section-2",
-    "href": "Day34_prelim.html#section-2",
-    "title": "Day 34",
+    "objectID": "Day26.html#group-activity-2",
+    "href": "Day26.html#group-activity-2",
+    "title": "Day 26",
+    "section": " Group Activity 2",
+    "text": "Group Activity 2\n\n\n\n\n\n\n\nSay hi to your neighbor and think about your approach to solve example 2.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "Day18.html#sampling-distributions-using-proportions",
+    "href": "Day18.html#sampling-distributions-using-proportions",
+    "title": "Day 18",
+    "section": "Sampling Distributions using Proportions",
+    "text": "Sampling Distributions using Proportions\n\n\nObjective: Understand how the sample proportion \\(\\hat{p}\\) estimates the population proportion \\(p\\).\nContext: Whether estimating voter preferences, customer behaviors, or biological occurrences, knowing how to infer population characteristics from sample data is crucial."
+  },
+  {
+    "objectID": "Day18.html#motivation-and-real-world-examples",
+    "href": "Day18.html#motivation-and-real-world-examples",
+    "title": "Day 18",
+    "section": "Motivation and Real-World Examples",
+    "text": "Motivation and Real-World Examples\n\n\nVoter Preference: Estimate the proportion of voters in favor of a new bill.\nCustomer Behavior: Understand the percentage of customers using store credit cards.\nConservation Efforts: Track the fraction of endangered species born in captivity."
+  },
+  {
+    "objectID": "Day18.html#group-activity-1",
+    "href": "Day18.html#group-activity-1",
+    "title": "Day 18",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nTask: In groups of two- three, discuss why it’s important to estimate these proportions accurately.\nQuestion: What might be some implications of inaccurate estimates in these scenarios?\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "Day18.html#section",
+    "href": "Day18.html#section",
+    "title": "Day 18",
     "section": "",
-    "text": "Example 2:"
+    "text": "Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60 \\%\\) of all the city’s voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate. What properties do you observe?"
   },
   {
-    "objectID": "Day4.html#recap-student-survey",
-    "href": "Day4.html#recap-student-survey",
-    "title": "Day 4",
-    "section": "Recap: Student Survey",
-    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12\n1\n60\n115\n7\n8\n3.70\n94"
+    "objectID": "Day18.html#sampling-distribution-for-hatp",
+    "href": "Day18.html#sampling-distribution-for-hatp",
+    "title": "Day 18",
+    "section": "Sampling distribution for \\(\\hat{p}\\)",
+    "text": "Sampling distribution for \\(\\hat{p}\\)"
   },
   {
-    "objectID": "Day4.html#histogram",
-    "href": "Day4.html#histogram",
-    "title": "Day 4",
-    "section": "Histogram",
-    "text": "Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
+    "objectID": "Day18.html#properties-of-sampling-distribution-of-hatp",
+    "href": "Day18.html#properties-of-sampling-distribution-of-hatp",
+    "title": "Day 18",
+    "section": "Properties of Sampling Distribution of \\(\\hat{p}\\)",
+    "text": "Properties of Sampling Distribution of \\(\\hat{p}\\)\n\n\nMean of \\(\\hat{p}\\)\n\nThe mean equals the population proportion \\(p\\).\n\\(\\hat{p}\\) is an unbiased estimator of \\(p\\). \\[ E(\\hat{p}) = \\mu_{\\hat{p}} = p \\]\n\nStandard Deviation of \\(\\hat{p}\\)\n\nThe variability of \\(\\hat{p}\\) decreases as sample size \\(n\\) increases. \\[ \\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}} \\]"
   },
   {
-    "objectID": "Day4.html#histogram-shape",
-    "href": "Day4.html#histogram-shape",
-    "title": "Day 4",
-    "section": "Histogram: Shape",
-    "text": "Histogram: Shape\n\n\nHistogram: aggregates values into bins and counts how many cases fall into each bin\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
+    "objectID": "Day18.html#central-limit-theorem-for-hatp",
+    "href": "Day18.html#central-limit-theorem-for-hatp",
+    "title": "Day 18",
+    "section": "Central Limit Theorem for \\(\\hat{p}\\)",
+    "text": "Central Limit Theorem for \\(\\hat{p}\\)\n\n\nApproximately Normal: For large samples, \\(\\hat{p}\\)’s distribution is nearly normal.\nRule of Thumb:\n\nConsider large if \\(np \\geq 15\\) and \\(n(1-p) \\geq 15\\). \\[ n \\cdot \\hat{p} \\geq 15 \\quad \\text{and} \\quad n(1-\\hat{p}) \\geq 15 \\]"
   },
   {
-    "objectID": "Day4.html#shape-and-stats",
-    "href": "Day4.html#shape-and-stats",
-    "title": "Day 4",
-    "section": "Shape and Stats",
-    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\n\n\nlibrary(dplyr)  # for data manipulation\nsurvey %&gt;% summarize(mean = mean(Pulse),\n                     sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
+    "objectID": "Day18.html#section-2",
+    "href": "Day18.html#section-2",
+    "title": "Day 18",
+    "section": "",
+    "text": "Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize. Find the mean and standard deviation of \\(\\hat{p}\\)."
   },
   {
-    "objectID": "Day4.html#bell-shaped-distribution",
-    "href": "Day4.html#bell-shaped-distribution",
-    "title": "Day 4",
-    "section": "Bell-shaped distribution",
-    "text": "Bell-shaped distribution\n\nPlotQuiz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n75\n200\n25"
+    "objectID": "Day18.html#section-3",
+    "href": "Day18.html#section-3",
+    "title": "Day 18",
+    "section": "",
+    "text": "Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for \\(27 \\%\\) of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?"
   },
   {
-    "objectID": "Day4.html#standardizing-data-z-score",
-    "href": "Day4.html#standardizing-data-z-score",
-    "title": "Day 4",
-    "section": "Standardizing data: z-score",
-    "text": "Standardizing data: z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[z = \\dfrac{x - \\text{mean}}{\\text{SD}}\\]\n\nE.g. if a value \\(x\\) has \\(z=-1.5\\) then the value \\(x\\) is 1.5 standard deviations below the mean.\n\n\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between ____ and _____."
+    "objectID": "Day18.html#section-4",
+    "href": "Day18.html#section-4",
+    "title": "Day 18",
+    "section": "",
+    "text": "Example 4: In the 2012 U.S. presidential election, \\(51 \\%\\) of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than \\(40 \\%\\) of them had voted for Barack Obama?"
   },
   {
-    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
-    "href": "Day4.html#shape-left-skew-right-skew-histograms",
-    "title": "Day 4",
-    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)",
-    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+    "objectID": "Day28.html#comparing-two-population-means-paired-difference-example",
+    "href": "Day28.html#comparing-two-population-means-paired-difference-example",
+    "title": "Day 28",
+    "section": "Comparing Two Population Means: Paired Difference Example",
+    "text": "Comparing Two Population Means: Paired Difference Example\n\n\nObjective: Assess the effectiveness of two training programs in skill enhancement.\nDesign Rationale: Participants are paired based on initial assessments to ensure comparable skills levels, enhancing the validity of the comparison."
   },
   {
-    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "title": "Day 4",
-    "section": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)",
-    "text": "Shape: Left Skew \\(\\&\\) Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm =T)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = T)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm =T)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = T)\n\n[1] 8"
+    "objectID": "Day28.html#conceptual-foundation-for-paired-samples",
+    "href": "Day28.html#conceptual-foundation-for-paired-samples",
+    "title": "Day 28",
+    "section": "Conceptual Foundation for Paired Samples",
+    "text": "Conceptual Foundation for Paired Samples\n\n\nPaired designs minimize variability by controlling for individual differences.\nThis approach is crucial in settings where participants have inherent variability in initial abilities."
   },
   {
-    "objectID": "Day4.html#shape-boxplots",
-    "href": "Day4.html#shape-boxplots",
-    "title": "Day 4",
-    "section": "Shape: boxplots",
-    "text": "Shape: boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3)\nMedian: The middle value of the dataset, represented by a line inside the box\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR\nOutliers: Data points outside of the whiskers, often represented as individual points"
+    "objectID": "Day28.html#hypotheses-framework",
+    "href": "Day28.html#hypotheses-framework",
+    "title": "Day 28",
+    "section": "Hypotheses Framework",
+    "text": "Hypotheses Framework\n\n\nNull Hypothesis \\((H_0)\\): \\(\\mu_{\\text{A}} = \\mu_{\\text{B}}\\) (no difference in means between two methods).\nAlternative Hypothesis \\((H_a)\\): \\(\\mu_{\\text{A}} &gt; \\mu_{\\text{B}}\\) (Method A outperforms Method B)."
   },
   {
-    "objectID": "Day4.html#shape-boxplots-1",
-    "href": "Day4.html#shape-boxplots-1",
-    "title": "Day 4",
-    "section": "Shape: boxplots",
-    "text": "Shape: boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
+    "objectID": "Day28.html#data-overview",
+    "href": "Day28.html#data-overview",
+    "title": "Day 28",
+    "section": "Data Overview",
+    "text": "Data Overview\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n1\n85\n83\n\n\n2\n88\n89\n\n\n3\n90\n87\n\n\n4\n92\n84\n\n\n5\n91\n92\n\n\n6\n89\n90\n\n\n7\n93\n85\n\n\n8\n95\n91\n\n\n9\n96\n98\n\n\n10\n97\n94\n\n\n\n\n\n\n\nPair\nMethod A\nMethod B\n\n\n\n\n11\n98\n100\n\n\n12\n99\n101\n\n\n13\n100\n99\n\n\n14\n101\n111\n\n\n15\n102\n111\n\n\n16\n103\n106\n\n\n17\n104\n109\n\n\n18\n105\n103\n\n\n19\n106\n111\n\n\n20\n107\n114"
   },
   {
-    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "title": "Day 4",
-    "section": "Elements of a Box Plot: Inner Fences",
-    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
+    "objectID": "Day28.html#transition-to-paired-analysis",
+    "href": "Day28.html#transition-to-paired-analysis",
+    "title": "Day 28",
+    "section": "Transition to Paired Analysis",
+    "text": "Transition to Paired Analysis\n\n\nTransition from single-sample to paired-sample testing involves considering the dependency between paired observations.\nIndependence within pairs is crucial; the pairing itself should not influence the measured outcomes."
   },
   {
-    "objectID": "Day4.html#elements-of-a-box-plot-outer-fences",
-    "href": "Day4.html#elements-of-a-box-plot-outer-fences",
-    "title": "Day 4",
-    "section": "Elements of a Box Plot: Outer Fences",
-    "text": "Elements of a Box Plot: Outer Fences\n\n\nLower Outer Fence: \\[ \\text{Lower outer fence} = Q_L - 3 \\times \\text{IQR} \\]\nUpper Outer Fence: \\[ \\text{Upper outer fence} = Q_U + 3 \\times \\text{IQR} \\]\nOuter fences help in spotting what are often considered extreme outliers. These are data points that are significantly distant from the typical data range, suggesting possible data entry errors, measurement errors, or novel findings worthy of further investigation."
+    "objectID": "Day28.html#statistical-techniques-and-conditions",
+    "href": "Day28.html#statistical-techniques-and-conditions",
+    "title": "Day 28",
+    "section": "Statistical Techniques and Conditions",
+    "text": "Statistical Techniques and Conditions\n\nKnown vs. Unknown Standard Deviations\n\nUse \\(z\\)-tests when standard deviations are known and sample sizes are large.\nEmploy \\(t\\)-tests when standard deviations are unknown and sample sizes are small.\n\nNormality and Non-Normal Data\n\nFor normally distributed differences, use \\(t\\)-tests.\nFor non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test."
   },
   {
-    "objectID": "Day4.html#outliers",
-    "href": "Day4.html#outliers",
-    "title": "Day 4",
-    "section": "Outliers",
-    "text": "Outliers\n\nMild Outliers fall between the inner and outer fences and Extreme Outliers fall beyond the outer fences.\nDifferentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. This categorization can impact the conclusions drawn from the data."
+    "objectID": "Day28.html#selecting-appropriate-statistical-tests",
+    "href": "Day28.html#selecting-appropriate-statistical-tests",
+    "title": "Day 28",
+    "section": "Selecting Appropriate Statistical Tests",
+    "text": "Selecting Appropriate Statistical Tests\n\n\nFor Normal Distributions: Apply the paired \\(t\\)-test.\nFor Non-Normal Distributions: Use non-parametric methods that do not assume a normal distribution."
   },
   {
-    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
-    "href": "Day4.html#adding-a-qualitative-variable-stats",
-    "title": "Day 4",
-    "section": "Adding a qualitative variable: stats",
-    "text": "Adding a qualitative variable: stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable\n\n\nlibrary(dplyr)\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmoker have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
+    "objectID": "Day28.html#results-interpretation-and-confidence-intervals",
+    "href": "Day28.html#results-interpretation-and-confidence-intervals",
+    "title": "Day 28",
+    "section": "Results Interpretation and Confidence Intervals",
+    "text": "Results Interpretation and Confidence Intervals\n\nEvaluate the p-value against the significance level to decide on rejecting the null hypothesis. Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance."
   },
   {
-    "objectID": "Day4.html#side-by-side-histogram",
-    "href": "Day4.html#side-by-side-histogram",
-    "title": "Day 4",
-    "section": "Side-by-side Histogram",
-    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nggplot(survey, aes(x=Pulse)) + \n  geom_histogram(binwidth = 4, fill=\"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)  # to plot by category of Smoke"
+    "objectID": "Day28.html#section-1",
+    "href": "Day28.html#section-1",
+    "title": "Day 28",
+    "section": "",
+    "text": "Diagnostic PlotsR-code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlibrary(gridExtra)\n\n# Define the scores for Method A and Method B\nmethodA &lt;- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)\nmethodB &lt;- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)\n\n# Calculate differences\ndifferences &lt;- methodA - methodB\n\n# Generate a QQ plot for normality check\nlibrary(ggplot2)\nqq_norm &lt;- ggplot(data = as.data.frame(differences), aes(sample = differences)) +\n  stat_qq() + stat_qq_line() +\n  ggtitle(\"QQ Plot of Differences\")\n\n# Generate a histogram for normality check\nhistogram &lt;- ggplot(data = as.data.frame(differences), aes(x = differences)) +\n  geom_histogram(bins = 10, color = \"black\", fill = \"blue\") +\n  ggtitle(\"Histogram of Differences\")\n\ngrid.arrange(qq_norm,histogram, ncol = 2)"
   },
   {
-    "objectID": "Day4.html#side-by-side-boxplot",
-    "href": "Day4.html#side-by-side-boxplot",
-    "title": "Day 4",
-    "section": "Side-by-side boxplot",
-    "text": "Side-by-side boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Create boxplots using facet_wrap()\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
+    "objectID": "Day28.html#tests-in-r",
+    "href": "Day28.html#tests-in-r",
+    "title": "Day 28",
+    "section": "Tests in R",
+    "text": "Tests in R\n\n# Perform the Anderson-Darling test for normality\nlibrary(nortest)\nad.test(differences)\n\n\n    Anderson-Darling normality test\n\ndata:  differences\nA = 0.2269, p-value = 0.787\n\n# Perform the paired t-test\nt.test(methodA, methodB, paired = TRUE, alternate = \"greater\")\n\n\n    Paired t-test\n\ndata:  methodA and methodB\nt = -0.7721, df = 19, p-value = 0.4496\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n -3.154203  1.454203\nsample estimates:\nmean difference \n          -0.85 \n\nsd(differences) # s_d\n\n[1] 4.92336\n\nqt(0.975, df = 20 -1) # critical value\n\n[1] 2.093024"
   },
   {
-    "objectID": "Day4.html#stacked-bar-graph",
-    "href": "Day4.html#stacked-bar-graph",
-    "title": "Day 4",
-    "section": "Stacked bar graph",
-    "text": "Stacked bar graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
-  },
-  {
-    "objectID": "Day4.html#stacked-bar-graph-counts",
-    "href": "Day4.html#stacked-bar-graph-counts",
-    "title": "Day 4",
-    "section": "Stacked bar graph (counts)",
-    "text": "Stacked bar graph (counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
-  },
-  {
-    "objectID": "Day5.html#introduction-to-probability",
-    "href": "Day5.html#introduction-to-probability",
-    "title": "Day 5",
-    "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., Tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
-  },
-  {
-    "objectID": "Day5.html#definitions",
-    "href": "Day5.html#definitions",
-    "title": "Day 5",
-    "section": "Definitions",
-    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nIn Coin Toss: Each toss that results in H or T.\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nIn Coin Toss: {H, T}"
-  },
-  {
-    "objectID": "Day5.html#venn-diagram",
-    "href": "Day5.html#venn-diagram",
-    "title": "Day 5",
-    "section": "Venn Diagram",
-    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
-  },
-  {
-    "objectID": "Day5.html#experiments-and-their-sample-spaces",
-    "href": "Day5.html#experiments-and-their-sample-spaces",
-    "title": "Day 5",
-    "section": "Experiments and Their Sample Spaces",
-    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a coin}\\} \\\\\n&= \\{H, T\\} \\text{ (Head or Tail)}\n\\end{align*}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the up face of a die}\\} \\\\\n&= \\{1, 2, 3, 4, 5, 6\\} \\text{ (Numbers on the die)}\n\\end{align*}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[\\begin{align*}\nS &= \\{e \\mid e \\text{ is the combination of faces of two coins}\\} \\\\\n&= \\{HH, HT, TH, TT\\} \\text{ (All possible combinations)}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "Day5.html#defining-probability",
-    "href": "Day5.html#defining-probability",
-    "title": "Day 5",
-    "section": "Defining Probability",
-    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRule 1: Range of Probabilities\n\nEach probability \\(p_i\\) must be: \\(0 \\leq p_i \\leq 1\\)\n\nRule 2: Sum of Probabilities\n\nTotal probability across all sample points: \\(\\sum_{\\text{all } i} p_i = 1\\)\nEnsures completeness of the sample space."
-  },
-  {
-    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "title": "Day 5",
-    "section": "Example: Calculating Winning Probability in a Dice Game",
-    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning } = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning } = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
-  },
-  {
-    "objectID": "Day5.html#event-definition",
-    "href": "Day5.html#event-definition",
-    "title": "Day 5",
-    "section": "Event Definition",
-    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
-  },
-  {
-    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
-    "href": "Day5.html#steps-for-calculating-event-probabilities",
-    "title": "Day 5",
-    "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
-  },
-  {
-    "objectID": "Day5.html#compound-events-unions",
-    "href": "Day5.html#compound-events-unions",
-    "title": "Day 5",
-    "section": "Compound Events: Unions",
-    "text": "Compound Events: Unions\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#compound-events-intersections",
-    "href": "Day5.html#compound-events-intersections",
-    "title": "Day 5",
-    "section": "Compound Events: Intersections",
-    "text": "Compound Events: Intersections\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "title": "Day 5",
-    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
-    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\nUnion and Intersection\n\nUnion (\\(A \\cup B\\)): Any number less than 6. \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): Only number both even and ≤ 3. \\[A \\cap B = \\{2\\}\\]\n\n\n\nProbability Calculations\n\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = P_1 + P_2 + P_3 + P_4 + P_6 = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = P_2 = \\frac{1}{6}\\]"
-  },
-  {
-    "objectID": "Day5.html#calculating-sample-points-using-combinations",
-    "href": "Day5.html#calculating-sample-points-using-combinations",
-    "title": "Day 5",
-    "section": "Calculating Sample Points Using Combinations",
-    "text": "Calculating Sample Points Using Combinations\n\n\n\nCombinations Rule: Calculate the number of possible samples drawn without replacement.\nFormula: \\(\\binom{N}{n} = \\frac{N!}{n!(N-n)!}\\) where \\(N\\) is the total number of elements, and \\(n\\) is the number of elements per sample.\n\nFactorial Explained\n\nNotation: \\(n!\\) (factorial of \\(n\\))\nDefinition: Product of all positive integers up to \\(n\\). \\[n! = n \\times (n-1) \\times \\dots \\times 1\\]\nExample: \\(5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\)"
-  },
-  {
-    "objectID": "Day5.html#your-odds-in-the-pick-6-lotto",
-    "href": "Day5.html#your-odds-in-the-pick-6-lotto",
-    "title": "Day 5",
-    "section": "Your Odds in the Pick-6 Lotto",
-    "text": "Your Odds in the Pick-6 Lotto\n\n\nIn Florida’s Pick-6 Lotto, you select six numbers from a set ranging from 1 to 53, aiming to match all to win.\n\nTotal Combinations: \\[\\binom{53}{6} = \\frac{53!}{6!(53-6)!} = \\frac{53 \\times 52 \\times 51 \\times 50 \\times 49 \\times 48}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 22,957,480\\]\nProbability of Winning: \\[P = \\frac{1}{22,957,480}\\]"
+    "objectID": "Day28.html#section-2",
+    "href": "Day28.html#section-2",
+    "title": "Day 28",
+    "section": "",
+    "text": "Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use \\(\\alpha=0.05\\), perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”."
   },
   {
     "objectID": "Day35_prelim.html#introduction-to-linear-relationships-in-populations",
