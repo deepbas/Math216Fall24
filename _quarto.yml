@@ -110,9 +110,9 @@ website:
           - text: "Lecture 34"
             href: Day34.html
             target: "_blank"
-          - text: "Lecture 35"
-            href: Day35.html
-            target: "_blank"
+          # - text: "Lecture 35"
+          #   href: Day35.html
+          #   target: "_blank"
 
 
           # Add additional lectures here
@@ -147,8 +147,8 @@ website:
             href: ConfIntervalsApp.html
           - text: "Power of Hypothesis Tests"
             href: PowerApp.html
-          # - text: "Github Tutorial"
-          #   href: github_tutorial.html
+          - text: "Simple Linear Regression"
+            href: SimpleLinearRegression.html
 
 
 format:
