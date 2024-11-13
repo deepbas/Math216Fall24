@@ -110,9 +110,9 @@ website:
           - text: "Lecture 34"
             href: Day34.html
             target: "_blank"
-           # - text: "Lecture 16"
-          #   href: Day16.html
-          #   target: "_blank"
+          - text: "Lecture 35"
+            href: Day35.html
+            target: "_blank"
 
 
           # Add additional lectures here

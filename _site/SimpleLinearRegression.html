@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.56">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>About – Math 216: Statistical Thinking</title>
+<title>simplelinearregression – Math 216: Statistical Thinking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +18,6 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -39,8 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -66,18 +61,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<link rel="stylesheet" href="styles.css">
+}</script><link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Math 216</span>
@@ -89,20 +78,20 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lecture Slides</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">
+<li>
     <a class="dropdown-item" href="./Day1.html" target="_blank">
  <span class="dropdown-text">Lecture 1</span></a>
   </li>  
@@ -235,24 +224,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Lecture 35</span></a>
   </li>  
     </ul>
-  </li>
+</li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutorials</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">
+<li>
     <a class="dropdown-item" href="./RandRStudio.html">
  <span class="dropdown-text">R and RStudio</span></a>
   </li>  
     </ul>
-  </li>
+</li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shinyapps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">ShinyApps</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">
+<li>
     <a class="dropdown-item" href="./SamplingApp.html">
  <span class="dropdown-text">Sampling Distributions</span></a>
   </li>  
@@ -265,75 +254,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Power of Hypothesis Tests</span></a>
   </li>  
     </ul>
-  </li>
+</li>
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#course-overview" id="toc-course-overview" class="nav-link active" data-scroll-target="#course-overview">Course overview</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&amp;code=NobwRAdghgtgpmAXGKAHVA6ASmANGAYwHsIAXOMpMAGwEsAjAJykYE8AKAZwAtaJWAlAB0IdJiw4BzSampFSAJmEQRAYgAEAETgAzPnHUBVAJIiArrXUAeALTqd1CwBMAClElx2I9etK1S1HBuEHDUXmAAyrQwsgYAMvos6gCyRE6h6gCC0NSsnLScQmACuN7q+en0LHFQrERmpF4QPj4VcFWMwaFNLS3kAB6kmYxwUMYQqA3h-U5QpFBFuOpFAKJkcIzqABrqAG5QjnCc6uzEMDBQNpxwqCxzcE4CiIvLYAAcAJy4AOwKuB8AZlwbwALMCAIw-ACsPwADMC-gA2L5vIFveGoiHAsHfRFFEplXoDIYjMYTKZFVizeYvVbrTYATT2BzMRxOZwuVxud3Ij2eeFeCnh4MRuCFuHBbwl3wlovBMPBMvlsolCqVcqVIPxpWavXUUAIfhIACEGqQSOFJERaWAAOIUDb3dQuOSkbWEloEbhwAgAa3oRH640mjSKPCIAHcsEdaE4zAdCgKihFuJH1NGKvHqImlgAxTJxCIrZS9Am6nwXPhdMIenyyeQAeQaIfC9bdxR1et8UHogSbpBbRRGnDM1FInAAKj3Au7yy1dhsqn4YBO4IN+4OwCPzhIIvNx-iPSX1MplGotLp9OUNgvNnJJLQCCJroxb9Y7DozBBDbQLXwQ0s9QDg0AjqCAZTUlA77qKSP4Luw4FzgURDUPcCG1uotA6Ow-4NAAJFa6gAHzqLCoGIV2Pj9NBUCcBgEBmPAjCPuwX50JwjQcYwnCyP4OHkqQeEzHMUBLIs+ICMeXasDRdEMUxLFsQUnGkNxvGNLhglUiJYl4BJUktAAvuooTXGBGFUdBBDsJ8Sy-EsgJLKCTmQuo3wwm58LqG8fzqMiTlAt5XmYt5rnOW5iIGb0Mm2Oo1niuoIpLAlkpLIqaWiolHnpVlGVpdlMqJZlOXgiCUXqIZGFODo0GQRgOjMPA7ANvQL77EazQALzXgAjgA+gcJCSOw-QlOo1Hdf0Swyd1ghVToHqGceS0iGUMBpBksWwX48EUS01AwOwMkAH7jUskHqN1kHsJJZQrSoEBASGeFttBIwQOknSuuhc7VbVIk3R6eikNB63pGEBnwFAEB9dRsVQxA7DVUJkOjDDMV2AjSM6Hhc1zqgIxOI+vJ9QjfUY+oBMPMT7DA0sIQRhdV0ifVjWeBN6hk6NZ749B0httjSxQEcI3TZJ6gANQYR4RAwH1qBEHwjSgVLc4+DLcucOt8jcOw8CkKmTiXa8B0vGZ3X5oWxaS9LcCy-LitkOwwucCNxtc9NxtU0ThoPKTaPk2NxByJs3VDg8Zu0AAXgY3UAirGHQ49+6eEUxIvBzXPqHYrkzZThPE37ZMyRLpEYB5qH0Bk3U8cxZDYUUAAG7AAKQYAoOhLG3HcCI3Lwe-n1O+04-vQ4HSy3NxsfqBOWCGCsSy7AAVmYHHGzYrnB0QoevITkcx8bkWS70tv28Szsi5X1fqC1bVzL+EBjcvq8g914Ll0s3Ar2vb8YGRNtq18N6eApM+DRAOIDB6vQsInE0nhcMUYYxxgTORDCqBoLoNLhrPq1xJDwCdi7N2k0lj9AoEbYh6g87expsDMarAyHG0EEsYOxtw5OEPHOSqUCWioBEPdMoT18LDlHOOKcvYDBbTIRsMRgQfq9D+rFa6Blgagw2hDD0zRYoQEYJGbGoF1AaHklXTYRAapEFajee+JBChzkYH1YgZBmL0AaA-Y4sV2DYyEtnTmaNPHc3UAAKhOMjGSmNfEhPFgAehOJwJwfjQJBNiZ4wQUSTjNBzgZAg9A+BxOqtNDA3A5hewLoaWm-gxrDljFmY4V0cahMHj7RotCliMAwA41SDAXHWONnY9pTiukQE4MtHmPhBGCW3BcNge45huLsO9T6Lg66ND2j4BRdglFA38Ko8GkDeicE4HDOw24PHI2omE6G8SBAAD0lAen2RTY5yTvFYwidc25c4CBzHCBEOQqA4CIFeMwogugymkAEMABQABdXSQhVp6UAT4Io4xyCMAIDcUgAKXjEBBbQ4A4JoWvFhSoeFlFXgAGFt4jFQh1OKwKdB6AILQCgIN2CMCeIC2ljA-HnTqWNIoRLxIIteBERi6hTHqAiD1eMw5tgnAiBEUamKBT7KmoSuFnZKLJlFeKyV0q2RMnYPKwQSqlj3JhXC4ZfDVoQA0FgL8QCDBoF4p8mlz5eD8EyOgVilhuoWFNTeDYxs2obAEGAQykKgA" title="Webpage example"></iframe>
 
 
 
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="course-overview" class="level1">
-<h1>Course overview</h1>
-<p>Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.</p>
-<p>At the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.</p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<blockquote class="blockquote">
-<ul>
-<li>Master the basic principles of data analysis, including the production and application of data in studies and experiments.</li>
-<li>Apply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.</li>
-<li>Critically evaluate statistical arguments and methodologies in published research.</li>
-<li>Compare and differentiate between parametric and non-parametric methods in statistical analysis.</li>
-<li>Utilize software R to conduct data analysis, create graphs, and perform basic statistical tests.</li>
-</ul>
-</blockquote>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -898,7 +837,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 

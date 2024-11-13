@@ -42,11 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-<<<<<<< HEAD:_site/Day34_prelim.html
     pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-=======
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
->>>>>>> origin/main:_site/Day34.html
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -419,68 +415,7 @@ Bastola
 </ul>
 </div>
 </section>
-<<<<<<< HEAD:_site/Day34_prelim.html
-<section id="contingency-table" class="slide level2 font70">
-<h2>Contingency Table</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Column 1</th>
-<th>Column 2</th>
-<th>…</th>
-<th>Column c</th>
-<th>Total</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Row 1</td>
-<td><span class="math inline">\(n_{11}\)</span></td>
-<td><span class="math inline">\(n_{12}\)</span></td>
-<td>…</td>
-<td><span class="math inline">\(n_{1c}\)</span></td>
-<td><span class="math inline">\(r_1\)</span></td>
-</tr>
-<tr class="even">
-<td>Row 2</td>
-<td><span class="math inline">\(n_{21}\)</span></td>
-<td><span class="math inline">\(n_{22}\)</span></td>
-<td>…</td>
-<td><span class="math inline">\(n_{2c}\)</span></td>
-<td><span class="math inline">\(r_2\)</span></td>
-</tr>
-<tr class="odd">
-<td>…</td>
-<td><span class="math inline">\(\vdots\)</span></td>
-<td><span class="math inline">\(\vdots\)</span></td>
-<td>…</td>
-<td><span class="math inline">\(\vdots\)</span></td>
-<td><span class="math inline">\(\vdots\)</span></td>
-</tr>
-<tr class="even">
-<td>Row r</td>
-<td><span class="math inline">\(n_{r1}\)</span></td>
-<td><span class="math inline">\(n_{r2}\)</span></td>
-<td>…</td>
-<td><span class="math inline">\(n_{rc}\)</span></td>
-<td><span class="math inline">\(r_r\)</span></td>
-</tr>
-<tr class="odd">
-<td>Total</td>
-<td><span class="math inline">\(c_1\)</span></td>
-<td><span class="math inline">\(c_2\)</span></td>
-<td>…</td>
-<td><span class="math inline">\(c_c\)</span></td>
-<td><span class="math inline">\(n\)</span></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="contingency-table-1" class="slide level2 font80">
-=======
 <section id="contingency-table" class="slide level2 font80">
->>>>>>> origin/main:_site/Day34.html
 <h2>Contingency Table</h2>
 <div class="cle6">
 <ul>
@@ -495,7 +430,7 @@ Bastola
 </section>
 <section id="contingency-table-1" class="slide level2 font80">
 <h2>Contingency Table</h2>
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th></th>
@@ -574,7 +509,7 @@ Bastola
 </ul>
 </div>
 </section>
-<section id="r-code-for-contingency-table-analysis" class="slide level2 font70">
+<section id="r-code-for-contingency-table-analysis" class="slide level2 font80">
 <h2>R Code for Contingency Table Analysis</h2>
 <div class="cle12">
 <ul>
@@ -596,23 +531,10 @@ Bastola
 <section id="section" class="slide level2 font60">
 <h2></h2>
 <blockquote>
-<<<<<<< HEAD:_site/Day34_prelim.html
-<p>Example 1: A survey was conducted to evaluate the effectiveness of a new flu vaccine that had been administered in a small community. The vaccine was provided free of charge in a two-shot sequence over a period of 2 weeks to those wishing to avail themselves of it. Some people receive the two-shot sequence, some appeared only for the first shot, and the others received neither.</p>
-</blockquote>
-<p>A survey of 1000 local inhabitants in the following spring provided the information shown in the following table. Do the data present sufficient evidence to indicate a dependence between the two classifications - vaccine category and occurrence/nonoccurrence of flu?</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Status</th>
-<th>No Vaccine</th>
-<th>One Shot</th>
-<th>Two Shot</th>
-<th>Total</th>
-=======
 <p>Example 1 A survey was conducted to evaluate the effectiveness of a new flu vaccine that had been administered in a small community. The vaccine was provided free of charge in a two-shot sequence over a period of 2 weeks to those wishing to avail themselves of it. Some people receive the two-shot sequence, some appeared only for the first shot, and the others received neither.</p>
 </blockquote>
 <p>A survey of 1000 local inhabitants in the following spring provided the information shown in the following table. Do the data present sufficient evidence to indicate a dependence between the two classifications - vaccine category and occurrence/nonoccurrence of flu?</p>
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Status</th>
@@ -620,32 +542,10 @@ Bastola
 <th style="text-align: left;">One Shot</th>
 <th style="text-align: left;">Two Shot</th>
 <th style="text-align: left;"></th>
->>>>>>> origin/main:_site/Day34.html
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<<<<<<< HEAD:_site/Day34_prelim.html
-<td>Flu</td>
-<td>24</td>
-<td>9</td>
-<td>13</td>
-<td>46</td>
-</tr>
-<tr class="even">
-<td>No flu</td>
-<td>289</td>
-<td>100</td>
-<td>565</td>
-<td>954</td>
-</tr>
-<tr class="odd">
-<td>Total</td>
-<td>313</td>
-<td>109</td>
-<td>578</td>
-<td>1000</td>
-=======
 <td style="text-align: left;">Flu</td>
 <td style="text-align: left;">24</td>
 <td style="text-align: left;">9</td>
@@ -665,7 +565,6 @@ Bastola
 <td style="text-align: left;">109</td>
 <td style="text-align: left;">578</td>
 <td style="text-align: left;">1000</td>
->>>>>>> origin/main:_site/Day34.html
 </tr>
 </tbody>
 </table>
@@ -673,23 +572,6 @@ Bastola
 <section id="section-1" class="slide level2">
 <h2></h2>
 </section>
-<<<<<<< HEAD:_site/Day34_prelim.html
-<section id="example-1-r-code-to-verify-answers" class="slide level2 font70">
-<h2>Example 1: R-code to verify answers</h2>
-<div class="cle7">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Enter each row into a vector</span></span>
-<span id="cb2-2"><a></a>data1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">24</span>, <span class="dv">9</span>, <span class="dv">13</span>)</span>
-<span id="cb2-3"><a></a>data2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">289</span>, <span class="dv">100</span>, <span class="dv">565</span>)</span>
-<span id="cb2-4"><a></a><span class="co"># Create a matrix from the data</span></span>
-<span id="cb2-5"><a></a>tab <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(data1, data2), </span>
-<span id="cb2-6"><a></a>              <span class="at">nrow =</span> <span class="dv">2</span>,  <span class="co"># specify the number of rows</span></span>
-<span id="cb2-7"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
-<span id="cb2-8"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
-<span id="cb2-9"><a></a></span>
-<span id="cb2-10"><a></a><span class="co"># Perform a chi-squared test without continuity correction</span></span>
-<span id="cb2-11"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-=======
 <section id="r-code-solutions" class="slide level2 font80">
 <h2>R-code Solutions</h2>
 <div class="cell">
@@ -701,7 +583,6 @@ Bastola
 <span id="cb2-6"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
 <span id="cb2-7"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
 <span id="cb2-8"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
->>>>>>> origin/main:_site/Day34.html
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's Chi-squared test
@@ -709,10 +590,6 @@ Bastola
 data:  tab
 X-squared = 17.313, df = 2, p-value = 0.000174</code></pre>
 </div>
-<<<<<<< HEAD:_site/Day34_prelim.html
-</div>
-=======
->>>>>>> origin/main:_site/Day34.html
 </div>
 </section>
 <section id="section-2" class="slide level2 font60">
@@ -720,11 +597,7 @@ X-squared = 17.313, df = 2, p-value = 0.000174</code></pre>
 <blockquote>
 <p>Example 2: A survey is taken to determine whether there is a relationship between political affiliation and strength of support for space exploration. We randomly select 100 individuals and ask their political affiliation and their support level to obtain the data in the following table. Perform the contingency table analysis at <span class="math inline">\(\alpha=0.10\)</span>.</p>
 </blockquote>
-<<<<<<< HEAD:_site/Day34_prelim.html
 <table class="caption-top">
-=======
-<table>
->>>>>>> origin/main:_site/Day34.html
 <thead>
 <tr class="header">
 <th>Support Level</th>
@@ -769,24 +642,6 @@ X-squared = 17.313, df = 2, p-value = 0.000174</code></pre>
 <section id="section-3" class="slide level2">
 <h2></h2>
 </section>
-<<<<<<< HEAD:_site/Day34_prelim.html
-<section id="example-2-r-code-to-verify-answers" class="slide level2 font70">
-<h2>Example 2: R-code to verify answers</h2>
-<div class="cle7">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Enter each row into a vector</span></span>
-<span id="cb4-2"><a></a>data1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>)</span>
-<span id="cb4-3"><a></a>data2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">17</span>, <span class="dv">6</span>)</span>
-<span id="cb4-4"><a></a>data3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">13</span>, <span class="dv">12</span>)</span>
-<span id="cb4-5"><a></a><span class="co"># Create a matrix from the data</span></span>
-<span id="cb4-6"><a></a>tab <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(data1, data2, data3), </span>
-<span id="cb4-7"><a></a>              <span class="at">nrow =</span> <span class="dv">3</span>,  <span class="co"># specify the number of rows</span></span>
-<span id="cb4-8"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
-<span id="cb4-9"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
-<span id="cb4-10"><a></a></span>
-<span id="cb4-11"><a></a><span class="co"># Perform a chi-squared test without continuity correction</span></span>
-<span id="cb4-12"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-=======
 <section id="r-code-solutions-1" class="slide level2 font80">
 <h2>R-code Solutions</h2>
 <div class="cell">
@@ -799,7 +654,6 @@ X-squared = 17.313, df = 2, p-value = 0.000174</code></pre>
 <span id="cb4-7"><a></a>              <span class="at">ncol =</span> <span class="dv">3</span>,  <span class="co"># specify the number of columns</span></span>
 <span id="cb4-8"><a></a>              <span class="at">byrow =</span> <span class="cn">TRUE</span>)  <span class="co"># fill the matrix by rows</span></span>
 <span id="cb4-9"><a></a><span class="fu">chisq.test</span>(tab, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
->>>>>>> origin/main:_site/Day34.html
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's Chi-squared test
@@ -808,10 +662,6 @@ data:  tab
 X-squared = 4.5397, df = 4, p-value = 0.3379</code></pre>
 </div>
 </div>
-<<<<<<< HEAD:_site/Day34_prelim.html
-</div>
-=======
->>>>>>> origin/main:_site/Day34.html
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
