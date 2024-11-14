@@ -46,6 +46,14 @@ yt <- 0
 #<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 ```
 
+
+## 
+
+```{=html}
+<iframe src="https://www.desmos.com/calculator/nr5qs8so4x?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+```
+
+
 ## Introduction to Linear Relationships in Populations {.font80}
 
 ::: cle6

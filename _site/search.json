@@ -1782,7 +1782,7 @@
     "href": "Day35_prelim.html#step-by-step-least-squares-estimation-1",
     "title": "Day 35",
     "section": "Step-by-Step: Least Squares Estimation",
-    "text": "Step-by-Step: Least Squares Estimation\n\n\nExample 2: Relationship between Variables\n\n\nConsider a hypothetical study on political affiliation and support for policies.\nUse regression to understand how one variable predicts another within a population sample.\n\n\n]"
+    "text": "Step-by-Step: Least Squares Estimation\n\n\nExample 2: Relationship between Variables\n\n\nConsider a hypothetical study on political affiliation and support for policies.\nUse regression to understand how one variable predicts another within a population sample."
   },
   {
     "objectID": "Day35_prelim.html#section",
@@ -2595,5 +2595,12 @@
     "title": "Day 20",
     "section": "",
     "text": "What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?"
+  },
+  {
+    "objectID": "Day35_prelim.html#section-1",
+    "href": "Day35_prelim.html#section-1",
+    "title": "Day 35",
+    "section": "",
+    "text": "Example 2:"
   }
 ]
