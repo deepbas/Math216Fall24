@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -340,113 +405,255 @@ Bastola
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<iframe src="https://www.desmos.com/calculator/nr5qs8so4x?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
-</section>
-<section id="introduction-to-linear-relationships-in-populations" class="slide level2 font80">
-<h2>Introduction to Linear Relationships in Populations</h2>
-<div class="cle6">
+<section id="describing-associations-between-two-quantitative-variables" class="slide level2 font80">
+<h2>Describing associations between two quantitative variables</h2>
+<div class="bqt">
+<p>Data: each case <span class="math inline">\(i\)</span> has two measurements</p>
 <ul>
-<li><strong>From Constants to Variables</strong>: Transition from treating population means as constants to viewing them as variables dependent on other factors.</li>
-<li><strong>Example</strong>: Mean sale price of residences depending on square footage.
-<ul>
-<li>Equation: <span class="math inline">\(y = \$30,000 + \$60 \times (\text{Square feet})\)</span></li>
-<li>This models the sale price as increasing with the living space in the residence.</li>
-</ul></li>
+<li><span class="math inline">\(x_i\)</span> is explanatory variable</li>
+<li><span class="math inline">\(y_i\)</span> is response variable</li>
 </ul>
 </div>
+<div class="out-t">
+<div class="font80">
+<p>A scatterplot is the plot of <span class="math inline">\((x_i, y_i)\)</span></p>
+<ul>
+<li>form? linear or non-linear</li>
+<li>direction? positive, negative, no association</li>
+<li>strength? amount of variation in <span class="math inline">\(y\)</span> around a “trend”</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="probabilistic-models-in-statistics" class="slide level2 font80">
-<h2>Probabilistic Models in Statistics</h2>
+<section id="example-associations-in-car-dataset" class="slide level2 font80">
+<h2>Example: Associations in Car dataset</h2>
+<center>
+<img src="images/linearassociation.png" width="80%" height="80%"><br> <a>Various Associations of quantitative variables in Cars data</a>
+</center>
+</section>
+<section id="direction-of-relationship" class="slide level2 font80">
+<h2>Direction of relationship</h2>
+<p><br></p>
+<div class="bq">
+<div class="font80">
+<p><span class="bold-text">positive association:</span> as <span class="math inline">\(x\)</span> increases, <span class="math inline">\(y\)</span> increases</p>
+<ul>
+<li>age of the husband and age of the wife</li>
+<li>height and diameter of a tree</li>
+</ul>
+<p><span class="bold-text">negative association:</span> as <span class="math inline">\(x\)</span> increases, <span class="math inline">\(y\)</span> decreases</p>
+<ul>
+<li>number of cigarettes smoked per day and lung capacity</li>
+<li>depth of tire tread and number of miles driven on the tires</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="understanding-correlation-coefficients-r-and-rho" class="slide level2 font60">
+<h2>Understanding Correlation Coefficients <span class="math inline">\(r\)</span> and <span class="math inline">\(\rho\)</span></h2>
+<div class="cle9">
+<ul>
+<li><p>Correlation coefficients, denoted <span class="math inline">\(r\)</span> (sample) or <span class="math inline">\(\rho\)</span> (population), measure the linear relationship between two variables.</p></li>
+<li><p>Strength varies as <span class="math inline">\(r \approx \pm 1\)</span> (strong), <span class="math inline">\(r \approx 0\)</span> (weak).</p></li>
+<li><p><strong>Direction</strong>:</p>
+<ul>
+<li>Positive (<span class="math inline">\(r &gt; 0\)</span>) or negative (<span class="math inline">\(r &lt; 0\)</span>) linear association.</li>
+</ul></li>
+<li><p><strong>Calculation and Interpretation</strong>:</p>
+<ul>
+<li><span class="math display">\[ r = \frac{\sum_{i=1}^n \left(\frac{x_i - \bar{x}}{s_x}\right) \left(\frac{y_i - \bar{y}}{s_y}\right)}{n-1} \]</span>
+<ul>
+<li>Considers deviations from the mean, normalized by standard deviations.</li>
+</ul></li>
+<li>Interpretation: <span class="math inline">\(r = 1\)</span> (perfect positive), <span class="math inline">\(r = -1\)</span> (perfect negative), <span class="math inline">\(r = 0\)</span> (no relationship).</li>
+</ul></li>
+<li><p><strong>Visualization &amp; Outliers</strong>:</p>
+<ul>
+<li>Scatterplots reveal the clustering around the regression line; outliers can heavily influence <span class="math inline">\(r\)</span>.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Example R code to calculate correlation</span></span>
+<span id="cb1-2"><a></a><span class="fu">cor</span>(data<span class="sc">$</span>x, data<span class="sc">$</span>y)  <span class="co"># Note: Order of x and y doesn't affect the outcome.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="car-correlations" class="slide level2 font80">
+<h2>Car Correlations</h2>
+<center>
+<img src="images/carcorrelations.png" width="80%" height="75%"><br> <a>Correlations of various variables in Cars data</a>
+</center>
+</section>
+<section id="deterministic-vs.-probabilistic-models" class="slide level2 font80">
+<h2>Deterministic vs.&nbsp;Probabilistic Models</h2>
+
+<img src="images/Day35-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="deterministic-vs.-probabilistic-models-1" class="slide level2 font80">
+<h2>Deterministic vs.&nbsp;Probabilistic Models</h2>
 <div class="cle7">
 <ul>
-<li><strong>Deterministic vs.&nbsp;Probabilistic Models</strong>:
-<ul>
 <li><strong>Deterministic Model</strong>: Assumes a perfect, predictable relationship without error, e.g., <span class="math inline">\(y = 1.5x\)</span>.</li>
-<li><strong>Probabilistic Model</strong>: Incorporates randomness, modeling <span class="math inline">\(y\)</span> as <span class="math inline">\(y = 1.5x + \text{random error}\)</span>.</li>
-</ul></li>
-<li><strong>General Form</strong>:
+<li><strong>Probabilistic Model</strong>: Incorporates randomness, modeling <span class="math inline">\(y\)</span> as: <span class="math display">\[ y = 1.5x + \text{random error} \]</span>
 <ul>
-<li><span class="math inline">\(y = \text{Deterministic component} + \text{Random error}\)</span></li>
+<li><strong>General Form</strong>: <span class="math display">\[ y = \text{Deterministic component} + \text{Random error} \]</span></li>
 <li>Assumes mean of random error is 0, aligning <span class="math inline">\(E(y)\)</span> with the deterministic component.</li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="simple-linear-regression-the-straight-line-model" class="slide level2 font80">
-<h2>Simple Linear Regression: The Straight-Line Model</h2>
-<div class="cle12">
+<section id="linear-regression-model" class="slide level2 font60">
+<h2>Linear Regression Model</h2>
+<div class="cle6">
 <ul>
-<li><strong>Fitting the Model</strong>: Uses simple linear regression to relate the mean value of <span class="math inline">\(y\)</span> to <span class="math inline">\(x\)</span>.
+<li><strong>Goal</strong>: To find a straight line that best fits the data in a scatterplot.</li>
+<li><strong>Regression Equation</strong>: <span class="math display">\[ \hat{y} = b_0 + b_1x \]</span>
 <ul>
-<li>Steps involve hypothesizing the relationship, estimating parameters, and evaluating the model’s usefulness.</li>
+<li><span class="math inline">\(x\)</span>: explanatory variable</li>
+<li><span class="math inline">\(\hat{y}\)</span>: predicted response variable</li>
 </ul></li>
-<li><strong>Key Steps</strong>:
+<li><strong>Parameters</strong>:
 <ul>
-<li><ol type="1">
-<li>Hypothesize the deterministic component (e.g., <span class="math inline">\(E(y) = \beta_0 + \beta_1x\)</span>).</li>
-</ol></li>
-<li><ol start="2" type="1">
-<li>Estimate model parameters using least squares.</li>
-</ol></li>
-<li><ol start="3" type="1">
-<li>Assess the fit and use the model for prediction.</li>
-</ol></li>
+<li><strong>Slope</strong> (<span class="math inline">\(b_1\)</span>): Increase in predicted <span class="math inline">\(y\)</span> for every unit increase in <span class="math inline">\(x\)</span>. <span class="math display">\[ b_1 = \frac{\text{change }\hat{y}}{\text{change } x} \]</span></li>
+<li><strong>Intercept</strong> (<span class="math inline">\(b_0\)</span>): Predicted <span class="math inline">\(y\)</span> value when <span class="math inline">\(x = 0\)</span>. <span class="math display">\[ \hat{y} = b_0 + b_1(0) = b_0 \]</span></li>
 </ul></li>
 </ul>
 </div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img src="images/Day35-2.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="simple-linear-regression-fitting-and-evaluation" class="slide level2 font80">
+<h2>Simple Linear Regression: Fitting and Evaluation</h2>
+<div class="cle12">
+<ul>
+<li><strong>Steps</strong>:
+<ol type="1">
+<li>Hypothesize the deterministic component (e.g., <span class="math inline">\(E(y) = \beta_0 + \beta_1x\)</span>).</li>
+<li>Estimate model parameters using least squares.</li>
+<li>Assess the fit and use the model for prediction.</li>
+</ol></li>
+<li><strong>Residuals</strong>:
+<ul>
+<li>Geometrically, a residual is the vertical distance from each point to the regression line, helping measure model fit.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="residuals" class="slide level2">
+<h2>Residuals</h2>
+<center>
+<img src="images/residuals.png"><br>
+</center>
 </section>
 <section id="implementing-regression-analysis" class="slide level2 font80">
 <h2>Implementing Regression Analysis</h2>
 <div class="cle6">
 <ul>
-<li><strong>Practical Example</strong>: Analyzing drug effectiveness based on dosage percentage.
+<li><strong>Example</strong>: Understanding the relationship between temperature and cricket chirp rate.
 <ul>
-<li>Model reaction time as a function of drug concentration in the bloodstream.</li>
+<li>Model temperature as a function of cricket chirp rate per minute.</li>
 </ul></li>
 <li><strong>Methodology</strong>:
 <ul>
-<li>Use observed data to fit a linear model predicting reaction times.</li>
-<li>Calculate deviations to measure model fit and adjust parameters accordingly.</li>
+<li>Utilize observed data to fit a linear model that predicts temperature based on cricket chirp rates.</li>
+<li>Calculate deviations to assess model fit and refine parameters as needed.</li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="step-by-step-least-squares-estimation" class="slide level2 font80">
-<h2>Step-by-Step: Least Squares Estimation</h2>
-<div class="cle12">
-<blockquote>
-<p>Example 1: Drug Effectiveness Study</p>
-</blockquote>
-<ul>
-<li>Given data on drug dosage and reaction times, fit a linear model to predict effects.</li>
-<li>Initial model: <span class="math inline">\(y = -1 + x\)</span>, refined by least squares to minimize prediction errors.</li>
-<li>Evaluate the model by calculating the sum of squared errors (SSE) and using it to adjust the model.</li>
-</ul>
-</div>
+<section id="data-overview" class="slide level2 font50">
+<h2>Data Overview</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Observation</th>
+<th>Temperature (°F)</th>
+<th>Chirp Rate (chirps/15 sec)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>89</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>72</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>93</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>84</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>81</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>75</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>70</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>82</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>69</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>83</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>80</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>83</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>81</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>84</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>76</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="step-by-step-least-squares-estimation-1" class="slide level2 font80">
-<h2>Step-by-Step: Least Squares Estimation</h2>
-<div class="cle13">
-<blockquote>
-<p>Example 2: Relationship between Variables</p>
-</blockquote>
-<ul>
-<li>Consider a hypothetical study on political affiliation and support for policies.</li>
-<li>Use regression to understand how one variable predicts another within a population sample.</li>
-</ul>
-</div>
-</section>
-<section id="section-1" class="slide level2 font60">
+<section id="section-1" class="slide level2">
 <h2></h2>
-<blockquote>
-<p>Example 2:</p>
-</blockquote>
-
-<img src="images/Day29-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
-<h2></h2>
+<iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&amp;code=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-LvLwfg6R0DEUsHpCwZLzwOWysqyFIgwDRW2UAA"></iframe>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
