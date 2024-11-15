@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.25">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Bastola">
   <title>Math 216: Statistical Thinking – Day 35</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -552,11 +552,11 @@ Bastola
 <ul>
 <li><strong>Example</strong>: Understanding the relationship between temperature and cricket chirp rate.
 <ul>
-<li>Model temperature as a function of cricket chirp rate per minute.</li>
+<li>Model cricket chirp rate as a function of temperature.</li>
 </ul></li>
 <li><strong>Methodology</strong>:
 <ul>
-<li>Utilize observed data to fit a linear model that predicts temperature based on cricket chirp rates.</li>
+<li>Utilize observed data to fit a linear model that predicts cricket chirp rate based on temperature.</li>
 <li>Calculate deviations to assess model fit and refine parameters as needed.</li>
 </ul></li>
 </ul>
@@ -564,7 +564,7 @@ Bastola
 </section>
 <section id="data-overview" class="slide level2 font50">
 <h2>Data Overview</h2>
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Observation</th>

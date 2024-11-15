@@ -199,9 +199,9 @@ cor(data$x, data$y)  # Note: Order of x and y doesn't affect the outcome.
 
 ::: {.cle6}
 - **Example**: Understanding the relationship between temperature and cricket chirp rate.
-  - Model temperature as a function of cricket chirp rate per minute.
+  - Model cricket chirp rate as a function of temperature.
 - **Methodology**:
-  - Utilize observed data to fit a linear model that predicts temperature based on cricket chirp rates.
+  - Utilize observed data to fit a linear model that predicts cricket chirp rate based on temperature.
   - Calculate deviations to assess model fit and refine parameters as needed.
 :::
 
