@@ -8,10 +8,10 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.5.25">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 36</title>
+  <title>Math 216: Statistical Thinking – Day 38</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -328,7 +328,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 36</h1>
+  <h1 class="title">Day 38</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -339,63 +339,6 @@ Bastola
 </div>
 </div>
 
-</section>
-<section id="review-of-simple-linear-regression-model-estimation" class="slide level2 font80">
-<h2>Review of Simple Linear Regression Model Estimation</h2>
-<div class="cle6">
-<ul>
-<li><strong>Recap</strong>: From the last session, we learned to estimate the simple linear regression line <span class="math inline">\(\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x\)</span> from a sample.</li>
-<li><strong>Further Analysis Needs</strong>: To conduct deeper analysis, we adhere to key assumptions about the regression model.</li>
-</ul>
-</div>
-</section>
-<section id="key-assumptions-for-linear-regression" class="slide level2 font80">
-<h2>Key Assumptions for Linear Regression</h2>
-<div class="cle7">
-<ul>
-<li><strong>Simple Linear Regression Model</strong>:
-<ul>
-<li><span class="math inline">\(y = \beta_0 + \beta_1 x + \varepsilon\)</span></li>
-</ul></li>
-<li><strong>Assumptions</strong>:
-<ol type="1">
-<li><strong>Mean of Errors (<span class="math inline">\(\varepsilon\)</span>)</strong>: The mean of the probability distribution of <span class="math inline">\(\varepsilon\)</span> is 0, aligning the expected value of <span class="math inline">\(y\)</span> with <span class="math inline">\(\beta_0 + \beta_1 x\)</span> for any <span class="math inline">\(x\)</span>.</li>
-<li><strong>Constant Variance</strong>: The variance of <span class="math inline">\(\varepsilon\)</span> is constant across all values of <span class="math inline">\(x\)</span>, denoted as <span class="math inline">\(\sigma^2\)</span>.</li>
-<li><strong>Normal Distribution of Errors</strong>: <span class="math inline">\(\varepsilon\)</span> follows a normal distribution.</li>
-<li><strong>Independence of Errors</strong>: The errors associated with different <span class="math inline">\(y\)</span> values are independent.</li>
-</ol></li>
-</ul>
-</div>
-</section>
-<section id="making-inferences-about-the-slope-beta_1" class="slide level2 font80">
-<h2>Making Inferences About the Slope <span class="math inline">\(\beta_1\)</span></h2>
-<div class="cle12">
-<ul>
-<li><strong>Objective</strong>: Assess the significance of the slope <span class="math inline">\(\beta_1\)</span> to understand the contribution of <span class="math inline">\(x\)</span> in predicting <span class="math inline">\(y\)</span>.</li>
-<li><strong>Statistical Test</strong>:
-<ul>
-<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>): <span class="math inline">\(\beta_1 = 0\)</span> (No relationship)</li>
-<li>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>): <span class="math inline">\(\beta_1 \neq 0\)</span> (Significant relationship)</li>
-</ul></li>
-<li><strong>Using R for Hypothesis Testing</strong>:
-<ul>
-<li>Perform t-tests to decide whether to reject <span class="math inline">\(H_0\)</span>. A significant <span class="math inline">\(p\)</span>-value (&lt; alpha level) indicates a meaningful contribution of <span class="math inline">\(x\)</span> to predicting <span class="math inline">\(y\)</span>.</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="practical-steps-using-r" class="slide level2 font80">
-<h2>Practical Steps Using R</h2>
-<div class="cle6">
-<ul>
-<li><strong>Conducting the Test</strong>:
-<ol type="1">
-<li>Estimate <span class="math inline">\(\hat{\beta}_0\)</span> and <span class="math inline">\(\hat{\beta}_1\)</span> using the least squares method.</li>
-<li>Compute the standard error and perform a t-test to check the significance of <span class="math inline">\(\hat{\beta}_1\)</span>.</li>
-<li>Interpret the results: A significant test suggests that changes in <span class="math inline">\(x\)</span> systematically relate to changes in <span class="math inline">\(y\)</span>.</li>
-</ol></li>
-</ul>
-</div>
 </section>
 <section id="coefficient-of-correlation-and-determination" class="slide level2 font80">
 <h2>Coefficient of Correlation and Determination</h2>
@@ -428,6 +371,42 @@ Bastola
 <li>Employ R functions like <code>cor()</code> for correlation and derive <span class="math inline">\(r^2\)</span> to assess model fit.</li>
 </ul></li>
 </ul>
+</div>
+</section>
+<section id="title" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
+</div>
+</section>
+<section id="title-1" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
+</div>
+</section>
+<section id="title-2" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
+</div>
+</section>
+<section id="title-3" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
+</div>
+</section>
+<section id="title-4" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
+</div>
+</section>
+<section id="title-5" class="slide level2 font80">
+<h2>Title</h2>
+<div class="cle6">
+
 </div>
 </section>
 <section id="section" class="slide level2 font60">
