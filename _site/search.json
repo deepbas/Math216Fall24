@@ -2790,7 +2790,7 @@
     "href": "Day37_prelim.html#section-2",
     "title": "Day 37",
     "section": "",
-    "text": "# Define the data\nx &lt;- c(1, 2, 3, 4, 5)\ny &lt;- c(1, 1, 2, 2, 4)\n\n# Create a dataframe\ndata &lt;- data.frame(x, y)\n\n# Fit a linear model\nmod &lt;- lm(y ~ x, data = data)\nsummary(mod)\n\n\nCall:\nlm(formula = y ~ x, data = data)\n\nResiduals:\n         1          2          3          4          5 \n 4.000e-01 -3.000e-01 -3.886e-16 -7.000e-01  6.000e-01 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)  -0.1000     0.6351  -0.157   0.8849  \nx             0.7000     0.1915   3.656   0.0354 *\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.6055 on 3 degrees of freedom\nMultiple R-squared:  0.8167,    Adjusted R-squared:  0.7556 \nF-statistic: 13.36 on 1 and 3 DF,  p-value: 0.03535"
+    "text": "# Define the data\nx &lt;- c(1, 2, 3, 4, 5)\ny &lt;- c(1, 1, 2, 2, 4)\n\n# Create a dataframe\ndata &lt;- data.frame(x, y)\n\n# Fit a linear model\nmod &lt;- lm(y ~ x, data = data)\nsummary(mod)\n\n\nCall:\nlm(formula = y ~ x, data = data)\n\nResiduals:\n         1          2          3          4          5 \n 4.000e-01 -3.000e-01  6.478e-17 -7.000e-01  6.000e-01 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)  -0.1000     0.6351  -0.157   0.8849  \nx             0.7000     0.1915   3.656   0.0354 *\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.6055 on 3 degrees of freedom\nMultiple R-squared:  0.8167,    Adjusted R-squared:  0.7556 \nF-statistic: 13.36 on 1 and 3 DF,  p-value: 0.03535"
   },
   {
     "objectID": "Day37_prelim.html#interpretation-of-s-the-estimated-std.-dev.-of-varepsilon",
@@ -2832,7 +2832,7 @@
     "href": "Day37_prelim.html#how-can-we-make-a-decision-of-this-hypothesis-test-using-r",
     "title": "Day 37",
     "section": "How can we make a decision of this hypothesis test using R?",
-    "text": "How can we make a decision of this hypothesis test using R?\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)  -0.1000     0.6351  -0.157   0.8849  \nx             0.7000     0.1915   3.656   0.0354 *\n---\nSignif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1"
+    "text": "How can we make a decision of this hypothesis test using R?\n\n\n\n\n\n\n\n\n\n\nEstimate\nStd. Error\nt value\nPr(&gt;|t|)\n\n\n\n\n(Intercept)\n-0.1\n0.6350853\n-0.1574592\n0.8848840\n\n\nx\n0.7\n0.1914854\n3.6556308\n0.0353528"
   },
   {
     "objectID": "Day37_prelim.html#confidence-intervals",

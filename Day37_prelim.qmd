@@ -144,14 +144,10 @@ Graph of the straight-line model when the slope is zero, i.e., $y=\beta_0+\varep
 
 ## How can we make a decision of this hypothesis test using R? {.font80}
 
-```r
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)  
-(Intercept)  -0.1000     0.6351  -0.157   0.8849  
-x             0.7000     0.1915   3.656   0.0354 *
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```{r, echo=FALSE}
+summary(mod)["coefficients"] %>% knitr::kable()
 ```
+
 
 ## Confidence Intervals {.font80}
 

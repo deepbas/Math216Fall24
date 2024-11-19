@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.25">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Bastola">
   <title>Math 216: Statistical Thinking – Day 37</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -451,7 +451,7 @@ lm(formula = y ~ x, data = data)
 
 Residuals:
          1          2          3          4          5 
- 4.000e-01 -3.000e-01 -3.886e-16 -7.000e-01  6.000e-01 
+ 4.000e-01 -3.000e-01  6.478e-17 -7.000e-01  6.000e-01 
 
 Coefficients:
             Estimate Std. Error t value Pr(&gt;|t|)  
@@ -530,19 +530,52 @@ F-statistic: 13.36 on 1 and 3 DF,  p-value: 0.03535</code></pre>
 <img src="images/Day37-5.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
 <section id="how-can-we-make-a-decision-of-this-hypothesis-test-using-r" class="slide level2 font80">
 <h2>How can we make a decision of this hypothesis test using R?</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>Coefficients<span class="sc">:</span></span>
-<span id="cb3-2"><a></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)  </span>
-<span id="cb3-3"><a></a>(Intercept)  <span class="sc">-</span><span class="fl">0.1000</span>     <span class="fl">0.6351</span>  <span class="sc">-</span><span class="fl">0.157</span>   <span class="fl">0.8849</span>  </span>
-<span id="cb3-4"><a></a>x             <span class="fl">0.7000</span>     <span class="fl">0.1915</span>   <span class="fl">3.656</span>   <span class="fl">0.0354</span> <span class="sc">*</span></span>
-<span id="cb3-5"><a></a><span class="sc">---</span></span>
-<span id="cb3-6"><a></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> ‘<span class="sc">**</span><span class="er">*</span>’ <span class="fl">0.001</span> ‘<span class="sc">**</span>’ <span class="fl">0.01</span> ‘<span class="sc">*</span>’ <span class="fl">0.05</span> ‘.’ <span class="fl">0.1</span> ‘ ’ <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="kable_wrapper">
+<tbody>
+<tr>
+<td>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Estimate</th>
+<th style="text-align: right;">Std. Error</th>
+<th style="text-align: right;">t value</th>
+<th style="text-align: right;">Pr(&gt;|t|)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-0.1</td>
+<td style="text-align: right;">0.6350853</td>
+<td style="text-align: right;">-0.1574592</td>
+<td style="text-align: right;">0.8848840</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">x</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.1914854</td>
+<td style="text-align: right;">3.6556308</td>
+<td style="text-align: right;">0.0353528</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 <section id="confidence-intervals" class="slide level2 font80">
 <h2>Confidence Intervals</h2>
 
 <img src="images/Day37-6.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"><h4 class="font80" id="confidence-intervals-in-r">Confidence Intervals in R</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">confint</span>(mod, <span class="at">level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">confint</span>(mod, <span class="at">level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                  2.5 %   97.5 %
 (Intercept) -2.12112485 1.921125
