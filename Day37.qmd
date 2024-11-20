@@ -59,7 +59,7 @@ yt <- 0
   4. **Independence of Errors**: The errors associated with different $y$ values are independent.
 :::
 
-##
+## Constant Variance {.font80}
 
 <img src="images/Day37-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
@@ -105,7 +105,7 @@ summary(mod)
 
 :::
 
-## Making Inferences About the Slope $\beta_1$ {.font80}
+## Making Inferences About the Slope $\beta_1$ {.font70}
 
 ::: cle12
 - **Objective**: Assess the significance of the slope $\beta_1$ to understand the contribution of $x$ in predicting $y$.
@@ -113,8 +113,16 @@ summary(mod)
   - Null Hypothesis ($H_0$): $\beta_1 = 0$ (No relationship)
   - Alternative Hypothesis ($H_a$): $\beta_1 \neq 0$ (Significant relationship)
 - **Using R for Hypothesis Testing**:
-  - Perform t-tests to decide whether to reject $H_0$. A significant $p$-value (< alpha level) indicates a meaningful contribution of $x$ to predicting $y$.
+  - Perform t-tests to decide whether to reject $H_0$. A significant $p$-value ($< \alpha$) indicates a meaningful contribution of $x$ to predicting $y$.
 :::
+
+
+## {.font80}  
+
+<img src="images/Day37-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+Graph of the straight-line model when the slope is zero, i.e., $y=\beta_0+\varepsilon$
+
 
 ##
 
@@ -131,11 +139,6 @@ summary(mod)
 :::
 
 
-## {.font80}  
-
-<img src="images/Day37-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
-
-Graph of the straight-line model when the slope is zero, i.e., $y=\beta_0+\varepsilon$
 
 
 ## Hypothesis Testing {.font80}
@@ -161,9 +164,7 @@ confint(mod, level = 0.95)
 ```
 
 
-
 ## {.font60}
-
 
 
 ```{=html}
