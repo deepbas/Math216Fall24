@@ -1,0 +1,176 @@
+---
+title: "Simple Linear Regression"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 155: Modern Statistics with Computer Analysis"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## What is Simple Linear Regression? {.font80}
+
+::: cle6
+- **Goal**: Predict a dependent variable (outcome) based on one independent variable (predictor).
+- **Method**: Fit the best line through the data points in a scatterplot.
+- **Formula for Line**: $y = \beta_0 + \beta_1x + \epsilon$
+- **Correlation Coefficient $r$**:
+$$
+r = \frac{\sum (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum (x_i - \overline{x})^2 \sum (y_i - \overline{y})^2}}
+$$
+- This formula expresses the sample correlation coefficient using deviations from the mean.
+:::
+
+
+
+## Sample Data: Coffee Consumption and Productivity (n = 10) {.font60}
+
+| Hour of the Day | Productivity Score |
+|-----------------|--------------------|
+| 1               | 1.5                |
+| 2               | 3.5                |
+| 3               | 2.3                |
+| 4               | 4.8                |
+| 5               | 5.2                |
+| 6               | 7.4                |
+| 7               | 6.9                |
+| 8               | 8.0                |
+| 9               | 8.5                |
+| 10              | 10.1               |
+
+- **Hour of the Day**: Time since start of work (hours)
+- **Productivity Score**: Measured on a scale where higher values indicate better focus and output
+
+**Context**: Observing the impact of coffee consumed at the beginning of the day on hourly productivity scores. The data explores whether productivity peaks post-coffee consumption.
+
+
+
+## Visualizing Data and Regression Line {.font80}
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+# More varied data with larger scatter
+data <- data.frame(
+  x = 1:10,
+  y = c(1.5, 3.5, 2.3, 4.8, 5.2, 7.4, 6.9, 8.0, 8.5, 10.1)
+)
+
+# Plot with ggplot2
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  ggtitle("Scatterplot with Line of Best Fit")
+```
+
+##
+
+
+```{=html}
+<iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&code=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-LvLwfg6R0DEUsHpCwZLzwOWysqyFIgwDRW2UAA"></iframe>
+```
+
+
+
+## Correlation Does Not Imply Causation {.font70}
+
+::: cle10
+#### Ice Cream Sales vs. Swimming Pool Accidents
+
+- Both increase in summer, driven by warmer weather, not causation.
+
+#### Firefighters at a Scene vs. Damage
+
+- Larger fires need more firefighters; more firefighters do not cause more damage.
+
+#### Shoe Size and Reading Ability in Children
+
+- Both shoe size and reading skills increase with age.
+:::
+
+
+
+##
+
+
+[Link to Minitab App](https://app.minitab.com/)
+
+::: row
+
+::: left
+<img src="images/Day40_155_1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+:::
+
+
+::: right
+<img src="images/Day40_155_2.png" style="display: block; margin: auto;" width="100%"  loading="lazy" decoding="async">
+:::
+
+
+:::
+
+
+## Does Correlation Does Imply Causation? Why? {.font60}
+
+::: cle10
+#### Group 1: Social Media Use and Academic Performance
+
+<details><summary>Answer</summary>
+- Lower grades correlate with more social media usage, but causation is not direct.
+</details>
+
+#### Group 2: Organic Food Consumption and Health
+<details><summary>Answer</summary>
+- Healthier individuals might choose organic foods, other healthy behaviors are involved.
+</details>
+#### Group 3: Pirates and Global Warming
+<details><summary>Answer</summary>
+- Decrease in pirates correlates with increase in global temperatures, clearly not causative.
+</details>
+#### Group 4: Coffee Shops and Property Values
+<details><summary>Answer</summary>
+- Higher property values attract more coffee shops, not the other way around.
+</details>
+:::
+
+
