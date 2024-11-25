@@ -55,7 +55,7 @@ yt <- 0
 - **Formula for Line**: $y = \beta_0 + \beta_1x + \epsilon$
 - **Correlation Coefficient $r$**:
 $$
-r = \frac{\sum (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum (x_i - \overline{x})^2 \sum (y_i - \overline{y})^2}}
+r = \frac{1}{n-1}\sum \bigg(\frac{x - \bar{x}}{s_x} \bigg)\bigg(\frac{y - \bar{y}}{s_y} \bigg)
 $$
 - This formula expresses the sample correlation coefficient using deviations from the mean.
 :::
@@ -102,6 +102,25 @@ ggplot(data, aes(x = x, y = y)) +
   theme_minimal() +
   ggtitle("Scatterplot with Line of Best Fit")
 ```
+
+
+## Example: Associations in Car dataset {.font80}
+
+
+<center>
+<img src="images/linearassociation.png" width="80%" height="80%"><br>
+<a>Various Associations of quantitative variables in Cars data</a>
+</center>
+
+
+## Car Correlations {.font80}
+
+<center>
+<img src="images/carcorrelations.png" width="80%" height="75%"><br>
+<a>Correlations of various variables in Cars data</a>
+</center>
+
+
 
 ##
 
