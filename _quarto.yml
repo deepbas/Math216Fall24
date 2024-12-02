@@ -122,6 +122,15 @@ website:
           - text: "Lecture 38"
             href: Day38.html
             target: "_blank"
+          - text: "Lecture 40"
+            href: Day40.html
+            target: "_blank"
+          # - text: "Lecture 35"
+          #   href: Day35.html
+          #   target: "_blank"
+          # - text: "Lecture 35"
+          #   href: Day35.html
+          #   target: "_blank"
           # - text: "Lecture 35"
           #   href: Day35.html
           #   target: "_blank"
