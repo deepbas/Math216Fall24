@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -340,50 +405,352 @@ Bastola
 </div>
 
 </section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="advanced-inference-tools" class="slide level2 font70">
+<h2>Advanced Inference tools</h2>
 <div class="cle6">
-
+<div class="row">
+<div class="left">
+<p>Quantitative Response Analysis:</p>
+<ul>
+<li><strong>One Mean:</strong> Employ 1-sample t-test or confidence interval.</li>
+<li><strong>Two Means:</strong> Use 2 independent sample t-tests/CI or Matched pairs analysis.</li>
+<li><strong>Multiple Means:</strong> Implement One-way ANOVA for comparing more than two groups.</li>
+</ul>
+</div>
+<div class="right">
+<p><strong>Hypothesis Testing Across Multiple Categories:</strong></p>
+<p><span class="math display">\[\begin{align*}
+H_{0}:&amp; \quad \mu_{1}=\mu_{2}=\ldots=\mu_{k}\\ H_{a}:&amp; \quad \text{At least one } \mu_{i} \neq \mu_{j}
+\end{align*}\]</span></p>
+</div>
+</div>
 </div>
 </section>
-<section id="title-1" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
+<section id="frisbee-example" class="slide level2 font80">
+<h2>Frisbee Example</h2>
+<div class="cle9">
+<p>Does Frisbee grip affect the distance of a throw?</p>
+<p>A student performed the following experiment: 3 grips, 8 throws using each grip</p>
+<pre><code>1. Normal grip
+2. One finger out grip
+3. Frisbee inverted grip</code></pre>
+<p>A grip type is randomly assigned to each of the 24 throws she plans on making</p>
+<ul>
+<li>Response: measured in paces how far her throw went</li>
+<li>Question: How might you summarize her data?</li>
+</ul>
 </div>
 </section>
-<section id="title-2" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
+<section id="frisbee-example-1" class="slide level2 font80">
+<h2>Frisbee Example</h2>
+<div class="lqt">
+<div class="row">
+<div class="left">
+<center>
+<img src="images/frisbee.png" width="80%" height="80%"> <br>
+</center>
+</div>
+<div class="right">
+<table>
+<thead>
+<tr class="header">
+<th>&nbsp;</th>
+<th>Finger-out</th>
+<th>Inverted</th>
+<th>Normal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>n</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Mean</td>
+<td>29.5</td>
+<td>32.375</td>
+<td>33.125</td>
+</tr>
+<tr class="odd">
+<td>SD</td>
+<td>4.175</td>
+<td>3.159</td>
+<td>3.944</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span class="inverse">Question: Is this evidence that grip affects mean distance thrown?</span> <span class="math display">\[\begin{align*}
+H_{0}:&amp; \quad \mu_{1}=\mu_{2}=\mu_{3}\\
+H_{a}:&amp; \quad \text{At least one } \mu_{1}, \mu_{2}, \mu_{3} \text{ is not the same}
+\end{align*}\]</span></p>
 </div>
 </section>
-<section id="title-3" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
+<section id="analyzing-variability-in-group-means" class="slide level2 font80">
+<h2>Analyzing Variability in Group Means</h2>
+<div class="cle">
+<div class="row">
+<div class="left">
+<p><strong>Dataset Differences:</strong> Although Datasets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> have identical group means, their variability differs significantly.</p>
+<p><strong>Mean Variability:</strong> Contrasting Datasets <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, both showcase similar variability yet differ in group means.</p>
+<p><strong>Evidence of Variance:</strong> Dataset <span class="math inline">\(A\)</span> shows minimal evidence of mean differences, whereas Datasets <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span> display substantial evidence.</p>
+</div>
+<div class="right">
+<center>
+<img src="images/anova-plot.png" width="90%" height="90%"> <br> <strong>Fig 1</strong>: Comparative analysis of group means and variability.
+</center>
+</div>
+</div>
 </div>
 </section>
-<section id="title-4" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
+<section id="implications-of-variability-analysis" class="slide level2 font80">
+<h2>Implications of Variability Analysis</h2>
+<div class="cle14">
+<div class="row">
+<div class="left">
+<p>Assessment Criteria: Evaluating differences in means involves:</p>
+<ul>
+<li>Magnitude of mean differences among groups.</li>
+<li>Intra-group variability.</li>
+</ul>
+<p><strong>Conclusion:</strong> A robust analysis of variability is crucial to accurately identify and interpret differences in group means.</p>
+</div>
+<div class="right">
+<center>
+<img src="images/anova-plot.png" width="90%" height="90%"> <br> <strong>Fig 2</strong>: Visual evidence supporting variability analysis.
+</center>
+</div>
+</div>
 </div>
 </section>
-<section id="title-5" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
+<section id="analysis-of-variance" class="slide level2 font80">
+<h2>Analysis of Variance</h2>
+<p>Analysis of Variance (ANOVA) compares the variability between groups to the variability within groups</p>
+<center>
+<img src="images/ANOVA-decomposition.png" width="90%" height="80%">
+</center>
+</section>
+<section id="f-statistic" class="slide level2 font80">
+<h2>F-Statistic</h2>
+<div class="cle">
+<div class="font70">
+<p>The F-statistic is a ratio: <span class="math display">\[F=\frac{M S G}{M S E}=\frac{\text { average between group variability }}{\text { average within group variability }}\]</span></p>
+<p>If there really is a difference between the groups <span class="math inline">\((H_a \text{ true})\)</span>, we would expect the F-statistic to be</p>
+<p>a). Large positive</p>
+<p>b). Large negative</p>
+<p>c). Close to 0</p>
+</div>
 </div>
 </section>
-<section id="section" class="slide level2 font60">
-<h2></h2>
-<blockquote>
-<p>Example 2:</p>
-</blockquote>
+<section id="frisbee-example-2" class="slide level2 font70">
+<h2>Frisbee Example</h2>
+<div class="lqt">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>frisbee <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/deepbas/statdatasets/main/Frisbee.csv"</span>)</span>
+<span id="cb2-2"><a></a>frisbee.anova <span class="ot">&lt;-</span> <span class="fu">aov</span>(Distance <span class="sc">~</span> Grip, <span class="at">data =</span> frisbee) <span class="co"># fit an ANOVA model</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">summary</span>(frisbee.anova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)
+Grip         2  58.58   29.29   2.045  0.154
+Residuals   21 300.75   14.32               </code></pre>
+</div>
+</div>
+<p>F-test statistic: 2.045</p>
+<p>P-value: 0.154</p>
+</div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="f-distribution" class="slide level2 font80">
+<h2>F-Distribution</h2>
+<div class="zen">
+<p>We can use the F-distribution to generate a p-value if:</p>
+<ol type="1">
+<li>Sample sizes in each group are large (each <span class="math inline">\(n_{i} \geq 30\)</span> ) OR the data within each group are relatively normally distributed</li>
+<li>Variability is similar in all groups</li>
+</ol>
+<ul>
+<li>The F-distribution has two degrees of freedom, one for the numerator of the ratio <span class="math inline">\((\boldsymbol{k}-\mathbf{1})\)</span> and one for the denominator <span class="math inline">\((n-k)\)</span></li>
+<li>For F-statistics, the p-value (the area as extreme or more extreme) is always the right tail</li>
+</ul>
+</div>
+</section>
+<section id="check-assumptions-normality" class="slide level2 font80">
+<h2>Check assumptions: normality</h2>
+<div class="eqt">
+<div class="font70">
+<div class="row">
+<div class="left">
+<center>
+<img src="images/frisbee.png" width="80%" height="80%">
+</center>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">table</span>(frisbee<span class="sc">$</span>Grip)  <span class="co"># check n's</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Finger Out   Inverted     Normal 
+         8          8          8 </code></pre>
+</div>
+</div>
+<p>Small <span class="math inline">\(n_i\)</span> but all groups are roughly normal</p>
+</div>
+<div class="right">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># checking normality with qq-plots</span></span>
+<span id="cb7-2"><a></a><span class="fu">ggplot</span>(frisbee, <span class="fu">aes</span>(<span class="at">sample =</span> Distance)) <span class="sc">+</span> </span>
+<span id="cb7-3"><a></a>  <span class="fu">geom_qq</span>() <span class="sc">+</span> <span class="fu">geom_qq_line</span>() <span class="sc">+</span>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Grip) <span class="sc">+</span>  </span>
+<span id="cb7-4"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Day41_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" width="288"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="check-assumptions-equal-variance" class="slide level2 font80">
+<h2>Check Assumptions: Equal Variance</h2>
+<div class="cle">
+<div class="font80">
+<p>The F-distribution assumes equal within group variability for each group. This is also an assumption when using the randomization distribution.</p>
+<ul>
+<li>As a rough rule of thumb, this assumption is violated if the largest group standard deviation is more than double the smallest group standard deviation</li>
+</ul>
+<div class="row">
+<div class="left">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">tapply</span>(frisbee<span class="sc">$</span>Distance, frisbee<span class="sc">$</span>Grip, sd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Finger Out   Inverted     Normal 
+  4.174754   3.159453   3.943802 </code></pre>
+</div>
+</div>
+</div>
+<div class="right">
+<p>Ensure:</p>
+<p><span class="math inline">\(\frac{\text{largest }s}{\text{smallest }s} &lt; 2\)</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="frisbee-example-inference" class="slide level2 font80">
+<h2>Frisbee Example: Inference</h2>
+<div class="cle10">
+<div class="font80">
+<p>Question: Is this evidence that grip affects mean distance thrown?</p>
+<p><span class="math display">\[\begin{align*}
+H_{0}:&amp; \quad \mu_{1}=\mu_{2}=\mu_{3}\\
+H_{a}:&amp; \quad \text{At least one } \mu_{1}, \mu_{2}, \mu_{3} \text{ is not the same}
+\end{align*}\]</span> <span class="math inline">\(\mu_{\mathrm{i}}\)</span> is the true mean distance thrown using grip <span class="math inline">\(i\)</span>. <span class="math display">\[F=2.05(\mathrm{df}=2,21), \text {p-value}=0.1543\]</span></p>
+<ul>
+<li>An F-statistic as large as 2.045 would occur by chance about 16% of the time if the means were all equal.</li>
+<li><strong>Conclusion:</strong> Do not reject the Null hypothesis. The difference in observed means is not statistically discernible.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="picturing-the-variation" class="slide level2 font80">
+<h2>Picturing the variation</h2>
+<div class="cle">
+<div class="font80">
+<div class="row">
+<div class="left">
+<p><span class="bold-green">Green: Variation within groups</span></p>
+</div>
+<div class="right">
+<p><span class="bold-blue">Blue: Variation between groups</span></p>
+</div>
+</div>
+<center>
+<img src="images/anova-picture.png" width="70%" height="70%"> <br>
+</center>
+</div>
+</div>
+</section>
+<section id="anova-table-for-frisbee-data" class="slide level2 font80">
+<h2>ANOVA Table for Frisbee data</h2>
+<div class="font80">
+<p><span class="math display">\[\text{F-test stat} = 29.29/14.32 = 2.045\]</span> <br></p>
+<table>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 30%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>df</th>
+<th>Sum of Squares</th>
+<th>Mean Square</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Groups <br> &nbsp;</td>
+<td>#groups -1 <br> 3-1 = 2</td>
+<td>SSG <br> 58.583</td>
+<td>SSG/df <br> 58.583/2 = 29.29</td>
+</tr>
+<tr class="even">
+<td>Error <br> (residual)</td>
+<td>n - #groups <br> 24-3 = 21</td>
+<td>SSE <br> 300.750</td>
+<td>SSE/df <br> 300.75/21= 14.32</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>n-1 <br> 24-1 = 23</td>
+<td>SSTotal <br> 359.333</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="anova-table-formula-dont-memorize" class="slide level2 font80">
+<h2>ANOVA Table formula (don’t memorize!)</h2>
+<div>
+<table data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Source</td>
+<td data-quarto-table-cell-role="th">df</td>
+<td data-quarto-table-cell-role="th">Sum of Squares</td>
+<td data-quarto-table-cell-role="th">Mean Square</td>
+</tr>
+<tr class="even">
+<td>Groups</td>
+<td>\( k - 1 \)</td>
+<td>\( \sum_{\text{groups}} n_i (\bar{x}_i - \bar{x})^2 \)</td>
+<td>\( \frac{SSG}{k - 1} \)</td>
+</tr>
+<tr class="odd">
+<td>Error (residual)</td>
+<td>\( N - k \)</td>
+<td>\( \sum_{\text{groups}} (n_i - 1) s_i^2 \)</td>
+<td>\( \frac{SSE}{N - k} \)</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td>\( N - 1 \)</td>
+<td>\( \sum_{\text{values}} (x_i - \bar{x})^2 \)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
