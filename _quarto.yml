@@ -136,26 +136,7 @@ website:
           #   target: "_blank"
 
 
-          # Add additional lectures here
-      # - text: "Class Activities"
-      #   menu:
-      #     - text: "Activity 1"
-      #       href: class_activity_1.html
-          # - text: "Activity 2"
-          #   href: class_activity_2.html
-          # - text: "Activity 3"
-          #   href: class_activity_3.html
-          # - text: "Activity 4"
-          #   href: class_activity_4.html
-          #        
-            
-                  
-          # Add additional problems here
-      # - text: "Reports"
-      #   href: reports.html
-      # - text: "Midterms"
-      #   href: midterms.html
-      # Add additional navbar items as needed
+
       - text: "Tutorials"
         menu:
           - text: "R and RStudio"
