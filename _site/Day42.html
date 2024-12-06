@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -340,50 +405,188 @@ Bastola
 </div>
 
 </section>
-<section id="title" class="slide level2 font80">
-<h2>Title</h2>
+<section id="recap-and-practice-anova" class="slide level2 font80">
+<h2>Recap and Practice: ANOVA</h2>
 <div class="cle6">
-
+<p><strong>Purpose</strong>: Compare the means of three or more groups to detect significant differences.</p>
+<h4 id="key-concepts">Key Concepts</h4>
+<ul>
+<li><em>Null Hypothesis (<span class="math inline">\(H_0\)</span>)</em>: Means of all groups are equal.</li>
+<li><em>Alternative Hypothesis (<span class="math inline">\(H_A\)</span>)</em>: At least one group mean differs.</li>
+<li><em>Assumptions</em>:
+<ul>
+<li>Normality within each group.</li>
+<li>Homogeneity of variances.</li>
+</ul></li>
+</ul>
 </div>
 </section>
-<section id="title-1" class="slide level2 font80">
-<h2>Title</h2>
+<section id="steps-of-hypothesis-testing-anova" class="slide level2 font60">
+<h2>5 Steps of Hypothesis Testing (ANOVA)</h2>
 <div class="cle6">
-
+<ol type="1">
+<li><strong>State Hypotheses</strong>:
+<ul>
+<li><span class="math inline">\(H_0: \mu_1 = \mu_2 = \cdots = \mu_k\)</span></li>
+<li><span class="math inline">\(H_A\)</span>: At least one <span class="math inline">\(\mu_i\)</span> is different.</li>
+</ul></li>
+<li><strong>Check Assumptions</strong>:
+<ul>
+<li>Visualize data or test for normality.</li>
+<li>Check equal variances.</li>
+</ul></li>
+<li><strong>Calculate Test Statistic</strong>:
+<ul>
+<li>Partition total variation into: Between-groups (SSG) and Within-groups (SSE).</li>
+<li><span class="math inline">\(F = \frac{\text{MSG}}{\text{MSE}}\)</span>, where MSG = SSG/df and MSE = SSE/df.</li>
+</ul></li>
+<li><strong>Determine p-value</strong>:
+<ul>
+<li>Use the <span class="math inline">\(F\)</span>-distribution to calculate p-value.</li>
+</ul></li>
+<li><strong>Draw Conclusion</strong>:
+<ul>
+<li>Compare p-value to significance level <span class="math inline">\(\alpha\)</span>.</li>
+</ul></li>
+</ol>
 </div>
 </section>
-<section id="title-2" class="slide level2 font80">
-<h2>Title</h2>
+<section id="class-activity-metal-contamination" class="slide level2">
+<h2>Class Activity: Metal Contamination</h2>
 <div class="cle6">
-
+<p><strong>Problem</strong>: Investigate if mean copper concentrations differ among three river sites.</p>
+<h4 id="data-summary">Data Summary</h4>
+<table>
+<thead>
+<tr class="header">
+<th>Site</th>
+<th><span class="math inline">\(\bar{x}\)</span></th>
+<th>SD (<span class="math inline">\(s\)</span>)</th>
+<th><span class="math inline">\(n\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>21.34</td>
+<td>3.092</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>16.60</td>
+<td>2.687</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>13.16</td>
+<td>4.274</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
-<section id="title-3" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
-</div>
-</section>
-<section id="title-4" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
-</div>
-</section>
-<section id="title-5" class="slide level2 font80">
-<h2>Title</h2>
-<div class="cle6">
-
-</div>
-</section>
-<section id="section" class="slide level2 font60">
+<section id="section" class="slide level2">
 <h2></h2>
-<blockquote>
-<p>Example 2:</p>
-</blockquote>
+<div class="cle6">
+<p>Step 1: State Hypotheses</p>
+<ol type="1">
+<li>Null Hypothesis: <span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span></li>
+<li>Alternative Hypothesis: <span class="math inline">\(H_A\)</span>: At least one <span class="math inline">\(\mu_i\)</span> differs.</li>
+</ol>
+</div>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
+<div class="cle6">
+<p>Step 2: Assumptions</p>
+<ul>
+<li>What assumptions must hold for ANOVA?<br>
+<em>(Think about normality and variances.)</em></li>
+</ul>
+</div>
+</section>
+<section id="section-2" class="slide level2 font70">
+<h2></h2>
+<p>Step 3: Complete the ANOVA Table</p>
+<table>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>df</th>
+<th>SS</th>
+<th>MS</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Groups</td>
+<td><code>A</code></td>
+<td>169.05</td>
+<td><code>C</code></td>
+<td><code>E</code></td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td>11</td>
+<td><code>B</code></td>
+<td><code>D</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>13</td>
+<td>302.02</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="cle6">
+<p>Fill in the Missing Values!</p>
+<ul>
+<li><p><strong>Hint</strong>: Use formulas:</p>
+<ul>
+<li>df (Groups) = <span class="math inline">\(k-1\)</span>, Error = <span class="math inline">\(N-k\)</span></li>
+<li>SS (Total) = SS (Groups) + SS (Error)</li>
+<li>MS = <span class="math inline">\(\frac{\text{SS}}{\text{df}}\)</span></li>
+<li><span class="math inline">\(F = \frac{\text{MS}_{\text{Groups}}}{\text{MS}_{\text{Error}}}\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="step-4-find-the-p-value" class="slide level2">
+<h2>Step 4: Find the p-value</h2>
+<div class="cle6">
+<ol type="1">
+<li>Calculate: <span class="math display">\[F = 6.992\]</span></li>
+<li>Command in R:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="dv">1</span><span class="sc">-</span><span class="fu">pf</span>(<span class="fl">6.992</span>, <span class="at">df1=</span><span class="dv">2</span>, <span class="at">df2=</span><span class="dv">11</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01097789</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Interpretation?</li>
+</ol>
+</div>
+</section>
+<section id="step-5-draw-conclusion" class="slide level2">
+<h2>Step 5: Draw Conclusion</h2>
+<ol type="1">
+<li>Based on p-value (~1.1%), do we reject <span class="math inline">\(H_0\)</span>?</li>
+</ol>
+<div class="custom-space">
+
+</div>
+<ol start="2" type="1">
+<li>What does this say about copper concentrations?</li>
+</ol>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

@@ -1,0 +1,181 @@
+---
+title: "Day 42"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Recap and Practice: ANOVA {.font80}
+
+::: cle6
+
+**Purpose**: Compare the means of three or more groups to detect significant differences.
+
+#### Key Concepts
+- *Null Hypothesis ($H_0$)*: Means of all groups are equal.
+- *Alternative Hypothesis ($H_A$)*: At least one group mean differs.
+- *Assumptions*:
+  - Normality within each group.
+  - Homogeneity of variances.
+
+:::
+
+## 5 Steps of Hypothesis Testing (ANOVA) {.font60}
+
+::: cle6
+
+1. **State Hypotheses**:
+   - $H_0: \mu_1 = \mu_2 = \cdots = \mu_k$
+   - $H_A$: At least one $\mu_i$ is different.
+
+2. **Check Assumptions**:
+   - Visualize data or test for normality.
+   - Check equal variances.
+
+3. **Calculate Test Statistic**:
+   - Partition total variation into: Between-groups (SSG) and Within-groups (SSE).
+   - $F = \frac{\text{MSG}}{\text{MSE}}$, where MSG = SSG/df and MSE = SSE/df.
+
+4. **Determine p-value**:
+   - Use the $F$-distribution to calculate p-value.
+
+5. **Draw Conclusion**:
+   - Compare p-value to significance level $\alpha$.
+
+:::
+
+##  Class Activity: Metal Contamination
+
+::: cle6
+
+**Problem**: Investigate if mean copper concentrations differ among three river sites.
+
+#### Data Summary
+
+| Site | $\bar{x}$ | SD ($s$) | $n$ |
+|------|-----------|-----------|-----|
+| 1    | 21.34     | 3.092     | 5   |
+| 2    | 16.60     | 2.687     | 4   |
+| 3    | 13.16     | 4.274     | 5   |
+
+:::
+
+
+##
+
+::: cle6
+
+Step 1: State Hypotheses
+
+1. Null Hypothesis: $H_0: \mu_1 = \mu_2 = \mu_3$
+2. Alternative Hypothesis: $H_A$: At least one $\mu_i$ differs.
+
+:::
+
+## 
+
+::: cle6
+
+Step 2: Assumptions
+
+- What assumptions must hold for ANOVA?  
+*(Think about normality and variances.)*
+
+:::
+
+
+
+## {.font70}
+
+Step 3: Complete the ANOVA Table
+
+| Source   | df   | SS      | MS        | F     |
+|----------|------|---------|-----------|-------|
+| Groups   | `A`  | 169.05  | `C`       | `E`   |
+| Error    | 11   | `B`     | `D`       |       |
+| Total    | 13   | 302.02  |           |       |
+
+
+::: cle6
+
+Fill in the Missing Values!
+
+- **Hint**: Use formulas:
+
+  - df (Groups) = $k-1$, Error = $N-k$
+  - SS (Total) = SS (Groups) + SS (Error)
+  - MS = $\frac{\text{SS}}{\text{df}}$
+  - $F = \frac{\text{MS}_{\text{Groups}}}{\text{MS}_{\text{Error}}}$
+
+:::
+
+
+## Step 4: Find the p-value
+
+::: cle6
+
+1. Calculate:
+   $$F = 6.992$$
+2. Command in R:
+```{r}
+1-pf(6.992, df1=2, df2=11)
+```
+
+3. Interpretation?
+
+:::
+
+## Step 5: Draw Conclusion 
+
+1. Based on p-value (~1.1%), do we reject $H_0$?
+
+::: custom-space
+:::
+
+
+2. What does this say about copper concentrations?
+
+
+
